@@ -98,19 +98,19 @@
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">/* ********************************************************************** */</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> CC_DEBUGERROR_SEVERITY {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  CC_DEBUGERROR_ERROR,</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  CC_DEBUGERROR_WARNING,</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  CC_DEBUGERROR_INFO</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;} CC_DEBUGERROR_SEVERITY;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="debugerror_8h.html#abb46c319942696b6c5f0bce6cecdf54d">   47</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> <a class="code" href="debugerror_8h.html#abb46c319942696b6c5f0bce6cecdf54d">CC_DEBUGERROR_SEVERITY</a> {</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="debugerror_8h.html#abb46c319942696b6c5f0bce6cecdf54da7f3503747456ebd36e35051d2b5cd09a">   48</a></span>&#160;  <a class="code" href="debugerror_8h.html#abb46c319942696b6c5f0bce6cecdf54da7f3503747456ebd36e35051d2b5cd09a">CC_DEBUGERROR_ERROR</a>,</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="debugerror_8h.html#abb46c319942696b6c5f0bce6cecdf54da60b297f683404656a5c76db3feab4eb0">   49</a></span>&#160;  <a class="code" href="debugerror_8h.html#abb46c319942696b6c5f0bce6cecdf54da60b297f683404656a5c76db3feab4eb0">CC_DEBUGERROR_WARNING</a>,</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="debugerror_8h.html#abb46c319942696b6c5f0bce6cecdf54da3b48d0a938231b85aee9d4a58d8f0f56">   50</a></span>&#160;  <a class="code" href="debugerror_8h.html#abb46c319942696b6c5f0bce6cecdf54da3b48d0a938231b85aee9d4a58d8f0f56">CC_DEBUGERROR_INFO</a></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;} <a class="code" href="debugerror_8h.html#abb46c319942696b6c5f0bce6cecdf54d">CC_DEBUGERROR_SEVERITY</a>;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>cc_debugerror {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  cc_error super; <span class="comment">/* make struct is-A cc_error */</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="structcc__debugerror.html">   53</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structcc__debugerror.html">cc_debugerror</a> {</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="structcc__debugerror.html#a0042d09ac874de34b6d18e6a5af6abe0">   54</a></span>&#160;  <a class="code" href="structcc__error.html">cc_error</a> <a class="code" href="structcc__debugerror.html#a0042d09ac874de34b6d18e6a5af6abe0">super</a>; <span class="comment">/* make struct is-A cc_error */</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  CC_DEBUGERROR_SEVERITY severity;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;} cc_debugerror;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="structcc__debugerror.html#a5521c2e12d8f865fc857fc710cfbfb50">   56</a></span>&#160;  <a class="code" href="debugerror_8h.html#abb46c319942696b6c5f0bce6cecdf54d">CC_DEBUGERROR_SEVERITY</a> <a class="code" href="structcc__debugerror.html#a5521c2e12d8f865fc857fc710cfbfb50">severity</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;} <a class="code" href="structcc__debugerror.html">cc_debugerror</a>;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">void</span> cc_debugerror_cb(<span class="keyword">const</span> cc_debugerror * err, <span class="keywordtype">void</span> * data);</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="debugerror_8h.html#a1d3f377f90c7732d23b13dc8fd80c7e3">   59</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">void</span> <a class="code" href="debugerror_8h.html#a1d3f377f90c7732d23b13dc8fd80c7e3">cc_debugerror_cb</a>(<span class="keyword">const</span> <a class="code" href="structcc__debugerror.html">cc_debugerror</a> * err, <span class="keywordtype">void</span> * data);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">/* ********************************************************************** */</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
@@ -124,16 +124,16 @@
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;COIN_DLL_API <span class="keywordtype">void</span> cc_debugerror_postinfo(<span class="keyword">const</span> <span class="keywordtype">char</span> * source, <span class="keyword">const</span> <span class="keywordtype">char</span> * format, ...);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;COIN_DLL_API <span class="keywordtype">void</span> cc_debugerror_init(cc_debugerror * me);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;COIN_DLL_API <span class="keywordtype">void</span> cc_debugerror_clean(cc_debugerror * me);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;COIN_DLL_API <span class="keywordtype">void</span> cc_debugerror_init(<a class="code" href="structcc__debugerror.html">cc_debugerror</a> * me);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;COIN_DLL_API <span class="keywordtype">void</span> cc_debugerror_clean(<a class="code" href="structcc__debugerror.html">cc_debugerror</a> * me);</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;COIN_DLL_API CC_DEBUGERROR_SEVERITY cc_debugerror_get_severity(<span class="keyword">const</span> cc_debugerror * me);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;COIN_DLL_API <a class="code" href="debugerror_8h.html#abb46c319942696b6c5f0bce6cecdf54d">CC_DEBUGERROR_SEVERITY</a> cc_debugerror_get_severity(<span class="keyword">const</span> <a class="code" href="structcc__debugerror.html">cc_debugerror</a> * me);</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;COIN_DLL_API <span class="keywordtype">void</span> cc_debugerror_set_handler_callback(cc_debugerror_cb * <span class="keyword">function</span>, <span class="keywordtype">void</span> * data);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;COIN_DLL_API cc_debugerror_cb * cc_debugerror_get_handler_callback(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;COIN_DLL_API <span class="keywordtype">void</span> cc_debugerror_set_handler_callback(<a class="code" href="debugerror_8h.html#a1d3f377f90c7732d23b13dc8fd80c7e3">cc_debugerror_cb</a> * <span class="keyword">function</span>, <span class="keywordtype">void</span> * data);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;COIN_DLL_API <a class="code" href="debugerror_8h.html#a1d3f377f90c7732d23b13dc8fd80c7e3">cc_debugerror_cb</a> * cc_debugerror_get_handler_callback(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;COIN_DLL_API <span class="keywordtype">void</span> * cc_debugerror_get_handler_data(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;COIN_DLL_API cc_debugerror_cb * cc_debugerror_get_handler(<span class="keywordtype">void</span> ** data);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;COIN_DLL_API <a class="code" href="debugerror_8h.html#a1d3f377f90c7732d23b13dc8fd80c7e3">cc_debugerror_cb</a> * cc_debugerror_get_handler(<span class="keywordtype">void</span> ** data);</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">/* ********************************************************************** */</span></div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
@@ -142,11 +142,20 @@
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ! CC_DEBUGERROR_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="structcc__error_html"><div class="ttname"><a href="structcc__error.html">cc_error</a></div><div class="ttdoc">The cc_error type is an internal Coin structure for error management.This is a Coin extension...</div><div class="ttdef"><b>Definition:</b> error.h:49</div></div>
+<div class="ttc" id="debugerror_8h_html_abb46c319942696b6c5f0bce6cecdf54da7f3503747456ebd36e35051d2b5cd09a"><div class="ttname"><a href="debugerror_8h.html#abb46c319942696b6c5f0bce6cecdf54da7f3503747456ebd36e35051d2b5cd09a">CC_DEBUGERROR_ERROR</a></div><div class="ttdef"><b>Definition:</b> debugerror.h:48</div></div>
+<div class="ttc" id="debugerror_8h_html_abb46c319942696b6c5f0bce6cecdf54da60b297f683404656a5c76db3feab4eb0"><div class="ttname"><a href="debugerror_8h.html#abb46c319942696b6c5f0bce6cecdf54da60b297f683404656a5c76db3feab4eb0">CC_DEBUGERROR_WARNING</a></div><div class="ttdef"><b>Definition:</b> debugerror.h:49</div></div>
+<div class="ttc" id="structcc__debugerror_html_a0042d09ac874de34b6d18e6a5af6abe0"><div class="ttname"><a href="structcc__debugerror.html#a0042d09ac874de34b6d18e6a5af6abe0">cc_debugerror::super</a></div><div class="ttdeci">cc_error super</div><div class="ttdef"><b>Definition:</b> debugerror.h:54</div></div>
+<div class="ttc" id="structcc__debugerror_html"><div class="ttname"><a href="structcc__debugerror.html">cc_debugerror</a></div><div class="ttdoc">The cc_debugerror type is an internal Coin structure for debug error management.This is a Coin extens...</div><div class="ttdef"><b>Definition:</b> debugerror.h:53</div></div>
 <div class="ttc" id="error_8h_html"><div class="ttname"><a href="error_8h.html">error.h</a></div></div>
+<div class="ttc" id="debugerror_8h_html_abb46c319942696b6c5f0bce6cecdf54d"><div class="ttname"><a href="debugerror_8h.html#abb46c319942696b6c5f0bce6cecdf54d">CC_DEBUGERROR_SEVERITY</a></div><div class="ttdeci">CC_DEBUGERROR_SEVERITY</div><div class="ttdef"><b>Definition:</b> debugerror.h:47</div></div>
+<div class="ttc" id="structcc__debugerror_html_a5521c2e12d8f865fc857fc710cfbfb50"><div class="ttname"><a href="structcc__debugerror.html#a5521c2e12d8f865fc857fc710cfbfb50">cc_debugerror::severity</a></div><div class="ttdeci">CC_DEBUGERROR_SEVERITY severity</div><div class="ttdef"><b>Definition:</b> debugerror.h:56</div></div>
+<div class="ttc" id="debugerror_8h_html_a1d3f377f90c7732d23b13dc8fd80c7e3"><div class="ttname"><a href="debugerror_8h.html#a1d3f377f90c7732d23b13dc8fd80c7e3">cc_debugerror_cb</a></div><div class="ttdeci">void cc_debugerror_cb(const cc_debugerror *err, void *data)</div><div class="ttdef"><b>Definition:</b> debugerror.h:59</div></div>
+<div class="ttc" id="debugerror_8h_html_abb46c319942696b6c5f0bce6cecdf54da3b48d0a938231b85aee9d4a58d8f0f56"><div class="ttname"><a href="debugerror_8h.html#abb46c319942696b6c5f0bce6cecdf54da3b48d0a938231b85aee9d4a58d8f0f56">CC_DEBUGERROR_INFO</a></div><div class="ttdef"><b>Definition:</b> debugerror.h:50</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <hr />
 <p align="right">Coin3D is Free Software, published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.</p>
 <address style="align: right;"><small>
-Generated on Fri Jun 13 2014 10:15:53 for Coin by <a href="http://www.doxygen.org/">Doxygen</a> 1.8.7.</small></address>
+Generated on Mon Aug 25 2014 19:18:21 for Coin by <a href="http://www.doxygen.org/">Doxygen</a> 1.8.7.</small></address>
 </body>
 </html>

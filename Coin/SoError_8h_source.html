@@ -135,22 +135,23 @@
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordtype">void</span> handleError(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <a class="code" href="classSoError.html">SoError</a>(<span class="keyword">const</span> cc_error * error);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <a class="code" href="classSoError.html">SoError</a>(<span class="keyword">const</span> <a class="code" href="structcc__error.html">cc_error</a> * error);</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> generateBaseString(<a class="code" href="classSbString.html">SbString</a> &amp; str, <span class="keyword">const</span> <a class="code" href="classSoBase.html">SoBase</a> * <span class="keyword">const</span> base,</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                                 <span class="keyword">const</span> <span class="keywordtype">char</span> * <span class="keyword">const</span> what);</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> callbackForwarder(<span class="keyword">const</span> cc_error * err, <span class="keywordtype">void</span> * data);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> callbackForwarder(<span class="keyword">const</span> <a class="code" href="structcc__error.html">cc_error</a> * err, <span class="keywordtype">void</span> * data);</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keyword">static</span> <a class="code" href="classSoType.html">SoType</a> classTypeId;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keyword">static</span> SoErrorCB * callback;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> * callbackData;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <a class="code" href="classSbString.html">SbString</a> debugstring;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  cc_error err;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <a class="code" href="structcc__error.html">cc_error</a> err;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;};</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#endif // !COIN_SOERROR_H</span></div>
 <div class="ttc" id="classSoBase_html"><div class="ttname"><a href="classSoBase.html">SoBase</a></div><div class="ttdoc">The SoBase class is the top-level superclass for a number of class-hierarchies.SoBase provides the ba...</div><div class="ttdef"><b>Definition:</b> SoBase.h:45</div></div>
+<div class="ttc" id="structcc__error_html"><div class="ttname"><a href="structcc__error.html">cc_error</a></div><div class="ttdoc">The cc_error type is an internal Coin structure for error management.This is a Coin extension...</div><div class="ttdef"><b>Definition:</b> error.h:49</div></div>
 <div class="ttc" id="classSoEngine_html"><div class="ttname"><a href="classSoEngine.html">SoEngine</a></div><div class="ttdoc">SoEngine is the base class for Coin engines.Engines enables the application programmers to make compl...</div><div class="ttdef"><b>Definition:</b> SoEngine.h:43</div></div>
 <div class="ttc" id="classSoNode_html"><div class="ttname"><a href="classSoNode.html">SoNode</a></div><div class="ttdoc">The SoNode class is the base class for nodes used in scene graphs.Coin is a retained mode 3D visualiz...</div><div class="ttdef"><b>Definition:</b> SoNode.h:56</div></div>
 <div class="ttc" id="SoType_8h_html"><div class="ttname"><a href="SoType_8h.html">SoType.h</a></div></div>
@@ -164,6 +165,6 @@
 <hr />
 <p align="right">Coin3D is Free Software, published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.</p>
 <address style="align: right;"><small>
-Generated on Fri Jun 13 2014 10:15:54 for Coin by <a href="http://www.doxygen.org/">Doxygen</a> 1.8.7.</small></address>
+Generated on Mon Aug 25 2014 19:18:22 for Coin by <a href="http://www.doxygen.org/">Doxygen</a> 1.8.7.</small></address>
 </body>
 </html>

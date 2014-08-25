@@ -124,7 +124,7 @@
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keyword">virtual</span> SoErrorCBPtr <a class="code" href="classSoError.html#ac9a724e724781d7d77b4b6a4f7f8420d">getHandler</a>(<span class="keywordtype">void</span> * &amp; data) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> callbackForwarder(<span class="keyword">const</span> <span class="keyword">struct</span> cc_debugerror * error, <span class="keywordtype">void</span> * data);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> callbackForwarder(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structcc__debugerror.html">cc_debugerror</a> * error, <span class="keywordtype">void</span> * data);</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> commonPostHandling(Severity severity, <span class="keyword">const</span> <span class="keywordtype">char</span> * type,</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                 <span class="keyword">const</span> <span class="keywordtype">char</span> * source, <span class="keyword">const</span> <a class="code" href="classSbString.html">SbString</a> &amp; s);</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
@@ -144,6 +144,7 @@
 <div class="ttc" id="classSoError_html_a3221f7f406b8788c5f3dce1475da00b0"><div class="ttname"><a href="classSoError.html#a3221f7f406b8788c5f3dce1475da00b0">SoError::setHandlerCallback</a></div><div class="ttdeci">static void setHandlerCallback(SoErrorCB *const func, void *const data)</div><div class="ttdef"><b>Definition:</b> SoError.cpp:175</div></div>
 <div class="ttc" id="classSoError_html_acae62657f4158d0d9edd3dd88bd9968c"><div class="ttname"><a href="classSoError.html#acae62657f4158d0d9edd3dd88bd9968c">SoError::getHandlerData</a></div><div class="ttdeci">static void * getHandlerData(void)</div><div class="ttdef"><b>Definition:</b> SoError.cpp:207</div></div>
 <div class="ttc" id="classSoError_html_a41bcf4c50ee9fb96d86e1fdb64e8bfdd"><div class="ttname"><a href="classSoError.html#a41bcf4c50ee9fb96d86e1fdb64e8bfdd">SoError::getTypeId</a></div><div class="ttdeci">virtual SoType getTypeId(void) const </div><div class="ttdef"><b>Definition:</b> SoError.cpp:148</div></div>
+<div class="ttc" id="structcc__debugerror_html"><div class="ttname"><a href="structcc__debugerror.html">cc_debugerror</a></div><div class="ttdoc">The cc_debugerror type is an internal Coin structure for debug error management.This is a Coin extens...</div><div class="ttdef"><b>Definition:</b> debugerror.h:53</div></div>
 <div class="ttc" id="classSoError_html_ac9a724e724781d7d77b4b6a4f7f8420d"><div class="ttname"><a href="classSoError.html#ac9a724e724781d7d77b4b6a4f7f8420d">SoError::getHandler</a></div><div class="ttdeci">virtual SoErrorCBPtr getHandler(void *&amp;data) const </div><div class="ttdef"><b>Definition:</b> SoError.cpp:291</div></div>
 <div class="ttc" id="classSoError_html_a7648888fdc2d85156787a76d7d064c66"><div class="ttname"><a href="classSoError.html#a7648888fdc2d85156787a76d7d064c66">SoError::post</a></div><div class="ttdeci">static void post(const char *const format,...)</div><div class="ttdef"><b>Definition:</b> SoError.cpp:230</div></div>
 <div class="ttc" id="classSoError_html_ae2c90745f79f7bbbc4f5038aad369381"><div class="ttname"><a href="classSoError.html#ae2c90745f79f7bbbc4f5038aad369381">SoError::getClassTypeId</a></div><div class="ttdeci">static SoType getClassTypeId(void)</div><div class="ttdef"><b>Definition:</b> SoError.cpp:135</div></div>
@@ -159,6 +160,6 @@
 <hr />
 <p align="right">Coin3D is Free Software, published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.</p>
 <address style="align: right;"><small>
-Generated on Fri Jun 13 2014 10:15:54 for Coin by <a href="http://www.doxygen.org/">Doxygen</a> 1.8.7.</small></address>
+Generated on Mon Aug 25 2014 19:18:22 for Coin by <a href="http://www.doxygen.org/">Doxygen</a> 1.8.7.</small></address>
 </body>
 </html>

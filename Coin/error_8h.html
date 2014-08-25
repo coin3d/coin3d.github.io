@@ -49,6 +49,7 @@
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -60,64 +61,38 @@
 </div>
 <p><a href="error_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcc__error.html">cc_error</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="structcc__error.html" title="The cc_error type is an internal Coin structure for error management.This is a Coin extension...">cc_error</a> type is an internal Coin structure for error management.This is a Coin extension.  <a href="structcc__error.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a60d398c05a1166545d3a50ad8f09d00d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a60d398c05a1166545d3a50ad8f09d00d"></a>
-typedef struct cc_error&#160;</td><td class="memItemRight" valign="bottom"><b>cc_error</b></td></tr>
+typedef struct <a class="el" href="structcc__error.html">cc_error</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cc_error</b></td></tr>
 <tr class="separator:a60d398c05a1166545d3a50ad8f09d00d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5de7acf83ec72a29dbd90faf5c902a49"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5de7acf83ec72a29dbd90faf5c902a49"></a>
-typedef void&#160;</td><td class="memItemRight" valign="bottom"><b>cc_error_cb</b> (const cc_error *err, void *data)</td></tr>
-<tr class="separator:a5de7acf83ec72a29dbd90faf5c902a49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a63f4120926ef6771d861cb15d83e3bac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a63f4120926ef6771d861cb15d83e3bac"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>cc_error_init</b> (cc_error *me)</td></tr>
-<tr class="separator:a63f4120926ef6771d861cb15d83e3bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6a318d2fe1562f2c7de485d55cc5546"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac6a318d2fe1562f2c7de485d55cc5546"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>cc_error_clean</b> (cc_error *me)</td></tr>
-<tr class="separator:ac6a318d2fe1562f2c7de485d55cc5546"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa95d4deb0bd0dddf66a570893b87c8b3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa95d4deb0bd0dddf66a570893b87c8b3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>cc_error_copy</b> (const cc_error *src, cc_error *dst)</td></tr>
-<tr class="separator:aa95d4deb0bd0dddf66a570893b87c8b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae90fbcf6d5d656fea543ee08c12811cb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae90fbcf6d5d656fea543ee08c12811cb"></a>
-const <a class="el" href="structcc__string.html">cc_string</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>cc_error_get_debug_string</b> (const cc_error *me)</td></tr>
-<tr class="separator:ae90fbcf6d5d656fea543ee08c12811cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48ec2c4b88066d451153df98ed8f97ca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a48ec2c4b88066d451153df98ed8f97ca"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>cc_error_set_handler_callback</b> (cc_error_cb *func, void *data)</td></tr>
-<tr class="separator:a48ec2c4b88066d451153df98ed8f97ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e78d1ee322ae7dd56cbdf5932e52e40"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8e78d1ee322ae7dd56cbdf5932e52e40"></a>
-cc_error_cb *&#160;</td><td class="memItemRight" valign="bottom"><b>cc_error_get_handler_callback</b> (void)</td></tr>
-<tr class="separator:a8e78d1ee322ae7dd56cbdf5932e52e40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30c09397ee4ff06837c47cdc1e59b9b6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a30c09397ee4ff06837c47cdc1e59b9b6"></a>
-void *&#160;</td><td class="memItemRight" valign="bottom"><b>cc_error_get_handler_data</b> (void)</td></tr>
-<tr class="separator:a30c09397ee4ff06837c47cdc1e59b9b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18c81082ad4a55cb95863f9163bb7385"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a18c81082ad4a55cb95863f9163bb7385"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>cc_error_post</b> (const char *format,...)</td></tr>
-<tr class="separator:a18c81082ad4a55cb95863f9163bb7385"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a662a8926d5f2b6e14d58f9928db24172"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a662a8926d5f2b6e14d58f9928db24172"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>cc_error_post_arglist</b> (const char *format, va_list args)</td></tr>
-<tr class="separator:a662a8926d5f2b6e14d58f9928db24172"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add3650c7e3753c9d14812dd89df852b5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="add3650c7e3753c9d14812dd89df852b5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>cc_error_set_debug_string</b> (cc_error *me, const char *str)</td></tr>
-<tr class="separator:add3650c7e3753c9d14812dd89df852b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5705de552e57c5fb3fc27360dbd2a2f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad5705de552e57c5fb3fc27360dbd2a2f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>cc_error_append_to_debug_string</b> (cc_error *me, const char *str)</td></tr>
-<tr class="separator:ad5705de552e57c5fb3fc27360dbd2a2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1dbdf1b6ed354eeb88de4ec7e39a97b0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1dbdf1b6ed354eeb88de4ec7e39a97b0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>cc_error_handle</b> (cc_error *me)</td></tr>
-<tr class="separator:a1dbdf1b6ed354eeb88de4ec7e39a97b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a497fc4c54ce02f86d67244df29e4fcbe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a497fc4c54ce02f86d67244df29e4fcbe"></a>
-cc_error_cb *&#160;</td><td class="memItemRight" valign="bottom"><b>cc_error_get_handler</b> (void **data)</td></tr>
-<tr class="separator:a497fc4c54ce02f86d67244df29e4fcbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c9deaf897739f4f99770adf2194a3f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3c9deaf897739f4f99770adf2194a3f1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>cc_error_default_handler_cb</b> (const cc_error *err, void *data)</td></tr>
-<tr class="separator:a3c9deaf897739f4f99770adf2194a3f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4504cffc1a4f2f2bc889178d3818f75"><td class="memItemLeft" align="right" valign="top">typedef void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error_8h.html#ac4504cffc1a4f2f2bc889178d3818f75">cc_error_cb</a> (const <a class="el" href="structcc__error.html">cc_error</a> *err, void *data)</td></tr>
+<tr class="separator:ac4504cffc1a4f2f2bc889178d3818f75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a class="anchor" id="ac4504cffc1a4f2f2bc889178d3818f75"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cc_error_cb</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The definition for an error callback handler. </p>
+
+</div>
+</div>
 </div><!-- contents -->
 <hr />
 <p align="right">Coin3D is Free Software, published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.</p>
 <address style="align: right;"><small>
-Generated on Fri Jun 13 2014 10:15:56 for Coin by <a href="http://www.doxygen.org/">Doxygen</a> 1.8.7.</small></address>
+Generated on Mon Aug 25 2014 19:18:24 for Coin by <a href="http://www.doxygen.org/">Doxygen</a> 1.8.7.</small></address>
 </body>
 </html>
