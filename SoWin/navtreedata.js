@@ -49,7 +49,8 @@ var NAVTREEINDEX =
 "SoWinBasic_8h_source.html",
 "classSoWinFullViewer.html#a5b4bfad8841b5af974595c64807c5bc5",
 "classSoWinRenderArea.html#a0d8826d497bf68e8ed5973d5329421e2",
-"classSoWinViewer.html#a91c1c5059b1bc9cd8bcd2e7e474a0ca2"
+"classSoWinViewer.html#a91c1c5059b1bc9cd8bcd2e7e474a0ca2",
+"group__envvars.html#gae0e14afa32d5ffcf2a6d1cc55aaac462"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
