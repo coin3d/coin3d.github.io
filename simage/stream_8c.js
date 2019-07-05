@@ -1,0 +1,25 @@
+var stream_8c =
+[
+    [ "simage_stream_s", "structsimage__stream__s.html", "structsimage__stream__s" ],
+    [ "simage_stream_importer", "structsimage__stream__importer.html", "structsimage__stream__importer" ],
+    [ "simage_stream_exporter", "structsimage__stream__exporter.html", "structsimage__stream__exporter" ],
+    [ "add_internal_importers", "stream_8c.html#ae3cb0640bb0eab39e33041e12e857ac8", null ],
+    [ "add_internal_exporters", "stream_8c.html#ad72ad815311e51e7c9101f1728241516", null ],
+    [ "s_stream_open", "stream_8c.html#a8a504fe35a510043b43a70d4f918a812", null ],
+    [ "s_stream_create", "stream_8c.html#a6adb32d0f05da752583bd3fa2c8c824e", null ],
+    [ "s_stream_get_buffer", "stream_8c.html#a84575d42b612b6ecd390ce33eecffffb", null ],
+    [ "s_stream_put_buffer", "stream_8c.html#a87a02f510adb825ba66bf42c5f704843", null ],
+    [ "s_stream_close", "stream_8c.html#a5b10cb26480c72bd93e7abcf9ebfd599", null ],
+    [ "s_stream_destroy", "stream_8c.html#a8da1765eab30549fdf48f70b5578f469", null ],
+    [ "s_stream_params", "stream_8c.html#abcb434d9e6cbbf645de7b36a7c681670", null ],
+    [ "s_stream_context_get", "stream_8c.html#a16585e155b313c15041af2921478d01a", null ],
+    [ "s_stream_context_set", "stream_8c.html#ad9cafbd750ceb9b564a7afb9ddfdba06", null ],
+    [ "s_stream_importer_add", "stream_8c.html#a310d04e7012e18033d2a3e51f0eb2dc1", null ],
+    [ "s_stream_importer_add_ex", "stream_8c.html#ad57d3643ce92f348f0d1588b9280b626", null ],
+    [ "s_stream_exporter_add", "stream_8c.html#a200f0531dd434d1c92f5476a4726a1bc", null ],
+    [ "s_stream_exporter_add_ex", "stream_8c.html#ab36f2344a823d1bdae7e73376192c75e", null ],
+    [ "s_stream_seek", "stream_8c.html#a8324ab16a7d9675b41a145154c815a16", null ],
+    [ "s_stream_tell", "stream_8c.html#ad24bb8cb2494052a24c7bf738528c151", null ],
+    [ "importers", "stream_8c.html#a715d387b807932cc16e5ab578d1b8afd", null ],
+    [ "exporters", "stream_8c.html#a7be56cc41d205bf14459a782eb114728", null ]
+];
