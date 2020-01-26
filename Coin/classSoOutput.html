@@ -33,8 +33,8 @@
     Coin3D is Free Software,<br />published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.
   </td>
   <td style="text-align: right; padding-right: 0.5em;">
-    <a href="https://github.com/coin3d/">https://github.com/coin3d/</a><br />
-    <a href="http://www.kongsberg.com/kogt/">http://www.kongsberg.com/kogt/</a><br />  
+    <a href="https://coin3d.github.io">https://coin3d.github.io</a><br />
+    <a href="https://www.kongsberg.com/en/kogt/">https://www.kongsberg.com/en/kogt/</a><br />  
     </td>
  </tr>
  </tbody>
@@ -265,7 +265,7 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Enumerates the possible stages of a write operation (writing needs to be done in mutiple passes).</p>
+<p>Enumerates the possible stages of a write operation (writing needs to be done in multiple passes).</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoOutput.html#ad6b89daf5481cda8842a32d1731a919f">setStage()</a>, <a class="el" href="classSoOutput.html#a5d454949ef2bcba49c3940fe0418999c">getStage()</a> </dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af5f67f92434acc6d7c7619d3ef1dfb7fae0d98ba0aaa299ac5309ba8280c54282"></a>COUNT_REFS&#160;</td><td class="fielddoc"><p>Not writing, just counting the internal references in the scene graph. </p>
@@ -389,7 +389,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Set up a new file pointer which we will write to.</p>
-<p>Important note: do <em>not</em> use this method when the Coin library has been compiled as an MSWindows DLL, as passing FILE* instances back or forth to DLLs is dangerous and will most likely cause a crash. This is an intrinsic limitation for MSWindows DLLs.</p>
+<p>Important note: do <em>not</em> use this method when the Coin library has been compiled as a Microsoft Windows DLL, as passing FILE* instances back or forth to DLLs is dangerous and will most likely cause a crash. This is an intrinsic limitation for Microsoft Windows DLLs.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoOutput.html#a15bd93d4388bcbd7415c85241b2e9d3b">openFile()</a>, <a class="el" href="classSoOutput.html#a09e03f4b73073ca6e120029581774bc7">setBuffer()</a>, <a class="el" href="classSoOutput.html#a29933d0eef663faeae145afe9a567836">getFilePointer()</a> </dd></dl>
 
 </div>
@@ -417,8 +417,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the current filepointer. If we're writing to a memory buffer, <code>NULL</code> is returned.</p>
-<p>Important note: do <em>not</em> use this method when the Coin library has been compiled as an MSWindows DLL, as passing FILE* instances back or forth to DLLs is dangerous and will most likely cause a crash. This is an intrinsic limitation for MSWindows DLLs.</p>
+<p>Returns the current file pointer. If we're writing to a memory buffer, <code>NULL</code> is returned.</p>
+<p>Important note: do <em>not</em> use this method when the Coin library has been compiled as a Microsoft Windows DLL, as passing FILE* instances back or forth to DLLs is dangerous and will most likely cause a crash. This is an intrinsic limitation for Microsoft Windows DLLs.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoOutput.html#a23b6ff34263ce8bbe6e6a354b8e24382">setFilePointer()</a> </dd></dl>
 
 </div>
@@ -446,8 +446,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Opens a file for writing. If the file can not be opened or is not writeable, <em>FALSE</em> will be returned.</p>
-<p>Files opened by this method will automatically be closed if the user supplies another filepointer, another filename for writing, or if the <a class="el" href="classSoOutput.html" title="The SoOutput class is an abstraction of an output stream. ">SoOutput</a> instance is deleted.</p>
+<p>Opens a file for writing. If the file cannot be opened or is not writable, <em>FALSE</em> will be returned.</p>
+<p>Files opened by this method will automatically be closed if the user supplies another file pointer, another filename for writing, or if the <a class="el" href="classSoOutput.html" title="The SoOutput class is an abstraction of an output stream. ">SoOutput</a> instance is deleted.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoOutput.html#a23b6ff34263ce8bbe6e6a354b8e24382">setFilePointer()</a>, <a class="el" href="classSoOutput.html#a09e03f4b73073ca6e120029581774bc7">setBuffer()</a>, <a class="el" href="classSoOutput.html#a731b0fb2e9d1bc7022072c731a016e80">closeFile()</a> </dd></dl>
 
 </div>
@@ -509,7 +509,7 @@ Protected Attributes</h2></td></tr>
 <p>Currently <em>BZIP2</em>, <em>GZIP</em> are the only compression methods supported, and you have to compile Coin with zlib and bzip2-support to enable them.</p>
 <p>Supply <em>compmethod</em> = <em>NONE</em> or <em>level</em> = 0.0 if you want to disable compression. The compression is disabled by default.</p>
 <p>Please note that it's not possible to compress when writing to a memory buffer.</p>
-<p>This method will return <em>TRUE</em> if the compression method selected is available. If it's not available, <em>FALSE</em> will be returned and compression is disabled.</p>
+<p>This method will return <em>TRUE</em> if the compression method selected is available. If it is not available, <em>FALSE</em> will be returned and compression is disabled.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoOutput.html#a902c5214a8a02777bca40f69f37a817a">getAvailableCompressionMethods()</a> </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>Coin 2.1 </dd></dl>
 
@@ -592,7 +592,7 @@ Protected Attributes</h2></td></tr>
 <p>Sets up a memory buffer of size <em>initSize</em> for writing. Writing will start at <em>bufPointer</em> + <em>offset</em>.</p>
 <p>If the buffer is filled up, <em>reallocFunc</em> is called to get more memory. If <em>reallocFunc</em> returns <em>NULL</em>, further writing is disabled.</p>
 <p>Important note: remember that the resultant memory buffer after write operations have completed may reside somewhere else in memory than on <em>bufPointer</em> if <em>reallocFunc</em> is set. It is a good idea to make it a habit to always use <a class="el" href="classSoOutput.html#aff275ad2c2364a2f091a9bbc90a1f2e4">getBuffer()</a> to retrieve the memory buffer pointer after write operations.</p>
-<p>Here's a complete, stand-alone usage example which shows how to write a scene graph to a memory buffer:</p>
+<p>Here's a complete, standalone usage example which shows how to write a scene graph to a memory buffer:</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="SoDB_8h.html">Inventor/SoDB.h</a>&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;Inventor/actions/SoWriteAction.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;Inventor/nodes/SoCone.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;Inventor/nodes/SoSeparator.h&gt;</span></div><div class="line"></div><div class="line"><span class="keyword">static</span> <span class="keywordtype">char</span> * buffer;</div><div class="line"><span class="keyword">static</span> <span class="keywordtype">size_t</span> buffer_size = 0;</div><div class="line"></div><div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> *</div><div class="line">buffer_realloc(<span class="keywordtype">void</span> * bufptr, <span class="keywordtype">size_t</span> size)</div><div class="line">{</div><div class="line">  buffer = (<span class="keywordtype">char</span> *)realloc(bufptr, size);</div><div class="line">  buffer_size = size;</div><div class="line">  <span class="keywordflow">return</span> buffer;</div><div class="line">}</div><div class="line"></div><div class="line"><span class="keyword">static</span> <a class="code" href="classSbString.html">SbString</a></div><div class="line">buffer_writeaction(<a class="code" href="classSoNode.html">SoNode</a> * root)</div><div class="line">{</div><div class="line">  <a class="code" href="classSoOutput.html">SoOutput</a> out;</div><div class="line">  buffer = (<span class="keywordtype">char</span> *)malloc(1024);</div><div class="line">  buffer_size = 1024;</div><div class="line">  out.<a class="code" href="classSoOutput.html#a09e03f4b73073ca6e120029581774bc7">setBuffer</a>(buffer, buffer_size, buffer_realloc);</div><div class="line"></div><div class="line">  <a class="code" href="classSoWriteAction.html">SoWriteAction</a> wa(&amp;out);</div><div class="line">  wa.apply(root);</div><div class="line"></div><div class="line">  <a class="code" href="classSbString.html">SbString</a> s(buffer);</div><div class="line">  free(buffer);</div><div class="line">  <span class="keywordflow">return</span> s;</div><div class="line">}</div><div class="line"></div><div class="line"><span class="keywordtype">int</span></div><div class="line">main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> ** argv)</div><div class="line">{</div><div class="line">  <a class="code" href="classSoDB.html#a970f42dfd362c33c69fa1869bfae72b5">SoDB::init</a>();</div><div class="line"></div><div class="line">  <a class="code" href="classSoSeparator.html">SoSeparator</a> * root = <span class="keyword">new</span> <a class="code" href="classSoSeparator.html">SoSeparator</a>;</div><div class="line">  root-&gt;<a class="code" href="classSoBase.html#ac01cf34901b2a2be1bc2671bb2463851">ref</a>();</div><div class="line"></div><div class="line">  root-&gt;<a class="code" href="classSoGroup.html#a23e0a7aebf3ec75c40638cc360c0e5e6">addChild</a>(<span class="keyword">new</span> <a class="code" href="classSoCone.html">SoCone</a>);</div><div class="line"></div><div class="line">  <a class="code" href="classSbString.html">SbString</a> s = buffer_writeaction(root);</div><div class="line">  (void)fprintf(stdout, <span class="stringliteral">&quot;%s\n&quot;</span>, s.<a class="code" href="classSbString.html#a6bfa023105342c057fe9eb555772ed6c">getString</a>());</div><div class="line"></div><div class="line">  root-&gt;<a class="code" href="classSoBase.html#a254b1ac395fe4d4d10438b994bdb3561">unref</a>();</div><div class="line">  <span class="keywordflow">return</span> 0;</div><div class="line">}</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoOutput.html#aff275ad2c2364a2f091a9bbc90a1f2e4">getBuffer()</a>, <a class="el" href="classSoOutput.html#ad0ec26e51a5e6ba5af4562c67147eb5d">getBufferSize()</a>, <a class="el" href="classSoOutput.html#afa8509851087905c9952fa03a68e489e">resetBuffer()</a> </dd></dl>
 
 </div>
@@ -865,7 +865,7 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns an indicator on the current write stage. Writing is done in two passes, one to count and check connections, one to do the actual ascii or binary export of data.</p>
+<p>Returns an indicator on the current write stage. Writing is done in two passes, one to count and check connections, one to do the actual ASCII or binary export of data.</p>
 <p>You should not need to use this method, as it is meant for internal purposes in Coin.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoOutput.html#ad6b89daf5481cda8842a32d1731a919f">setStage()</a> </dd></dl>
 
@@ -1384,7 +1384,7 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Reset all value and make ready for using another filepointer or buffer. </p>
+<p>Reset all value and make ready for using another file pointer or buffer. </p>
 
 </div>
 </div>
@@ -1422,7 +1422,7 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns whether or not the write routines tries to compact the data when writing it (i.e. using less whitespace, etc).</p>
+<p>Returns whether or not the write routines try to compact the data when writing it (i.e. using less whitespace, etc).</p>
 <p>Note that "compact" in this sense does <em>not</em> mean "bitwise compression", as it could easily be mistaken for. </p>
 
 </div>
@@ -1442,7 +1442,7 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set up annotation of different aspects of the output data. This is not useful for much else than debugging purposes, I s'pose. </p>
+<p>Set up annotation of different aspects of the output data. This is not useful for much else than debugging purposes, I suppose. </p>
 
 </div>
 </div>
@@ -1800,7 +1800,7 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns <em>TRUE</em> of we're set up to write to a memory buffer. </p>
+<p>Returns <em>TRUE</em> if we're set up to write to a memory buffer. </p>
 
 </div>
 </div>
@@ -1857,7 +1857,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Check that the current memory buffer has enough space to contain the given number of bytes needed for the next write operation.</p>
 <p>Returns <em>FALSE</em> if there's not enough space left, otherwise <em>TRUE</em>.</p>
-<p>Note that there will automatically be made an attempt at allocating more memory if the realloction callback function argument of <a class="el" href="classSoOutput.html#a09e03f4b73073ca6e120029581774bc7">setBuffer()</a> was not <em>NULL</em>. </p>
+<p>Note that there will automatically be made an attempt at allocating more memory if the reallocation callback function argument of <a class="el" href="classSoOutput.html#a09e03f4b73073ca6e120029581774bc7">setBuffer()</a> was not <em>NULL</em>. </p>
 
 </div>
 </div>
@@ -2246,7 +2246,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSoOutput.html">SoOutput</a></li>
-    <li class="footer">Generated on Thu Oct 18 2018 20:23:37 for Coin by
+    <li class="footer">Generated on Fri Jan 24 2020 00:10:21 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

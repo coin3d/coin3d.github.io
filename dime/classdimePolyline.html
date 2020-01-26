@@ -33,8 +33,8 @@
     Coin3D is Free Software,<br />published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.
   </td>
   <td style="text-align: right; padding-right: 0.5em;">
-    <a href="https://github.com/coin3d/">https://github.com/coin3d/</a><br />
-    <a href="http://www.kongsberg.com/kogt/">http://www.kongsberg.com/kogt/</a><br />  
+    <a href="https://coin3d.github.io">https://coin3d.github.io</a><br />
+    <a href="https://www.kongsberg.com/en/kogt/">https://www.kongsberg.com/en/kogt/</a><br />  
     </td>
  </tr>
  </tbody>
@@ -664,7 +664,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>numRecords</b></td></t
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Will return the value of the record with group code <em>groupcode</em>. <em>false</em> is returned if the record could not be found. Subclasses should overload this method if one or several records are stored in the class. If the groupcode queried is not stored internally, the subclass should call its parent's method. </p>
+<p>Will return the value of the record with group code <em>groupcode</em>. <em>false</em> is returned if the record could not be found. Subclasses should overload this method if one or several records are stored in the class. If the group code queried is not stored internally, the subclass should call its parent's method. </p>
 
 <p>Reimplemented from <a class="el" href="classdimeExtrusionEntity.html#af3596428241f800cf6923839fe4b7fe1">dimeExtrusionEntity</a>.</p>
 
@@ -721,7 +721,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>numRecords</b></td></t
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Must be implemented by subclasses to return the entity name; e.g. POLYLINE, 3DFACE, etc. </p>
+<p>Must be implemented by subclasses to return the entity name, e.g. POLYLINE, 3DFACE, etc. </p>
 
 <p>Implements <a class="el" href="classdimeEntity.html#aa76ebb5f27452e91bb9a220a38c6a622">dimeEntity</a>.</p>
 
@@ -936,7 +936,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>numRecords</b></td></t
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Must be overloaded by entities that directly supports a record type. During <a class="el" href="classdimeRecordHolder.html#a1c352cacad3d4711dd522931908cee1e">dimeRecordHolder::read()</a>, <a class="el" href="classdimeRecordHolder.html#a41059899b472a7eb689044851d251945">dimeRecordHolder::setRecord</a> and <a class="el" href="classdimeRecordHolder.html#aec7cbfb81036eef1c7b7862b2deb9229">dimeRecordHolder::setRecords</a>, this function is called for every record found, and it is up to the subclass if the record should be stored internally, or if a generic record should be created and stored in this superclass. A subclass should return <em>true</em> when it will handle the record, <em>false</em> otherwise. Default function does nothing, and returns <em>false</em>.</p>
+<p>Must be overloaded by entities that directly support a record type. During <a class="el" href="classdimeRecordHolder.html#a1c352cacad3d4711dd522931908cee1e">dimeRecordHolder::read()</a>, <a class="el" href="classdimeRecordHolder.html#a41059899b472a7eb689044851d251945">dimeRecordHolder::setRecord</a> and <a class="el" href="classdimeRecordHolder.html#aec7cbfb81036eef1c7b7862b2deb9229">dimeRecordHolder::setRecords</a>, this function is called for every record found, and it is up to the subclass if the record should be stored internally, or if a generic record should be created and stored in this superclass. A subclass should return <em>true</em> when it will handle the record, <em>false</em> otherwise. Default function does nothing, and returns <em>false</em>.</p>
 <p>For entities, records with group codes 8 (layer name) and 62 (color number) are automatically handled by the <a class="el" href="classdimeEntity.html" title="The dimeEntity class is the superclass of all entity classes. ">dimeEntity</a> class.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classdimeRecordHolder.html#a1c352cacad3d4711dd522931908cee1e">dimeRecordHolder::read()</a> </dd>
 <dd>
@@ -1001,7 +1001,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>numRecords</b></td></t
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classdimePolyline.html">dimePolyline</a></li>
-    <li class="footer">Generated on Thu Oct 18 2018 19:25:20 for dime by
+    <li class="footer">Generated on Sun Jan 26 2020 20:29:17 for dime by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

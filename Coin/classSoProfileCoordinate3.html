@@ -33,8 +33,8 @@
     Coin3D is Free Software,<br />published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.
   </td>
   <td style="text-align: right; padding-right: 0.5em;">
-    <a href="https://github.com/coin3d/">https://github.com/coin3d/</a><br />
-    <a href="http://www.kongsberg.com/kogt/">http://www.kongsberg.com/kogt/</a><br />  
+    <a href="https://coin3d.github.io">https://coin3d.github.io</a><br />
+    <a href="https://www.kongsberg.com/en/kogt/">https://www.kongsberg.com/en/kogt/</a><br />  
     </td>
  </tr>
  </tbody>
@@ -100,7 +100,7 @@ Inheritance diagram for SoProfileCoordinate3:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a85d4ba1b1f5f6f185a8ffdc698eb6a23"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classSoType.html">SoType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoProfileCoordinate3.html#a85d4ba1b1f5f6f185a8ffdc698eb6a23">getTypeId</a> (void) const</td></tr>
-<tr class="memdesc:a85d4ba1b1f5f6f185a8ffdc698eb6a23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the type identification of an object derived from a class inheriting <a class="el" href="classSoBase.html" title="The SoBase class is the top-level superclass for a number of class-hierarchies. ">SoBase</a>. This is used for run-time type checking and "downward" casting.  <a href="#a85d4ba1b1f5f6f185a8ffdc698eb6a23">More...</a><br /></td></tr>
+<tr class="memdesc:a85d4ba1b1f5f6f185a8ffdc698eb6a23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the type identification of an object derived from a class inheriting <a class="el" href="classSoBase.html" title="The SoBase class is the top-level superclass for a number of class-hierarchies. ">SoBase</a>. This is used for runtime type checking and "downward" casting.  <a href="#a85d4ba1b1f5f6f185a8ffdc698eb6a23">More...</a><br /></td></tr>
 <tr class="separator:a85d4ba1b1f5f6f185a8ffdc698eb6a23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83842009f7c1cba2b4ab1cecffc6445e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoProfileCoordinate3.html#a83842009f7c1cba2b4ab1cecffc6445e">SoProfileCoordinate3</a> (void)</td></tr>
 <tr class="separator:a83842009f7c1cba2b4ab1cecffc6445e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -317,7 +317,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="separator:a8419a92b3ac808c6a789673db06776be inherit pub_static_methods_classSoBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73ce238db093db6ba1b4009818cc9f27 inherit pub_static_methods_classSoBase"><td class="memItemLeft" align="right" valign="top"><a id="a73ce238db093db6ba1b4009818cc9f27"></a>
 static <a class="el" href="classSoType.html">SoType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoBase.html#a73ce238db093db6ba1b4009818cc9f27">getClassTypeId</a> (void)</td></tr>
-<tr class="memdesc:a73ce238db093db6ba1b4009818cc9f27 inherit pub_static_methods_classSoBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">This static method returns the <a class="el" href="classSoType.html" title="The SoType class is the basis for the run-time type system in Coin. ">SoType</a> object associated with objects of this class. <br /></td></tr>
+<tr class="memdesc:a73ce238db093db6ba1b4009818cc9f27 inherit pub_static_methods_classSoBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">This static method returns the <a class="el" href="classSoType.html" title="The SoType class is the basis for the runtime type system in Coin. ">SoType</a> object associated with objects of this class. <br /></td></tr>
 <tr class="separator:a73ce238db093db6ba1b4009818cc9f27 inherit pub_static_methods_classSoBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74952f1fd17c44eb0fc9c3dc3b69102a inherit pub_static_methods_classSoBase"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoBase.html#a74952f1fd17c44eb0fc9c3dc3b69102a">addName</a> (<a class="el" href="classSoBase.html">SoBase</a> *const base, const char *const name)</td></tr>
 <tr class="separator:a74952f1fd17c44eb0fc9c3dc3b69102a inherit pub_static_methods_classSoBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -462,7 +462,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="classSoProfileCoordinate3.html" title="The SoProfileCoordinate3 class is a node specifying a set of 3D coordinates for profiles. ">SoProfileCoordinate3</a> class is a node specifying a set of 3D coordinates for profiles. </p>
 <p>Use nodes of this type to provide coordinates to profiles.</p>
-<p>The third element of the coordinate vectors is used for normalization. A node of this type where all the normalization values are equal to 1.0 is the equivalent of setting up an <a class="el" href="classSoProfileCoordinate2.html" title="The SoProfileCoordinate2 class is a node specifying a set of 2D coordinates for profiles. ">SoProfileCoordinate2</a> node.</p>
+<p>The third element of the coordinate vector is used for normalization. A node of this type where all the normalization values are equal to 1.0 is the equivalent of setting up an <a class="el" href="classSoProfileCoordinate2.html" title="The SoProfileCoordinate2 class is a node specifying a set of 2D coordinates for profiles. ">SoProfileCoordinate2</a> node.</p>
 <p>Note that an <a class="el" href="classSoProfileCoordinate3.html" title="The SoProfileCoordinate3 class is a node specifying a set of 3D coordinates for profiles. ">SoProfileCoordinate3</a> node will <em>replace</em> the profile coordinates already present in the state (if any).</p>
 <p><b>FILE FORMAT/DEFAULTS:</b> </p><div class="fragment"><div class="line">ProfileCoordinate3 {</div><div class="line">    <a class="code" href="classSoProfileCoordinate3.html#ae1f2958d22ff9e3965d7a83efd485c84">point</a> 0 0 1</div><div class="line">}</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoProfile.html" title="The SoProfile class is the abstract superclass for profile definitions. ">SoProfile</a>, <a class="el" href="classSoProfileCoordinate2.html" title="The SoProfileCoordinate2 class is a node specifying a set of 2D coordinates for profiles. ">SoProfileCoordinate2</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -536,10 +536,10 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the type identification of an object derived from a class inheriting <a class="el" href="classSoBase.html" title="The SoBase class is the top-level superclass for a number of class-hierarchies. ">SoBase</a>. This is used for run-time type checking and "downward" casting. </p>
+<p>Returns the type identification of an object derived from a class inheriting <a class="el" href="classSoBase.html" title="The SoBase class is the top-level superclass for a number of class-hierarchies. ">SoBase</a>. This is used for runtime type checking and "downward" casting. </p>
 <p>Usage example:</p>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> foo(<a class="code" href="classSoNode.html">SoNode</a> * node)</div><div class="line">{</div><div class="line">  <span class="keywordflow">if</span> (node-&gt;<a class="code" href="classSoBase.html#a873b521c1386368d4d63ff893856590a">getTypeId</a>() == SoFile::getClassTypeId()) {</div><div class="line">    <a class="code" href="classSoFile.html">SoFile</a> * filenode = (<a class="code" href="classSoFile.html">SoFile</a> *)node;  <span class="comment">// safe downward cast, knows the type</span></div><div class="line"><span class="comment"></span>  }</div><div class="line">}</div></div><!-- fragment --><p>For application programmers wanting to extend the library with new nodes, engines, nodekits, draggers or others: this method needs to be overridden in <em>all</em> subclasses. This is typically done as part of setting up the full type system for extension classes, which is usually accomplished by using the pre-defined macros available through for instance <a class="el" href="SoSubNode_8h_source.html">Inventor/nodes/SoSubNode.h</a> (SO_NODE_INIT_CLASS and SO_NODE_CONSTRUCTOR for node classes), <a class="el" href="SoSubEngine_8h_source.html">Inventor/engines/SoSubEngine.h</a> (for engine classes) and so on.</p>
-<p>For more information on writing Coin extensions, see the class documentation of the toplevel superclasses for the various class groups. </p>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> foo(<a class="code" href="classSoNode.html">SoNode</a> * node)</div><div class="line">{</div><div class="line">  <span class="keywordflow">if</span> (node-&gt;<a class="code" href="classSoBase.html#a873b521c1386368d4d63ff893856590a">getTypeId</a>() == SoFile::getClassTypeId()) {</div><div class="line">    <a class="code" href="classSoFile.html">SoFile</a> * filenode = (<a class="code" href="classSoFile.html">SoFile</a> *)node;  <span class="comment">// safe downward cast, knows the type</span></div><div class="line"><span class="comment"></span>  }</div><div class="line">}</div></div><!-- fragment --><p>For application programmers wanting to extend the library with new nodes, engines, nodekits, draggers or others: this method needs to be overridden in <em>all</em> subclasses. This is typically done as part of setting up the full type system for extension classes, which is usually accomplished by using the predefined macros available through for instance <a class="el" href="SoSubNode_8h_source.html">Inventor/nodes/SoSubNode.h</a> (SO_NODE_INIT_CLASS and SO_NODE_CONSTRUCTOR for node classes), <a class="el" href="SoSubEngine_8h_source.html">Inventor/engines/SoSubEngine.h</a> (for engine classes) and so on.</p>
+<p>For more information on writing Coin extensions, see the class documentation of the top level superclasses for the various class groups. </p>
 
 <p>Implements <a class="el" href="classSoBase.html#a873b521c1386368d4d63ff893856590a">SoBase</a>.</p>
 
@@ -627,7 +627,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Action method for the <a class="el" href="classSoGLRenderAction.html" title="The SoGLRenderAction class renders the scene graph with OpenGL calls. ">SoGLRenderAction</a>.</p>
-<p>This is called during rendering traversals. Nodes influencing the rendering state in any way or who wants to throw geometry primitives at OpenGL overrides this method. </p>
+<p>This is called during rendering traversals. Nodes influencing the rendering state in any way or want to throw geometry primitives at OpenGL override this method. </p>
 
 <p>Reimplemented from <a class="el" href="classSoNode.html#af6fa1a20527192bc6f9d18062322456c">SoNode</a>.</p>
 
@@ -718,7 +718,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Action method for the <a class="el" href="classSoGetBoundingBoxAction.html" title="The SoGetBoundingBoxAction class calculates bounding boxes for nodes and subgraphs. ">SoGetBoundingBoxAction</a>.</p>
 <p>Calculates bounding box and center coordinates for node and modifies the values of the <em>action</em> to encompass the bounding box for this node and to shift the center point for the scene more towards the one for this node.</p>
-<p>Nodes influencing how geometry nodes calculates their bounding box also overrides this method to change the relevant state variables. </p>
+<p>Nodes influencing how geometry nodes calculate their bounding box also override this method to change the relevant state variables. </p>
 
 <p>Reimplemented from <a class="el" href="classSoNode.html#a4fe80ee53bf8d7821b9b6e91ac20f5c4">SoNode</a>.</p>
 
@@ -749,7 +749,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Action method for the <a class="el" href="classSoGetPrimitiveCountAction.html" title="The SoGetPrimitiveCountAction class counts the primitives in a scene. ">SoGetPrimitiveCountAction</a>.</p>
 <p>Calculates the number of triangle, line segment and point primitives for the node and adds these to the counters of the <em>action</em>.</p>
-<p>Nodes influencing how geometry nodes calculates their primitive count also overrides this method to change the relevant state variables. </p>
+<p>Nodes influencing how geometry nodes calculate their primitive count also override this method to change the relevant state variables. </p>
 
 <p>Reimplemented from <a class="el" href="classSoNode.html#a1e33c6b6ea83d1982ecf2febb903d942">SoNode</a>.</p>
 
@@ -781,7 +781,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSoProfileCoordinate3.html">SoProfileCoordinate3</a></li>
-    <li class="footer">Generated on Thu Oct 18 2018 20:23:40 for Coin by
+    <li class="footer">Generated on Fri Jan 24 2020 00:10:22 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

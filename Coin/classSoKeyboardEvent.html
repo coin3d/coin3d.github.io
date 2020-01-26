@@ -33,8 +33,8 @@
     Coin3D is Free Software,<br />published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.
   </td>
   <td style="text-align: right; padding-right: 0.5em;">
-    <a href="https://github.com/coin3d/">https://github.com/coin3d/</a><br />
-    <a href="http://www.kongsberg.com/kogt/">http://www.kongsberg.com/kogt/</a><br />  
+    <a href="https://coin3d.github.io">https://coin3d.github.io</a><br />
+    <a href="https://www.kongsberg.com/en/kogt/">https://www.kongsberg.com/en/kogt/</a><br />  
     </td>
  </tr>
  </tbody>
@@ -337,8 +337,8 @@ static <a class="el" href="classSoType.html">SoType</a>&#160;</td><td class="mem
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="classSoKeyboardEvent.html" title="The SoKeyboardEvent class contains information about keyboard interaction. ">SoKeyboardEvent</a> class contains information about keyboard interaction. </p>
-<p>When the user presses any keys on the keyboard, these will be translated from a system specific event into a Coin event and sent to the scenegraph by using instances of this class.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoEvent.html" title="The SoEvent class is the base class for all Coin events. ">SoEvent</a>, <a class="el" href="classSoButtonEvent.html" title="The SoButtonEvent class is the base class for all button events. ">SoButtonEvent</a>, <a class="el" href="classSoMouseButtonEvent.html" title="The SoMouseButtonEvent class contains information about mousebutton interaction. ">SoMouseButtonEvent</a>, <a class="el" href="classSoSpaceballButtonEvent.html" title="The SoSpaceballButtonEvent class contains information about spaceball button interaction. ">SoSpaceballButtonEvent</a> </dd>
+<p>When the user presses any keys on the keyboard, these will be translated from a system specific event into a Coin event and sent to the scene graph by using instances of this class.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoEvent.html" title="The SoEvent class is the base class for all Coin events. ">SoEvent</a>, <a class="el" href="classSoButtonEvent.html" title="The SoButtonEvent class is the base class for all button events. ">SoButtonEvent</a>, <a class="el" href="classSoMouseButtonEvent.html" title="The SoMouseButtonEvent class contains information about mouse button interaction. ...">SoMouseButtonEvent</a>, <a class="el" href="classSoSpaceballButtonEvent.html" title="The SoSpaceballButtonEvent class contains information about spaceball button interaction. ">SoSpaceballButtonEvent</a> </dd>
 <dd>
 <a class="el" href="classSoEventCallback.html" title="The SoEventCallback class provides functionality for catching events. ">SoEventCallback</a>, <a class="el" href="classSoHandleEventAction.html" title="The SoHandleEventAction class distributes user events to the scene. ">SoHandleEventAction</a> </dd></dl>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
@@ -497,7 +497,7 @@ static <a class="el" href="classSoType.html">SoType</a>&#160;</td><td class="mem
       </table>
 </div><div class="memdoc">
 <p>Returns the value of the key which was pressed or released.</p>
-<p>Coin adds a new key value called UNDEFINED. This is needed to support GUI toolkits where it's not possible to find exactly which key is pressed, and/or to support non-US keyboards. The Open Inventor design for this class is flawed, since it assumes everybody uses a US keyboard. We recommend using <a class="el" href="classSoKeyboardEvent.html#a086369a51ce8ee2d7b6b87b74d2142c8">getPrintableCharacter()</a> to find which key is pressed/released, at least for printable non-alphanumerical characters.</p>
+<p>Coin adds a new key value called UNDEFINED. This is needed to support GUI toolkits where it is not possible to find exactly which key is pressed, and/or to support non-US keyboards. The Open Inventor design for this class is flawed, since it assumes everybody uses a US keyboard. We recommend using <a class="el" href="classSoKeyboardEvent.html#a086369a51ce8ee2d7b6b87b74d2142c8">getPrintableCharacter()</a> to find which key is pressed/released, at least for printable non-alphanumerical characters.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoKeyboardEvent.html#a086369a51ce8ee2d7b6b87b74d2142c8">getPrintableCharacter()</a>, <a class="el" href="classSoButtonEvent.html#ad13cb474a27796399000cd269ee38a4a">getState()</a> </dd>
 <dd>
 <a class="el" href="classSoEvent.html#a2ca46d050a624a6ac3c4857172b39844">wasShiftDown()</a>, <a class="el" href="classSoEvent.html#a9f6fab9da7e70c0d510c8a00bb793656">wasCtrlDown()</a>, <a class="el" href="classSoEvent.html#aa72b5b6502699b62566475a62b2d5d12">wasAltDown()</a>, <a class="el" href="classSoEvent.html#ac89d713a82ff502c3236b1972fa1c603">getPosition()</a>, <a class="el" href="classSoEvent.html#adca74cc262505b4950244cf06fd71046">getTime()</a> </dd></dl>
@@ -580,7 +580,7 @@ static <a class="el" href="classSoType.html">SoType</a>&#160;</td><td class="mem
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Convenience method for quickly checking if the given event is a keypress on the given key, <code>whichKey</code>.</p>
+<p>Convenience method for quickly checking if the given event is a key press on the given key, <code>whichKey</code>.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoKeyboardEvent.html#aad092c44c2794240fe0d541a8114f647">isKeyReleaseEvent()</a>, <a class="el" href="classSoEvent.html#aabb09979c3212b08e4eabbf9ef569f49">isOfType()</a>, <a class="el" href="classSoKeyboardEvent.html#a03fcc1505a715464521bdf7c0fa365d7">getKey()</a>, <a class="el" href="classSoButtonEvent.html#ad13cb474a27796399000cd269ee38a4a">getState()</a> </dd></dl>
 
 </div>
@@ -672,7 +672,7 @@ static <a class="el" href="classSoType.html">SoType</a>&#160;</td><td class="mem
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSoKeyboardEvent.html">SoKeyboardEvent</a></li>
-    <li class="footer">Generated on Thu Oct 18 2018 20:23:22 for Coin by
+    <li class="footer">Generated on Fri Jan 24 2020 00:10:15 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

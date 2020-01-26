@@ -33,8 +33,8 @@
     Coin3D is Free Software,<br />published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.
   </td>
   <td style="text-align: right; padding-right: 0.5em;">
-    <a href="https://github.com/coin3d/">https://github.com/coin3d/</a><br />
-    <a href="http://www.kongsberg.com/kogt/">http://www.kongsberg.com/kogt/</a><br />  
+    <a href="https://coin3d.github.io">https://coin3d.github.io</a><br />
+    <a href="https://www.kongsberg.com/en/kogt/">https://www.kongsberg.com/en/kogt/</a><br />  
     </td>
  </tr>
  </tbody>
@@ -123,15 +123,15 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>The <a class="el" href="classSoSensorManager.html" title="The SoSensorManager class handles the sensor queues. ">SoSensorManager</a> class handles the sensor queues. </p>
 <p>There are two major sensor types in Coin, "delay" sensors and "timer" sensors:</p>
 <ul>
-<li>Delay sensors trigger when the application is otherwise idle. In addition, to avoid starvation in applications that are continually busy, the delay-sensor queue also has a timeout which, when reached, will empty the queue anyhow.</li>
+<li>Delay sensors trigger when the application is otherwise idle. In addition, to avoid starvation in applications that are continually busy, the delay sensor queue also has a timeout which, when reached, will empty the queue anyhow.</li>
 </ul>
 <ul>
 <li>Timer sensors are set up to trigger at specific, absolute times.</li>
 </ul>
-<p>Each of these two types has its own queue, which is handled by the <a class="el" href="classSoSensorManager.html" title="The SoSensorManager class handles the sensor queues. ">SoSensorManager</a>. The queues are kept in sorted order by <a class="el" href="classSoSensorManager.html" title="The SoSensorManager class handles the sensor queues. ">SoSensorManager</a>, either according to trigger-time (for timer sensors) or by priority (for delay sensors).</p>
+<p>Each of these two types has its own queue, which is handled by the <a class="el" href="classSoSensorManager.html" title="The SoSensorManager class handles the sensor queues. ">SoSensorManager</a>. The queues are kept in sorted order by <a class="el" href="classSoSensorManager.html" title="The SoSensorManager class handles the sensor queues. ">SoSensorManager</a>, either according to trigger time (for timer sensors) or by priority (for delay sensors).</p>
 <p>The <a class="el" href="classSoSensorManager.html" title="The SoSensorManager class handles the sensor queues. ">SoSensorManager</a> provides methods for managing these queues, by insertion and removal of sensors, and processing (emptying) of the queues.</p>
-<p>The sensor mechanism is crucial in Coin for a number of important features, most notably automatic scheduling redrawal upon changes, and for making it possible to set up animations in the scenegraph which does <em>not</em> need any additional book-keeping from the application code.</p>
-<p><a class="el" href="classSoSensorManager.html" title="The SoSensorManager class handles the sensor queues. ">SoSensorManager</a> should usually be considered as an internal class in the Coin API. It is only interesting for application programmers when <em>implementing</em> new windowsystem-specific libraries (like Kongsberg Oil &amp; Gas Technologies's SoQt, SoXt, SoGtk, SoWin or Sc21) or wrappers. Then one has to set up code to empty the queues at the correct intervals. For detailed information on how to do that, we would advise you to look at the implementation of said mechanisms in the So*-libraries which SIM provides.</p>
+<p>The sensor mechanism is crucial in Coin for a number of important features, most notably automatic scheduling redraw upon changes, and for making it possible to set up animations in the scene graph which does <em>not</em> need any additional book-keeping from the application code.</p>
+<p><a class="el" href="classSoSensorManager.html" title="The SoSensorManager class handles the sensor queues. ">SoSensorManager</a> should usually be considered as an internal class in the Coin API. It is only interesting for application programmers when <em>implementing</em> new window system specific libraries (like Kongsberg Oil &amp; Gas Technologies SoQt, SoXt, SoGtk, SoWin or Sc21) or wrappers. Then one has to set up code to empty the queues at the correct intervals. For detailed information on how to do that, we would advise you to look at the implementation of said mechanisms in the So*-libraries which SIM provides.</p>
 <p>Please note that before Coin 2.3.1, sensors with equal priority (or the same trigger time for SoTimerQueue sensors) were processed LIFO. This has now been changed to FIFO to be conformant to SGI Inventor.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoSensor.html" title="The SoSensor class is the abstract base class for all sensors. ">SoSensor</a> <a class="el" href="classSoTimerQueueSensor.html" title="The SoTimerQueueSensor class is the abstract base class for sensors triggering on certain timer event...">SoTimerQueueSensor</a> <a class="el" href="classSoDelayQueueSensor.html" title="The SoDelayQueueSensor class is the abstract base class for priority scheduled sensors. ">SoDelayQueueSensor</a> </dd>
 <dd>
@@ -214,7 +214,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Add a new entry to the timer queue of sensors. The queue will be sorted in order of supposed trigger time.</p>
+<p>Add a new entry to the queue of timer sensors. The queue will be sorted in order of supposed trigger time.</p>
 <dl class="section see"><dt>See also</dt><dd>removeFromQueue() </dd></dl>
 
 </div>
@@ -391,7 +391,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Trigger all the timers which has expired. </p>
+<p>Trigger all the timers which have expired. </p>
 
 </div>
 </div>
@@ -521,7 +521,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>NOTE: THIS METHOD IS OBSOLETED. DON'T USE IT.</p>
 <p>This is a wrapper around the standard select(2) call, which will make sure the sensor queues are updated while waiting for any action to happen on the given file descriptors.</p>
-<p>The void* arguments must be valid pointers to fd_set structures. We've changed this from the original SGI Inventor API to avoid messing up the header file with system-specific includes.</p>
+<p>The void* arguments must be valid pointers to fd_set structures. We've changed this from the original SGI Inventor API to avoid messing up the header file with system specific includes.</p>
 <p>NOTE: THIS METHOD IS OBSOLETED. DON'T USE IT. </p>
 
 </div>
@@ -536,7 +536,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSoSensorManager.html">SoSensorManager</a></li>
-    <li class="footer">Generated on Thu Oct 18 2018 20:23:48 for Coin by
+    <li class="footer">Generated on Fri Jan 24 2020 00:10:25 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

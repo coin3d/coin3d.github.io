@@ -33,8 +33,8 @@
     Coin3D is Free Software,<br />published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.
   </td>
   <td style="text-align: right; padding-right: 0.5em;">
-    <a href="https://github.com/coin3d/">https://github.com/coin3d/</a><br />
-    <a href="http://www.kongsberg.com/kogt/">http://www.kongsberg.com/kogt/</a><br />  
+    <a href="https://coin3d.github.io">https://coin3d.github.io</a><br />
+    <a href="https://www.kongsberg.com/en/kogt/">https://www.kongsberg.com/en/kogt/</a><br />  
     </td>
  </tr>
  </tbody>
@@ -191,7 +191,7 @@ Protected Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="classSbSphereSheetProjector.html" title="The SbSphereSheetProjector class projects 2D points to 3D points on a sheet covering a spherical shap...">SbSphereSheetProjector</a> class projects 2D points to 3D points on a sheet covering a spherical shape. </p>
-<p>The following stand-alone example shows how screen space coordinates projects into 3D when mapped with an <a class="el" href="classSbSphereSheetProjector.html" title="The SbSphereSheetProjector class projects 2D points to 3D points on a sheet covering a spherical shap...">SbSphereSheetProjector</a>. It outputs the resulting projections as an <a class="el" href="classSoPointSet.html" title="The SoPointSet class is used to display a set of 3D points. ">SoPointSet</a> in a Inventor-file on stdout:</p>
+<p>The following standalone example shows how screen space coordinates projects into 3D when mapped with an <a class="el" href="classSbSphereSheetProjector.html" title="The SbSphereSheetProjector class projects 2D points to 3D points on a sheet covering a spherical shap...">SbSphereSheetProjector</a>. It outputs the resulting projections as an <a class="el" href="classSoPointSet.html" title="The SoPointSet class is used to display a set of 3D points. ">SoPointSet</a> in a Inventor-file on stdout:</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;cstdio&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;Inventor/SbLinear.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;Inventor/projectors/SbSphereSheetProjector.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="SoDB_8h.html">Inventor/SoDB.h</a>&gt;</span></div><div class="line"></div><div class="line"><span class="keywordtype">int</span></div><div class="line">main(<span class="keywordtype">void</span>)</div><div class="line">{</div><div class="line">  <a class="code" href="classSoDB.html#a970f42dfd362c33c69fa1869bfae72b5">SoDB::init</a>();</div><div class="line"></div><div class="line">  <span class="keyword">const</span> <span class="keywordtype">float</span> START = 0.0f;</div><div class="line">  <span class="keyword">const</span> <span class="keywordtype">float</span> END = 1.0f;</div><div class="line">  <span class="keyword">const</span> <span class="keywordtype">float</span> STEPS = 50.0f;</div><div class="line">  <span class="keyword">const</span> <span class="keywordtype">float</span> STEPSIZE = ((END - START) / STEPS);</div><div class="line"></div><div class="line">  <a class="code" href="classSbSphere.html">SbSphere</a> s(<a class="code" href="classSbVec3f.html">SbVec3f</a>(0, 0, 0), 0.8);</div><div class="line">  <a class="code" href="classSbSphereSheetProjector.html">SbSphereSheetProjector</a> ssp(s, TRUE); <span class="comment">// last argument is orientToEye</span></div><div class="line"></div><div class="line">  <a class="code" href="classSbViewVolume.html">SbViewVolume</a> volume;</div><div class="line">  volume.<a class="code" href="classSbViewVolume.html#a74cccdb71cc35fb5b3b084917031ebe7">ortho</a>(-1, 1, -1, 1, -1, 1);</div><div class="line">  ssp.setViewVolume(volume);</div><div class="line"></div><div class="line">  (void)fprintf(stdout, <span class="stringliteral">&quot;#Inventor V2.1 ascii\n\n&quot;</span></div><div class="line">                <span class="stringliteral">&quot;Separator {\n&quot;</span></div><div class="line">                <span class="stringliteral">&quot;  Coordinate3 {\n&quot;</span></div><div class="line">                <span class="stringliteral">&quot;    point [\n&quot;</span>);</div><div class="line"></div><div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">float</span> i=START; i &lt;= END; i += STEPSIZE) {</div><div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">float</span> j=START; j &lt;= END; j += STEPSIZE) {</div><div class="line">      <a class="code" href="classSbVec3f.html">SbVec3f</a> v = ssp.project(<a class="code" href="classSbVec2f.html">SbVec2f</a>(j, i));</div><div class="line">      (void)fprintf(stdout, <span class="stringliteral">&quot;\t%f %f %f,\n&quot;</span>, v[0], v[1], v[2]);</div><div class="line">    }</div><div class="line">  }</div><div class="line"></div><div class="line">  (void)fprintf(stdout, <span class="stringliteral">&quot;      ]\n&quot;</span></div><div class="line">                <span class="stringliteral">&quot;    }\n&quot;</span></div><div class="line">                <span class="stringliteral">&quot;  DrawStyle { pointSize 2 }\n&quot;</span></div><div class="line">                <span class="stringliteral">&quot;  PointSet { }\n&quot;</span></div><div class="line">                <span class="stringliteral">&quot;}\n&quot;</span>);</div><div class="line"></div><div class="line">  <span class="keywordflow">return</span> 0;</div><div class="line">}</div></div><!-- fragment --><p>The projections to 3D points in the resulting Inventor-file looks like this:</p>
 <center> <div class="image">
 <img src="spheresheet.png" alt="spheresheet.png"/>
@@ -213,7 +213,7 @@ Rendering of Example Resulting Projections</div></div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Constructor. Uses default sphere defintion, see <a class="el" href="classSbSphereProjector.html#a868f57ebec32957883b1321b0adf955b">SbSphereProjector::SbSphereProjector()</a>.</p>
+<p>Constructor. Uses default sphere definition, see <a class="el" href="classSbSphereProjector.html#a868f57ebec32957883b1321b0adf955b">SbSphereProjector::SbSphereProjector()</a>.</p>
 <p><em>orienttoeye</em> decides whether or not the sheet should always be oriented towards the viewer. </p>
 
 </div>
@@ -342,7 +342,7 @@ Rendering of Example Resulting Projections</div></div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns rotation on the projection surface which re-orients <em>point1</em> to <em>point2</em>. </p>
+<p>Returns rotation on the projection surface which reorients <em>point1</em> to <em>point2</em>. </p>
 
 <p>Implements <a class="el" href="classSbSphereProjector.html#a9c4d57571349f6233e78e351b949a7b9">SbSphereProjector</a>.</p>
 
@@ -503,7 +503,7 @@ Rendering of Example Resulting Projections</div></div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSbSphereSheetProjector.html">SbSphereSheetProjector</a></li>
-    <li class="footer">Generated on Thu Oct 18 2018 20:22:59 for Coin by
+    <li class="footer">Generated on Fri Jan 24 2020 00:09:59 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

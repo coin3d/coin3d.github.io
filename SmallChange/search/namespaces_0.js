@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['coinresources',['CoinResources',['C:/Data/Volker/Bitbucket/installed/share/doc/Coin/html/namespaceCoinResources.html',1,'']]]
+  ['coinresources',['CoinResources',['C:/Data/Volker/Github/installed/share/doc/Coin/html/namespaceCoinResources.html',1,'']]]
 ];

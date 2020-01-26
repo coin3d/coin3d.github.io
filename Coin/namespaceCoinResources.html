@@ -33,8 +33,8 @@
     Coin3D is Free Software,<br />published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.
   </td>
   <td style="text-align: right; padding-right: 0.5em;">
-    <a href="https://github.com/coin3d/">https://github.com/coin3d/</a><br />
-    <a href="http://www.kongsberg.com/kogt/">http://www.kongsberg.com/kogt/</a><br />  
+    <a href="https://coin3d.github.io">https://coin3d.github.io</a><br />
+    <a href="https://www.kongsberg.com/en/kogt/">https://www.kongsberg.com/en/kogt/</a><br />  
     </td>
  </tr>
  </tbody>
@@ -105,7 +105,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (void)</td><
 <p>The resource locators take the form of a URL with coin as its schema and empty host eg. "coin://path/to/resource.ext".</p>
 <p>The "coin:" prefix is for Coin to differentiate a resource locator from a filename (for multipurpose function usage).</p>
 <p>The path/to/resource.ext is for most platforms the path under the environment variable $COINDIR where the file should be present. For Mac OS X, the path is under the Inventor framework bundle Resources/ directory, if Coin was installed as a framework that is.</p>
-<p>The file on disk can be an updated version, compared to the compiled-in buffer, which is why the externalized files are prioritized over the builtin buffers.</p>
+<p>The file on disk can be an updated version, compared to the compiled-in buffer, which is why the externalized files are prioritized over the built-in buffers.</p>
 <p>A resource does not need to have a corresponding external file. This is configured in the flags parameter when the resource is set. You can in other words also register built-in-only resources. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a27c6790b3c9c18123a8e640cfb28fcb2"></a>
@@ -123,7 +123,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (void)</td><
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns a resource if one exists. If the Coin installation permits, the resource will be loaded from file, but if the file can not be located or loaded, builtin versions will be returned instead.</p>
+<p>Returns a resource if one exists. If the Coin installation permits, the resource will be loaded from file, but if the file cannot be located or loaded, built-in versions will be returned instead.</p>
 <dl class="section return"><dt>Returns</dt><dd>TRUE on success, and FALSE if there is no such resource. </dd></dl>
 
 </div>
@@ -159,7 +159,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (void)</td><
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This function registers a new resource. The resource locator (<em>resloc</em>) should take the form "coin:" followed by a relative file path that should lead to the file representation of the resource from where the COINDIR environment variable points. The relative path should use / for directory separation, and not \ if on MS Windows.</p>
+<p>This function registers a new resource. The resource locator (<em>resloc</em>) should take the form "coin:" followed by a relative file path that should lead to the file representation of the resource from where the COINDIR environment variable points. The relative path should use / for directory separation, and not \ if on Microsoft Windows.</p>
 <p>If you put COIN_RESOURCE_NOT_A_FILE in the <em>flags</em> argument, then the automatic file searching will not be performed.</p>
 <dl class="section return"><dt>Returns</dt><dd>TRUE if the resource was set, and FALSE if something went wrong. FALSE would most likely be returned because the resource already exists. </dd></dl>
 
@@ -190,7 +190,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (void)</td><
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceCoinResources.html">CoinResources</a></li>
-    <li class="footer">Generated on Thu Oct 18 2018 20:24:10 for Coin by
+    <li class="footer">Generated on Fri Jan 24 2020 00:10:40 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

@@ -33,8 +33,8 @@
     Coin3D is Free Software,<br />published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.
   </td>
   <td style="text-align: right; padding-right: 0.5em;">
-    <a href="https://github.com/coin3d/">https://github.com/coin3d/</a><br />
-    <a href="http://www.kongsberg.com/kogt/">http://www.kongsberg.com/kogt/</a><br />  
+    <a href="https://coin3d.github.io">https://coin3d.github.io</a><br />
+    <a href="https://www.kongsberg.com/en/kogt/">https://www.kongsberg.com/en/kogt/</a><br />  
     </td>
  </tr>
  </tbody>
@@ -290,9 +290,9 @@ Static Protected Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="classSoInput.html" title="The SoInput class is an abstraction of file import functionality. ">SoInput</a> class is an abstraction of file import functionality. </p>
 <p>This class takes care of most of the chores of doing data import in Coin. It puts a layer of abstraction over the read operations to make it transparent for the rest of the Coin code whether or not we're reading from a file, from a memory buffer or from stdin.</p>
-<p><a class="el" href="classSoInput.html" title="The SoInput class is an abstraction of file import functionality. ">SoInput</a> also takes care of checking file validity, aswell as handling information about features in the various file formats which are supported.</p>
-<p>Example usage: </p><div class="fragment"><div class="line"><span class="keywordtype">int</span></div><div class="line">main(<span class="keywordtype">void</span>)</div><div class="line">{</div><div class="line">  <a class="code" href="classSoDB.html#a970f42dfd362c33c69fa1869bfae72b5">SoDB::init</a>();</div><div class="line"></div><div class="line">  <a class="code" href="classSoInput.html">SoInput</a> in;</div><div class="line">  <span class="keywordflow">if</span> (in.<a class="code" href="classSoInput.html#a75df5c1deef8e619c1056aae2776abdc">openFile</a>(<span class="stringliteral">&quot;fab_model.iv&quot;</span>)) {</div><div class="line">    <a class="code" href="classSoSeparator.html">SoSeparator</a> * root = <a class="code" href="classSoDB.html#a2ceee0dd279cd44b19660ae4fdd427de">SoDB::readAll</a>(&amp;in);</div><div class="line">    <span class="keywordflow">if</span> (root) {</div><div class="line">      <span class="comment">// Do stuff with the imported scene graph here</span></div><div class="line">      <span class="comment">// ...</span></div><div class="line">      <span class="keywordflow">return</span> 0;</div><div class="line">    }</div><div class="line">  }</div><div class="line"></div><div class="line">  <span class="keywordflow">return</span> 1;</div><div class="line">}</div></div><!-- fragment --><p>Important note: there are several public and protected methods which makes it possible to pass in or get returned FILE* structures in this class. Do <em>not</em> use these methods when the Coin library has been compiled as an MSWindows DLL, as passing FILE* instances back or forth to DLLs is dangerous and will most likely cause a crash. This is an intrinsic limitation for MSWindows DLLs.</p>
-<p>This class supports one environment variable called COIN_SOINPUT_SEARCH_GLOBAL_DICT. When set to "1", the global dictionary is searched after the current file dictionary when resolving USE keywords. This makes it possible to reference nodes in other files. The reason for introducing this feature is that the <a class="el" href="classSoFile.html" title="The SoFile class is node container for another model file. ">SoFile</a> node rereads the file whenever the name field changes. The first time the file is read, it's possible to reference nodes in the parent file, using the USE keyword. But, when the file is reread this is no longer possible, since the reading now starts at the <a class="el" href="classSoFile.html" title="The SoFile class is node container for another model file. ">SoFile</a> node, with an empty dictionary.</p>
+<p><a class="el" href="classSoInput.html" title="The SoInput class is an abstraction of file import functionality. ">SoInput</a> also takes care of checking file validity, as well as handling information about features in the various file formats which are supported.</p>
+<p>Example usage: </p><div class="fragment"><div class="line"><span class="keywordtype">int</span></div><div class="line">main(<span class="keywordtype">void</span>)</div><div class="line">{</div><div class="line">  <a class="code" href="classSoDB.html#a970f42dfd362c33c69fa1869bfae72b5">SoDB::init</a>();</div><div class="line"></div><div class="line">  <a class="code" href="classSoInput.html">SoInput</a> in;</div><div class="line">  <span class="keywordflow">if</span> (in.<a class="code" href="classSoInput.html#a75df5c1deef8e619c1056aae2776abdc">openFile</a>(<span class="stringliteral">&quot;fab_model.iv&quot;</span>)) {</div><div class="line">    <a class="code" href="classSoSeparator.html">SoSeparator</a> * root = <a class="code" href="classSoDB.html#a2ceee0dd279cd44b19660ae4fdd427de">SoDB::readAll</a>(&amp;in);</div><div class="line">    <span class="keywordflow">if</span> (root) {</div><div class="line">      <span class="comment">// Do stuff with the imported scene graph here</span></div><div class="line">      <span class="comment">// ...</span></div><div class="line">      <span class="keywordflow">return</span> 0;</div><div class="line">    }</div><div class="line">  }</div><div class="line"></div><div class="line">  <span class="keywordflow">return</span> 1;</div><div class="line">}</div></div><!-- fragment --><p>Important note: there are several public and protected methods which make it possible to pass in or get returned FILE* structures in this class. Do <em>not</em> use these methods when the Coin library has been compiled as an Microsoft Windows DLL, as passing FILE* instances back or forth to DLLs is dangerous and will most likely cause a crash. This is an intrinsic limitation for Microsoft Windows DLLs.</p>
+<p>This class supports one environment variable called COIN_SOINPUT_SEARCH_GLOBAL_DICT. When set to "1", the global dictionary is searched after the current file dictionary when resolving USE keywords. This makes it possible to reference nodes in other files. The reason for introducing this feature is that the <a class="el" href="classSoFile.html" title="The SoFile class is node container for another model file. ">SoFile</a> node rereads the file whenever the name field changes. The first time the file is read, it is possible to reference nodes in the parent file, using the USE keyword. But, when the file is reread this is no longer possible, since the reading now starts at the <a class="el" href="classSoFile.html" title="The SoFile class is node container for another model file. ">SoFile</a> node, with an empty dictionary.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoOutput.html" title="The SoOutput class is an abstraction of an output stream. ">SoOutput</a>, <a class="el" href="classSoDB.html" title="The SoDB class keeps track of internal global data. ">SoDB</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aad6a27869faabd1cfc94d537881af73e"></a>
@@ -310,7 +310,7 @@ Static Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Constructor. If no filepointer is set, input will be read from stdin. </p>
+<p>Constructor. If no file pointer is set, input will be read from stdin. </p>
 
 </div>
 </div>
@@ -396,7 +396,7 @@ Static Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Adds a Proto which should be active in the current scope.</p>
+<p>Adds a PROTO <em>proto</em> which should be active in the current scope.</p>
 <p>This function is an extension for Coin, and it is not available in the original SGI Open Inventor v2.1 API.<br />
  </p><dl class="section since"><dt>Since</dt><dd>Coin 2.0 </dd></dl>
 
@@ -417,7 +417,7 @@ Static Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Pushed a Proto onto the Proto stack. The Proto stack is used during VRML2 file parsing.</p>
+<p>Pushed a PROTO <em>proto</em> onto the PROTO stack. The PROTO stack is used during VRML2 file parsing.</p>
 <p>This function is an extension for Coin, and it is not available in the original SGI Open Inventor v2.1 API.<br />
  </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoInput.html#af9b9b35394f090326900d83d203c45c0">popProto()</a> </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>Coin 2.0 </dd></dl>
@@ -439,7 +439,7 @@ Static Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns the Proto at the top of the Proto stack.</p>
+<p>Returns the PROTO at the top of the PROTO stack.</p>
 <p>This function is an extension for Coin, and it is not available in the original SGI Open Inventor v2.1 API.<br />
  </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoInput.html#aa117f260177b221870236d761005867b">pushProto()</a> </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>Coin 2.0 </dd></dl>
@@ -461,7 +461,7 @@ Static Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Pops a Proto off the Proto stack.</p>
+<p>Pops a PROTO off the PROTO stack.</p>
 <p>This function is an extension for Coin, and it is not available in the original SGI Open Inventor v2.1 API.<br />
  </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoInput.html#aa117f260177b221870236d761005867b">pushProto()</a> </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>Coin 2.0 </dd></dl>
@@ -505,7 +505,7 @@ Static Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Adds a ROUTE from <em>fromnode's</em> <em>fromfield</em>, to <em>tonode's</em> <em>tofield</em>. This makes it possible to defines ROUTEs in files before the <em>fromnode</em> or <em>tonode</em> is parsed.</p>
+<p>Adds a ROUTE from <em>fromnode's</em> <em>fromfield</em>, to <em>tonode's</em> <em>tofield</em>. This makes it possible to define ROUTEs in files before the <em>fromnode</em> or <em>tonode</em> is parsed.</p>
 <p>This function is an extension for Coin, and it is not available in the original SGI Open Inventor v2.1 API.<br />
  </p><dl class="section since"><dt>Since</dt><dd>Coin 2.0 </dd></dl>
 
@@ -542,7 +542,7 @@ Static Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Checks if the next bytes in <em>in</em> is the IS keyword. Returns <code>TRUE</code> if the IS keyword was found, <em>readok</em> will be set to <code>FALSE</code> if some error occured while searching for the IS keyword.</p>
+<p>Checks if the next bytes in <em>in</em> is the IS keyword. Returns <code>TRUE</code> if the IS keyword was found, <em>readok</em> will be set to <code>FALSE</code> if some error occurred while searching for the IS keyword.</p>
 <p>This function is an extension for Coin, and it is not available in the original SGI Open Inventor v2.1 API.<br />
  </p><dl class="section since"><dt>Since</dt><dd>Coin 2.0 </dd></dl>
 
@@ -571,8 +571,8 @@ Static Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Uses the given file pointer as the input file. The input stack of files will be emptied first. Closing a file passed in by it's file pointer is the library user's responsibility.</p>
-<p>Important note: do <em>not</em> use this method when the Coin library has been compiled as an MSWindows DLL, as passing FILE* instances back or forth to DLLs is dangerous and will most likely cause a crash. This is an intrinsic limitation for MSWindows DLLs.</p>
+<p>Uses the given file pointer as the input file. The input stack of files will be emptied first. Closing a file passed in by its file pointer is the library user's responsibility.</p>
+<p>Important note: do <em>not</em> use this method when the Coin library has been compiled as a Microsoft Windows DLL, as passing FILE* instances back or forth to DLLs is dangerous and will most likely cause a crash. This is an intrinsic limitation for Microsoft Windows DLLs.</p>
 <p>Note that it is not allowed to pass a FILE* to a gzip-compressed file under Mac OS X.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoInput.html#a75df5c1deef8e619c1056aae2776abdc">openFile()</a>, <a class="el" href="classSoInput.html#a1129eedac60a1c409d47558009a46ffb">closeFile()</a> </dd></dl>
 
@@ -756,7 +756,7 @@ Static Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Returns file pointer of the file on top of the input stack. If the "file" is actually a memory buffer, returns <code>NULL</code>.</p>
-<p>Important note: do <em>not</em> use this method when the Coin library has been compiled as an MSWindows DLL, as passing FILE* instances back or forth to DLLs is dangerous and will most likely cause a crash. This is an intrinsic limitation for MSWindows DLLs.</p>
+<p>Important note: do <em>not</em> use this method when the Coin library has been compiled as an Microsoft Windows DLL, as passing FILE* instances back or forth to DLLs is dangerous and will most likely cause a crash. This is an intrinsic limitation for Microsoft Windows DLLs.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoInput.html#a214ba56aae201b25cb30cb118b8b65c8">getCurFileName()</a> </dd></dl>
 
 </div>
@@ -784,7 +784,7 @@ Static Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the name of the file on top of the input stack. <code>NULL</code> will be returned if the toplevel "file" is a memory buffer.</p>
+<p>Returns the name of the file on top of the input stack. <code>NULL</code> will be returned if the top level "file" is a memory buffer.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoInput.html#ad85a0f056f7a1d29567342ac203e90be">getCurFile()</a> </dd></dl>
 
 </div>
@@ -1063,7 +1063,7 @@ Static Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Reads an unsigned integer in hexidecimal format from the current stream. Note that no error checking is done to see if it actually is a hex format value.</p>
+<p>Reads an unsigned integer in hexadecimal format from the current stream. Note that no error checking is done to see if it actually is a hex format value.</p>
 <p>A number in hexadecimal format must have the "0x" prefix.</p>
 <p>Returns <code>FALSE</code> if end of file is encountered. </p>
 
@@ -1838,8 +1838,8 @@ Static Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Finds an <a class="el" href="classSoBase.html" title="The SoBase class is the top-level superclass for a number of class-hierarchies. ">SoBase</a> derived object which has been mapped to <em>name</em> earlier during the import process.</p>
-<p>The Coin library will by default only search through the previously loaded nodes from the <em>same</em> file. By setting the environment variable <code>COIN_SOINPUT_SEARCH_GLOBAL_DICT</code> to "1", you can force the import process to search for USE-references through <em>all</em> nodes that has been loaded or otherwise instantiated.</p>
+<p>Finds a <a class="el" href="classSoBase.html" title="The SoBase class is the top-level superclass for a number of class-hierarchies. ">SoBase</a> derived object which has been mapped to <em>name</em> earlier during the import process.</p>
+<p>The Coin library will by default only search through the previously loaded nodes from the <em>same</em> file. By setting the environment variable <code>COIN_SOINPUT_SEARCH_GLOBAL_DICT</code> to "1", you can force the import process to search for USE-references through <em>all</em> nodes that have been loaded or otherwise instantiated.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoInput.html#abdf22810734f06e0caad609d47ec07e2">addReference()</a>, <a class="el" href="classSoInput.html#a4cefe302eb15818d8479ef280db0ebbb">removeReference()</a> </dd></dl>
 
 </div>
@@ -2076,7 +2076,7 @@ Static Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the list of directories which'll be searched upon loading Coin and VRML format files. Directory searches will be done whenever any external references appears in a file, for instance to texture images. </p>
+<p>Returns the list of directories which will be searched upon loading Coin and VRML format files. Directory searches will be done whenever any external references appears in a file, for instance for texture images. </p>
 
 </div>
 </div>
@@ -2255,7 +2255,7 @@ Static Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Given a <em>basename</em> for a file and an array of <em>directories</em> to search, returns the full name of the file found.</p>
-<p>In addition to looking at the root of each directory in <em>directories</em>, all <em>subdirectories</em> is also searched for each item in <em>directories</em>.</p>
+<p>In addition to looking at the root of each directory in <em>directories</em>, all <em>subdirectories</em> are also searched for each item in <em>directories</em>.</p>
 <p>If no file matching <em>basename</em> could be found in any of the directories, returns an empty string.</p>
 <p>This method is a Coin extension, not part of the original Inventor API. </p>
 
@@ -2284,7 +2284,7 @@ Static Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Pop the topmost file off the stack. Returns <code>FALSE</code> if there was no files on the stack to pop. A file is only popped when there is more than one file on the stack.</p>
+<p>Pop the topmost file off the stack. Returns <code>FALSE</code> if there was no file on the stack to pop. A file is only popped when there is more than one file on the stack.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoInput.html#a7a3279ca83ff540501a2fba2d27a04d3">pushFile()</a>, <a class="el" href="classSoInput.html#a75df5c1deef8e619c1056aae2776abdc">openFile()</a>, <a class="el" href="classSoInput.html#a1129eedac60a1c409d47558009a46ffb">closeFile()</a> </dd></dl>
 
 </div>
@@ -2354,7 +2354,7 @@ Static Protected Member Functions</h2></td></tr>
  Return the currently active stream.</p>
 <p>Scan through the include directories in order and try to find a file with the given name in any one of them. If file is found, put the full name with complete path from current directory of process into <em>fullname</em>, open the file and return the file pointer.</p>
 <p>If the file could either not be found or not opened for reading, return <code>NULL</code>.</p>
-<p>Important note: do <em>not</em> use this method when the Coin library has been compiled as an MSWindows DLL, as passing FILE* instances back or forth to DLLs is dangerous and will most likely cause a crash. This is an intrinsic limitation for MSWindows DLLs. </p>
+<p>Important note: do <em>not</em> use this method when the Coin library has been compiled as an Microsoft Windows DLL, as passing FILE* instances back or forth to DLLs is dangerous and will most likely cause a crash. This is an intrinsic limitation for Microsoft Windows DLLs. </p>
 
 </div>
 </div>
@@ -2436,7 +2436,7 @@ Static Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns <code>TRUE</code> if the current stream has had it's header parsed. If it hasn't, this method will attempt to read the header and returns <code>TRUE</code> if it could be done.</p>
+<p>Returns <code>TRUE</code> if the current stream has had its header parsed. If it hasn't, this method will attempt to read the header and returns <code>TRUE</code> if it could be done.</p>
 <p>If <em>bValidateBufferHeader</em> is <code>TRUE</code>, the returned flag will also be <code>FALSE</code> if the file stream header was not of a supported file format type. </p>
 
 </div>
@@ -3201,7 +3201,7 @@ Static Protected Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSoInput.html">SoInput</a></li>
-    <li class="footer">Generated on Thu Oct 18 2018 20:23:20 for Coin by
+    <li class="footer">Generated on Fri Jan 24 2020 00:10:14 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

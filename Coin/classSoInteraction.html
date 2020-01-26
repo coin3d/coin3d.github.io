@@ -33,8 +33,8 @@
     Coin3D is Free Software,<br />published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.
   </td>
   <td style="text-align: right; padding-right: 0.5em;">
-    <a href="https://github.com/coin3d/">https://github.com/coin3d/</a><br />
-    <a href="http://www.kongsberg.com/kogt/">http://www.kongsberg.com/kogt/</a><br />  
+    <a href="https://coin3d.github.io">https://coin3d.github.io</a><br />
+    <a href="https://www.kongsberg.com/en/kogt/">https://www.kongsberg.com/en/kogt/</a><br />  
     </td>
  </tr>
  </tbody>
@@ -77,7 +77,7 @@ $(document).ready(function(){initNavTree('classSoInteraction.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>The <a class="el" href="classSoInteraction.html" title="The SoInteraction class takes care of initalizing internal classes. ">SoInteraction</a> class takes care of initalizing internal classes.  
+<p>The <a class="el" href="classSoInteraction.html" title="The SoInteraction class takes care of initializing internal classes. ">SoInteraction</a> class takes care of initializing internal classes.  
  <a href="classSoInteraction.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="SoInteraction_8h_source.html">Inventor/SoInteraction.h</a>&gt;</code></p>
@@ -88,8 +88,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a42c9aff2309ba6835c5a7a2171870a86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="classSoInteraction.html" title="The SoInteraction class takes care of initalizing internal classes. ">SoInteraction</a> class takes care of initalizing internal classes. </p>
-<p><a class="el" href="classSoInteraction.html" title="The SoInteraction class takes care of initalizing internal classes. ">SoInteraction</a> is present for the sole purpose of providing an interface to the initialization methods of the classes in Coin which are somehow related to user interaction, like the draggers and manipulators.</p>
+<div class="textblock"><p>The <a class="el" href="classSoInteraction.html" title="The SoInteraction class takes care of initializing internal classes. ">SoInteraction</a> class takes care of initializing internal classes. </p>
+<p><a class="el" href="classSoInteraction.html" title="The SoInteraction class takes care of initializing internal classes. ">SoInteraction</a> is present for the sole purpose of providing an interface to the initialization methods of the classes in Coin which are somehow related to user interaction, like the draggers and manipulators.</p>
 <p>It is unlikely that the application programmer should need to worry about this class, as <a class="el" href="classSoInteraction.html#a42c9aff2309ba6835c5a7a2171870a86">SoInteraction::init()</a> is called by the GUI specific initialization methods. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a42c9aff2309ba6835c5a7a2171870a86"></a>
@@ -117,7 +117,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Calls the initClass() method of these classes: <a class="el" href="classSoAntiSquish.html" title="The SoAntiSquish class is used to reset to uniform scaling. ">SoAntiSquish</a>, <a class="el" href="classSoSelection.html" title="The SoSelection class manages a list of selected nodes. ">SoSelection</a>, <a class="el" href="classSoExtSelection.html" title="The SoExtSelection class can be used for extended selection functionality. ">SoExtSelection</a>, <a class="el" href="classSoSurroundScale.html" title="The SoSurroundScale class is used to automatically scale geometry to surround other geometry...">SoSurroundScale</a>, <a class="el" href="classSoInteractionKit.html" title="The SoInteractionKit class is a base class for draggers. ">SoInteractionKit</a>, <a class="el" href="classSoDragger.html" title="The SoDragger class is the base class for all draggers. ">SoDragger</a>, <a class="el" href="classSoClipPlaneManip.html" title="The SoClipPlaneManip class is used to manipulate clip planes. ">SoClipPlaneManip</a>, <a class="el" href="classSoDirectionalLightManip.html" title="The SoDirectionalLightManip class is used to manipulate SoDirectionalLight nodes. ...">SoDirectionalLightManip</a>, <a class="el" href="classSoPointLightManip.html" title="The SoPointLightManip class is used to manipulate point light nodes. ">SoPointLightManip</a>, <a class="el" href="classSoSpotLightManip.html" title="The SoSpotLightManip class is used to manipulate spot light nodes. ">SoSpotLightManip</a>, <a class="el" href="classSoTransformManip.html" title="The SoTransformManip class is used to manipulate transformations. ">SoTransformManip</a>, <a class="el" href="classSoCenterballManip.html" title="The SoCenterballManip wraps an SoCenterballDragger for convenience. ">SoCenterballManip</a>, <a class="el" href="classSoHandleBoxManip.html" title="The SoHandleBoxManip class wraps an SoHandleBoxDragger for manipulating a transformation. ">SoHandleBoxManip</a>, <a class="el" href="classSoJackManip.html" title="The SoJackManip wraps an SoJackDragger for convenience. ">SoJackManip</a>, <a class="el" href="classSoTabBoxManip.html" title="The SoTabBoxManip class wraps an SoTabBoxDragger. ">SoTabBoxManip</a>, <a class="el" href="classSoTrackballManip.html" title="The SoTrackballManip wraps an SoTrackballDragger for convenience. ">SoTrackballManip</a>, <a class="el" href="classSoTransformBoxManip.html" title="The SoTransformBoxManip wraps an SoTransformBoxDragger for convenience. ">SoTransformBoxManip</a>, <a class="el" href="classSoTransformerManip.html" title="The SoTransformerManip wraps an SoTransformerDragger for convenience. ">SoTransformerManip</a>.</p>
 <p>Note that this method calls <a class="el" href="classSoDB.html#a970f42dfd362c33c69fa1869bfae72b5">SoDB::init()</a> and <a class="el" href="classSoNodeKit.html#a008ec3602a4cc4127902c25b29cf55b4">SoNodeKit::init()</a> to make sure all classes that the interaction functionality depends on have been initialized.</p>
-<p>Application programmers should usually not have to invoke this method directly from application code, as it is indirectly called from the GUI-binding libraries' <a class="el" href="classSoInteraction.html#a42c9aff2309ba6835c5a7a2171870a86">init()</a>-functions. Only if you are using your own GUI-binding (and not one of Kongsberg Oil &amp; Gas Technologies's SoQt, SoGtk, SoXt, SoWin, Sc21 etc. libraries) do you have to explicitly call <a class="el" href="classSoInteraction.html#a42c9aff2309ba6835c5a7a2171870a86">SoInteraction::init()</a>.</p>
+<p>Application programmers should usually not have to invoke this method directly from application code, as it is indirectly called from the GUI-binding libraries' <a class="el" href="classSoInteraction.html#a42c9aff2309ba6835c5a7a2171870a86">init()</a>-functions. Only if you are using your own GUI-binding (and not one of Kongsberg Oil &amp; Gas Technologies SoQt, SoGtk, SoXt, SoWin, Sc21 etc. libraries) do you have to explicitly call <a class="el" href="classSoInteraction.html#a42c9aff2309ba6835c5a7a2171870a86">SoInteraction::init()</a>.</p>
 <div class="fragment"><div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> ** argv )</div><div class="line">{</div><div class="line">  <span class="comment">// SoQt::init() calls SoDB::init(), SoNodeKit::init() and</span></div><div class="line">  <span class="comment">// SoInteraction::init().</span></div><div class="line">  QWidget * window = SoQt::init( argv[0] );</div><div class="line"></div><div class="line">  <a class="code" href="classSoSeparator.html">SoSeparator</a> * root = make_scenegraph();</div><div class="line">  root-&gt;<a class="code" href="classSoBase.html#ac01cf34901b2a2be1bc2671bb2463851">ref</a>();</div><div class="line">  <span class="comment">/// [... etc ...] ///</span></div></div><!-- fragment --> 
 </div>
 </div>
@@ -131,7 +131,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSoInteraction.html">SoInteraction</a></li>
-    <li class="footer">Generated on Thu Oct 18 2018 20:23:20 for Coin by
+    <li class="footer">Generated on Fri Jan 24 2020 00:10:14 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

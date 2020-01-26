@@ -33,8 +33,8 @@
     Coin3D is Free Software,<br />published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.
   </td>
   <td style="text-align: right; padding-right: 0.5em;">
-    <a href="https://github.com/coin3d/">https://github.com/coin3d/</a><br />
-    <a href="http://www.kongsberg.com/kogt/">http://www.kongsberg.com/kogt/</a><br />  
+    <a href="https://coin3d.github.io">https://coin3d.github.io</a><br />
+    <a href="https://www.kongsberg.com/en/kogt/">https://www.kongsberg.com/en/kogt/</a><br />  
     </td>
  </tr>
  </tbody>
@@ -93,7 +93,7 @@ Inheritance diagram for SoCallbackAction:</div>
   <map id="SoCallbackAction_map" name="SoCallbackAction_map">
 <area href="classSoAction.html" title="The SoAction class is the base class for all traversal actions. " alt="SoAction" shape="rect" coords="0,0,133,24"/>
 <area href="classSoVectorizeAction.html" title="The SoVectorizeAction class is the base class for vectorizing Coin scene graphs. " alt="SoVectorizeAction" shape="rect" coords="0,112,133,136"/>
-<area href="classSoVectorizePSAction.html" title="The SoVectorizePSAction class is used for rendering to a Postscript file. " alt="SoVectorizePSAction" shape="rect" coords="0,168,133,192"/>
+<area href="classSoVectorizePSAction.html" title="The SoVectorizePSAction class is used for rendering to a PostScript file. " alt="SoVectorizePSAction" shape="rect" coords="0,168,133,192"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -389,8 +389,8 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p>The <a class="el" href="classSoCallbackAction.html" title="The SoCallbackAction class invokes callbacks at specific nodes. ">SoCallbackAction</a> class invokes callbacks at specific nodes. </p>
 <p>This action has mechanisms for tracking traversal position and traversal state. In combination with the ability to pass geometry primitives to callback actions set by the user, this does for instance make it rather straightforward to extract the geometry of a scene graph.</p>
 <p>You should be able to use this action for most of your "simple" traversal needs, instead of cooking up your own code, as the <a class="el" href="classSoCallbackAction.html" title="The SoCallbackAction class invokes callbacks at specific nodes. ">SoCallbackAction</a> is rather flexible.</p>
-<p>A common use of this action is to extract geometry of non-primitive shapes as triangles. A full-fledged example that demonstrates this on a scenegraph with two spheres follows:</p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="SoDB_8h.html">Inventor/SoDB.h</a>&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;Inventor/SoPrimitiveVertex.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="SoCallbackAction_8h.html">Inventor/actions/SoCallbackAction.h</a>&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;Inventor/nodes/SoCoordinate3.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;Inventor/nodes/SoIndexedFaceSet.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;Inventor/nodes/SoSeparator.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;Inventor/nodes/SoShape.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;Inventor/nodes/SoSphere.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;Inventor/nodes/SoTranslation.h&gt;</span></div><div class="line"></div><div class="line"></div><div class="line"><span class="keyword">static</span> <a class="code" href="classSoCoordinate3.html">SoCoordinate3</a> * coord3 = NULL;</div><div class="line"><span class="keyword">static</span> <a class="code" href="classSoIndexedFaceSet.html">SoIndexedFaceSet</a> * ifs = NULL;</div><div class="line"></div><div class="line"><span class="keyword">static</span> <span class="keywordtype">int</span> coord3idx = 0;</div><div class="line"></div><div class="line"></div><div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span></div><div class="line">triangle_cb(<span class="keywordtype">void</span> * userdata, <a class="code" href="classSoCallbackAction.html">SoCallbackAction</a> * action,</div><div class="line">            <span class="keyword">const</span> <a class="code" href="classSoPrimitiveVertex.html">SoPrimitiveVertex</a> * v1,</div><div class="line">            <span class="keyword">const</span> <a class="code" href="classSoPrimitiveVertex.html">SoPrimitiveVertex</a> * v2,</div><div class="line">            <span class="keyword">const</span> <a class="code" href="classSoPrimitiveVertex.html">SoPrimitiveVertex</a> * v3)</div><div class="line">{</div><div class="line">  <span class="keyword">const</span> <a class="code" href="classSbVec3f.html">SbVec3f</a> vtx[] = { v1-&gt;<a class="code" href="classSoPrimitiveVertex.html#a5cf6c0630f3355391048f18cad572166">getPoint</a>(), v2-&gt;<a class="code" href="classSoPrimitiveVertex.html#a5cf6c0630f3355391048f18cad572166">getPoint</a>(), v3-&gt;<a class="code" href="classSoPrimitiveVertex.html#a5cf6c0630f3355391048f18cad572166">getPoint</a>() };</div><div class="line">  <span class="keyword">const</span> <a class="code" href="classSbMatrix.html">SbMatrix</a> mm = action-&gt;<a class="code" href="classSoCallbackAction.html#ad5e338430be8aedba6e864e89ebeee38">getModelMatrix</a>();</div><div class="line"></div><div class="line">  <a class="code" href="classSbVec3f.html">SbVec3f</a> vx[3];</div><div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j=0; j &lt; 3; j++) { mm.<a class="code" href="classSbMatrix.html#ac50a48e4adf51ec4310fe27f83c5ca62">multVecMatrix</a>(vtx[j], vx[j]); }</div><div class="line"></div><div class="line">  <span class="comment">// (This is sub-optimal -- should scan for the same vertex</span></div><div class="line">  <span class="comment">// coordinates already being present in the SoCoordinate3</span></div><div class="line">  <span class="comment">// node. We&#39;ll get lots of duplicate coordinates from this.)</span></div><div class="line">  coord3-&gt;<a class="code" href="classSoCoordinate3.html#a51a6e25b7a4d81bc2c573514e8555744">point</a>.<a class="code" href="classSoMField.html#ad41785f63d6cf99f4a8bc6fedd55d398">setNum</a>(coord3-&gt;<a class="code" href="classSoCoordinate3.html#a51a6e25b7a4d81bc2c573514e8555744">point</a>.<a class="code" href="classSoMField.html#a5308d1fd30bc255a16cac527d5e93123">getNum</a>() + 3);</div><div class="line">  coord3-&gt;<a class="code" href="classSoCoordinate3.html#a51a6e25b7a4d81bc2c573514e8555744">point</a>.setValues(coord3idx, 3, vx);</div><div class="line"></div><div class="line">  int32_t indices[] = { coord3idx, coord3idx + 1, coord3idx + 2, -1 };</div><div class="line">  coord3idx += 3;</div><div class="line"></div><div class="line">  <span class="keywordtype">int</span> oldsize = ifs-&gt;<a class="code" href="classSoIndexedShape.html#a2782d75eda8d1831b2b279be8b333de5">coordIndex</a>.<a class="code" href="classSoMField.html#a5308d1fd30bc255a16cac527d5e93123">getNum</a>();</div><div class="line">  ifs-&gt;<a class="code" href="classSoIndexedShape.html#a2782d75eda8d1831b2b279be8b333de5">coordIndex</a>.<a class="code" href="classSoMField.html#ad41785f63d6cf99f4a8bc6fedd55d398">setNum</a>(oldsize + 4);</div><div class="line">  ifs-&gt;<a class="code" href="classSoIndexedShape.html#a2782d75eda8d1831b2b279be8b333de5">coordIndex</a>.setValues(oldsize, 4, indices);</div><div class="line"></div><div class="line">  <span class="comment">// (Note that it would likely be desirable to grab normal vectors,</span></div><div class="line">  <span class="comment">// materials and / or texture coordinates in a real-world</span></div><div class="line">  <span class="comment">// application. How to do this is not shown by the above code,</span></div><div class="line">  <span class="comment">// but it is not much different from the extraction of vertex</span></div><div class="line">  <span class="comment">// coordinates.)</span></div><div class="line">}</div><div class="line"></div><div class="line"></div><div class="line"><span class="keywordtype">int</span></div><div class="line">main(<span class="keywordtype">void</span>)</div><div class="line">{</div><div class="line">  <a class="code" href="classSoDB.html#a970f42dfd362c33c69fa1869bfae72b5">SoDB::init</a>();</div><div class="line"></div><div class="line">  <a class="code" href="classSoSeparator.html">SoSeparator</a> * root = <span class="keyword">new</span> <a class="code" href="classSoSeparator.html">SoSeparator</a>;</div><div class="line">  root-&gt;<a class="code" href="classSoGroup.html#a23e0a7aebf3ec75c40638cc360c0e5e6">addChild</a>(<span class="keyword">new</span> <a class="code" href="classSoSphere.html">SoSphere</a>);</div><div class="line">  <a class="code" href="classSoTranslation.html">SoTranslation</a> * trans = <span class="keyword">new</span> <a class="code" href="classSoTranslation.html">SoTranslation</a>;</div><div class="line">  trans-&gt;<a class="code" href="classSoTranslation.html#a854b33585bc5271410059beac21531a0">translation</a>.setValue(10, 0, 0);</div><div class="line">  root-&gt;<a class="code" href="classSoGroup.html#a23e0a7aebf3ec75c40638cc360c0e5e6">addChild</a>(trans);</div><div class="line">  <a class="code" href="classSoSphere.html">SoSphere</a> * ss = <span class="keyword">new</span> <a class="code" href="classSoSphere.html">SoSphere</a>;</div><div class="line">  ss-&gt;<a class="code" href="classSoSphere.html#aa2808fcef9f6d9e7479361ec92b5dbd6">radius</a> = 3;</div><div class="line">  root-&gt;<a class="code" href="classSoGroup.html#a23e0a7aebf3ec75c40638cc360c0e5e6">addChild</a>(ss);</div><div class="line"></div><div class="line">  root-&gt;<a class="code" href="classSoBase.html#ac01cf34901b2a2be1bc2671bb2463851">ref</a>();</div><div class="line"></div><div class="line">  coord3 = <span class="keyword">new</span> <a class="code" href="classSoCoordinate3.html">SoCoordinate3</a>;</div><div class="line">  coord3-&gt;<a class="code" href="classSoCoordinate3.html#a51a6e25b7a4d81bc2c573514e8555744">point</a>.<a class="code" href="classSoMField.html#ad41785f63d6cf99f4a8bc6fedd55d398">setNum</a>(0);</div><div class="line">  ifs = <span class="keyword">new</span> <a class="code" href="classSoIndexedFaceSet.html">SoIndexedFaceSet</a>;</div><div class="line">  ifs-&gt;<a class="code" href="classSoIndexedShape.html#a2782d75eda8d1831b2b279be8b333de5">coordIndex</a>.<a class="code" href="classSoMField.html#ad41785f63d6cf99f4a8bc6fedd55d398">setNum</a>(0);</div><div class="line"></div><div class="line">  <a class="code" href="classSoCallbackAction.html">SoCallbackAction</a> ca;</div><div class="line">  ca.<a class="code" href="classSoCallbackAction.html#a7a71315cb4b24a5cd83dbbdbfc0d2a3e">addTriangleCallback</a>(SoShape::getClassTypeId(), triangle_cb, NULL);</div><div class="line">  ca.<a class="code" href="classSoAction.html#ad2d6ddb297b3a1f5b80026db5fd5e616">apply</a>(root);</div><div class="line"></div><div class="line">  root-&gt;<a class="code" href="classSoBase.html#a254b1ac395fe4d4d10438b994bdb3561">unref</a>();</div><div class="line"></div><div class="line">  <span class="comment">// [the generated SoCoordinate3 and SoIndexedFaceSet nodes would now</span></div><div class="line">  <span class="comment">// typically be used in a scenegraph in a viewer, or written to disk</span></div><div class="line">  <span class="comment">// or something]</span></div><div class="line"></div><div class="line">  <span class="keywordflow">return</span> 0;</div><div class="line">}</div></div><!-- fragment --> </div><h2 class="groupheader">Member Typedef Documentation</h2>
+<p>A common use of this action is to extract geometry of non-primitive shapes as triangles. A full-fledged example that demonstrates this on a scene graph with two spheres follows:</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="SoDB_8h.html">Inventor/SoDB.h</a>&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;Inventor/SoPrimitiveVertex.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="SoCallbackAction_8h.html">Inventor/actions/SoCallbackAction.h</a>&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;Inventor/nodes/SoCoordinate3.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;Inventor/nodes/SoIndexedFaceSet.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;Inventor/nodes/SoSeparator.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;Inventor/nodes/SoShape.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;Inventor/nodes/SoSphere.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;Inventor/nodes/SoTranslation.h&gt;</span></div><div class="line"></div><div class="line"></div><div class="line"><span class="keyword">static</span> <a class="code" href="classSoCoordinate3.html">SoCoordinate3</a> * coord3 = NULL;</div><div class="line"><span class="keyword">static</span> <a class="code" href="classSoIndexedFaceSet.html">SoIndexedFaceSet</a> * ifs = NULL;</div><div class="line"></div><div class="line"><span class="keyword">static</span> <span class="keywordtype">int</span> coord3idx = 0;</div><div class="line"></div><div class="line"></div><div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span></div><div class="line">triangle_cb(<span class="keywordtype">void</span> * userdata, <a class="code" href="classSoCallbackAction.html">SoCallbackAction</a> * action,</div><div class="line">            <span class="keyword">const</span> <a class="code" href="classSoPrimitiveVertex.html">SoPrimitiveVertex</a> * v1,</div><div class="line">            <span class="keyword">const</span> <a class="code" href="classSoPrimitiveVertex.html">SoPrimitiveVertex</a> * v2,</div><div class="line">            <span class="keyword">const</span> <a class="code" href="classSoPrimitiveVertex.html">SoPrimitiveVertex</a> * v3)</div><div class="line">{</div><div class="line">  <span class="keyword">const</span> <a class="code" href="classSbVec3f.html">SbVec3f</a> vtx[] = { v1-&gt;<a class="code" href="classSoPrimitiveVertex.html#a5cf6c0630f3355391048f18cad572166">getPoint</a>(), v2-&gt;<a class="code" href="classSoPrimitiveVertex.html#a5cf6c0630f3355391048f18cad572166">getPoint</a>(), v3-&gt;<a class="code" href="classSoPrimitiveVertex.html#a5cf6c0630f3355391048f18cad572166">getPoint</a>() };</div><div class="line">  <span class="keyword">const</span> <a class="code" href="classSbMatrix.html">SbMatrix</a> mm = action-&gt;<a class="code" href="classSoCallbackAction.html#ad5e338430be8aedba6e864e89ebeee38">getModelMatrix</a>();</div><div class="line"></div><div class="line">  <a class="code" href="classSbVec3f.html">SbVec3f</a> vx[3];</div><div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j=0; j &lt; 3; j++) { mm.<a class="code" href="classSbMatrix.html#ac50a48e4adf51ec4310fe27f83c5ca62">multVecMatrix</a>(vtx[j], vx[j]); }</div><div class="line"></div><div class="line">  <span class="comment">// (This is sub-optimal -- should scan for the same vertex</span></div><div class="line">  <span class="comment">// coordinates already being present in the SoCoordinate3</span></div><div class="line">  <span class="comment">// node. We&#39;ll get lots of duplicate coordinates from this.)</span></div><div class="line">  coord3-&gt;<a class="code" href="classSoCoordinate3.html#a51a6e25b7a4d81bc2c573514e8555744">point</a>.<a class="code" href="classSoMField.html#ad41785f63d6cf99f4a8bc6fedd55d398">setNum</a>(coord3-&gt;<a class="code" href="classSoCoordinate3.html#a51a6e25b7a4d81bc2c573514e8555744">point</a>.<a class="code" href="classSoMField.html#a5308d1fd30bc255a16cac527d5e93123">getNum</a>() + 3);</div><div class="line">  coord3-&gt;<a class="code" href="classSoCoordinate3.html#a51a6e25b7a4d81bc2c573514e8555744">point</a>.setValues(coord3idx, 3, vx);</div><div class="line"></div><div class="line">  int32_t indices[] = { coord3idx, coord3idx + 1, coord3idx + 2, -1 };</div><div class="line">  coord3idx += 3;</div><div class="line"></div><div class="line">  <span class="keywordtype">int</span> oldsize = ifs-&gt;<a class="code" href="classSoIndexedShape.html#a2782d75eda8d1831b2b279be8b333de5">coordIndex</a>.<a class="code" href="classSoMField.html#a5308d1fd30bc255a16cac527d5e93123">getNum</a>();</div><div class="line">  ifs-&gt;<a class="code" href="classSoIndexedShape.html#a2782d75eda8d1831b2b279be8b333de5">coordIndex</a>.<a class="code" href="classSoMField.html#ad41785f63d6cf99f4a8bc6fedd55d398">setNum</a>(oldsize + 4);</div><div class="line">  ifs-&gt;<a class="code" href="classSoIndexedShape.html#a2782d75eda8d1831b2b279be8b333de5">coordIndex</a>.setValues(oldsize, 4, indices);</div><div class="line"></div><div class="line">  <span class="comment">// (Note that it would likely be desirable to grab normal vectors,</span></div><div class="line">  <span class="comment">// materials and / or texture coordinates in a real-world</span></div><div class="line">  <span class="comment">// application. How to do this is not shown by the above code,</span></div><div class="line">  <span class="comment">// but it is not much different from the extraction of vertex</span></div><div class="line">  <span class="comment">// coordinates.)</span></div><div class="line">}</div><div class="line"></div><div class="line"></div><div class="line"><span class="keywordtype">int</span></div><div class="line">main(<span class="keywordtype">void</span>)</div><div class="line">{</div><div class="line">  <a class="code" href="classSoDB.html#a970f42dfd362c33c69fa1869bfae72b5">SoDB::init</a>();</div><div class="line"></div><div class="line">  <a class="code" href="classSoSeparator.html">SoSeparator</a> * root = <span class="keyword">new</span> <a class="code" href="classSoSeparator.html">SoSeparator</a>;</div><div class="line">  root-&gt;<a class="code" href="classSoGroup.html#a23e0a7aebf3ec75c40638cc360c0e5e6">addChild</a>(<span class="keyword">new</span> <a class="code" href="classSoSphere.html">SoSphere</a>);</div><div class="line">  <a class="code" href="classSoTranslation.html">SoTranslation</a> * trans = <span class="keyword">new</span> <a class="code" href="classSoTranslation.html">SoTranslation</a>;</div><div class="line">  trans-&gt;<a class="code" href="classSoTranslation.html#a854b33585bc5271410059beac21531a0">translation</a>.setValue(10, 0, 0);</div><div class="line">  root-&gt;<a class="code" href="classSoGroup.html#a23e0a7aebf3ec75c40638cc360c0e5e6">addChild</a>(trans);</div><div class="line">  <a class="code" href="classSoSphere.html">SoSphere</a> * ss = <span class="keyword">new</span> <a class="code" href="classSoSphere.html">SoSphere</a>;</div><div class="line">  ss-&gt;<a class="code" href="classSoSphere.html#aa2808fcef9f6d9e7479361ec92b5dbd6">radius</a> = 3;</div><div class="line">  root-&gt;<a class="code" href="classSoGroup.html#a23e0a7aebf3ec75c40638cc360c0e5e6">addChild</a>(ss);</div><div class="line"></div><div class="line">  root-&gt;<a class="code" href="classSoBase.html#ac01cf34901b2a2be1bc2671bb2463851">ref</a>();</div><div class="line"></div><div class="line">  coord3 = <span class="keyword">new</span> <a class="code" href="classSoCoordinate3.html">SoCoordinate3</a>;</div><div class="line">  coord3-&gt;<a class="code" href="classSoCoordinate3.html#a51a6e25b7a4d81bc2c573514e8555744">point</a>.<a class="code" href="classSoMField.html#ad41785f63d6cf99f4a8bc6fedd55d398">setNum</a>(0);</div><div class="line">  ifs = <span class="keyword">new</span> <a class="code" href="classSoIndexedFaceSet.html">SoIndexedFaceSet</a>;</div><div class="line">  ifs-&gt;<a class="code" href="classSoIndexedShape.html#a2782d75eda8d1831b2b279be8b333de5">coordIndex</a>.<a class="code" href="classSoMField.html#ad41785f63d6cf99f4a8bc6fedd55d398">setNum</a>(0);</div><div class="line"></div><div class="line">  <a class="code" href="classSoCallbackAction.html">SoCallbackAction</a> ca;</div><div class="line">  ca.<a class="code" href="classSoCallbackAction.html#a7a71315cb4b24a5cd83dbbdbfc0d2a3e">addTriangleCallback</a>(SoShape::getClassTypeId(), triangle_cb, NULL);</div><div class="line">  ca.<a class="code" href="classSoAction.html#ad2d6ddb297b3a1f5b80026db5fd5e616">apply</a>(root);</div><div class="line"></div><div class="line">  root-&gt;<a class="code" href="classSoBase.html#a254b1ac395fe4d4d10438b994bdb3561">unref</a>();</div><div class="line"></div><div class="line">  <span class="comment">// [the generated SoCoordinate3 and SoIndexedFaceSet nodes would now</span></div><div class="line">  <span class="comment">// typically be used in a scene graph in a viewer, or written to disk</span></div><div class="line">  <span class="comment">// or something]</span></div><div class="line"></div><div class="line">  <span class="keywordflow">return</span> 0;</div><div class="line">}</div></div><!-- fragment --> </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="ae6fdf843f4157cbc3ff98c5d711e9de7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae6fdf843f4157cbc3ff98c5d711e9de7">&#9670;&nbsp;</a></span>SoCallbackActionCB</h2>
 
@@ -522,9 +522,9 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the type identification of an action derived from a class inheriting <a class="el" href="classSoAction.html" title="The SoAction class is the base class for all traversal actions. ">SoAction</a>. This is used for run-time type checking and "downward" casting.</p>
+<p>Returns the type identification of an action derived from a class inheriting <a class="el" href="classSoAction.html" title="The SoAction class is the base class for all traversal actions. ">SoAction</a>. This is used for runtime type checking and "downward" casting.</p>
 <p>Usage example:</p>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> bar(<a class="code" href="classSoAction.html">SoAction</a> * action)</div><div class="line">{</div><div class="line">  <span class="keywordflow">if</span> (action-&gt;<a class="code" href="classSoAction.html#a364ad60918a4d20ebdc9635457fe331c">getTypeId</a>() == SoGLRenderAction::getClassTypeId()) {</div><div class="line">    <span class="comment">// safe downward cast, know the type</span></div><div class="line">    <a class="code" href="classSoGLRenderAction.html">SoGLRenderAction</a> * glrender = (<a class="code" href="classSoGLRenderAction.html">SoGLRenderAction</a> *)action;</div><div class="line">  }</div><div class="line">  <span class="keywordflow">return</span>; <span class="comment">// ignore if not renderaction</span></div><div class="line">}</div></div><!-- fragment --><p>For application programmers wanting to extend the library with new actions: this method needs to be overridden in <em>all</em> subclasses. This is typically done as part of setting up the full type system for extension classes, which is usually accomplished by using the pre-defined macros available through Inventor/nodes/SoSubAction.h: SO_ACTION_SOURCE, SO_ACTION_INIT_CLASS and SO_ACTION_CONSTRUCTOR.</p>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> bar(<a class="code" href="classSoAction.html">SoAction</a> * action)</div><div class="line">{</div><div class="line">  <span class="keywordflow">if</span> (action-&gt;<a class="code" href="classSoAction.html#a364ad60918a4d20ebdc9635457fe331c">getTypeId</a>() == SoGLRenderAction::getClassTypeId()) {</div><div class="line">    <span class="comment">// safe downward cast, know the type</span></div><div class="line">    <a class="code" href="classSoGLRenderAction.html">SoGLRenderAction</a> * glrender = (<a class="code" href="classSoGLRenderAction.html">SoGLRenderAction</a> *)action;</div><div class="line">  }</div><div class="line">  <span class="keywordflow">return</span>; <span class="comment">// ignore if not render action</span></div><div class="line">}</div></div><!-- fragment --><p>For application programmers wanting to extend the library with new actions: this method needs to be overridden in <em>all</em> subclasses. This is typically done as part of setting up the full type system for extension classes, which is usually accomplished by using the predefined macros available through Inventor/nodes/SoSubAction.h: SO_ACTION_SOURCE, SO_ACTION_INIT_CLASS and SO_ACTION_CONSTRUCTOR.</p>
 <p>For more information on writing Coin extensions, see the <a class="el" href="classSoAction.html" title="The SoAction class is the base class for all traversal actions. ">SoAction</a> class documentation.</p>
 <p>Returns the actual type id of an object derived from a class inheriting <a class="el" href="classSoAction.html" title="The SoAction class is the base class for all traversal actions. ">SoAction</a>. Needs to be overridden in <em>all</em> subclasses. </p>
 
@@ -1025,7 +1025,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns a coordinate quartuplet from the current state pool of coordinates. </p>
+<p>Returns a coordinate quadruplet from the current state pool of coordinates. </p>
 
 </div>
 </div>
@@ -1120,7 +1120,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns current fontname setting. </p>
+<p>Returns current font name setting. </p>
 
 </div>
 </div>
@@ -1139,7 +1139,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns current fontsize setting. </p>
+<p>Returns current font size setting. </p>
 
 </div>
 </div>
@@ -1158,7 +1158,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns current lightmodel setting. </p>
+<p>Returns current light model setting. </p>
 
 </div>
 </div>
@@ -1255,7 +1255,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns current materialbinding setting. </p>
+<p>Returns current material binding setting. </p>
 
 </div>
 </div>
@@ -1312,7 +1312,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns current normalbinding setting. </p>
+<p>Returns current normal binding setting. </p>
 
 </div>
 </div>
@@ -1407,7 +1407,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns current vertexordering shapehint setting.</p>
+<p>Returns current vertex ordering shape hint setting.</p>
 <p>Please note that this is the vertex ordering set by the <a class="el" href="classSoShapeHints.html" title="The SoShapeHints class is a node containing hints about how to render geometry. ">SoShapeHints</a> node. If you want to find the vertex ordering for VRML nodes you'll need to read this directly from the <em>ccw</em> field in those nodes. </p>
 
 </div>
@@ -1427,7 +1427,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns current shapetype hint setting.</p>
+<p>Returns current shape type hint setting.</p>
 <p>Please note that this is the shape type set by the <a class="el" href="classSoShapeHints.html" title="The SoShapeHints class is a node containing hints about how to render geometry. ">SoShapeHints</a> node. If you want to find the shape type for VRML nodes you'll need to read this directly from the <em>solid</em> field in those nodes. </p>
 
 </div>
@@ -1447,7 +1447,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns current facetype hint setting.</p>
+<p>Returns current face type hint setting.</p>
 <p>Please note that this is the face type set by the <a class="el" href="classSoShapeHints.html" title="The SoShapeHints class is a node containing hints about how to render geometry. ">SoShapeHints</a> node. If you want to find the face type for VRML nodes you'll need to read this directly from the <em>convex</em> field in those nodes. </p>
 
 </div>
@@ -1467,7 +1467,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns current creaseangle setting. Please note that this is the crease angle value set by the <a class="el" href="classSoShapeHints.html" title="The SoShapeHints class is a node containing hints about how to render geometry. ">SoShapeHints</a> node. If you want to find the crease angle for VRML nodes you'll need to read this directly from the creaseAngle field in those nodes. </p>
+<p>Returns current crease angle setting. Please note that this is the crease angle value set by the <a class="el" href="classSoShapeHints.html" title="The SoShapeHints class is a node containing hints about how to render geometry. ">SoShapeHints</a> node. If you want to find the crease angle for VRML nodes you'll need to read this directly from the creaseAngle field in those nodes. </p>
 
 </div>
 </div>
@@ -1564,7 +1564,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns current texturecoordinate binding setting. </p>
+<p>Returns current texture coordinate binding setting. </p>
 
 </div>
 </div>
@@ -1681,7 +1681,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns current texturemapping model setting. </p>
+<p>Returns current texture mapping model setting. </p>
 
 </div>
 </div>
@@ -1893,7 +1893,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns current pickstyle setting. </p>
+<p>Returns current pick style setting. </p>
 
 </div>
 </div>
@@ -2182,9 +2182,9 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This virtual method is called from <a class="el" href="classSoAction.html#ad2d6ddb297b3a1f5b80026db5fd5e616">SoAction::apply()</a>, and is the entry point for the actual scenegraph traversal.</p>
+<p>This virtual method is called from <a class="el" href="classSoAction.html#ad2d6ddb297b3a1f5b80026db5fd5e616">SoAction::apply()</a>, and is the entry point for the actual scene graph traversal.</p>
 <p>It can be overridden to initialize the action at traversal start, for specific initializations in the action subclasses inheriting <a class="el" href="classSoAction.html" title="The SoAction class is the base class for all traversal actions. ">SoAction</a>.</p>
-<p>Default method just calls <a class="el" href="classSoAction.html#a805627d07445a9c3a7e6324748aac2a9">traverse()</a>, which any overridden implementation of the method must do too (or call <a class="el" href="classSoAction.html#a893a67a9bf2e7b5b5ef0f1f36f1b8097">SoAction::beginTraversal()</a>) to trigger the scenegraph traversal. </p>
+<p>Default method just calls <a class="el" href="classSoAction.html#a805627d07445a9c3a7e6324748aac2a9">traverse()</a>, which any overridden implementation of the method must do too (or call <a class="el" href="classSoAction.html#a893a67a9bf2e7b5b5ef0f1f36f1b8097">SoAction::beginTraversal()</a>) to trigger the scene graph traversal. </p>
 
 <p>Reimplemented from <a class="el" href="classSoAction.html#a893a67a9bf2e7b5b5ef0f1f36f1b8097">SoAction</a>.</p>
 
@@ -2200,7 +2200,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSoCallbackAction.html">SoCallbackAction</a></li>
-    <li class="footer">Generated on Thu Oct 18 2018 20:23:06 for Coin by
+    <li class="footer">Generated on Fri Jan 24 2020 00:10:06 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

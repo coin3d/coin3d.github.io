@@ -1130,9 +1130,9 @@ var hierarchy =
     ] ],
     [ "SpiderMonkey_t", "structSpiderMonkey__t.html", null ],
     [ "SoRenderManager::Superimposition", "classSoRenderManager_1_1Superimposition.html", null ],
-    [ "SoMultiTextureCoordinateElement::UnitData", "classSoMultiTextureCoordinateElement_1_1UnitData.html", null ],
-    [ "SoMultiTextureImageElement::UnitData", "classSoMultiTextureImageElement_1_1UnitData.html", null ],
     [ "SoMultiTextureMatrixElement::UnitData", "classSoMultiTextureMatrixElement_1_1UnitData.html", null ],
     [ "SoTextureCombineElement::UnitData", "classSoTextureCombineElement_1_1UnitData.html", null ],
+    [ "SoMultiTextureCoordinateElement::UnitData", "classSoMultiTextureCoordinateElement_1_1UnitData.html", null ],
+    [ "SoMultiTextureImageElement::UnitData", "classSoMultiTextureImageElement_1_1UnitData.html", null ],
     [ "int", "classint.html", null ]
 ];

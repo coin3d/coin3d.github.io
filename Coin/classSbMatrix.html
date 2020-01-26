@@ -33,8 +33,8 @@
     Coin3D is Free Software,<br />published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.
   </td>
   <td style="text-align: right; padding-right: 0.5em;">
-    <a href="https://github.com/coin3d/">https://github.com/coin3d/</a><br />
-    <a href="http://www.kongsberg.com/kogt/">http://www.kongsberg.com/kogt/</a><br />  
+    <a href="https://coin3d.github.io">https://coin3d.github.io</a><br />
+    <a href="https://www.kongsberg.com/en/kogt/">https://www.kongsberg.com/en/kogt/</a><br />  
     </td>
  </tr>
  </tbody>
@@ -866,7 +866,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Set translation, rotation and scaling all at once with a specified scale orientation. The resulting matrix gets calculated like this:</p>
-<div class="fragment"><div class="line">M = Ro-¹ * S * Ro * R * T</div></div><!-- fragment --><p>where <em>Ro</em> is the scale orientation, and <em>S</em>, <em>R</em> and <em>T</em> is scaling, rotation and translation.</p>
+<div class="fragment"><div class="line">M = Ro^-1 * S * Ro * R * T</div></div><!-- fragment --><p>where <em>Ro</em> is the scale orientation, and <em>S</em>, <em>R</em> and <em>T</em> is scaling, rotation and translation.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSbMatrix.html#a9e7499122cfa98b5e3eec4832248343d">setTranslate()</a>, <a class="el" href="classSbMatrix.html#ad980a0a21520443af5f27ad2c3a0ac4d">setRotate()</a>, <a class="el" href="classSbMatrix.html#ac3fe68df7dff290a61a29ee3494559fb">setScale()</a> and <a class="el" href="classSbMatrix.html#a5b40e19cb8f6b1dce441347427f66a00">getTransform()</a>. </dd></dl>
 
 </div>
@@ -915,7 +915,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Set translation, rotation and scaling all at once with a specified scale orientation and center point. The resulting matrix gets calculated like this:</p>
-<div class="fragment"><div class="line">M = -Tc * Ro-¹ * S * Ro * R * T * Tc</div></div><!-- fragment --><p>where <em>Tc</em> is the center point, <em>Ro</em> the scale orientation, <em>S</em>, <em>R</em> and <em>T</em> is scaling, rotation and translation.</p>
+<div class="fragment"><div class="line">M = -Tc * Ro^-1 * S * Ro * R * T * Tc</div></div><!-- fragment --><p>where <em>Tc</em> is the center point, <em>Ro</em> the scale orientation, <em>S</em>, <em>R</em> and <em>T</em> is scaling, rotation and translation.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSbMatrix.html#a9e7499122cfa98b5e3eec4832248343d">setTranslate()</a>, <a class="el" href="classSbMatrix.html#ad980a0a21520443af5f27ad2c3a0ac4d">setRotate()</a>, <a class="el" href="classSbMatrix.html#ac3fe68df7dff290a61a29ee3494559fb">setScale()</a> and <a class="el" href="classSbMatrix.html#a5b40e19cb8f6b1dce441347427f66a00">getTransform()</a>. </dd></dl>
 
 </div>
@@ -957,7 +957,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Factor the matrix back into its translation, rotation, scale and scaleorientation components.</p>
+<p>Factor the matrix back into its translation, rotation, scale and scale orientation components.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSbMatrix.html#a34d355d437c12b71cffcf6aca2deada8">factor()</a> </dd></dl>
 
 </div>
@@ -1623,7 +1623,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Compare matrices to see if they are not equal. For two matrices to not be equal, it is enough that at least one of their elements are unequal.</p>
+<p>Compare matrices to see if they are not equal. For two matrices to not be equal, it is enough that at least one of their elements are not equal.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSbMatrix.html#a144ee908dfcb56e96543ef07638d8cdb">equals()</a>. </dd></dl>
 
 </div>
@@ -1638,7 +1638,7 @@ Friends</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSbMatrix.html">SbMatrix</a></li>
-    <li class="footer">Generated on Thu Oct 18 2018 20:22:59 for Coin by
+    <li class="footer">Generated on Fri Jan 24 2020 00:09:59 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

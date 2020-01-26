@@ -33,8 +33,8 @@
     Coin3D is Free Software,<br />published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.
   </td>
   <td style="text-align: right; padding-right: 0.5em;">
-    <a href="https://github.com/coin3d/">https://github.com/coin3d/</a><br />
-    <a href="http://www.kongsberg.com/kogt/">http://www.kongsberg.com/kogt/</a><br />  
+    <a href="https://coin3d.github.io">https://coin3d.github.io</a><br />
+    <a href="https://www.kongsberg.com/en/kogt/">https://www.kongsberg.com/en/kogt/</a><br />  
     </td>
  </tr>
  </tbody>
@@ -131,7 +131,7 @@ Variables</h2></td></tr>
 <p>The <code>on</code> keyword just enables the profiling element so profiling data is recorded.</p>
 <p>The <code>off</code> keyword just disables the profiling subsystem. There is really no need for specifying this as it is off by default, but can for instance be used to override settings already in the environment at launch-time.</p>
 <p>The <code>syncgl</code> keyword will make GL rendering flush the GL pipeline between each node, so that the profiling data will better reflect which nodes actually cause work for Open GL. Note however that the GL rendering performance drops like a rock when enabling this. The <code>syncgl</code> keyword implies the <code>on</code> keyword.</p>
-<p><b>Old</b> <b>Usage:</b> When this was first implemented, just setting this environment variable to <code>"1"</code> or any positive integer value turned on the live scene graph profiling feature in Coin. This usage is still supported, but as the number of options grew, it was obvious that we needed a new scheme rather than one variable for each feature. The positive integer approach can not be combined with using keywords, and setting the value to <code>"1"</code> is the same thing as setting it to <code>"on"</code>. </p>
+<p><b>Old</b> <b>Usage:</b> When this was first implemented, just setting this environment variable to <code>"1"</code> or any positive integer value turned on the live scene graph profiling feature in Coin. This usage is still supported, but as the number of options grew, it was obvious that we needed a new scheme rather than one variable for each feature. The positive integer approach cannot be combined with using keywords, and setting the value to <code>"1"</code> is the same thing as setting it to <code>"on"</code>. </p>
 
 </div>
 </div>
@@ -165,7 +165,7 @@ Variables</h2></td></tr>
 <p>The <code>lines=&lt;int&gt;</code> option lets you select the number of lines to output. The default is 20. This option only works with <code>stdout</code> and <code>stderr</code>.</p>
 <p>The <code>action=&lt;actionclass&gt;</code> option lets you select which action is to be profiled. The default is of course the <a class="el" href="classSoGLRenderAction.html" title="The SoGLRenderAction class renders the scene graph with OpenGL calls. ">SoGLRenderAction</a>. This only works with <code>stdout</code> and <code>stderr</code>.</p>
 <p>The <code>category=&lt;keyword&gt;</code> option lets you specify which view you should have on the profiling data. A <code>nodes</code> view will give you one entry in the list for each node. A <code>types</code> view will summarize over each type and present one entry per node type. A <em>names</em> view will group nodes that belong under the same named node together and presents that summary as one entry.</p>
-<p><b>Old</b> <b>Usage:</b> Setting this environment variable to <code>"1"</code> (or any positive integer) turns on the live scene graph (primarily) profiling overlay feature in Coin, the way it was in the beginning of implementing this functionality. This still works but just gives you one default view. It can not be combined with using keywords. </p>
+<p><b>Old</b> <b>Usage:</b> Setting this environment variable to <code>"1"</code> (or any positive integer) turns on the live scene graph (primarily) profiling overlay feature in Coin, the way it was in the beginning of implementing this functionality. This still works but just gives you one default view. It cannot be combined with using keywords. </p>
 
 </div>
 </div>
@@ -174,7 +174,7 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Oct 18 2018 20:22:57 for Coin by
+    <li class="footer">Generated on Fri Jan 24 2020 00:09:57 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

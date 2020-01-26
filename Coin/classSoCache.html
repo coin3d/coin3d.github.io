@@ -33,8 +33,8 @@
     Coin3D is Free Software,<br />published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.
   </td>
   <td style="text-align: right; padding-right: 0.5em;">
-    <a href="https://github.com/coin3d/">https://github.com/coin3d/</a><br />
-    <a href="http://www.kongsberg.com/kogt/">http://www.kongsberg.com/kogt/</a><br />  
+    <a href="https://coin3d.github.io">https://coin3d.github.io</a><br />
+    <a href="https://www.kongsberg.com/en/kogt/">https://www.kongsberg.com/en/kogt/</a><br />  
     </td>
  </tr>
  </tbody>
@@ -127,7 +127,7 @@ Protected Member Functions</h2></td></tr>
 <div class="textblock"><p>The <a class="el" href="classSoCache.html" title="The SoCache class is the superclass for all internal cache classes. ">SoCache</a> class is the superclass for all internal cache classes. </p>
 <p>It organizes reference counting to make it possible to share cache instances. It also organizes a list of elements that will affect the cache. If any of the elements have changed since the cache was created, the cache is invalid.</p>
 <p>The cache element test algorithm in Coin works like this:</p>
-<p>Every element that is read before it's written when a cache is created is stored in the <a class="el" href="classSoCache.html" title="The SoCache class is the superclass for all internal cache classes. ">SoCache</a>'s element list. This is done to detect when something outside the cache changes.</p>
+<p>Every element that is read before it is written when a cache is created is stored in the <a class="el" href="classSoCache.html" title="The SoCache class is the superclass for all internal cache classes. ">SoCache</a>'s element list. This is done to detect when something outside the cache changes.</p>
 <p>Example: you have a <a class="el" href="classSoCoordinate3.html" title="The SoCoordinate3 class is a node for providing coordinates to shape nodes. ">SoCoordinate3</a> node outside an <a class="el" href="classSoSeparator.html" title="The SoSeparator class is a state-preserving group node. ">SoSeparator</a>, but an <a class="el" href="classSoIndexedFaceSet.html" title="The SoIndexedFaceSet class is used to handle generic indexed facesets. ">SoIndexedFaceSet</a> inside the <a class="el" href="classSoSeparator.html" title="The SoSeparator class is a state-preserving group node. ">SoSeparator</a>. If the <a class="el" href="classSoSeparator.html" title="The SoSeparator class is a state-preserving group node. ">SoSeparator</a> creates a cache, <a class="el" href="classSoIndexedFaceSet.html" title="The SoIndexedFaceSet class is used to handle generic indexed facesets. ">SoIndexedFaceSet</a> will read <a class="el" href="classSoCoordinateElement.html" title="The SoCoordinateElement class is yet to be documented. ">SoCoordinateElement</a>, and since <a class="el" href="classSoCoordinateElement.html" title="The SoCoordinateElement class is yet to be documented. ">SoCoordinateElement</a> hasn't been set after the cache was opened, the cache stores that element in the cache's list of element dependencies.</p>
 <p>At the next frame, the <a class="el" href="classSoSeparator.html" title="The SoSeparator class is a state-preserving group node. ">SoSeparator</a> will test if the cache is valid, and will then test all dependency elements. If one of the elements doesn't match, the cache is not valid and can't be used.</p>
 <p>That's the basics. There are some steps you have to do when creating a cache to make the cache dependencies work. Basically you have to do it like this:</p>
@@ -329,7 +329,7 @@ SoCacheElement::setInvalid(storedinvalid);
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns the element that caused the invalidation. Returns <em>NULL</em> if the cache is valid, or if the cache was not invalidated bacause of an element. </p>
+<p>Returns the element that caused the invalidation. Returns <em>NULL</em> if the cache is valid, or if the cache was not invalidated because of an element. </p>
 
 </div>
 </div>
@@ -391,7 +391,7 @@ SoCacheElement::setInvalid(storedinvalid);
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSoCache.html">SoCache</a></li>
-    <li class="footer">Generated on Thu Oct 18 2018 20:23:05 for Coin by
+    <li class="footer">Generated on Fri Jan 24 2020 00:10:06 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

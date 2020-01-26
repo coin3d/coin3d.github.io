@@ -33,8 +33,8 @@
     Coin3D is Free Software,<br />published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.
   </td>
   <td style="text-align: right; padding-right: 0.5em;">
-    <a href="https://github.com/coin3d/">https://github.com/coin3d/</a><br />
-    <a href="http://www.kongsberg.com/kogt/">http://www.kongsberg.com/kogt/</a><br />  
+    <a href="https://coin3d.github.io">https://coin3d.github.io</a><br />
+    <a href="https://www.kongsberg.com/en/kogt/">https://www.kongsberg.com/en/kogt/</a><br />  
     </td>
  </tr>
  </tbody>
@@ -100,7 +100,7 @@ Inheritance diagram for SoCalculator:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a44802ceacdfb5893356f8c0360b2772b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classSoType.html">SoType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoCalculator.html#a44802ceacdfb5893356f8c0360b2772b">getTypeId</a> (void) const</td></tr>
-<tr class="memdesc:a44802ceacdfb5893356f8c0360b2772b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the type identification of an object derived from a class inheriting <a class="el" href="classSoBase.html" title="The SoBase class is the top-level superclass for a number of class-hierarchies. ">SoBase</a>. This is used for run-time type checking and "downward" casting.  <a href="#a44802ceacdfb5893356f8c0360b2772b">More...</a><br /></td></tr>
+<tr class="memdesc:a44802ceacdfb5893356f8c0360b2772b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the type identification of an object derived from a class inheriting <a class="el" href="classSoBase.html" title="The SoBase class is the top-level superclass for a number of class-hierarchies. ">SoBase</a>. This is used for runtime type checking and "downward" casting.  <a href="#a44802ceacdfb5893356f8c0360b2772b">More...</a><br /></td></tr>
 <tr class="separator:a44802ceacdfb5893356f8c0360b2772b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abce4db36acf3f8b44e858b04ae8311d3"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="classSoFieldData.html">SoFieldData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoCalculator.html#abce4db36acf3f8b44e858b04ae8311d3">getFieldData</a> (void) const</td></tr>
 <tr class="separator:abce4db36acf3f8b44e858b04ae8311d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -258,7 +258,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="separator:a8419a92b3ac808c6a789673db06776be inherit pub_static_methods_classSoBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73ce238db093db6ba1b4009818cc9f27 inherit pub_static_methods_classSoBase"><td class="memItemLeft" align="right" valign="top"><a id="a73ce238db093db6ba1b4009818cc9f27"></a>
 static <a class="el" href="classSoType.html">SoType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoBase.html#a73ce238db093db6ba1b4009818cc9f27">getClassTypeId</a> (void)</td></tr>
-<tr class="memdesc:a73ce238db093db6ba1b4009818cc9f27 inherit pub_static_methods_classSoBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">This static method returns the <a class="el" href="classSoType.html" title="The SoType class is the basis for the run-time type system in Coin. ">SoType</a> object associated with objects of this class. <br /></td></tr>
+<tr class="memdesc:a73ce238db093db6ba1b4009818cc9f27 inherit pub_static_methods_classSoBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">This static method returns the <a class="el" href="classSoType.html" title="The SoType class is the basis for the runtime type system in Coin. ">SoType</a> object associated with objects of this class. <br /></td></tr>
 <tr class="separator:a73ce238db093db6ba1b4009818cc9f27 inherit pub_static_methods_classSoBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74952f1fd17c44eb0fc9c3dc3b69102a inherit pub_static_methods_classSoBase"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoBase.html#a74952f1fd17c44eb0fc9c3dc3b69102a">addName</a> (<a class="el" href="classSoBase.html">SoBase</a> *const base, const char *const name)</td></tr>
 <tr class="separator:a74952f1fd17c44eb0fc9c3dc3b69102a inherit pub_static_methods_classSoBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -412,7 +412,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>General purpose calculator for floats and 3D float vectors. </p>
 <p>The <a class="el" href="classSoCalculator.html" title="General purpose calculator for floats and 3D float vectors. ">SoCalculator</a> uses the values from the input fields (which are either single floating point values or vectors) as variables in the free-form engine expressions and places the results on the output fields.</p>
-<p>The engine has sixteen input fields; eight scalar inputs (<em>a</em>, <em>b</em>, <em>c</em>, <em>d</em>, <em>e</em>, <em>f</em> <em>g</em>, and <em>h</em>), and eight vector inputs (<em>A</em>, <em>B</em>, <em>C</em>, <em>D</em>, <em>E</em>, <em>F</em>, <em>G</em>, and <em>H</em>).</p>
+<p>The engine has sixteen input fields; eight scalar inputs (<em>a</em>, <em>b</em>, <em>c</em>, <em>d</em>, <em>e</em>, <em>f</em>, <em>g</em>, and <em>h</em>), and eight vector inputs (<em>A</em>, <em>B</em>, <em>C</em>, <em>D</em>, <em>E</em>, <em>F</em>, <em>G</em>, and <em>H</em>).</p>
 <p>There are eight output fields; four scalar outputs (<em>oa</em>, <em>ob</em>, <em>oc</em>, and <em>od</em>), and four vector outputs (<em>oA</em>, <em>oB</em>, <em>oC</em>, and <em>oD</em>).</p>
 <p>The expression syntax is quite similar to C/C++, with a very limited set of keywords and functions.</p>
 <p>An example:</p>
@@ -467,8 +467,8 @@ Additional Inherited Members</h2></td></tr>
 </ul>
 <p>The only control flow available is the <em></em>? operator. An example:</p>
 <div class="fragment"><div class="line"><a class="code" href="classSoCalculator.html#ad0b4e58a658ee51d1a1857b6ec5118a1">oa</a> = (<a class="code" href="classSoCalculator.html#a8334a05f1d4ad8a76233ab1227613c26">a</a> &gt; <a class="code" href="classSoCalculator.html#ab8dcece3f0627bc900f37455726ceb0b">b</a>) ? (<a class="code" href="classSoCalculator.html#a8334a05f1d4ad8a76233ab1227613c26">a</a> * 0.5) : (<a class="code" href="classSoCalculator.html#ab8dcece3f0627bc900f37455726ceb0b">b</a> * <a class="code" href="classSoCalculator.html#a5320d1f469afc91138d57bd08aa8498c">c</a>)</div></div><!-- fragment --><p>(The parentheses are not necessary, they're there just to make the example easier to read)</p>
-<p>In addition to the standard comparators (<em>&lt;</em>, <em>&gt;</em>, <em>&lt;=</em>, <em>&gt;=</em>, <em>==</em>, <em>!=</em>), you can also use &amp;&amp; (AND) and || (OR) to combine expression, and the unary ! (NOT) operator.</p>
-<p>One final thing worth mentioning is the temporary variables. There exists sixteen temporary variables that can be used in expressions. <em>ta</em>, <em>tb</em>, <em>tc</em>, <em>td</em>, <em>te</em>, <em>tf</em>, <em>tg</em>, and <em>th</em> are scalar variables, and <em>tA</em>, <em>tB</em>, <em>tC</em>, <em>tD</em>, <em>tE</em>, <em>tF</em>, <em>tG</em>, and <em>tH</em> are vector variables. They are usually used when you have more than one expression that should be evaluated in order.</p>
+<p>In addition to the standard comparison operators (<em>&lt;</em>, <em>&gt;</em>, <em>&lt;=</em>, <em>&gt;=</em>, <em>==</em>, <em>!=</em>), you can also use &amp;&amp; (AND) and || (OR) to combine expression, and the unary ! (NOT) operator.</p>
+<p>One final thing worth mentioning are the temporary variables. There exist sixteen temporary variables that can be used in expressions. <em>ta</em>, <em>tb</em>, <em>tc</em>, <em>td</em>, <em>te</em>, <em>tf</em>, <em>tg</em>, and <em>th</em> are scalar variables, and <em>tA</em>, <em>tB</em>, <em>tC</em>, <em>tD</em>, <em>tE</em>, <em>tF</em>, <em>tG</em>, and <em>tH</em> are vector variables. They are usually used when you have more than one expression that should be evaluated in order.</p>
 <p>An example with three expressions:</p>
 <div class="fragment"><div class="line">ta = <a class="code" href="classSoCalculator.html#a8334a05f1d4ad8a76233ab1227613c26">a</a> * <a class="code" href="classSoCalculator.html#ab8dcece3f0627bc900f37455726ceb0b">b</a>; tb = <a class="code" href="classSoCalculator.html#a5320d1f469afc91138d57bd08aa8498c">c</a> + <a class="code" href="classSoCalculator.html#ad06a1196f4dcb1031691439cd222edc2">d</a>; tc = <a class="code" href="classSoCalculator.html#afdc2df292e3699506ac21beb4d34a8d8">e</a> - <a class="code" href="classSoCalculator.html#aa47315dc25780b728d6bda6819dffa16">f</a></div><div class="line">tA = vec3f(ta, tb, tc) + <a class="code" href="classSoCalculator.html#a78b6958e185647f1efcf8dc37a39b461">A</a></div><div class="line"><a class="code" href="classSoCalculator.html#a6b200d36871a6093f5eca0b8b81f4842">oA</a> = tA * <a class="code" href="classSoCalculator.html#ac275feac67d7994c577cc056da4afc99">B</a></div></div><!-- fragment --><p>The example just shows how temporary variables can be used to make your expressions easier to read. Please note that it's possible to have several statements in one expression. You just separate them with semicolons.</p>
 <p>Here is a simple example of how an <a class="el" href="classSoCalculator.html" title="General purpose calculator for floats and 3D float vectors. ">SoCalculator</a> engine may be used in an .iv file:</p>
@@ -545,10 +545,10 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the type identification of an object derived from a class inheriting <a class="el" href="classSoBase.html" title="The SoBase class is the top-level superclass for a number of class-hierarchies. ">SoBase</a>. This is used for run-time type checking and "downward" casting. </p>
+<p>Returns the type identification of an object derived from a class inheriting <a class="el" href="classSoBase.html" title="The SoBase class is the top-level superclass for a number of class-hierarchies. ">SoBase</a>. This is used for runtime type checking and "downward" casting. </p>
 <p>Usage example:</p>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> foo(<a class="code" href="classSoNode.html">SoNode</a> * node)</div><div class="line">{</div><div class="line">  <span class="keywordflow">if</span> (node-&gt;<a class="code" href="classSoBase.html#a873b521c1386368d4d63ff893856590a">getTypeId</a>() == SoFile::getClassTypeId()) {</div><div class="line">    <a class="code" href="classSoFile.html">SoFile</a> * filenode = (<a class="code" href="classSoFile.html">SoFile</a> *)node;  <span class="comment">// safe downward cast, knows the type</span></div><div class="line"><span class="comment"></span>  }</div><div class="line">}</div></div><!-- fragment --><p>For application programmers wanting to extend the library with new nodes, engines, nodekits, draggers or others: this method needs to be overridden in <em>all</em> subclasses. This is typically done as part of setting up the full type system for extension classes, which is usually accomplished by using the pre-defined macros available through for instance <a class="el" href="SoSubNode_8h_source.html">Inventor/nodes/SoSubNode.h</a> (SO_NODE_INIT_CLASS and SO_NODE_CONSTRUCTOR for node classes), <a class="el" href="SoSubEngine_8h_source.html">Inventor/engines/SoSubEngine.h</a> (for engine classes) and so on.</p>
-<p>For more information on writing Coin extensions, see the class documentation of the toplevel superclasses for the various class groups. </p>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> foo(<a class="code" href="classSoNode.html">SoNode</a> * node)</div><div class="line">{</div><div class="line">  <span class="keywordflow">if</span> (node-&gt;<a class="code" href="classSoBase.html#a873b521c1386368d4d63ff893856590a">getTypeId</a>() == SoFile::getClassTypeId()) {</div><div class="line">    <a class="code" href="classSoFile.html">SoFile</a> * filenode = (<a class="code" href="classSoFile.html">SoFile</a> *)node;  <span class="comment">// safe downward cast, knows the type</span></div><div class="line"><span class="comment"></span>  }</div><div class="line">}</div></div><!-- fragment --><p>For application programmers wanting to extend the library with new nodes, engines, nodekits, draggers or others: this method needs to be overridden in <em>all</em> subclasses. This is typically done as part of setting up the full type system for extension classes, which is usually accomplished by using the predefined macros available through for instance <a class="el" href="SoSubNode_8h_source.html">Inventor/nodes/SoSubNode.h</a> (SO_NODE_INIT_CLASS and SO_NODE_CONSTRUCTOR for node classes), <a class="el" href="SoSubEngine_8h_source.html">Inventor/engines/SoSubEngine.h</a> (for engine classes) and so on.</p>
+<p>For more information on writing Coin extensions, see the class documentation of the top level superclasses for the various class groups. </p>
 
 <p>Implements <a class="el" href="classSoBase.html#a873b521c1386368d4d63ff893856590a">SoBase</a>.</p>
 
@@ -1029,7 +1029,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSoCalculator.html">SoCalculator</a></li>
-    <li class="footer">Generated on Thu Oct 18 2018 20:23:05 for Coin by
+    <li class="footer">Generated on Fri Jan 24 2020 00:10:06 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

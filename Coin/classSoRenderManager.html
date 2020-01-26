@@ -33,8 +33,8 @@
     Coin3D is Free Software,<br />published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.
   </td>
   <td style="text-align: right; padding-right: 0.5em;">
-    <a href="https://github.com/coin3d/">https://github.com/coin3d/</a><br />
-    <a href="http://www.kongsberg.com/kogt/">http://www.kongsberg.com/kogt/</a><br />  
+    <a href="https://coin3d.github.io">https://coin3d.github.io</a><br />
+    <a href="https://www.kongsberg.com/en/kogt/">https://www.kongsberg.com/en/kogt/</a><br />  
     </td>
  </tr>
  </tbody>
@@ -293,7 +293,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Sets how rendering of primitives is done. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a4b8d99cff0fd91e31bc2c5d33610f6eba41d5486d26e07494c0723fdadf3ac48f"></a>AS_IS&#160;</td><td class="fielddoc"><p>Render primitives as they are described in the scenegraph. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a4b8d99cff0fd91e31bc2c5d33610f6eba41d5486d26e07494c0723fdadf3ac48f"></a>AS_IS&#160;</td><td class="fielddoc"><p>Render primitives as they are described in the scene graph. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a4b8d99cff0fd91e31bc2c5d33610f6eba0319a8ba1bf7ba758a8f90f0d944ca29"></a>WIREFRAME&#160;</td><td class="fielddoc"><p>Render polygons as wireframe </p>
 </td></tr>
@@ -320,19 +320,19 @@ Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Manages how to render steroscopic images. </p>
+<p>Manages how to render stereoscopic images. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a34169ef6635a94765aa0d4f25537a26eaf233746e8954c7e4f9d201311aab2e79"></a>MONO&#160;</td><td class="fielddoc"><p>No stereoscopic rendering </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a34169ef6635a94765aa0d4f25537a26eae884638b7b5b349d4f314b2ad3734f97"></a>ANAGLYPH&#160;</td><td class="fielddoc"><p>Anaglyph rendering is used to provide a steroscopic 3D effect, when viewed with 3D glasses. The image is made up of two color layers which are superimposed on each other, and appears as 3 dimensional when viewed through corresponding colored filters(glases) </p>
+<tr><td class="fieldname"><a id="a34169ef6635a94765aa0d4f25537a26eae884638b7b5b349d4f314b2ad3734f97"></a>ANAGLYPH&#160;</td><td class="fielddoc"><p>Anaglyph rendering is used to provide a stereoscopic 3D effect, when viewed with 3D glasses. The image is made up of two color layers which are superimposed on each other, and appears as 3 dimensional when viewed through corresponding colored filters (glasses) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a34169ef6635a94765aa0d4f25537a26ea7534ce29815527d9f009b0df2e90000d"></a>SEPARATE_OUTPUT&#160;</td><td class="fielddoc"><p>Send output to separate buffers. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a34169ef6635a94765aa0d4f25537a26ea317100d42d54cf314250b80d06f56498"></a>QUAD_BUFFER&#160;</td><td class="fielddoc"><p>Same as SEPARATE_OUTPUT, SEPARATE_OUTPUT is more commonly known as QUAD_BUFFER, when also using double buffering. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a34169ef6635a94765aa0d4f25537a26eacfda8c636cb70c8a7c54e0574a849b1f"></a>INTERLEAVED_ROWS&#160;</td><td class="fielddoc"><p>Render every second row as left and right image. If rendered with a polarized projector, polarized filters kan be used to give a 3D effect. </p>
+<tr><td class="fieldname"><a id="a34169ef6635a94765aa0d4f25537a26eacfda8c636cb70c8a7c54e0574a849b1f"></a>INTERLEAVED_ROWS&#160;</td><td class="fielddoc"><p>Render every second row as left and right image. If rendered with a polarized projector, polarized filters can be used to give a 3D effect. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a34169ef6635a94765aa0d4f25537a26eaf1d738a792fa4f1011bf0290ee07f327"></a>INTERLEAVED_COLUMNS&#160;</td><td class="fielddoc"><p>Render every second column as left and right image. If rendered with a polarized projector, polarized filters kan be used to give a 3D effect. </p>
+<tr><td class="fieldname"><a id="a34169ef6635a94765aa0d4f25537a26eaf1d738a792fa4f1011bf0290ee07f327"></a>INTERLEAVED_COLUMNS&#160;</td><td class="fielddoc"><p>Render every second column as left and right image. If rendered with a polarized projector, polarized filters can be used to give a 3D effect. </p>
 </td></tr>
 </table>
 
@@ -376,7 +376,7 @@ Protected Member Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="aa73c943c31d9d7950858fc2ef24ea45fa68306b5c74257c54663ba03cd4d863de"></a>FIXED_NEAR_PLANE&#160;</td><td class="fielddoc"><p>Keep near plane at a fixed distance from the camera. The far plane is always set at the end of the bounding box. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa73c943c31d9d7950858fc2ef24ea45fa6c42d938a028ae69ea309846ec5f635b"></a>VARIABLE_NEAR_PLANE&#160;</td><td class="fielddoc"><p>Variable adjustment of the nearplane relative to the camera. </p>
+<tr><td class="fieldname"><a id="aa73c943c31d9d7950858fc2ef24ea45fa6c42d938a028ae69ea309846ec5f635b"></a>VARIABLE_NEAR_PLANE&#160;</td><td class="fielddoc"><p>Variable adjustment of the near plane relative to the camera. </p>
 </td></tr>
 </table>
 
@@ -525,8 +525,8 @@ Protected Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">clearwindow</td><td>If set to <code>TRUE</code>, clear the rendering buffer before drawing.</td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">clearzbuffer</td><td>If set to <code>TRUE</code>, clear the depth buffer values before rendering.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">initmatrices</td><td>if true, the projection and modelview matrices are reset to identity </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">action</td><td>Renders with a user supplied action </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">initmatrices</td><td>If set to <code>TRUE</code>, the projection and modelview matrices are reset to identity. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">action</td><td>Renders with a user supplied action. </td></tr>
   </table>
   </dd>
 </dl>
@@ -612,7 +612,7 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Set the node which is top of the scene graph we're managing. The <em>sceneroot</em> node reference count will be increased by 1, and any previously set scene graph top node will have it's reference count decreased by 1.</p>
+<p>Set the node which is top of the scene graph we're managing. The <em>sceneroot</em> node reference count will be increased by 1, and any previously set scene graph top node will have its reference count decreased by 1.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoRenderManager.html#a46e616b275f479cd780494e7bdc31b6c">getSceneGraph()</a> </dd></dl>
 
 </div>
@@ -717,7 +717,7 @@ Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This method returns the current autoclipping strategy.</p>
+<p>This method returns the current auto clipping strategy.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoRenderManager.html#a9e8d39ab12f70dc6cf3059751cd52376">setAutoClipping</a> </dd></dl>
 
 </div>
@@ -737,7 +737,7 @@ Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>When the <a class="el" href="classSoRenderManager.html#aa73c943c31d9d7950858fc2ef24ea45fa68306b5c74257c54663ba03cd4d863de">SoRenderManager::FIXED_NEAR_PLANE</a> autoclipping strategy is used, you set the value of the near plane distance with this method.</p>
+<p>When the <a class="el" href="classSoRenderManager.html#aa73c943c31d9d7950858fc2ef24ea45fa68306b5c74257c54663ba03cd4d863de">SoRenderManager::FIXED_NEAR_PLANE</a> auto clipping strategy is used, you set the value of the near plane distance with this method.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoRenderManager.html#a9e8d39ab12f70dc6cf3059751cd52376">setAutoClipping</a>, <a class="el" href="classSoRenderManager.html#a3c6f2037b969d8f05be03d13fe43eeda">getNearPlaneValue</a>, <a class="el" href="classSoRenderManager.html#aa73c943c31d9d7950858fc2ef24ea45f">SoRenderManager::AutoClippingStrategy</a> </dd></dl>
 
 </div>
@@ -757,7 +757,7 @@ Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This method returns the near plane distance value that will be used when the <a class="el" href="classSoRenderManager.html#aa73c943c31d9d7950858fc2ef24ea45fa68306b5c74257c54663ba03cd4d863de">SoRenderManager::FIXED_NEAR_PLANE</a> autoclipping strategy is used.</p>
+<p>This method returns the near plane distance value that will be used when the <a class="el" href="classSoRenderManager.html#aa73c943c31d9d7950858fc2ef24ea45fa68306b5c74257c54663ba03cd4d863de">SoRenderManager::FIXED_NEAR_PLANE</a> auto clipping strategy is used.</p>
 <p>Default value is 0.6.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoRenderManager.html#a9e8d39ab12f70dc6cf3059751cd52376">setAutoClipping</a>, <a class="el" href="classSoRenderManager.html#a5f59f1429587b5bf12107d33935030e1">setNearPlaneValue</a>, <a class="el" href="classSoRenderManager.html#aa73c943c31d9d7950858fc2ef24ea45f">SoRenderManager::AutoClippingStrategy</a> </dd></dl>
 
@@ -818,7 +818,7 @@ Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Tell the scenemanager that double buffering is used </p>
+<p>Tell the scene manager that double buffering is used </p>
 
 </div>
 </div>
@@ -837,7 +837,7 @@ Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>returns if the scenemanager is double buffered </p>
+<p>returns if the scene manager is double buffered </p>
 
 </div>
 </div>
@@ -1059,7 +1059,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Redraw at first opportunity as system becomes idle.</p>
-<p>Multiple calls to this method before an actual redraw has taken place will only result in a single redraw of the scene. </p>
+<p>Multiple calls to this method before an actual redraw have taken place will only result in a single redraw of the scene. </p>
 
 </div>
 </div>
@@ -1079,7 +1079,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Update window size of our <a class="el" href="classSoGLRenderAction.html" title="The SoGLRenderAction class renders the scene graph with OpenGL calls. ">SoGLRenderAction</a>'s viewport settings.</p>
-<p>Note that this will <em>only</em> change the information about window dimensions, the actual viewport size and origin (ie the rectangle which redraws are confined to) will stay the same.</p>
+<p>Note that this will <em>only</em> change the information about window dimensions, the actual viewport size and origin (i.e. the rectangle which redraws are confined to) will stay the same.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoRenderManager.html#aefae350517dde035dbad1409a0d75dcc">setViewportRegion()</a> </dd></dl>
 
 </div>
@@ -1218,7 +1218,7 @@ Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns current viewport region used by the renderaction and the event handling.</p>
+<p>Returns current viewport region used by the render action and the event handling.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoRenderManager.html#aefae350517dde035dbad1409a0d75dcc">setViewportRegion()</a> </dd></dl>
 
 </div>
@@ -1314,8 +1314,8 @@ Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set index of background color in the color lookup table if rendering in colorindex mode.</p>
-<p>Note: colorindex mode is not supported yet in Coin. </p>
+<p>Set index of background color in the color lookup table if rendering in color index mode.</p>
+<p>Note: color index mode is not supported yet in Coin. </p>
 
 </div>
 </div>
@@ -1334,7 +1334,7 @@ Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns index of colormap for background filling.</p>
+<p>Returns index of color map for background filling.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoRenderManager.html#a215e56519f7ea8c48d21b381e1841995">setBackgroundIndex()</a> </dd></dl>
 
 </div>
@@ -1354,7 +1354,7 @@ Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Turn RGB truecolor mode on or off. If you turn truecolor mode off, colorindex mode will be used instead. </p>
+<p>Turn RGB true color mode on or off. If you turn true color mode off, color index mode will be used instead. </p>
 
 </div>
 </div>
@@ -1427,7 +1427,7 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Deactive rendering and event handling. </p>
+<p>Deactivate rendering and event handling. </p>
 
 </div>
 </div>
@@ -1618,7 +1618,7 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns whether or not we automatically notifies everything connected to the <code>realTime</code> field after a redraw. </p>
+<p>Returns whether or not we automatically notify everything connected to the <code>realTime</code> field after a redraw. </p>
 
 </div>
 </div>
@@ -1711,7 +1711,7 @@ Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Removes a prerendercallback.</p>
+<p>Removes a pre render callback.</p>
 <dl class="section pre"><dt>Precondition</dt><dd>The tuple (cb, data) must exactly match an earlier call to <a class="el" href="classSoRenderManager.html#a76d7c3dddabe07cad68eadbdc98c732b">SoRenderManager::addPreRenderCallback</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1784,7 +1784,7 @@ Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Removes a postrendercallback.</p>
+<p>Removes a post render callback.</p>
 <dl class="section pre"><dt>Precondition</dt><dd>The tuple (cb, data) must exactly match an earlier call to <a class="el" href="classSoRenderManager.html#a58329aea3262e2e23010b7531cc4b893">SoRenderManager::addPostRenderCallback</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1811,7 +1811,7 @@ Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Reinitialize after parameters affecting the OpenGL context has changed. </p>
+<p>Reinitialize after parameters affecting the OpenGL context have changed. </p>
 
 </div>
 </div>
@@ -1968,8 +1968,8 @@ Protected Member Functions</h2></td></tr>
 <p>Convenience function for <a class="el" href="classSoRenderManager.html#ae0a117546dc0c5ceeaf9904d6a0cde33">SoRenderManager::renderScene</a></p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">action</td><td>Renders with a user supplied action</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">initmatrices</td><td>if true, the projection and modelview matrices are reset to identity</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">action</td><td>Renders with a user supplied action.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">initmatrices</td><td>If set to <code>TRUE</code>, the projection and modelview matrices are reset to identity.</td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">clearwindow</td><td>If set to <code>TRUE</code>, clear the rendering buffer before drawing.</td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">clearzbuffer</td><td>If set to <code>TRUE</code>, clear the depth buffer values before rendering. </td></tr>
   </table>
@@ -2028,8 +2028,8 @@ Protected Member Functions</h2></td></tr>
 <p>Convenience function for <a class="el" href="classSoRenderManager.html#ae0a117546dc0c5ceeaf9904d6a0cde33">SoRenderManager::renderScene</a></p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">action</td><td>Renders with a user supplied action</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">initmatrices</td><td>if true, the projection and modelview matrices are reset to identity</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">action</td><td>Renders with a user supplied action.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">initmatrices</td><td>If set to <code>TRUE</code>, the projection and modelview matrices are reset to identity.</td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">clearwindow</td><td>If set to <code>TRUE</code>, clear the rendering buffer before drawing.</td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">clearzbuffer</td><td>If set to <code>TRUE</code>, clear the depth buffer values before rendering. </td></tr>
   </table>
@@ -2088,8 +2088,8 @@ Protected Member Functions</h2></td></tr>
 <p>Convenience function for <a class="el" href="classSoRenderManager.html#ae0a117546dc0c5ceeaf9904d6a0cde33">SoRenderManager::renderScene</a></p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">action</td><td>Renders with a user supplied action</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">initmatrices</td><td>if true, the projection and modelview matrices are reset to identity</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">action</td><td>Renders with a user supplied action.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">initmatrices</td><td>If set to <code>TRUE</code>, the projection and modelview matrices are reset to identity.</td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">clearwindow</td><td>If set to <code>TRUE</code>, clear the rendering buffer before drawing.</td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">clearzbuffer</td><td>If set to <code>TRUE</code>, clear the depth buffer values before rendering. </td></tr>
   </table>
@@ -2121,7 +2121,7 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Initializes stencilbuffers for interleaved stereo </p>
+<p>Initializes stencil buffers for interleaved stereo </p>
 
 </div>
 </div>
@@ -2158,7 +2158,7 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Clears buffers with the backgroundcolor set correctly</p>
+<p>Clears buffers with the background color set correctly</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">color</td><td>Set to <code>TRUE</code> if color buffer should be cleared </td></tr>
@@ -2179,7 +2179,7 @@ Protected Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSoRenderManager.html">SoRenderManager</a></li>
-    <li class="footer">Generated on Thu Oct 18 2018 20:23:42 for Coin by
+    <li class="footer">Generated on Fri Jan 24 2020 00:10:23 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

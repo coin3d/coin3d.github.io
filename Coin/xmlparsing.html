@@ -33,8 +33,8 @@
     Coin3D is Free Software,<br />published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.
   </td>
   <td style="text-align: right; padding-right: 0.5em;">
-    <a href="https://github.com/coin3d/">https://github.com/coin3d/</a><br />
-    <a href="http://www.kongsberg.com/kogt/">http://www.kongsberg.com/kogt/</a><br />  
+    <a href="https://coin3d.github.io">https://coin3d.github.io</a><br />
+    <a href="https://www.kongsberg.com/en/kogt/">https://www.kongsberg.com/en/kogt/</a><br />  
     </td>
  </tr>
  </tbody>
@@ -74,7 +74,7 @@ $(document).ready(function(){initNavTree('xmlparsing.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>For Coin 3.0, we added an XML parser to Coin. This document describes how it can be used for generic purposes.</p>
-<p>Why another XML parser, you might ask? First of all, the XML parser is actually a third-party parser, expat. Coin needed one, and many Coin-dependent projects needed one as well. We therefore needed to expose an API for it. However, integrating a 3rd-party parser into Coin, we can not expose its API directly, or other projects also using Expat would get conflicts. We therefore needed to expose the XML API with a unique API, hence the API you see here. It is based on a XML DOM API we use(d) in a couple of other projects, but it has been tweaked to fit into Coin and to be wrapped over Expat (the original implementation just used flex).</p>
+<p>Why another XML parser, you might ask? First of all, the XML parser is actually a 3rd-party parser, Expat. Coin needed one, and many Coin-dependent projects needed one as well. We therefore needed to expose an API for it. However, integrating a 3rd-party parser into Coin, we cannot expose its API directly, or other projects also using Expat would get conflicts. We therefore needed to expose the XML API with a unique API, hence the API you see here. It is based on a XML DOM API we use(d) in a couple of other projects, but it has been tweaked to fit into Coin and to be wrapped over Expat (the original implementation just used flex).</p>
 <p>The XML parser is both a streaming parser and a DOM parser. Being a streaming parser means that documents can be read in without having to be fully contained in memory. When used as a DOM parser, the whole document is fully parsed in first, and then inspected by client code by traversing the DOM. The two modes can actually be mixed arbitrarily if ending up with a partial DOM sounds useful.</p>
 <p>The XML parser has both a C API and a C++ API. The C++ API is just a wrapper around the C API, and only serves as convenience if you prefer to read/write C++ code (which is tighter) over more verbose C code.</p>
 <p>The C API naming convention may look a bit strange, unless you have written libraries to be wrapped for scheme/lisp-like languages before. Then you might be familiar with the convention of suffixing your functions based on their behaviour/usage meaning. Mutating functions are suffixed with "!", or "_x" for (eXclamation point), and predicates are suffixed with "?", or "_p" in C.</p>
@@ -86,7 +86,7 @@ $(document).ready(function(){initNavTree('xmlparsing.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="related_pages.html">Related Pages</a></li>
-    <li class="footer">Generated on Thu Oct 18 2018 20:22:56 for Coin by
+    <li class="footer">Generated on Fri Jan 24 2020 00:09:56 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

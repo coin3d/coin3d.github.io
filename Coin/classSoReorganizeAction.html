@@ -33,8 +33,8 @@
     Coin3D is Free Software,<br />published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.
   </td>
   <td style="text-align: right; padding-right: 0.5em;">
-    <a href="https://github.com/coin3d/">https://github.com/coin3d/</a><br />
-    <a href="http://www.kongsberg.com/kogt/">http://www.kongsberg.com/kogt/</a><br />  
+    <a href="https://coin3d.github.io">https://coin3d.github.io</a><br />
+    <a href="https://www.kongsberg.com/en/kogt/">https://www.kongsberg.com/en/kogt/</a><br />  
     </td>
  </tr>
  </tbody>
@@ -374,9 +374,9 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the type identification of an action derived from a class inheriting <a class="el" href="classSoAction.html" title="The SoAction class is the base class for all traversal actions. ">SoAction</a>. This is used for run-time type checking and "downward" casting.</p>
+<p>Returns the type identification of an action derived from a class inheriting <a class="el" href="classSoAction.html" title="The SoAction class is the base class for all traversal actions. ">SoAction</a>. This is used for runtime type checking and "downward" casting.</p>
 <p>Usage example:</p>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> bar(<a class="code" href="classSoAction.html">SoAction</a> * action)</div><div class="line">{</div><div class="line">  <span class="keywordflow">if</span> (action-&gt;<a class="code" href="classSoAction.html#a364ad60918a4d20ebdc9635457fe331c">getTypeId</a>() == SoGLRenderAction::getClassTypeId()) {</div><div class="line">    <span class="comment">// safe downward cast, know the type</span></div><div class="line">    <a class="code" href="classSoGLRenderAction.html">SoGLRenderAction</a> * glrender = (<a class="code" href="classSoGLRenderAction.html">SoGLRenderAction</a> *)action;</div><div class="line">  }</div><div class="line">  <span class="keywordflow">return</span>; <span class="comment">// ignore if not renderaction</span></div><div class="line">}</div></div><!-- fragment --><p>For application programmers wanting to extend the library with new actions: this method needs to be overridden in <em>all</em> subclasses. This is typically done as part of setting up the full type system for extension classes, which is usually accomplished by using the pre-defined macros available through Inventor/nodes/SoSubAction.h: SO_ACTION_SOURCE, SO_ACTION_INIT_CLASS and SO_ACTION_CONSTRUCTOR.</p>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> bar(<a class="code" href="classSoAction.html">SoAction</a> * action)</div><div class="line">{</div><div class="line">  <span class="keywordflow">if</span> (action-&gt;<a class="code" href="classSoAction.html#a364ad60918a4d20ebdc9635457fe331c">getTypeId</a>() == SoGLRenderAction::getClassTypeId()) {</div><div class="line">    <span class="comment">// safe downward cast, know the type</span></div><div class="line">    <a class="code" href="classSoGLRenderAction.html">SoGLRenderAction</a> * glrender = (<a class="code" href="classSoGLRenderAction.html">SoGLRenderAction</a> *)action;</div><div class="line">  }</div><div class="line">  <span class="keywordflow">return</span>; <span class="comment">// ignore if not render action</span></div><div class="line">}</div></div><!-- fragment --><p>For application programmers wanting to extend the library with new actions: this method needs to be overridden in <em>all</em> subclasses. This is typically done as part of setting up the full type system for extension classes, which is usually accomplished by using the predefined macros available through Inventor/nodes/SoSubAction.h: SO_ACTION_SOURCE, SO_ACTION_INIT_CLASS and SO_ACTION_CONSTRUCTOR.</p>
 <p>For more information on writing Coin extensions, see the <a class="el" href="classSoAction.html" title="The SoAction class is the base class for all traversal actions. ">SoAction</a> class documentation.</p>
 <p>Returns the actual type id of an object derived from a class inheriting <a class="el" href="classSoAction.html" title="The SoAction class is the base class for all traversal actions. ">SoAction</a>. Needs to be overridden in <em>all</em> subclasses. </p>
 
@@ -616,9 +616,9 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This virtual method is called from <a class="el" href="classSoAction.html#ad2d6ddb297b3a1f5b80026db5fd5e616">SoAction::apply()</a>, and is the entry point for the actual scenegraph traversal.</p>
+<p>This virtual method is called from <a class="el" href="classSoAction.html#ad2d6ddb297b3a1f5b80026db5fd5e616">SoAction::apply()</a>, and is the entry point for the actual scene graph traversal.</p>
 <p>It can be overridden to initialize the action at traversal start, for specific initializations in the action subclasses inheriting <a class="el" href="classSoAction.html" title="The SoAction class is the base class for all traversal actions. ">SoAction</a>.</p>
-<p>Default method just calls <a class="el" href="classSoAction.html#a805627d07445a9c3a7e6324748aac2a9">traverse()</a>, which any overridden implementation of the method must do too (or call <a class="el" href="classSoAction.html#a893a67a9bf2e7b5b5ef0f1f36f1b8097">SoAction::beginTraversal()</a>) to trigger the scenegraph traversal. </p>
+<p>Default method just calls <a class="el" href="classSoAction.html#a805627d07445a9c3a7e6324748aac2a9">traverse()</a>, which any overridden implementation of the method must do too (or call <a class="el" href="classSoAction.html#a893a67a9bf2e7b5b5ef0f1f36f1b8097">SoAction::beginTraversal()</a>) to trigger the scene graph traversal. </p>
 
 <p>Reimplemented from <a class="el" href="classSoSimplifyAction.html#abc86509a2a38397f500a6d653a3dd487">SoSimplifyAction</a>.</p>
 
@@ -634,7 +634,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSoReorganizeAction.html">SoReorganizeAction</a></li>
-    <li class="footer">Generated on Thu Oct 18 2018 20:23:42 for Coin by
+    <li class="footer">Generated on Fri Jan 24 2020 00:10:23 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

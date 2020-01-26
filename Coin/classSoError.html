@@ -33,8 +33,8 @@
     Coin3D is Free Software,<br />published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.
   </td>
   <td style="text-align: right; padding-right: 0.5em;">
-    <a href="https://github.com/coin3d/">https://github.com/coin3d/</a><br />
-    <a href="http://www.kongsberg.com/kogt/">http://www.kongsberg.com/kogt/</a><br />  
+    <a href="https://coin3d.github.io">https://coin3d.github.io</a><br />
+    <a href="https://www.kongsberg.com/en/kogt/">https://www.kongsberg.com/en/kogt/</a><br />  
     </td>
  </tr>
  </tbody>
@@ -149,7 +149,7 @@ Static Protected Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="classSoError.html" title="The SoError class is the base class for all the error handling classes. ">SoError</a> class is the base class for all the error handling classes. </p>
 <p>The default error handler just prints messages on the standard error output channel, but this can be overridden by client applications.</p>
-<p>Being able to override the default handler is useful when you want to collect error messages upon e.g. model import for later presentation of the messages to the user in any custom manner (like for instance in a GUI messagebox).</p>
+<p>Being able to override the default handler is useful when you want to collect error messages upon e.g. model import for later presentation of the messages to the user in any custom manner (like for instance in a GUI message box).</p>
 <p>The <a class="el" href="classSoError.html" title="The SoError class is the base class for all the error handling classes. ">SoError</a> class is not designed to be particularly useful for "direct use". Within the Coin library it is only used through its subclasses. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aedcf39df541330db83bb8264c81b7033"></a>
@@ -213,7 +213,7 @@ Static Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>This method sets the error handler callback for messages posted via this class.</p>
-<p>Note that this will not override the error/debug message handler for subclasses, these will have to be overrided by calling the subclass' <a class="el" href="classSoError.html#a3221f7f406b8788c5f3dce1475da00b0">setHandlerCallback()</a> method.</p>
+<p>Note that this will not override the error/debug message handler for subclasses, these will have to be overridden by calling the subclass' <a class="el" href="classSoError.html#a3221f7f406b8788c5f3dce1475da00b0">setHandlerCallback()</a> method.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoError.html#a48f1514286444569c8ba7c4ae59b56ce">defaultHandlerCB()</a> </dd></dl>
 
 </div>
@@ -314,7 +314,7 @@ Static Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This static method returns the <a class="el" href="classSoType.html" title="The SoType class is the basis for the run-time type system in Coin. ">SoType</a> for this class.</p>
+<p>This static method returns the <a class="el" href="classSoType.html" title="The SoType class is the basis for the runtime type system in Coin. ">SoType</a> for this class.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoError.html#a5d123b1c52eed851fb729287dadbf998">getTypeId()</a> </dd></dl>
 
 </div>
@@ -342,7 +342,7 @@ Static Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This method returns the <a class="el" href="classSoType.html" title="The SoType class is the basis for the run-time type system in Coin. ">SoType</a> of a particular object instance.</p>
+<p>This method returns the <a class="el" href="classSoType.html" title="The SoType class is the basis for the runtime type system in Coin. ">SoType</a> of a particular object instance.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoError.html#ae2c90745f79f7bbbc4f5038aad369381">getClassTypeId()</a> </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classSoDebugError.html#acfe12f826175835bea8764d4d0df1d14">SoDebugError</a>, <a class="el" href="classSoReadError.html#ac674b8949e2437fb3966f1c178af5938">SoReadError</a>, and <a class="el" href="classSoMemoryError.html#a6c92570a67f436b410e4d37117fc1c64">SoMemoryError</a>.</p>
@@ -401,7 +401,7 @@ Static Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This method posts an error message. The <em>format</em> string and the trailing aguments should follow the printf() standard. </p>
+<p>This method posts an error message. The <em>format</em> string and the trailing arguments should follow the printf() standard. </p>
 
 </div>
 </div>
@@ -698,7 +698,7 @@ Static Protected Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSoError.html">SoError</a></li>
-    <li class="footer">Generated on Thu Oct 18 2018 20:23:09 for Coin by
+    <li class="footer">Generated on Fri Jan 24 2020 00:10:10 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

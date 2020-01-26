@@ -33,8 +33,8 @@
     Coin3D is Free Software,<br />published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.
   </td>
   <td style="text-align: right; padding-right: 0.5em;">
-    <a href="https://github.com/coin3d/">https://github.com/coin3d/</a><br />
-    <a href="http://www.kongsberg.com/kogt/">http://www.kongsberg.com/kogt/</a><br />  
+    <a href="https://coin3d.github.io">https://coin3d.github.io</a><br />
+    <a href="https://www.kongsberg.com/en/kogt/">https://www.kongsberg.com/en/kogt/</a><br />  
     </td>
  </tr>
  </tbody>
@@ -425,7 +425,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Extend the boundaries of the box by the given <em>bb</em> parameter. The given box is assumed to be in transformed space.</p>
-<p>The two given boxes will be combined in such a way so that the resultant bounding box always has the smallest possible volume. To accomplish this, the transformation on this <a class="el" href="classSbXfBox3f.html" title="The SbXfBox3f class is a 3 dimensional box with floating point coordinates and an attached transforma...">SbXfBox3f</a> will sometimes be flattened before it's combined with <em>bb</em>. </p>
+<p>The two given boxes will be combined in such a way so that the resultant bounding box always has the smallest possible volume. To accomplish this, the transformation on this <a class="el" href="classSbXfBox3f.html" title="The SbXfBox3f class is a 3 dimensional box with floating point coordinates and an attached transforma...">SbXfBox3f</a> will sometimes be flattened before it is combined with <em>bb</em>. </p>
 
 </div>
 </div>
@@ -446,7 +446,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Extend the boundaries of the box by the given <em>bb</em> parameter.</p>
 <p>The given box is assumed to be in transformed space.</p>
-<p>Note: is not guaranteed to give an optimal result if used for bbox calculation since the transformation matrix might change. See documentation in <a class="el" href="classSoGetBoundingBoxAction.html" title="The SoGetBoundingBoxAction class calculates bounding boxes for nodes and subgraphs. ">SoGetBoundingBoxAction</a> for more details. </p>
+<p>Note: is not guaranteed to give an optimal result if used for bounding box calculation since the transformation matrix might change. See documentation in <a class="el" href="classSoGetBoundingBoxAction.html" title="The SoGetBoundingBoxAction class calculates bounding boxes for nodes and subgraphs. ">SoGetBoundingBoxAction</a> for more details. </p>
 
 </div>
 </div>
@@ -485,7 +485,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Check if the given <em>box</em> lies wholly or partly within the boundaries of this box.</p>
+<p>Check if the given <em>box</em> lies entirely or partially within the boundaries of this box.</p>
 <p>The given box is assumed to be in transformed space. </p>
 
 </div>
@@ -619,7 +619,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Dump the state of this object to the <em>file</em> stream. Only works in debug version of library, method does nothing in an optimized compile. </p>
+<p>Dump the state of this object to the <em>fp</em> file stream. Only works in debug version of library, method does nothing in an optimized build. </p>
 
 </div>
 </div>
@@ -657,7 +657,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Check if <em>b1</em> and <em>b2</em> are equal. Return 1 if they are equal, or 0 if they are unequal. Note that the method will do a dumb component by component comparison. </p>
+<p>Check if <em>b1</em> and <em>b2</em> are equal. Return 1 if they are equal, or 0 if they are not equal. Note that the method will do a dumb component by component comparison. </p>
 
 </div>
 </div>
@@ -694,7 +694,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Check if <em>b1</em> and <em>b2</em> are unequal. Return 0 if they are equal, or 1 if they are unequal. See the note on <a class="el" href="classSbXfBox3f.html#a9b6bfb6e1bad9a583fe7cae59cec244f">operator==()</a>. </p>
+<p>Check if <em>b1</em> and <em>b2</em> are not equal. Return 0 if they are equal, or 1 if they are not equal. See the note on <a class="el" href="classSbXfBox3f.html#a9b6bfb6e1bad9a583fe7cae59cec244f">operator==()</a>. </p>
 
 </div>
 </div>
@@ -708,7 +708,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSbXfBox3f.html">SbXfBox3f</a></li>
-    <li class="footer">Generated on Thu Oct 18 2018 20:23:01 for Coin by
+    <li class="footer">Generated on Fri Jan 24 2020 00:10:01 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

@@ -33,8 +33,8 @@
     Coin3D is Free Software,<br />published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.
   </td>
   <td style="text-align: right; padding-right: 0.5em;">
-    <a href="https://github.com/coin3d/">https://github.com/coin3d/</a><br />
-    <a href="http://www.kongsberg.com/kogt/">http://www.kongsberg.com/kogt/</a><br />  
+    <a href="https://coin3d.github.io">https://coin3d.github.io</a><br />
+    <a href="https://www.kongsberg.com/en/kogt/">https://www.kongsberg.com/en/kogt/</a><br />  
     </td>
  </tr>
  </tbody>
@@ -224,14 +224,14 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Will create a new move file named filename and attempt to locate a suitable encoder based on the parameters (params) supplied.</p>
+<p>Will create a new move file named filename and attempt to locate a suitable encoder based on the parameters ( <em>params</em> ) supplied.</p>
 <p>Returns a pointer to the opened movie on success, NULL on failure</p>
 <p>Common parameters:</p><ul>
 <li>"mime-type" &lt;string&gt; : The requested encoder type. There are currently 2 encoders available, with mime-types "video/mpeg" and "video/avi".</li>
 <li>width &lt;int&gt; : Frame width (all input images must have this width)</li>
 <li>height &lt;int&gt; : Frame height (all input images must have this height)</li>
 </ul>
-<p>Parameters specific for the avi encoder</p><ul>
+<p>Parameters specific for the AVI encoder</p><ul>
 <li>fps &lt;int&gt; : Number of frames per second in output file</li>
 <li>parameter file &lt;int&gt; : If this parameter is missing (or empty ""), a GUI will pop up each time this functions is run, asking the user to specify compression settings. If a filename is specified and the file doesn't exist, a GUI pops up, and the compression settings are saved in a new file with the specified filename. If the file exists, no GUI pops up, and the compression settings are read from the file. The format of the file is unspecified, and copying such a file between different computers probably won't work.</li>
 <li>width and height must be divisible by 4 </li>
@@ -304,7 +304,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Adds (encodes) the image as one frame to the movie. params is currently used only for optimizing avi encoding: - "allow image
+<p>Adds (encodes) the image as one frame to the movie. <em>params</em> is currently used only for optimizing AVI encoding: - "allow image
  modification" &lt;int&gt; : Set to "1" to allow the encoder to modify the image buffer. If this parameter is not set, the encoder will make a local copy of the image before it is encoded.</p>
 <p>Example code:</p>
 <div class="fragment"><div class="line"><a class="code" href="structsimage__parameters__s.html">s_params</a> *imgparams = <a class="code" href="params_8c.html#a25b2c2aa8ca8404c8d4c9911998447ef">s_params_create</a>();</div><div class="line"><a class="code" href="params_8c.html#ad895755ecd9e266935d7d8c6fb339d78">s_params_set</a>(imgparams,</div><div class="line">             <span class="stringliteral">&quot;allow image modification&quot;</span>, <a class="code" href="simage_8h.html#abc6126af1d45847bc59afa0aa3216b04a2e7845ecbb977459f534d6a61f310a04">S_INTEGER_PARAM_TYPE</a>, 1,</div><div class="line">             NULL);</div><div class="line"><span class="keywordflow">for</span>(;;) {</div><div class="line">  <a class="code" href="simage12_8c.html#a5104d7ebe08a8c9a3603a8cb5df6ba70">s_image_set</a>(image, width, height, 1, &lt;<span class="keyword">get</span> image from somewhere&gt;);</div><div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;repeatCount;i++)</div><div class="line">    <a class="code" href="movie_8c.html#a7dd2e499947b7212dbdec12b41ddfc96">s_movie_put_image</a>(movie, image, imgparams);</div><div class="line">}</div><div class="line"><a class="code" href="params_8c.html#a172abd7c7b966c20f68521b3758b4cae">s_params_destroy</a>(imgparams);</div></div><!-- fragment --><p>Returns 1 on success, 0 on failure </p>
@@ -485,8 +485,8 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="movie_8c.html">movie.c</a></li>
-    <li class="footer">Generated on Fri Jul 5 2019 23:03:45 for simage by
+    <li class="navelem"><a class="el" href="dir_ce22de4b093703a7f4355ac14d76ce97.html">simage</a></li><li class="navelem"><a class="el" href="dir_c0ae09bd3c8dea8f2adc0c3a1def821b.html">src</a></li><li class="navelem"><a class="el" href="movie_8c.html">movie.c</a></li>
+    <li class="footer">Generated on Sun Jan 26 2020 20:20:57 for simage by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

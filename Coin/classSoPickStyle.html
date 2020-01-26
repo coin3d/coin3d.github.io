@@ -33,8 +33,8 @@
     Coin3D is Free Software,<br />published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.
   </td>
   <td style="text-align: right; padding-right: 0.5em;">
-    <a href="https://github.com/coin3d/">https://github.com/coin3d/</a><br />
-    <a href="http://www.kongsberg.com/kogt/">http://www.kongsberg.com/kogt/</a><br />  
+    <a href="https://coin3d.github.io">https://coin3d.github.io</a><br />
+    <a href="https://www.kongsberg.com/en/kogt/">https://www.kongsberg.com/en/kogt/</a><br />  
     </td>
  </tr>
  </tbody>
@@ -143,7 +143,7 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a4962dd662d22d85ad6c9fb8dd9ec59fe"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classSoType.html">SoType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoPickStyle.html#a4962dd662d22d85ad6c9fb8dd9ec59fe">getTypeId</a> (void) const</td></tr>
-<tr class="memdesc:a4962dd662d22d85ad6c9fb8dd9ec59fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the type identification of an object derived from a class inheriting <a class="el" href="classSoBase.html" title="The SoBase class is the top-level superclass for a number of class-hierarchies. ">SoBase</a>. This is used for run-time type checking and "downward" casting.  <a href="#a4962dd662d22d85ad6c9fb8dd9ec59fe">More...</a><br /></td></tr>
+<tr class="memdesc:a4962dd662d22d85ad6c9fb8dd9ec59fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the type identification of an object derived from a class inheriting <a class="el" href="classSoBase.html" title="The SoBase class is the top-level superclass for a number of class-hierarchies. ">SoBase</a>. This is used for runtime type checking and "downward" casting.  <a href="#a4962dd662d22d85ad6c9fb8dd9ec59fe">More...</a><br /></td></tr>
 <tr class="separator:a4962dd662d22d85ad6c9fb8dd9ec59fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdb60829515f29ff3eb4d21b05c7bf2c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoPickStyle.html#abdb60829515f29ff3eb4d21b05c7bf2c">SoPickStyle</a> (void)</td></tr>
 <tr class="separator:abdb60829515f29ff3eb4d21b05c7bf2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -360,7 +360,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="separator:a8419a92b3ac808c6a789673db06776be inherit pub_static_methods_classSoBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73ce238db093db6ba1b4009818cc9f27 inherit pub_static_methods_classSoBase"><td class="memItemLeft" align="right" valign="top"><a id="a73ce238db093db6ba1b4009818cc9f27"></a>
 static <a class="el" href="classSoType.html">SoType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoBase.html#a73ce238db093db6ba1b4009818cc9f27">getClassTypeId</a> (void)</td></tr>
-<tr class="memdesc:a73ce238db093db6ba1b4009818cc9f27 inherit pub_static_methods_classSoBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">This static method returns the <a class="el" href="classSoType.html" title="The SoType class is the basis for the run-time type system in Coin. ">SoType</a> object associated with objects of this class. <br /></td></tr>
+<tr class="memdesc:a73ce238db093db6ba1b4009818cc9f27 inherit pub_static_methods_classSoBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">This static method returns the <a class="el" href="classSoType.html" title="The SoType class is the basis for the runtime type system in Coin. ">SoType</a> object associated with objects of this class. <br /></td></tr>
 <tr class="separator:a73ce238db093db6ba1b4009818cc9f27 inherit pub_static_methods_classSoBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74952f1fd17c44eb0fc9c3dc3b69102a inherit pub_static_methods_classSoBase"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoBase.html#a74952f1fd17c44eb0fc9c3dc3b69102a">addName</a> (<a class="el" href="classSoBase.html">SoBase</a> *const base, const char *const name)</td></tr>
 <tr class="separator:a74952f1fd17c44eb0fc9c3dc3b69102a inherit pub_static_methods_classSoBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -477,7 +477,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="classSoPickStyle.html" title="The SoPickStyle class is a node for setting up how to do picking. ">SoPickStyle</a> class is a node for setting up how to do picking. </p>
 <p>By default, all geometry in a scene is available for picking. Upon writing applications with interaction possibilities, this is often <em>not</em> what you want. To exclude parts of the scene graph from pick actions, use the <a class="el" href="classSoPickStyle.html#a8c23088ad3a4eb7bdeaa93ae5a29b910a110f32f99cd9ba0d4022a062ed39c302">SoPickStyle::UNPICKABLE</a>.</p>
-<p>You can also optimize pick operations by using the <a class="el" href="classSoPickStyle.html#a8c23088ad3a4eb7bdeaa93ae5a29b910add95380db49456848037da8e016153a6">SoPickStyle::BOUNDING_BOX</a> pickstyle.</p>
+<p>You can also optimize pick operations by using the <a class="el" href="classSoPickStyle.html#a8c23088ad3a4eb7bdeaa93ae5a29b910add95380db49456848037da8e016153a6">SoPickStyle::BOUNDING_BOX</a> pick style.</p>
 <p><b>FILE FORMAT/DEFAULTS:</b> </p><div class="fragment"><div class="line">PickStyle {</div><div class="line">    <a class="code" href="classSoPickStyle.html#a85089766be4c884fce884971ac8cbcac">style</a> <a class="code" href="classSoPickStyle.html#a8c23088ad3a4eb7bdeaa93ae5a29b910a8ae8ec595b7fe45f29d7ce88d1e8ab41">SHAPE</a></div><div class="line">}</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoRayPickAction.html" title="The SoRayPickAction class does ray intersection with scene graphs. ">SoRayPickAction</a> </dd></dl>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a8c23088ad3a4eb7bdeaa93ae5a29b910"></a>
@@ -506,7 +506,7 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>Coin 3.0 </dd></dl>
 </td></tr>
 <tr><td class="fieldname"><a id="a8c23088ad3a4eb7bdeaa93ae5a29b910aeb3db5809eb2c0c42329b1b386544c7b"></a>SHAPE_FRONTFACES&#160;</td><td class="fielddoc"><p>Do exact picks, like SHAPE, but cull all the backface intersections from the list. Note that this logic is relative to the ray, not the view, in case the ray and the view direction are not aligned.</p>
-<p>The behaviour of this setting will also depend on the SoShapeStyle vertexOrdering and shapeType setting, which are used to flip frontfaces to become backfaces and vice versa and to turn backface culling on and off.</p>
+<p>The behaviour of this setting will also depend on the SoShapeStyle vertexOrdering and shapeType setting, which are used to flip front faces to become back faces and vice versa and to turn backface culling on and off.</p>
 <dl class="section since"><dt>Since</dt><dd>Coin 3.0 </dd></dl>
 </td></tr>
 </table>
@@ -584,10 +584,10 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the type identification of an object derived from a class inheriting <a class="el" href="classSoBase.html" title="The SoBase class is the top-level superclass for a number of class-hierarchies. ">SoBase</a>. This is used for run-time type checking and "downward" casting. </p>
+<p>Returns the type identification of an object derived from a class inheriting <a class="el" href="classSoBase.html" title="The SoBase class is the top-level superclass for a number of class-hierarchies. ">SoBase</a>. This is used for runtime type checking and "downward" casting. </p>
 <p>Usage example:</p>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> foo(<a class="code" href="classSoNode.html">SoNode</a> * node)</div><div class="line">{</div><div class="line">  <span class="keywordflow">if</span> (node-&gt;<a class="code" href="classSoBase.html#a873b521c1386368d4d63ff893856590a">getTypeId</a>() == SoFile::getClassTypeId()) {</div><div class="line">    <a class="code" href="classSoFile.html">SoFile</a> * filenode = (<a class="code" href="classSoFile.html">SoFile</a> *)node;  <span class="comment">// safe downward cast, knows the type</span></div><div class="line"><span class="comment"></span>  }</div><div class="line">}</div></div><!-- fragment --><p>For application programmers wanting to extend the library with new nodes, engines, nodekits, draggers or others: this method needs to be overridden in <em>all</em> subclasses. This is typically done as part of setting up the full type system for extension classes, which is usually accomplished by using the pre-defined macros available through for instance <a class="el" href="SoSubNode_8h_source.html">Inventor/nodes/SoSubNode.h</a> (SO_NODE_INIT_CLASS and SO_NODE_CONSTRUCTOR for node classes), <a class="el" href="SoSubEngine_8h_source.html">Inventor/engines/SoSubEngine.h</a> (for engine classes) and so on.</p>
-<p>For more information on writing Coin extensions, see the class documentation of the toplevel superclasses for the various class groups. </p>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> foo(<a class="code" href="classSoNode.html">SoNode</a> * node)</div><div class="line">{</div><div class="line">  <span class="keywordflow">if</span> (node-&gt;<a class="code" href="classSoBase.html#a873b521c1386368d4d63ff893856590a">getTypeId</a>() == SoFile::getClassTypeId()) {</div><div class="line">    <a class="code" href="classSoFile.html">SoFile</a> * filenode = (<a class="code" href="classSoFile.html">SoFile</a> *)node;  <span class="comment">// safe downward cast, knows the type</span></div><div class="line"><span class="comment"></span>  }</div><div class="line">}</div></div><!-- fragment --><p>For application programmers wanting to extend the library with new nodes, engines, nodekits, draggers or others: this method needs to be overridden in <em>all</em> subclasses. This is typically done as part of setting up the full type system for extension classes, which is usually accomplished by using the predefined macros available through for instance <a class="el" href="SoSubNode_8h_source.html">Inventor/nodes/SoSubNode.h</a> (SO_NODE_INIT_CLASS and SO_NODE_CONSTRUCTOR for node classes), <a class="el" href="SoSubEngine_8h_source.html">Inventor/engines/SoSubEngine.h</a> (for engine classes) and so on.</p>
+<p>For more information on writing Coin extensions, see the class documentation of the top level superclasses for the various class groups. </p>
 
 <p>Implements <a class="el" href="classSoBase.html#a873b521c1386368d4d63ff893856590a">SoBase</a>.</p>
 
@@ -737,7 +737,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSoPickStyle.html">SoPickStyle</a></li>
-    <li class="footer">Generated on Thu Oct 18 2018 20:23:38 for Coin by
+    <li class="footer">Generated on Fri Jan 24 2020 00:10:21 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>
