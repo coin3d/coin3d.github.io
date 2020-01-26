@@ -33,8 +33,8 @@
     Coin3D is Free Software,<br />published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.
   </td>
   <td style="text-align: right; padding-right: 0.5em;">
-    <a href="https://github.com/coin3d/">https://github.com/coin3d/</a><br />
-    <a href="http://www.kongsberg.com/kogt/">http://www.kongsberg.com/kogt/</a><br />  
+    <a href="https://coin3d.github.io">https://coin3d.github.io</a><br />
+    <a href="https://www.kongsberg.com/en/kogt/">https://www.kongsberg.com/en/kogt/</a><br />  
     </td>
  </tr>
  </tbody>
@@ -168,7 +168,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p>The <a class="el" href="classSoMemoryError.html" title="The SoMemoryError class is used to inform of problems with memory allocation. ">SoMemoryError</a> class is used to inform of problems with memory allocation. </p>
 <p>Modern operating systems takes care of handling most out of memory conditions for you, but in certain situations it can be wise to do some manual checking and intervention. This class is provided as an aid to help out in these situations.</p>
 <p>The basic design of the Coin library is to pass on the responsibility for handling failed attempts at memory allocation to the application programmer. If you want to detect and take care of these, you should compile Coin with the C++ exception throwing on and wrap your code within <code>try{}</code> and <code>catch{}</code> blocks. The most you can do if you get a failed allocation is typically to notify the user and then exit the application, though, and this is something most operating systems will do for you, so you probably need not consider this at all.</p>
-<p>So, where does the <a class="el" href="classSoMemoryError.html" title="The SoMemoryError class is used to inform of problems with memory allocation. ">SoMemoryError</a> class come in handy? There are certain things which could happen within the library which are best taken care of by internally handling failed attempts at memory allocation. An example: the user tries to load a model file which contains a filename pointer to a huge bitmapfile with a texture map. The end-user's system does not provide enough memory to load the file and prepare the texture image for rendering, though. This is a case where it is possible to just emit a warning and continue. The warning will then be passed through this class.</p>
+<p>So, where does the <a class="el" href="classSoMemoryError.html" title="The SoMemoryError class is used to inform of problems with memory allocation. ">SoMemoryError</a> class come in handy? There are certain things which could happen within the library which are best taken care of by internally handling failed attempts at memory allocation. An example: the user tries to load a model file which contains a filename pointer to a huge bitmap file with a texture map. The end-user's system does not provide enough memory to load the file and prepare the texture image for rendering, though. This is a case where it is possible to just emit a warning and continue. The warning will then be passed through this class.</p>
 <p>Note that <a class="el" href="classSoMemoryError.html" title="The SoMemoryError class is used to inform of problems with memory allocation. ">SoMemoryError</a> is probably not of much use to the application programmer. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a6c92570a67f436b410e4d37117fc1c64"></a>
@@ -194,7 +194,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This method returns the <a class="el" href="classSoType.html" title="The SoType class is the basis for the run-time type system in Coin. ">SoType</a> of a particular object instance.</p>
+<p>This method returns the <a class="el" href="classSoType.html" title="The SoType class is the basis for the runtime type system in Coin. ">SoType</a> of a particular object instance.</p>
 <dl class="section see"><dt>See also</dt><dd>getClassTypeId() </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classSoError.html#a5d123b1c52eed851fb729287dadbf998">SoError</a>.</p>
@@ -267,7 +267,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSoMemoryError.html">SoMemoryError</a></li>
-    <li class="footer">Generated on Thu Oct 18 2018 20:23:26 for Coin by
+    <li class="footer">Generated on Fri Jan 24 2020 00:10:17 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

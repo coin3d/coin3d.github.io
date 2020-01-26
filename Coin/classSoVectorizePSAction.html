@@ -33,8 +33,8 @@
     Coin3D is Free Software,<br />published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.
   </td>
   <td style="text-align: right; padding-right: 0.5em;">
-    <a href="https://github.com/coin3d/">https://github.com/coin3d/</a><br />
-    <a href="http://www.kongsberg.com/kogt/">http://www.kongsberg.com/kogt/</a><br />  
+    <a href="https://coin3d.github.io">https://coin3d.github.io</a><br />
+    <a href="https://www.kongsberg.com/en/kogt/">https://www.kongsberg.com/en/kogt/</a><br />  
     </td>
  </tr>
  </tbody>
@@ -80,7 +80,7 @@ $(document).ready(function(){initNavTree('classSoVectorizePSAction.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>The <a class="el" href="classSoVectorizePSAction.html" title="The SoVectorizePSAction class is used for rendering to a Postscript file. ">SoVectorizePSAction</a> class is used for rendering to a Postscript file.  
+<p>The <a class="el" href="classSoVectorizePSAction.html" title="The SoVectorizePSAction class is used for rendering to a PostScript file. ">SoVectorizePSAction</a> class is used for rendering to a PostScript file.  
  <a href="classSoVectorizePSAction.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="SoVectorizePSAction_8h_source.html">Inventor/annex/HardCopy/SoVectorizePSAction.h</a>&gt;</code></p>
@@ -617,7 +617,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a00703b6a5c0bac45ac95756f7eb054af inherit pro_attribs_classSoAction"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="classSoVectorizePSAction.html" title="The SoVectorizePSAction class is used for rendering to a Postscript file. ">SoVectorizePSAction</a> class is used for rendering to a Postscript file. </p>
+<div class="textblock"><p>The <a class="el" href="classSoVectorizePSAction.html" title="The SoVectorizePSAction class is used for rendering to a PostScript file. ">SoVectorizePSAction</a> class is used for rendering to a PostScript file. </p>
 <dl class="section since"><dt>Since</dt><dd>Coin 2.1 </dd>
 <dd>
 TGS provides HardCopy support as a separate extension for TGS Inventor. </dd></dl>
@@ -691,9 +691,9 @@ TGS provides HardCopy support as a separate extension for TGS Inventor. </dd></d
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the type identification of an action derived from a class inheriting <a class="el" href="classSoAction.html" title="The SoAction class is the base class for all traversal actions. ">SoAction</a>. This is used for run-time type checking and "downward" casting.</p>
+<p>Returns the type identification of an action derived from a class inheriting <a class="el" href="classSoAction.html" title="The SoAction class is the base class for all traversal actions. ">SoAction</a>. This is used for runtime type checking and "downward" casting.</p>
 <p>Usage example:</p>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> bar(<a class="code" href="classSoAction.html">SoAction</a> * action)</div><div class="line">{</div><div class="line">  <span class="keywordflow">if</span> (action-&gt;<a class="code" href="classSoAction.html#a364ad60918a4d20ebdc9635457fe331c">getTypeId</a>() == SoGLRenderAction::getClassTypeId()) {</div><div class="line">    <span class="comment">// safe downward cast, know the type</span></div><div class="line">    <a class="code" href="classSoGLRenderAction.html">SoGLRenderAction</a> * glrender = (<a class="code" href="classSoGLRenderAction.html">SoGLRenderAction</a> *)action;</div><div class="line">  }</div><div class="line">  <span class="keywordflow">return</span>; <span class="comment">// ignore if not renderaction</span></div><div class="line">}</div></div><!-- fragment --><p>For application programmers wanting to extend the library with new actions: this method needs to be overridden in <em>all</em> subclasses. This is typically done as part of setting up the full type system for extension classes, which is usually accomplished by using the pre-defined macros available through Inventor/nodes/SoSubAction.h: SO_ACTION_SOURCE, SO_ACTION_INIT_CLASS and SO_ACTION_CONSTRUCTOR.</p>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> bar(<a class="code" href="classSoAction.html">SoAction</a> * action)</div><div class="line">{</div><div class="line">  <span class="keywordflow">if</span> (action-&gt;<a class="code" href="classSoAction.html#a364ad60918a4d20ebdc9635457fe331c">getTypeId</a>() == SoGLRenderAction::getClassTypeId()) {</div><div class="line">    <span class="comment">// safe downward cast, know the type</span></div><div class="line">    <a class="code" href="classSoGLRenderAction.html">SoGLRenderAction</a> * glrender = (<a class="code" href="classSoGLRenderAction.html">SoGLRenderAction</a> *)action;</div><div class="line">  }</div><div class="line">  <span class="keywordflow">return</span>; <span class="comment">// ignore if not render action</span></div><div class="line">}</div></div><!-- fragment --><p>For application programmers wanting to extend the library with new actions: this method needs to be overridden in <em>all</em> subclasses. This is typically done as part of setting up the full type system for extension classes, which is usually accomplished by using the predefined macros available through Inventor/nodes/SoSubAction.h: SO_ACTION_SOURCE, SO_ACTION_INIT_CLASS and SO_ACTION_CONSTRUCTOR.</p>
 <p>For more information on writing Coin extensions, see the <a class="el" href="classSoAction.html" title="The SoAction class is the base class for all traversal actions. ">SoAction</a> class documentation.</p>
 <p>Returns the actual type id of an object derived from a class inheriting <a class="el" href="classSoAction.html" title="The SoAction class is the base class for all traversal actions. ">SoAction</a>. Needs to be overridden in <em>all</em> subclasses. </p>
 
@@ -863,7 +863,7 @@ TGS provides HardCopy support as a separate extension for TGS Inventor. </dd></d
       </table>
 </div><div class="memdoc">
 <p>Sets the Gouraud shading threshold. A threshold of 0.0 will disable Gouraud shading. A smaller value will yield more accurate Gouraud shading. Default is 0.1.</p>
-<p>Since the postscript language has no support for Gouraud shaded triangles, each triangle will be split into subtriangles approximately of size <em>eps</em> postscript units. One postscript unit is approximately 1/72 inch. </p>
+<p>Since the PostScript language has no support for Gouraud shaded triangles, each triangle will be split into subtriangles approximately of size <em>eps</em> PostScript units. One PostScript unit is approximately 1/72 inch. </p>
 
 </div>
 </div>
@@ -882,7 +882,7 @@ TGS provides HardCopy support as a separate extension for TGS Inventor. </dd></d
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns the <a class="el" href="classSoPSVectorOutput.html" title="The SoPSVectorOutput class is used for writing Postscript. ">SoPSVectorOutput</a> used by this instance. </p>
+<p>Returns the <a class="el" href="classSoPSVectorOutput.html" title="The SoPSVectorOutput class is used for writing PostScript. ">SoPSVectorOutput</a> used by this instance. </p>
 
 </div>
 </div>
@@ -901,7 +901,7 @@ TGS provides HardCopy support as a separate extension for TGS Inventor. </dd></d
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns the <a class="el" href="classSoPSVectorOutput.html" title="The SoPSVectorOutput class is used for writing Postscript. ">SoPSVectorOutput</a> used by this instance. Provided for API compatibility with TGS HardCopy support. </p>
+<p>Returns the <a class="el" href="classSoPSVectorOutput.html" title="The SoPSVectorOutput class is used for writing PostScript. ">SoPSVectorOutput</a> used by this instance. Provided for API compatibility with TGS HardCopy support. </p>
 
 </div>
 </div>
@@ -1070,7 +1070,7 @@ TGS provides HardCopy support as a separate extension for TGS Inventor. </dd></d
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSoVectorizePSAction.html">SoVectorizePSAction</a></li>
-    <li class="footer">Generated on Thu Oct 18 2018 20:24:06 for Coin by
+    <li class="footer">Generated on Fri Jan 24 2020 00:10:35 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

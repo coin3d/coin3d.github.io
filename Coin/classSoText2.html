@@ -33,8 +33,8 @@
     Coin3D is Free Software,<br />published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.
   </td>
   <td style="text-align: right; padding-right: 0.5em;">
-    <a href="https://github.com/coin3d/">https://github.com/coin3d/</a><br />
-    <a href="http://www.kongsberg.com/kogt/">http://www.kongsberg.com/kogt/</a><br />  
+    <a href="https://coin3d.github.io">https://coin3d.github.io</a><br />
+    <a href="https://www.kongsberg.com/en/kogt/">https://www.kongsberg.com/en/kogt/</a><br />  
     </td>
  </tr>
  </tbody>
@@ -154,7 +154,7 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a3a0cf460ffb7eb222e606cc45d5048e0"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classSoType.html">SoType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoText2.html#a3a0cf460ffb7eb222e606cc45d5048e0">getTypeId</a> (void) const</td></tr>
-<tr class="memdesc:a3a0cf460ffb7eb222e606cc45d5048e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the type identification of an object derived from a class inheriting <a class="el" href="classSoBase.html" title="The SoBase class is the top-level superclass for a number of class-hierarchies. ">SoBase</a>. This is used for run-time type checking and "downward" casting.  <a href="#a3a0cf460ffb7eb222e606cc45d5048e0">More...</a><br /></td></tr>
+<tr class="memdesc:a3a0cf460ffb7eb222e606cc45d5048e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the type identification of an object derived from a class inheriting <a class="el" href="classSoBase.html" title="The SoBase class is the top-level superclass for a number of class-hierarchies. ">SoBase</a>. This is used for runtime type checking and "downward" casting.  <a href="#a3a0cf460ffb7eb222e606cc45d5048e0">More...</a><br /></td></tr>
 <tr class="separator:a3a0cf460ffb7eb222e606cc45d5048e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abce21ed959d467b28115c8a72fa88283"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoText2.html#abce21ed959d467b28115c8a72fa88283">SoText2</a> (void)</td></tr>
 <tr class="separator:abce21ed959d467b28115c8a72fa88283"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -385,7 +385,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="separator:a8419a92b3ac808c6a789673db06776be inherit pub_static_methods_classSoBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73ce238db093db6ba1b4009818cc9f27 inherit pub_static_methods_classSoBase"><td class="memItemLeft" align="right" valign="top"><a id="a73ce238db093db6ba1b4009818cc9f27"></a>
 static <a class="el" href="classSoType.html">SoType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoBase.html#a73ce238db093db6ba1b4009818cc9f27">getClassTypeId</a> (void)</td></tr>
-<tr class="memdesc:a73ce238db093db6ba1b4009818cc9f27 inherit pub_static_methods_classSoBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">This static method returns the <a class="el" href="classSoType.html" title="The SoType class is the basis for the run-time type system in Coin. ">SoType</a> object associated with objects of this class. <br /></td></tr>
+<tr class="memdesc:a73ce238db093db6ba1b4009818cc9f27 inherit pub_static_methods_classSoBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">This static method returns the <a class="el" href="classSoType.html" title="The SoType class is the basis for the runtime type system in Coin. ">SoType</a> object associated with objects of this class. <br /></td></tr>
 <tr class="separator:a73ce238db093db6ba1b4009818cc9f27 inherit pub_static_methods_classSoBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74952f1fd17c44eb0fc9c3dc3b69102a inherit pub_static_methods_classSoBase"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoBase.html#a74952f1fd17c44eb0fc9c3dc3b69102a">addName</a> (<a class="el" href="classSoBase.html">SoBase</a> *const base, const char *const name)</td></tr>
 <tr class="separator:a74952f1fd17c44eb0fc9c3dc3b69102a inherit pub_static_methods_classSoBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -563,14 +563,14 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="classSoText2.html" title="The SoText2 class is a node type for visualizing 2D text aligned with the camera plane. ">SoText2</a> class is a node type for visualizing 2D text aligned with the camera plane. </p>
 <p><a class="el" href="classSoText2.html" title="The SoText2 class is a node type for visualizing 2D text aligned with the camera plane. ">SoText2</a> text is not scaled according to the distance from the camera, and is not influenced by rotation or scaling as 3D primitives are. If these are properties that you want the text to have, you should instead use an <a class="el" href="classSoText3.html" title="The SoText3 class renders extruded 3D text. ">SoText3</a> or <a class="el" href="classSoAsciiText.html" title="The SoAsciiText class renders flat 3D text. ">SoAsciiText</a> node.</p>
-<p>Note that even though the size of the 2D text is not influenced by the distance from the camera, the text is still subject to the usual rules with regard to the depthbuffer, so it <em>will</em> be obscured by graphics laying in front of it.</p>
+<p>Note that even though the size of the 2D text is not influenced by the distance from the camera, the text is still subject to the usual rules with regard to the depth buffer, so it <em>will</em> be obscured by graphics laying in front of it.</p>
 <p>The text will be <em>positioned</em> according to the current transformation. The x origin of the text is the first pixel of the leftmost character of the text. The y origin of the text is the baseline of the first line of text (the baseline being the imaginary line on which all upper case characters are standing).</p>
 <p>The size of the fonts on screen is decided from the <a class="el" href="classSoFont.html#a8d2c7630d8020176d56802a9f336cdeb">SoFont::size</a> field of a preceding SoFont-node in the scene graph, which specifies the size in pixel dimensions. This value sets the approximate vertical dimension of the letters. The default value if no SoFont-nodes are used, is 10.</p>
 <p>One important issue about rendering performance: since the positioning and rendering of an <a class="el" href="classSoText2.html" title="The SoText2 class is a node type for visualizing 2D text aligned with the camera plane. ">SoText2</a> node depends on the current viewport and camera, having <a class="el" href="classSoText2.html" title="The SoText2 class is a node type for visualizing 2D text aligned with the camera plane. ">SoText2</a> nodes in the scene graph will lead to a cache dependency on the previously encountered SoCamera-node. This can have severe influence on the rendering performance, since if the camera is above the <a class="el" href="classSoText2.html" title="The SoText2 class is a node type for visualizing 2D text aligned with the camera plane. ">SoText2</a>'s nearest parent <a class="el" href="classSoSeparator.html" title="The SoSeparator class is a state-preserving group node. ">SoSeparator</a>, the <a class="el" href="classSoSeparator.html" title="The SoSeparator class is a state-preserving group node. ">SoSeparator</a> will not be able to cache the geometry under it.</p>
 <p>(Even worse rendering performance will be forced if the <a class="el" href="classSoSeparator.html#a66bb73ac97538902c0f55f8d1f4444a5">SoSeparator::renderCaching</a> flag is explicitly set to <code>ON</code>, as the <a class="el" href="classSoSeparator.html" title="The SoSeparator class is a state-preserving group node. ">SoSeparator</a> node will then continuously generate and destruct the same cache as the camera moves.)</p>
 <p><a class="el" href="classSoText2.html" title="The SoText2 class is a node type for visualizing 2D text aligned with the camera plane. ">SoText2</a> nodes are therefore best positioned under their own <a class="el" href="classSoSeparator.html" title="The SoSeparator class is a state-preserving group node. ">SoSeparator</a> node, outside areas in the scene graph that otherwise contains static geometry.</p>
 <p>Also note that <a class="el" href="classSoText2.html" title="The SoText2 class is a node type for visualizing 2D text aligned with the camera plane. ">SoText2</a> nodes cache the ids and positions of each glyph bitmap used to render <code>string</code>. This means that <code>USE</code> of a <code>DEF'ed</code> <a class="el" href="classSoText2.html" title="The SoText2 class is a node type for visualizing 2D text aligned with the camera plane. ">SoText2</a> node, with a different font, will be noticeably slower than using two separate <a class="el" href="classSoText2.html" title="The SoText2 class is a node type for visualizing 2D text aligned with the camera plane. ">SoText2</a> nodes, one for each font, since it will have to recalculate glyph bitmap ids and positions for each call to <code>GLrender()</code>.</p>
-<p><a class="el" href="classSoScale.html" title="The SoScale class is a node type for scaling scene graph geometry. ">SoScale</a> nodes can not be used to influence the dimensions of the rendering output of <a class="el" href="classSoText2.html" title="The SoText2 class is a node type for visualizing 2D text aligned with the camera plane. ">SoText2</a> nodes.</p>
+<p><a class="el" href="classSoScale.html" title="The SoScale class is a node type for scaling scene graph geometry. ">SoScale</a> nodes cannot be used to influence the dimensions of the rendering output of <a class="el" href="classSoText2.html" title="The SoText2 class is a node type for visualizing 2D text aligned with the camera plane. ">SoText2</a> nodes.</p>
 <p><b>FILE FORMAT/DEFAULTS:</b> </p><div class="fragment"><div class="line">Text2 {</div><div class="line">    <span class="keywordtype">string</span> <span class="stringliteral">&quot;&quot;</span></div><div class="line">    <a class="code" href="classSoText2.html#abe85c0b6f6daed388cfbf38adbf36c76">spacing</a> 1</div><div class="line">    <a class="code" href="classSoText2.html#adaf2d2005e6420461e9d57c31f97f4a6">justification</a> LEFT</div><div class="line">}</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoFont.html" title="The SoFont class is an appearance node for setting fonts. ">SoFont</a>, <a class="el" href="classSoFontStyle.html" title="The SoFontStyle class changes the appearance of fonts for text rendering nodes. ">SoFontStyle</a>, <a class="el" href="classSoText3.html" title="The SoText3 class renders extruded 3D text. ">SoText3</a>, <a class="el" href="classSoAsciiText.html" title="The SoAsciiText class renders flat 3D text. ">SoAsciiText</a> </dd></dl>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a2b916b2cdf2af5de4e02289287055195"></a>
@@ -584,7 +584,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Enum contains the various options for how the horizontal text layout text should be done. Valid values are LEFT, RIGHT and CENTER. </p>
+<p>Enum contains the various options for how the horizontal text layout should be done. Valid values are LEFT, RIGHT and CENTER. </p>
 
 </div>
 </div>
@@ -659,10 +659,10 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the type identification of an object derived from a class inheriting <a class="el" href="classSoBase.html" title="The SoBase class is the top-level superclass for a number of class-hierarchies. ">SoBase</a>. This is used for run-time type checking and "downward" casting. </p>
+<p>Returns the type identification of an object derived from a class inheriting <a class="el" href="classSoBase.html" title="The SoBase class is the top-level superclass for a number of class-hierarchies. ">SoBase</a>. This is used for runtime type checking and "downward" casting. </p>
 <p>Usage example:</p>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> foo(<a class="code" href="classSoNode.html">SoNode</a> * node)</div><div class="line">{</div><div class="line">  <span class="keywordflow">if</span> (node-&gt;<a class="code" href="classSoBase.html#a873b521c1386368d4d63ff893856590a">getTypeId</a>() == SoFile::getClassTypeId()) {</div><div class="line">    <a class="code" href="classSoFile.html">SoFile</a> * filenode = (<a class="code" href="classSoFile.html">SoFile</a> *)node;  <span class="comment">// safe downward cast, knows the type</span></div><div class="line"><span class="comment"></span>  }</div><div class="line">}</div></div><!-- fragment --><p>For application programmers wanting to extend the library with new nodes, engines, nodekits, draggers or others: this method needs to be overridden in <em>all</em> subclasses. This is typically done as part of setting up the full type system for extension classes, which is usually accomplished by using the pre-defined macros available through for instance <a class="el" href="SoSubNode_8h_source.html">Inventor/nodes/SoSubNode.h</a> (SO_NODE_INIT_CLASS and SO_NODE_CONSTRUCTOR for node classes), <a class="el" href="SoSubEngine_8h_source.html">Inventor/engines/SoSubEngine.h</a> (for engine classes) and so on.</p>
-<p>For more information on writing Coin extensions, see the class documentation of the toplevel superclasses for the various class groups. </p>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> foo(<a class="code" href="classSoNode.html">SoNode</a> * node)</div><div class="line">{</div><div class="line">  <span class="keywordflow">if</span> (node-&gt;<a class="code" href="classSoBase.html#a873b521c1386368d4d63ff893856590a">getTypeId</a>() == SoFile::getClassTypeId()) {</div><div class="line">    <a class="code" href="classSoFile.html">SoFile</a> * filenode = (<a class="code" href="classSoFile.html">SoFile</a> *)node;  <span class="comment">// safe downward cast, knows the type</span></div><div class="line"><span class="comment"></span>  }</div><div class="line">}</div></div><!-- fragment --><p>For application programmers wanting to extend the library with new nodes, engines, nodekits, draggers or others: this method needs to be overridden in <em>all</em> subclasses. This is typically done as part of setting up the full type system for extension classes, which is usually accomplished by using the predefined macros available through for instance <a class="el" href="SoSubNode_8h_source.html">Inventor/nodes/SoSubNode.h</a> (SO_NODE_INIT_CLASS and SO_NODE_CONSTRUCTOR for node classes), <a class="el" href="SoSubEngine_8h_source.html">Inventor/engines/SoSubEngine.h</a> (for engine classes) and so on.</p>
+<p>For more information on writing Coin extensions, see the class documentation of the top level superclasses for the various class groups. </p>
 
 <p>Reimplemented from <a class="el" href="classSoShape.html#abd1c4ab209a57b673090cf1c33418fb2">SoShape</a>.</p>
 
@@ -721,7 +721,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Action method for the <a class="el" href="classSoGLRenderAction.html" title="The SoGLRenderAction class renders the scene graph with OpenGL calls. ">SoGLRenderAction</a>.</p>
-<p>This is called during rendering traversals. Nodes influencing the rendering state in any way or who wants to throw geometry primitives at OpenGL overrides this method. </p>
+<p>This is called during rendering traversals. Nodes influencing the rendering state in any way or want to throw geometry primitives at OpenGL override this method. </p>
 
 <p>Reimplemented from <a class="el" href="classSoShape.html#aa7e1b61eb89c30f60d05032cc703b35d">SoShape</a>.</p>
 
@@ -781,7 +781,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Action method for the <a class="el" href="classSoGetPrimitiveCountAction.html" title="The SoGetPrimitiveCountAction class counts the primitives in a scene. ">SoGetPrimitiveCountAction</a>.</p>
 <p>Calculates the number of triangle, line segment and point primitives for the node and adds these to the counters of the <em>action</em>.</p>
-<p>Nodes influencing how geometry nodes calculates their primitive count also overrides this method to change the relevant state variables. </p>
+<p>Nodes influencing how geometry nodes calculate their primitive count also override this method to change the relevant state variables. </p>
 
 <p>Reimplemented from <a class="el" href="classSoShape.html#a60b82169df8b927bb293f6360230651b">SoShape</a>.</p>
 
@@ -877,7 +877,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The set of strings to render. Each string in the multiple value field will be rendered on it's own line.</p>
+<p>The set of strings to render. Each string in the multiple value field will be rendered on its own line.</p>
 <p>The default value of the field is a single empty string. </p>
 
 </div>
@@ -922,7 +922,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSoText2.html">SoText2</a></li>
-    <li class="footer">Generated on Thu Oct 18 2018 20:24:02 for Coin by
+    <li class="footer">Generated on Fri Jan 24 2020 00:10:31 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

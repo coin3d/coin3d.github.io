@@ -33,8 +33,8 @@
     Coin3D is Free Software,<br />published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.
   </td>
   <td style="text-align: right; padding-right: 0.5em;">
-    <a href="https://github.com/coin3d/">https://github.com/coin3d/</a><br />
-    <a href="http://www.kongsberg.com/kogt/">http://www.kongsberg.com/kogt/</a><br />  
+    <a href="https://coin3d.github.io">https://coin3d.github.io</a><br />
+    <a href="https://www.kongsberg.com/en/kogt/">https://www.kongsberg.com/en/kogt/</a><br />  
     </td>
  </tr>
  </tbody>
@@ -159,10 +159,10 @@ Additional Inherited Members</h2></td></tr>
 <p>Timer sensors triggers upon specific points in time.</p>
 <p>This class is an abstract superclass which collects the common interface of the various non-abstract timer sensor classes. See the documentation of the subclasses for information on what ways there are to specify base times, intervals, alarm-style single triggering, repeated triggers, etc.</p>
 <p>Note that Coin timer sensors should in no way be considered "hard
-real-time". That is, you can <em>not</em> expect a timer to always trigger at the exact moment it was set up for. Delays in triggering could be due to other activities in Coin, a task suspended, or heavy load from other applications on the system. These situations could all cause the processing of sensor queues (from SoQt / SoWin / SoXt / whatever) to be slightly delayed, thereby causing delays in timer sensor triggering.</p>
-<p>On modern systems, a timer will usually trigger within a few milliseconds of it's designated time, though.</p>
-<p>If a timer sensor can not trigger at the exact moment it has been scheduled, it will be triggered at the first opportunity after the scheduled time has passed.</p>
-<p>Here's a simple usage example. It's a stand-alone example, which only demonstrates how to set up a repeating timer sensor with a callback:</p>
+real time". That is, you <em>cannot</em> expect a timer to always trigger at the exact moment it was set up for. Delays in triggering could be due to other activities in Coin, a task suspended, or heavy load from other applications on the system. These situations could all cause the processing of sensor queues (from SoQt / SoWin / SoXt / whatever) to be slightly delayed, thereby causing delays in timer sensor triggering.</p>
+<p>On modern systems, a timer will usually trigger within a few milliseconds of its designated time, though.</p>
+<p>If a timer sensor cannot trigger at the exact moment it has been scheduled, it will be triggered at the first opportunity after the scheduled time has passed.</p>
+<p>Here's a simple usage example. It's a standalone example, which only demonstrates how to set up a repeating timer sensor with a callback:</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;Inventor/Xt/SoXt.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;Inventor/sensors/SoTimerSensor.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;cstdio&gt;</span></div><div class="line"></div><div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span></div><div class="line">timeSensorCallback(<span class="keywordtype">void</span> * data, <a class="code" href="classSoSensor.html">SoSensor</a> * sensor)</div><div class="line">{</div><div class="line">  <a class="code" href="classSbTime.html">SbTime</a> time = <a class="code" href="classSbTime.html#a6a24da27d9ba83fc848b860f164d00fc">SbTime::getTimeOfDay</a>();</div><div class="line">  <a class="code" href="classSbString.html">SbString</a> <span class="keywordtype">string</span> = time.<a class="code" href="classSbTime.html#acdb45fc6b82efbf98b24e5884e3e2262">format</a>(<span class="stringliteral">&quot;%S.%i&quot;</span>);</div><div class="line">  (void)printf(<span class="stringliteral">&quot;%s\n&quot;</span>, <span class="keywordtype">string</span>.getString());</div><div class="line">}</div><div class="line"></div><div class="line"></div><div class="line"><span class="keywordtype">int</span></div><div class="line">main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> ** argv)</div><div class="line">{ </div><div class="line">  SoXt::init(<span class="stringliteral">&quot;test&quot;</span>);</div><div class="line"></div><div class="line">  <a class="code" href="classSoTimerSensor.html">SoTimerSensor</a> * timeSensor = <span class="keyword">new</span> <a class="code" href="classSoTimerSensor.html">SoTimerSensor</a>;</div><div class="line">  timeSensor-&gt;<a class="code" href="classSoSensor.html#ac0a0152828590c9b23da259a9c60a629">setFunction</a>(timeSensorCallback);</div><div class="line">  timeSensor-&gt;<a class="code" href="classSoTimerSensor.html#a39b95dd1f164c05310c9119833ef7357">setBaseTime</a>(<a class="code" href="classSbTime.html#a6a24da27d9ba83fc848b860f164d00fc">SbTime::getTimeOfDay</a>());</div><div class="line">  timeSensor-&gt;<a class="code" href="classSoTimerSensor.html#aba8f968935ab0c6ab79252f0b3e7478d">setInterval</a>(1.0f);</div><div class="line">  timeSensor-&gt;<a class="code" href="classSoTimerSensor.html#a40861c60dca0b4181ba39676a4489279">schedule</a>();</div><div class="line"></div><div class="line">  SoXt::mainLoop();</div><div class="line">  <span class="keywordflow">return</span> 0;</div><div class="line">}</div></div><!-- fragment --> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa44140fca366b973dcd09a17f67c3593"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa44140fca366b973dcd09a17f67c3593">&#9670;&nbsp;</a></span>SoTimerQueueSensor() <span class="overload">[1/2]</span></h2>
@@ -407,7 +407,7 @@ real-time". That is, you can <em>not</em> expect a timer to always trigger at th
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Set absolute time at which to trigger sensor.</p>
+<p>Set absolute time at which to trigger the sensor.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoTimerQueueSensor.html#a2fbde37afa40cbdb857fe43cc6656ec7">getTriggerTime()</a> </dd></dl>
 
 </div>
@@ -446,7 +446,7 @@ real-time". That is, you can <em>not</em> expect a timer to always trigger at th
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSoTimerQueueSensor.html">SoTimerQueueSensor</a></li>
-    <li class="footer">Generated on Thu Oct 18 2018 20:24:04 for Coin by
+    <li class="footer">Generated on Fri Jan 24 2020 00:10:33 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

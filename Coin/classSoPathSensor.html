@@ -33,8 +33,8 @@
     Coin3D is Free Software,<br />published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.
   </td>
   <td style="text-align: right; padding-right: 0.5em;">
-    <a href="https://github.com/coin3d/">https://github.com/coin3d/</a><br />
-    <a href="http://www.kongsberg.com/kogt/">http://www.kongsberg.com/kogt/</a><br />  
+    <a href="https://coin3d.github.io">https://coin3d.github.io</a><br />
+    <a href="https://www.kongsberg.com/en/kogt/">https://www.kongsberg.com/en/kogt/</a><br />  
     </td>
  </tr>
  </tbody>
@@ -218,7 +218,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="classSoPathSensor.html" title="The SoPathSensor class detects changes to paths. ">SoPathSensor</a> class detects changes to paths. </p>
-<p>If you need to know when a path changes (i.e. nodes in the path has been removed, or new nodes is added), use this sensor to get a notification.</p>
+<p>If you need to know when a path changes (i.e. nodes in the path have been removed, or new nodes are added), use this sensor to get a notification.</p>
 <p>You can also use this sensor to detect when some node in the path is changed.</p>
 <p>An <a class="el" href="classSoPathSensor.html" title="The SoPathSensor class detects changes to paths. ">SoPathSensor</a> can also act for delete-callback purposes alone and does not need a regular notification-based callback. The delete callback will be invoked for when the <a class="el" href="classSoPath.html" title="The SoPath class is a container class for traversal path descriptions. ">SoPath</a> instance is deleted, not for anything you would be monitoring in a path. </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
@@ -290,7 +290,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Constructor taking as parameters the sensor callback function and the userdata which will be passed the callback.</p>
+<p>Constructor taking as parameters the sensor callback function and the userdata which will be passed to the callback.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoSensor.html#ac0a0152828590c9b23da259a9c60a629">setFunction()</a>, <a class="el" href="classSoSensor.html#acc7ffab34126318972fdc0830de49150">setData()</a> </dd></dl>
 
 </div>
@@ -449,7 +449,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Called from entity we are monitoring when it changes.</p>
-<p>If this is an immediate sensor, the field and node (if any) causing the change will be stored and can be fetched by <a class="el" href="classSoDataSensor.html#af0425ce110b8a140e8a88860a32e6130">getTriggerField()</a> and <a class="el" href="classSoDataSensor.html#a71b4d85b7bb2e76ae1744aa00a04d8e8">getTriggerNode()</a>. If the triggerpath flag has been set, the path down to the node is also found and stored for later retrieval by <a class="el" href="classSoDataSensor.html#a204de8b45eafc468909912b8f5da60af">getTriggerPath()</a>.</p>
+<p>If this is an immediate sensor, the field and node (if any) causing the change will be stored and can be fetched by <a class="el" href="classSoDataSensor.html#af0425ce110b8a140e8a88860a32e6130">getTriggerField()</a> and <a class="el" href="classSoDataSensor.html#a71b4d85b7bb2e76ae1744aa00a04d8e8">getTriggerNode()</a>. If the trigger path flag has been set, the path down to the node is also found and stored for later retrieval by <a class="el" href="classSoDataSensor.html#a204de8b45eafc468909912b8f5da60af">getTriggerPath()</a>.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoDataSensor.html#a84765fde3a1daf9447f7a3883fb1657a">setTriggerPathFlag()</a> </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classSoDataSensor.html#af19eeacd02a6b3e210a07f1bef483428">SoDataSensor</a>.</p>
@@ -466,7 +466,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSoPathSensor.html">SoPathSensor</a></li>
-    <li class="footer">Generated on Thu Oct 18 2018 20:23:37 for Coin by
+    <li class="footer">Generated on Fri Jan 24 2020 00:10:21 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

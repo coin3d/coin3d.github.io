@@ -33,8 +33,8 @@
     Coin3D is Free Software,<br />published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.
   </td>
   <td style="text-align: right; padding-right: 0.5em;">
-    <a href="https://github.com/coin3d/">https://github.com/coin3d/</a><br />
-    <a href="http://www.kongsberg.com/kogt/">http://www.kongsberg.com/kogt/</a><br />  
+    <a href="https://coin3d.github.io">https://coin3d.github.io</a><br />
+    <a href="https://www.kongsberg.com/en/kogt/">https://www.kongsberg.com/en/kogt/</a><br />  
     </td>
  </tr>
  </tbody>
@@ -160,7 +160,7 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:acf17d96be7da195a9f1da111718c154b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classSoType.html">SoType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoText3.html#acf17d96be7da195a9f1da111718c154b">getTypeId</a> (void) const</td></tr>
-<tr class="memdesc:acf17d96be7da195a9f1da111718c154b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the type identification of an object derived from a class inheriting <a class="el" href="classSoBase.html" title="The SoBase class is the top-level superclass for a number of class-hierarchies. ">SoBase</a>. This is used for run-time type checking and "downward" casting.  <a href="#acf17d96be7da195a9f1da111718c154b">More...</a><br /></td></tr>
+<tr class="memdesc:acf17d96be7da195a9f1da111718c154b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the type identification of an object derived from a class inheriting <a class="el" href="classSoBase.html" title="The SoBase class is the top-level superclass for a number of class-hierarchies. ">SoBase</a>. This is used for runtime type checking and "downward" casting.  <a href="#acf17d96be7da195a9f1da111718c154b">More...</a><br /></td></tr>
 <tr class="separator:acf17d96be7da195a9f1da111718c154b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a220acf8612aaa63a89b506b42f6c6887"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSbBox3f.html">SbBox3f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoText3.html#a220acf8612aaa63a89b506b42f6c6887">getCharacterBounds</a> (<a class="el" href="classSoState.html">SoState</a> *state, <a class="el" href="classint.html">int</a> stringindex, <a class="el" href="classint.html">int</a> charindex)</td></tr>
 <tr class="separator:a220acf8612aaa63a89b506b42f6c6887"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -389,7 +389,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="separator:a8419a92b3ac808c6a789673db06776be inherit pub_static_methods_classSoBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73ce238db093db6ba1b4009818cc9f27 inherit pub_static_methods_classSoBase"><td class="memItemLeft" align="right" valign="top"><a id="a73ce238db093db6ba1b4009818cc9f27"></a>
 static <a class="el" href="classSoType.html">SoType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoBase.html#a73ce238db093db6ba1b4009818cc9f27">getClassTypeId</a> (void)</td></tr>
-<tr class="memdesc:a73ce238db093db6ba1b4009818cc9f27 inherit pub_static_methods_classSoBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">This static method returns the <a class="el" href="classSoType.html" title="The SoType class is the basis for the run-time type system in Coin. ">SoType</a> object associated with objects of this class. <br /></td></tr>
+<tr class="memdesc:a73ce238db093db6ba1b4009818cc9f27 inherit pub_static_methods_classSoBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">This static method returns the <a class="el" href="classSoType.html" title="The SoType class is the basis for the runtime type system in Coin. ">SoType</a> object associated with objects of this class. <br /></td></tr>
 <tr class="separator:a73ce238db093db6ba1b4009818cc9f27 inherit pub_static_methods_classSoBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74952f1fd17c44eb0fc9c3dc3b69102a inherit pub_static_methods_classSoBase"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoBase.html#a74952f1fd17c44eb0fc9c3dc3b69102a">addName</a> (<a class="el" href="classSoBase.html">SoBase</a> *const base, const char *const name)</td></tr>
 <tr class="separator:a74952f1fd17c44eb0fc9c3dc3b69102a inherit pub_static_methods_classSoBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -570,7 +570,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p>The <a class="el" href="classSoText3.html" title="The SoText3 class renders extruded 3D text. ">SoText3</a> class renders extruded 3D text. </p>
 <p>Render text as 3D geometry.</p>
 <p>The size of the textual geometry representation is decided from the <a class="el" href="classSoFont.html#a8d2c7630d8020176d56802a9f336cdeb">SoFont::size</a> field of a preceding SoFont-node in the scene graph, which specifies the size in unit coordinates. This value sets the approximate vertical size of the letters. The default value if no SoFont-nodes are used, is 10.</p>
-<p>This node will create 3D geometry from a specified font defined by a preceding <a class="el" href="classSoFont.html" title="The SoFont class is an appearance node for setting fonts. ">SoFont</a> node. The complexity of the glyphs is controlled by a preceding <a class="el" href="classSoComplexity.html" title="The SoComplexity class is a node type which is used to set the tradeoff between quality and performan...">SoComplexity</a> node with <em>Type</em> set to OBJECT_SPACE. Please note that the default builtin 3D font will not be affected by the <a class="el" href="classSoComplexity.html" title="The SoComplexity class is a node type which is used to set the tradeoff between quality and performan...">SoComplexity</a> node.</p>
+<p>This node will create 3D geometry from a specified font defined by a preceding <a class="el" href="classSoFont.html" title="The SoFont class is an appearance node for setting fonts. ">SoFont</a> node. The complexity of the glyphs is controlled by a preceding <a class="el" href="classSoComplexity.html" title="The SoComplexity class is a node type which is used to set the trade-off between quality and performa...">SoComplexity</a> node with <em>Type</em> set to OBJECT_SPACE. Please note that the default built-in 3D font will not be affected by the <a class="el" href="classSoComplexity.html" title="The SoComplexity class is a node type which is used to set the trade-off between quality and performa...">SoComplexity</a> node.</p>
 <p>This is a simple example of an extruded <a class="el" href="classSoText3.html" title="The SoText3 class renders extruded 3D text. ">SoText3</a> string:</p>
 <pre class="fragment"> #Inventor V2.1 ascii
 
@@ -613,7 +613,7 @@ Additional Inherited Members</h2></td></tr>
 Rendering of Example File</div></div>
 </center><p>if <a class="el" href="classSoText3.html#a7a795bea518688db02b74ec9b99edd59">SoText3::Part</a> is set to SIDES or ALL and no profile is provided, a flat, one unit long profile will be created.</p>
 <p>Separate colors can be assigned to the front, sides and back of the glyphs by adding a preceding <a class="el" href="classSoMaterialBinding.html" title="The SoMaterialBinding class is a node for setting up how materials are mapped to shapes. ">SoMaterialBinding</a> node. Set the <em>value</em> field to PER_PART (default is OVERALL). The front, side and back of the glyphs will then be colored according to diffuse color 0, 1 and 2 found on the stack.</p>
-<p>Beware that using a lot of <a class="el" href="classSoText3.html" title="The SoText3 class renders extruded 3D text. ">SoText3</a> text characters in a scene will usually have severe impact on the rendering performance, as each and every character of the text increases the polygon-count a lot. This makes <a class="el" href="classSoText3.html" title="The SoText3 class renders extruded 3D text. ">SoText3</a> nodes most suitable in situations where you just need a few characters to be placed in your scene, rather than to visualize complete sentences.</p>
+<p>Beware that using a lot of <a class="el" href="classSoText3.html" title="The SoText3 class renders extruded 3D text. ">SoText3</a> text characters in a scene will usually have severe impact on the rendering performance, as each and every character of the text increases the polygon count a lot. This makes <a class="el" href="classSoText3.html" title="The SoText3 class renders extruded 3D text. ">SoText3</a> nodes most suitable in situations where you just need a few characters to be placed in your scene, rather than to visualize complete sentences.</p>
 <p><b>FILE FORMAT/DEFAULTS:</b> </p><div class="fragment"><div class="line">Text3 {</div><div class="line">    <span class="keywordtype">string</span> <span class="stringliteral">&quot;&quot;</span></div><div class="line">    <a class="code" href="classSoText3.html#a0292971c2f1bda6e4e4dac28f13dac57">spacing</a> 1</div><div class="line">    <a class="code" href="classSoText3.html#a3ca5396211268bccace35366372cfac4">justification</a> <a class="code" href="classSoText3.html#a560b6a63e13298862b0e945ee4775584af994e589822a3f42b2857f127af15509">LEFT</a></div><div class="line">    <a class="code" href="classSoText3.html#aded5e059ecdc86184fbcfe02f6d302ae">parts</a> <a class="code" href="classSoText3.html#a7a795bea518688db02b74ec9b99edd59ad1d4a00f85648a48b36aa6135ca10d71">FRONT</a></div><div class="line">}</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoText2.html" title="The SoText2 class is a node type for visualizing 2D text aligned with the camera plane. ">SoText2</a>, <a class="el" href="classSoAsciiText.html" title="The SoAsciiText class renders flat 3D text. ">SoAsciiText</a>, <a class="el" href="classSoProfile.html" title="The SoProfile class is the abstract superclass for profile definitions. ">SoProfile</a> </dd></dl>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a7a795bea518688db02b74ec9b99edd59"></a>
@@ -689,10 +689,10 @@ Rendering of Example File</div></div>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the type identification of an object derived from a class inheriting <a class="el" href="classSoBase.html" title="The SoBase class is the top-level superclass for a number of class-hierarchies. ">SoBase</a>. This is used for run-time type checking and "downward" casting. </p>
+<p>Returns the type identification of an object derived from a class inheriting <a class="el" href="classSoBase.html" title="The SoBase class is the top-level superclass for a number of class-hierarchies. ">SoBase</a>. This is used for runtime type checking and "downward" casting. </p>
 <p>Usage example:</p>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> foo(<a class="code" href="classSoNode.html">SoNode</a> * node)</div><div class="line">{</div><div class="line">  <span class="keywordflow">if</span> (node-&gt;<a class="code" href="classSoBase.html#a873b521c1386368d4d63ff893856590a">getTypeId</a>() == SoFile::getClassTypeId()) {</div><div class="line">    <a class="code" href="classSoFile.html">SoFile</a> * filenode = (<a class="code" href="classSoFile.html">SoFile</a> *)node;  <span class="comment">// safe downward cast, knows the type</span></div><div class="line"><span class="comment"></span>  }</div><div class="line">}</div></div><!-- fragment --><p>For application programmers wanting to extend the library with new nodes, engines, nodekits, draggers or others: this method needs to be overridden in <em>all</em> subclasses. This is typically done as part of setting up the full type system for extension classes, which is usually accomplished by using the pre-defined macros available through for instance <a class="el" href="SoSubNode_8h_source.html">Inventor/nodes/SoSubNode.h</a> (SO_NODE_INIT_CLASS and SO_NODE_CONSTRUCTOR for node classes), <a class="el" href="SoSubEngine_8h_source.html">Inventor/engines/SoSubEngine.h</a> (for engine classes) and so on.</p>
-<p>For more information on writing Coin extensions, see the class documentation of the toplevel superclasses for the various class groups. </p>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> foo(<a class="code" href="classSoNode.html">SoNode</a> * node)</div><div class="line">{</div><div class="line">  <span class="keywordflow">if</span> (node-&gt;<a class="code" href="classSoBase.html#a873b521c1386368d4d63ff893856590a">getTypeId</a>() == SoFile::getClassTypeId()) {</div><div class="line">    <a class="code" href="classSoFile.html">SoFile</a> * filenode = (<a class="code" href="classSoFile.html">SoFile</a> *)node;  <span class="comment">// safe downward cast, knows the type</span></div><div class="line"><span class="comment"></span>  }</div><div class="line">}</div></div><!-- fragment --><p>For application programmers wanting to extend the library with new nodes, engines, nodekits, draggers or others: this method needs to be overridden in <em>all</em> subclasses. This is typically done as part of setting up the full type system for extension classes, which is usually accomplished by using the predefined macros available through for instance <a class="el" href="SoSubNode_8h_source.html">Inventor/nodes/SoSubNode.h</a> (SO_NODE_INIT_CLASS and SO_NODE_CONSTRUCTOR for node classes), <a class="el" href="SoSubEngine_8h_source.html">Inventor/engines/SoSubEngine.h</a> (for engine classes) and so on.</p>
+<p>For more information on writing Coin extensions, see the class documentation of the top level superclasses for the various class groups. </p>
 
 <p>Reimplemented from <a class="el" href="classSoShape.html#abd1c4ab209a57b673090cf1c33418fb2">SoShape</a>.</p>
 
@@ -758,7 +758,7 @@ Rendering of Example File</div></div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Not implemented. Should probably have been private in OIV. Let us know if you need this method for anything, and we'll implement it. </p>
+<p>Not implemented. Should probably have been private in Open Inventor API. Let us know if you need this method for anything, and we'll implement it. </p>
 
 </div>
 </div>
@@ -786,7 +786,7 @@ Rendering of Example File</div></div>
 </table>
 </div><div class="memdoc">
 <p>Action method for the <a class="el" href="classSoGLRenderAction.html" title="The SoGLRenderAction class renders the scene graph with OpenGL calls. ">SoGLRenderAction</a>.</p>
-<p>This is called during rendering traversals. Nodes influencing the rendering state in any way or who wants to throw geometry primitives at OpenGL overrides this method. </p>
+<p>This is called during rendering traversals. Nodes influencing the rendering state in any way or want to throw geometry primitives at OpenGL override this method. </p>
 
 <p>Reimplemented from <a class="el" href="classSoShape.html#aa7e1b61eb89c30f60d05032cc703b35d">SoShape</a>.</p>
 
@@ -817,7 +817,7 @@ Rendering of Example File</div></div>
 </div><div class="memdoc">
 <p>Action method for the <a class="el" href="classSoGetPrimitiveCountAction.html" title="The SoGetPrimitiveCountAction class counts the primitives in a scene. ">SoGetPrimitiveCountAction</a>.</p>
 <p>Calculates the number of triangle, line segment and point primitives for the node and adds these to the counters of the <em>action</em>.</p>
-<p>Nodes influencing how geometry nodes calculates their primitive count also overrides this method to change the relevant state variables. </p>
+<p>Nodes influencing how geometry nodes calculate their primitive count also override this method to change the relevant state variables. </p>
 
 <p>Reimplemented from <a class="el" href="classSoShape.html#a60b82169df8b927bb293f6360230651b">SoShape</a>.</p>
 
@@ -1048,7 +1048,7 @@ Rendering of Example File</div></div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Character parts. Default is to show only the front-facing part. </p>
+<p>Character parts. Default is to show only the front facing part. </p>
 
 </div>
 </div>
@@ -1062,7 +1062,7 @@ Rendering of Example File</div></div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSoText3.html">SoText3</a></li>
-    <li class="footer">Generated on Thu Oct 18 2018 20:24:02 for Coin by
+    <li class="footer">Generated on Fri Jan 24 2020 00:10:31 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

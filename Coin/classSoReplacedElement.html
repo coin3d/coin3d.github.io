@@ -33,8 +33,8 @@
     Coin3D is Free Software,<br />published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.
   </td>
   <td style="text-align: right; padding-right: 0.5em;">
-    <a href="https://github.com/coin3d/">https://github.com/coin3d/</a><br />
-    <a href="http://www.kongsberg.com/kogt/">http://www.kongsberg.com/kogt/</a><br />  
+    <a href="https://coin3d.github.io">https://coin3d.github.io</a><br />
+    <a href="https://www.kongsberg.com/en/kogt/">https://www.kongsberg.com/en/kogt/</a><br />  
     </td>
  </tr>
  </tbody>
@@ -104,7 +104,7 @@ Inheritance diagram for SoReplacedElement:</div>
 <area href="classSoGLColorIndexElement.html" title="The SoGLColorIndexElement class sets the current OpenGL color. " alt="SoGLColorIndexElement" shape="rect" coords="199,616,388,640"/>
 <area href="classSoGLShaderProgramElement.html" alt="SoGLShaderProgramElement" shape="rect" coords="199,672,388,696"/>
 <area href="classSoLightAttenuationElement.html" title="The SoLightAttenuationElement class is yet to be documented. " alt="SoLightAttenuationElement" shape="rect" coords="199,728,388,752"/>
-<area href="classSoListenerDopplerElement.html" title="The SoListenerDopplerElement holds the doppler velocity and factor of the current listener..." alt="SoListenerDopplerElement" shape="rect" coords="199,784,388,808"/>
+<area href="classSoListenerDopplerElement.html" title="The SoListenerDopplerElement holds the Doppler velocity and factor of the current listener..." alt="SoListenerDopplerElement" shape="rect" coords="199,784,388,808"/>
 <area href="classSoListenerOrientationElement.html" title="The SoListenerOrientationElement holds the orientation of the current listener. " alt="SoListenerOrientationElement" shape="rect" coords="199,840,388,864"/>
 <area href="classSoListenerPositionElement.html" title="The SoListenerPositionElement holds the position of the current listener. " alt="SoListenerPositionElement" shape="rect" coords="199,896,388,920"/>
 <area href="classSoNormalElement.html" title="The SoNormalElement class is yet to be documented. " alt="SoNormalElement" shape="rect" coords="199,952,388,976"/>
@@ -229,7 +229,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p>The <a class="el" href="classSoReplacedElement.html" title="The SoReplacedElement class is an abstract element superclass. ">SoReplacedElement</a> class is an abstract element superclass. </p>
 <p>This is the superclass of all elements where the new element data <em>replaces</em> the old data, and where the data the element stores is not just a simple float or integer value.</p>
 <p>Apart from this conceptual difference from its superclass, the <a class="el" href="classSoReplacedElement.html" title="The SoReplacedElement class is an abstract element superclass. ">SoReplacedElement</a> class also overloads the default <a class="el" href="classSoReplacedElement.html#a70833996b60d53f3e54ec90a3ea9fab5">getElement()</a> method to include a node reference. This reference is used to fetch the unique node identification number of the node that last changed the element.</p>
-<p>The identifier values of nodes in the scenegraph is updated upon <em>any</em> kind of change to a node, so this technique plays an important role in the construction, validation and destruction of internal scenegraph caches.</p>
+<p>The identifier values of nodes in the scene graph is updated upon <em>any</em> kind of change to a node, so this technique plays an important role in the construction, validation and destruction of internal scene graph caches.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoAccumulatedElement.html" title="The SoAccumulatedElement class is an abstract class for storing accumulated state. ">SoAccumulatedElement</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa616fc07d9945d27c12302aeafe73144"></a>
@@ -283,7 +283,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This function initializes the element type in the given <a class="el" href="classSoState.html" title="The SoState class manages the Coin scenegraph traversal state data. ">SoState</a>. It is called for the first element of each enabled element type in <a class="el" href="classSoState.html" title="The SoState class manages the Coin scenegraph traversal state data. ">SoState</a> objects. </p>
+<p>This function initializes the element type in the given <a class="el" href="classSoState.html" title="The SoState class manages the Coin scene graph traversal state data. ">SoState</a>. It is called for the first element of each enabled element type in <a class="el" href="classSoState.html" title="The SoState class manages the Coin scene graph traversal state data. ">SoState</a> objects. </p>
 
 <p>Reimplemented from <a class="el" href="classSoElement.html#a620552c04e13e74ac19bfdb3cebca818">SoElement</a>.</p>
 
@@ -347,7 +347,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>This function creates a copy of the element that contains enough information to enable the <a class="el" href="classSoReplacedElement.html#a85f4bb3be5fc564fa328ddfceb2fc0c0">matches()</a> function to work.</p>
-<p>Used to help with scenegraph traversal caching operations. </p>
+<p>Used to help with scene graph traversal caching operations. </p>
 
 <p>Implements <a class="el" href="classSoElement.html#a4a6e2a38cdbbdd1dccbb3e9928e68d55">SoElement</a>.</p>
 
@@ -446,7 +446,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>This function overloads <a class="el" href="classSoElement.html#a30c40ecaa79d6b140278fe906273e714">SoElement::getElement()</a> with an extra <em>node</em> parameter, to let us set the <a class="el" href="classSoReplacedElement.html#a7695219e8870f983e6960e4dcbbe487f">SoReplacedElement::nodeId</a> in the element instance before returning.</p>
 <p><a class="el" href="classSoReplacedElement.html" title="The SoReplacedElement class is an abstract element superclass. ">SoReplacedElement</a> subclasses should use this method to get writable instances.</p>
-<p>The identifier values of nodes in the scenegraph is updated upon <em>any</em> kind of change to a node, so this technique plays an important role in the construction, validation and destruction of internal scenegraph caches.</p>
+<p>The identifier values of nodes in the scene graph is updated upon <em>any</em> kind of change to a node, so this technique plays an important role in the construction, validation and destruction of internal scene graph caches.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoElement.html#a30c40ecaa79d6b140278fe906273e714">SoElement::getElement()</a> </dd></dl>
 
 </div>
@@ -487,7 +487,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSoReplacedElement.html">SoReplacedElement</a></li>
-    <li class="footer">Generated on Thu Oct 18 2018 20:23:42 for Coin by
+    <li class="footer">Generated on Fri Jan 24 2020 00:10:23 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

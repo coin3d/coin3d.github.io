@@ -33,8 +33,8 @@
     Coin3D is Free Software,<br />published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.
   </td>
   <td style="text-align: right; padding-right: 0.5em;">
-    <a href="https://github.com/coin3d/">https://github.com/coin3d/</a><br />
-    <a href="http://www.kongsberg.com/kogt/">http://www.kongsberg.com/kogt/</a><br />  
+    <a href="https://coin3d.github.io">https://coin3d.github.io</a><br />
+    <a href="https://www.kongsberg.com/en/kogt/">https://www.kongsberg.com/en/kogt/</a><br />  
     </td>
  </tr>
  </tbody>
@@ -227,13 +227,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>resetAge</b> (void) c
 <li>COIN_TEX2_LINEAR_MIPMAP_LIMIT: Linear filtering between mipmap levels is enabled if textureQuality is greater or equal to this value. Default value is 0.8.</li>
 </ul>
 <ul>
-<li>COIN_TEX2_SCALEUP_LIMIT: Textures with width or height not equal to a power of two will always be scaled up if textureQuality is greater or equal to this value. Default value is 0.7. If textureQuality is lower than this value, and the width or height is larger than 256 pixels, the texture is only scaled up if it's relatively close to the next power of two size. This could save a lot of texture memory.</li>
+<li>COIN_TEX2_SCALEUP_LIMIT: Textures with width or height not equal to a power of two will always be scaled up if textureQuality is greater or equal to this value. Default value is 0.7. If textureQuality is lower than this value, and the width or height is larger than 256 pixels, the texture is only scaled up if it is relatively close to the next power of two size. This could save a lot of texture memory.</li>
 </ul>
 <ul>
-<li>COIN_TEX2_USE_GLTEXSUBIMAGE: When set, and when the new texture data has the same attributes as the old data, glTexSubImage() will be used to copy new data into the texture instead of recreating the texture. This is not enabled by default, since it seems to trigger a bug in the Linux nVidia drivers. It just happens in some unreproducable cases. It could be a bug in our glTexSubImage() code, of course. :)</li>
+<li>COIN_TEX2_USE_GLTEXSUBIMAGE: When set, and when the new texture data have the same attributes as the old data, glTexSubImage() will be used to copy new data into the texture instead of recreating the texture. This is not enabled by default, since it seems to trigger a bug in the Linux nVidia drivers. It just happens in some unreproduceable cases. It could be a bug in our glTexSubImage() code, of course. :)</li>
 </ul>
 <ul>
-<li>COIN_TEX2_USE_SGIS_GENERATE_MIPMAP: When set, use the GL_SGIS_generate_mip extension (if available) to generate mipmaps, otherwise use a fast internal routine to generate them. Use of SGIS_generate_mipmap is not enabled by default since we suspect some ATi drivers have problems with this extensions.</li>
+<li>COIN_TEX2_USE_SGIS_GENERATE_MIPMAP: When set, use the GL_SGIS_generate_mipmap extension (if available) to generate mipmaps, otherwise use a fast internal routine to generate them. Use of GL_SGIS_generate_mipmap is not enabled by default since we suspect some ATi drivers have problems with this extension.</li>
 </ul>
 <ul>
 <li>COIN_ENABLE_CONFORMANT_GL_CLAMP: When set, GL_CLAMP will be used when SoGLImage::CLAMP is specified as the texture wrap mode. By default GL_CLAMP_TO_EDGE is used, since this is usually what people want. See <a href="http://www.opengl.org/discussion_boards/ubb/Forum3/HTML/007306.html">http://www.opengl.org/discussion_boards/ubb/Forum3/HTML/007306.html</a> for a discussion regarding GL_CLAMP and GL_CLAMP_TO_EDGE.</li>
@@ -256,8 +256,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>resetAge</b> (void) c
       </table>
 </div><div class="memdoc">
 <p>Image resize callback type. If registered using <a class="el" href="classSoGLImage.html#a8a8860699c12cee3abad5a1d0cb0048e">setResizeCallback()</a>, this function will be called whenever Coin needs to resize an image. The function will be called both for 2D and 3D images.</p>
-<p><em>state</em> is the current state at the time of resizing. <em>newsize</em> is the requested new image size. Note that the z size of a 2D image is 0. <em>destbuffer</em> is a pre-allocated buffer big enough to hold the pixels for the resized image. The # of bytes per pixel is the same as for the original image. <em>reason</em> is a hint about why the image is resized. At the moment, only IMAGE is supported. <em>image</em> is the original image.</p>
-<p>Return value: TRUE if the resize ahs been resized, FALSE if not. If FALSE is returned, Coin will resize the image instead. </p>
+<p><em>state</em> is the current state at the time of resizing. <em>newsize</em> is the requested new image size. Note that the z size of a 2D image is 0. <em>destbuffer</em> is a preallocated buffer big enough to hold the pixels for the resized image. The # of bytes per pixel is the same as for the original image. <em>reason</em> is a hint about why the image is resized. At the moment, only IMAGE is supported. <em>image</em> is the original image.</p>
+<p>Return value: TRUE if the resize has been resized, FALSE if not. If FALSE is returned, Coin will resize the image instead. </p>
 
 </div>
 </div>
@@ -303,7 +303,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>resetAge</b> (void) c
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Can be used to tune/optimize the GL texture handling. Normally the texture quality will be used to decide scaling and filtering, and the image data will be scanned to decide if the image is (partly) transparent, and if the texture can be rendered using the cheaper alpha test instead of blending if it does contain transparency. If you know the contents of your texture image, or if you have special requirements on how the texture should be rendered, you can set the flags using the <a class="el" href="classSoGLImage.html#a6950dd6e70a3c23fe1d548b945ceb9f8">SoGLImage::setFlags()</a> method. </p>
+<p>Can be used to tune/optimize the GL texture handling. Normally the texture quality will be used to decide scaling and filtering, and the image data will be scanned to decide if the image is (partially) transparent, and if the texture can be rendered using the cheaper alpha test instead of blending if it does contain transparency. If you know the contents of your texture image, or if you have special requirements on how the texture should be rendered, you can set the flags using the <a class="el" href="classSoGLImage.html#a6950dd6e70a3c23fe1d548b945ceb9f8">SoGLImage::setFlags()</a> method. </p>
 
 </div>
 </div>
@@ -377,7 +377,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>resetAge</b> (void) c
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This class has a private destuctor since we want users to supply the current GL state when deleting the image. This is to make sure gl texture objects are freed as soon as possible. If you supply NULL to this method, the gl texture objects won't be deleted until the next time an GLRenderAction is applied in the image's cache context(s). </p>
+<p>This class has a private destructor since we want users to supply the current GL state when deleting the image. This is to make sure GL texture objects are freed as soon as possible. If you supply NULL to this method, the GL texture objects won't be deleted until the next time an GLRenderAction is applied in the image's cache context(s). </p>
 
 <p>Reimplemented in <a class="el" href="classSoGLBigImage.html#a66f4ebbb9a4d6a914f46faa82212f7f3">SoGLBigImage</a>, and <a class="el" href="classSoGLCubeMapImage.html#a3b76cfb097f3135fc8e2928ba9b8baf1">SoGLCubeMapImage</a>.</p>
 
@@ -628,7 +628,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>resetAge</b> (void) c
         </tr>
       </table>
 </div><div class="memdoc">
-<p>2D <a class="el" href="classSoGLImage.html#a9224330dccd39954755029af4bb4a24c">setData()</a> wrapper. Supplies raw data, size and numcomponents instead of an <a class="el" href="classSbImage.html" title="The SbImage class is an abstract datatype for 2D and 3D images. ">SbImage</a>. Creates a temporary image, then calls the read <a class="el" href="classSoGLImage.html#a9224330dccd39954755029af4bb4a24c">setData()</a>. This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+<p>2D <a class="el" href="classSoGLImage.html#a9224330dccd39954755029af4bb4a24c">setData()</a> wrapper. Supplies raw data, size and numcomponents instead of an <a class="el" href="classSbImage.html" title="The SbImage class is an abstract data type for 2D and 3D images. ">SbImage</a>. Creates a temporary image, then calls the read <a class="el" href="classSoGLImage.html#a9224330dccd39954755029af4bb4a24c">setData()</a>. This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
 
 </div>
 </div>
@@ -699,7 +699,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>resetAge</b> (void) c
         </tr>
       </table>
 </div><div class="memdoc">
-<p>3D <a class="el" href="classSoGLImage.html#a9224330dccd39954755029af4bb4a24c">setData()</a> wrapper. Supplies raw data, size and numcomponents instead of an <a class="el" href="classSbImage.html" title="The SbImage class is an abstract datatype for 2D and 3D images. ">SbImage</a>. Creates a temporary image, then calls the read <a class="el" href="classSoGLImage.html#a9224330dccd39954755029af4bb4a24c">setData()</a>. This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+<p>3D <a class="el" href="classSoGLImage.html#a9224330dccd39954755029af4bb4a24c">setData()</a> wrapper. Supplies raw data, size and numcomponents instead of an <a class="el" href="classSbImage.html" title="The SbImage class is an abstract data type for 2D and 3D images. ">SbImage</a>. Creates a temporary image, then calls the read <a class="el" href="classSoGLImage.html#a9224330dccd39954755029af4bb4a24c">setData()</a>. This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
 
 </div>
 </div>
@@ -829,7 +829,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>resetAge</b> (void) c
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Sets the data for this GL image. Should only be called when one of the parameters have changed, since this will cause the GL texture object to be recreated. Caller is responsible for sending legal Wrap values. CLAMP_TO_EDGE is only supported on OpenGL v1.2 implementations, and as an extension on some earlier SGI implementations (GL_SGIS_texture_edge_clamp).</p>
+<p>Sets the data for this GL image. Should only be called when one of the parameters have changed, since this will cause the GL texture object to be recreated. Caller is responsible for sending legal wrap values. CLAMP_TO_EDGE is only supported on OpenGL v1.2 implementations, and as an extension on some earlier SGI implementations (GL_SGIS_texture_edge_clamp).</p>
 <p>For now, if quality &gt; 0.5 when created, we create mipmaps, otherwise a regular texture is created. Be aware, if you for instance create a texture with texture quality 0.4, and then later try to apply the texture with a texture quality greater than 0.5, the texture object will be recreated as a mipmap texture object. This will happen only once though, of course.</p>
 <p>If <em>border</em> != 0, the OpenGL texture will be created with this border size. Be aware that this might be extremely slow on most PC hardware.</p>
 <p>Normally, the OpenGL texture object isn't created until the first time it is needed, but if <em>createinstate</em> is != NULL, the texture object is created immediately. This is useful if you use a temporary buffer to hold the texture data. Be careful when using this feature, since the texture data might be needed at a later stage (for instance to create a texture object for another context). It will not be possible to create texture objects for other cache contexts when <em>createinstate</em> is != NULL.</p>
@@ -921,7 +921,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>resetAge</b> (void) c
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns or creates a <a class="el" href="classSoGLDisplayList.html" title="The SoGLDisplayList class stores and manages OpenGL display lists. ">SoGLDisplayList</a> to be used for rendering. Returns NULL if no SoDLDisplayList could be created. </p>
+<p>Returns or creates a <a class="el" href="classSoGLDisplayList.html" title="The SoGLDisplayList class stores and manages OpenGL display lists. ">SoGLDisplayList</a> to be used for rendering. Returns NULL if no <a class="el" href="classSoGLDisplayList.html" title="The SoGLDisplayList class stores and manages OpenGL display lists. ">SoGLDisplayList</a> could be created. </p>
 
 <p>Reimplemented in <a class="el" href="classSoGLCubeMapImage.html#acfd924916d8c5403f7279f5a3d6e55cf">SoGLCubeMapImage</a>, and <a class="el" href="classSoGLBigImage.html#a34c957db1299d20e1e2d339dce664552">SoGLBigImage</a>.</p>
 
@@ -942,7 +942,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>resetAge</b> (void) c
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns <em>TRUE</em> if this texture has some pixels with alpha != 255 </p>
+<p>Returns <em>TRUE</em> if this texture has some pixels with alpha value != 255 </p>
 
 </div>
 </div>
@@ -1057,7 +1057,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>resetAge</b> (void) c
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns an unique if for this GL image. This id can be used to test for changes in an <a class="el" href="classSoGLImage.html" title="The SoGLImage class is used to handle OpenGL 2D/3D textures. ">SoGLImage</a>'s internal data. </p>
+<p>Returns an unique id for this GL image. This id can be used to test for changes in an <a class="el" href="classSoGLImage.html" title="The SoGLImage class is used to handle OpenGL 2D/3D textures. ">SoGLImage</a>'s internal data. </p>
 
 </div>
 </div>
@@ -1094,7 +1094,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>resetAge</b> (void) c
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Virtual method that will be called once each frame. The method should unref display lists that has an age bigger or equal to <em>maxage</em>, and increment the age for other display lists. </p>
+<p>Virtual method that will be called once each frame. The method should unref display lists that have an age bigger or equal to <em>maxage</em>, and increment the age for other display lists. </p>
 
 <p>Reimplemented in <a class="el" href="classSoGLBigImage.html#aeab189f04a025e0a49954c8374621d5c">SoGLBigImage</a>.</p>
 
@@ -1324,7 +1324,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>resetAge</b> (void) c
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSoGLImage.html">SoGLImage</a></li>
-    <li class="footer">Generated on Thu Oct 18 2018 20:23:14 for Coin by
+    <li class="footer">Generated on Fri Jan 24 2020 00:10:12 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

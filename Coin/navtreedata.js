@@ -133,8 +133,7 @@ var NAVTREEINDEX =
 "classSoVertexShape.html#ac1e619dc424153e58f6470576165e4c4",
 "functions_r.html",
 "group__threads.html#ga8fee93200a830bf8d695dc1ad90284bc",
-"spidermonkey_8h.html#aa311e996daa7ae922e70a24517dc5c7e",
-"structSoLazyElement_1_1CoinState.html#adee68b3a8bf3ff1037be7886b5d4f16f"
+"structSoIntersectingPrimitive.html#a8b0583b1ed8810f99f5922b2a94823d8"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

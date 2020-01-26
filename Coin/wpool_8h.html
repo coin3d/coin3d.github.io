@@ -33,8 +33,8 @@
     Coin3D is Free Software,<br />published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.
   </td>
   <td style="text-align: right; padding-right: 0.5em;">
-    <a href="https://github.com/coin3d/">https://github.com/coin3d/</a><br />
-    <a href="http://www.kongsberg.com/kogt/">http://www.kongsberg.com/kogt/</a><br />  
+    <a href="https://coin3d.github.io">https://coin3d.github.io</a><br />
+    <a href="https://www.kongsberg.com/en/kogt/">https://www.kongsberg.com/en/kogt/</a><br />  
     </td>
  </tr>
  </tbody>
@@ -239,8 +239,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Locks the pool so that workers can be started using the <a class="el" href="wpool_8h.html#ab6520bc3ada9718920816fda16fe345f">cc_wpool_start_worker()</a> method. <em>numworkersneeded</em> should contain the minumum number of workers that is needed. If <em>numworkersneeded</em> workers are available, the pool will be locked and TRUE is returned. Otherwise FALSE is returned.</p>
-<p>Usage pseudocode:</p>
+<p>Locks the pool so that workers can be started using the <a class="el" href="wpool_8h.html#ab6520bc3ada9718920816fda16fe345f">cc_wpool_start_worker()</a> method. <em>numworkersneeded</em> should contain the minimum number of workers that is needed. If <em>numworkersneeded</em> workers are available, the pool will be locked and TRUE is returned. Otherwise FALSE is returned.</p>
+<p>Usage pseudo code:</p>
 <div class="fragment"><div class="line"><span class="keywordtype">int</span> numworkers = 5;</div><div class="line"></div><div class="line"><span class="keywordflow">if</span> (<a class="code" href="wpool_8h.html#af74a596c25276cf64940945ced3e1aac">cc_wpool_begin</a>(pool, numworkers)) {</div><div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; numworkers; i++) {</div><div class="line">    <a class="code" href="wpool_8h.html#ab6520bc3ada9718920816fda16fe345f">cc_wpool_start_worker</a>(my_work[i], my_closure[i]);</div><div class="line">  }</div><div class="line">  <a class="code" href="wpool_8h.html#aee918e25fac8bb394789c70c3501a522">cc_wpool_end</a>(pool);</div><div class="line">}</div></div><!-- fragment --><p>Important! If too few workers are available, the pool will not be locked and <a class="el" href="wpool_8h.html#aee918e25fac8bb394789c70c3501a522">cc_wpool_end()</a> should not be called.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="wpool_8h.html#ab6520bc3ada9718920816fda16fe345f">cc_wpool_start_worker()</a>, <a class="el" href="wpool_8h.html#aee918e25fac8bb394789c70c3501a522">cc_wpool_end()</a> </dd></dl>
 
@@ -338,8 +338,8 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_469ed70aca823fd8322768ad54869f94.html">Inventor</a></li><li class="navelem"><a class="el" href="dir_c926cf464acaebc2091d00c8a935648f.html">C</a></li><li class="navelem"><a class="el" href="dir_b7bb16c11722e2c1eb4bf76dbb6d1b35.html">threads</a></li><li class="navelem"><a class="el" href="wpool_8h.html">wpool.h</a></li>
-    <li class="footer">Generated on Thu Oct 18 2018 20:22:56 for Coin by
+    <li class="navelem"><a class="el" href="dir_a6603f4dc6a79c28acf9645e930a3a85.html">coin</a></li><li class="navelem"><a class="el" href="dir_f4c6851b118624738cdb074afbf8bfed.html">include</a></li><li class="navelem"><a class="el" href="dir_aa3b0a2670ac5fed57825755ff7e6077.html">Inventor</a></li><li class="navelem"><a class="el" href="dir_8ee6d99fdffd5eea665086b0c867238a.html">C</a></li><li class="navelem"><a class="el" href="dir_9580f3a9e23156ee61858034fa9c58d7.html">threads</a></li><li class="navelem"><a class="el" href="wpool_8h.html">wpool.h</a></li>
+    <li class="footer">Generated on Fri Jan 24 2020 00:09:56 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

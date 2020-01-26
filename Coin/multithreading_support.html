@@ -33,8 +33,8 @@
     Coin3D is Free Software,<br />published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.
   </td>
   <td style="text-align: right; padding-right: 0.5em;">
-    <a href="https://github.com/coin3d/">https://github.com/coin3d/</a><br />
-    <a href="http://www.kongsberg.com/kogt/">http://www.kongsberg.com/kogt/</a><br />  
+    <a href="https://coin3d.github.io">https://coin3d.github.io</a><br />
+    <a href="https://www.kongsberg.com/en/kogt/">https://www.kongsberg.com/en/kogt/</a><br />  
     </td>
  </tr>
  </tbody>
@@ -76,15 +76,15 @@ $(document).ready(function(){initNavTree('multithreading_support.html','');});
 <div class="textblock"><p>The support in Coin for using multiple threads in application programs and the Coin library itself, consists of two main features:</p>
 <ul>
 <li>
-<p class="startli">Coin provides platform-independent thread-handling abstraction classes. These are classes that the application programmer can freely use in her application code to start new threads, control their execution, work with mutexes and do other tasks related to handling multiple threads.</p>
+<p class="startli">Coin provides platform independent thread handling abstraction classes. These are classes that the application programmer can freely use in her application code to start new threads, control their execution, work with mutexes and do other tasks related to handling multiple threads.</p>
 <p>The classes in question are <a class="el" href="classSbThread.html">SbThread</a>, <a class="el" href="classSbMutex.html">SbMutex</a>, <a class="el" href="classSbStorage.html">SbStorage</a>, <a class="el" href="classSbBarrier.html">SbBarrier</a>, <a class="el" href="classSbCondVar.html">SbCondVar</a>, <a class="el" href="classSbFifo.html">SbFifo</a>, <a class="el" href="classSbThreadAutoLock.html">SbThreadAutoLock</a>, <a class="el" href="classSbRWMutex.html">SbRWMutex</a>, and <a class="el" href="classSbTypedStorage.html">SbTypedStorage</a>. See their respective documentation for the detailed information.</p>
-<p>The classes fully hides the system-specific implementation, which is either done on top of native Win32 (if on Microsoft Windows), or over POSIX threads (on UNIX and UNIX-like systems). </p>
+<p>The classes fully hides the system specific implementation, which is either done on top of native Win32 (if on Microsoft Windows), or over POSIX threads (on UNIX and UNIX-like systems). </p>
 <p class="endli"></p>
 </li>
 <li>
 <p class="startli">The other aspect of our multi-threading support is that Coin can be specially configured so that rendering traversals of the scene graph are done in a thread-safe manner. This means e.g. that it is possible to have Coin render the scene in parallel on multiple CPUs for multiple rendering pipes, to better take advantage of such high-end systems (like CAVE environments, for instance).</p>
 <p>Thread-safe render traversals are <em>off</em> by default, because there is a small overhead involved which would make rendering (very) slightly slower on single-threaded invocations.</p>
-<p>To get a Coin library built with thread-safe rendering, one must actively re-configure Coin and build a special, local version. For configure-based builds (UNIX and UNIX-like systems, or with Cygwin on Microsoft Windows) this is done with the option "--enable-threadsafe" to Autoconf configure. To change the configuration and re-build with Visual Studio, you will need to change the preprocessor directive COIN_THREADSAFE to defined in the file src/setup.h located in the same folder as you found your solution file.</p>
+<p>To get a Coin library built with thread-safe rendering, one must actively reconfigure Coin and build a special, local version. For configure-based builds (UNIX and UNIX-like systems, or with Cygwin on Microsoft Windows) this is done with the option "--enable-threadsafe" to Autoconf configure. To change the configuration and rebuild with Visual Studio, you will need to change the preprocessor directive COIN_THREADSAFE to defined in the file src/setup.h located in the same folder as you found your solution file.</p>
 <p class="endli"></p>
 </li>
 </ul>
@@ -95,11 +95,11 @@ $(document).ready(function(){initNavTree('multithreading_support.html','');});
 <p class="endli"></p>
 </li>
 <li>
-<p class="startli">Rendering traversals is currently the only operation which we publicly support to be thread-safe. There are other aspects of Coin that we know are thread-safe, like most other action traversals beside just rendering, but we make no guarantees in this regard. </p>
+<p class="startli">Rendering traversals are currently the only operation which we publicly support to be thread-safe. There are other aspects of Coin that we know are thread-safe, like most other action traversals beside just rendering, but we make no guarantees in this regard. </p>
 <p class="endli"></p>
 </li>
 <li>
-<p class="startli">Be careful about using a separate thread for changing Coin structures versus what is used for the application's GUI event thread.</p>
+<p class="startli">Be careful about using a separate thread for changing Coin structures versus what is used for the applications GUI event thread.</p>
 <p>We are aware of at least issues with Qt3 (and thereby SoQt), where you should not modify the scene graph in any way in a thread separate from the main Qt thread. This because it will trigger operations where Qt3 is not thread-safe. For Qt4, we have not been aware of such problems.</p>
 <p class="endli"></p>
 </li>
@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('multithreading_support.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="related_pages.html">Related Pages</a></li>
-    <li class="footer">Generated on Thu Oct 18 2018 20:22:56 for Coin by
+    <li class="footer">Generated on Fri Jan 24 2020 00:09:56 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

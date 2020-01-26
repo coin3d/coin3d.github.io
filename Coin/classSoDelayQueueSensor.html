@@ -33,8 +33,8 @@
     Coin3D is Free Software,<br />published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.
   </td>
   <td style="text-align: right; padding-right: 0.5em;">
-    <a href="https://github.com/coin3d/">https://github.com/coin3d/</a><br />
-    <a href="http://www.kongsberg.com/kogt/">http://www.kongsberg.com/kogt/</a><br />  
+    <a href="https://coin3d.github.io">https://coin3d.github.io</a><br />
+    <a href="https://www.kongsberg.com/en/kogt/">https://www.kongsberg.com/en/kogt/</a><br />  
     </td>
  </tr>
  </tbody>
@@ -161,9 +161,9 @@ Protected Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="classSoDelayQueueSensor.html" title="The SoDelayQueueSensor class is the abstract base class for priority scheduled sensors. ">SoDelayQueueSensor</a> class is the abstract base class for priority scheduled sensors. </p>
-<p>Delay queue sensors are invoked upon various events <em>not</em> related to time occurrences. See documentation of subclasses to see which types of events can be surveilled by the builtin sensor types.</p>
+<p>Delay queue sensors are invoked upon various events <em>not</em> related to time occurrences. See documentation of subclasses to see which types of events can be surveilled by the built-in sensor types.</p>
 <p>The priority values can be used to queue events by their importance, so the sensors are triggered in the sequence you want.</p>
-<p>The queue of delay sensors (i.e. instances of subclasses of <a class="el" href="classSoDelayQueueSensor.html" title="The SoDelayQueueSensor class is the abstract base class for priority scheduled sensors. ">SoDelayQueueSensor</a>) will be processed as soon as either the run-time system is idle, or if it is continually busy they will be processed within a fixed amount of time.</p>
+<p>The queue of delay sensors (i.e. instances of subclasses of <a class="el" href="classSoDelayQueueSensor.html" title="The SoDelayQueueSensor class is the abstract base class for priority scheduled sensors. ">SoDelayQueueSensor</a>) will be processed as soon as either the runtime system is idle, or if it is continually busy they will be processed within a fixed amount of time.</p>
 <p>This time interval is by default 1/12th of a second, but can be controlled with the <a class="el" href="classSoSensorManager.html#a017db6daa54156ec1a2f8198fb30d531">SoSensorManager::setDelaySensorTimeout()</a> interface. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad13897ccad36d059d146f1956b83e08c"></a>
@@ -210,7 +210,7 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Constructor taking as arguments the sensor callback function and the userdata which will be passed the callback.</p>
+<p>Constructor taking as arguments the sensor callback function and the userdata which will be passed to the callback.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoSensor.html#ac0a0152828590c9b23da259a9c60a629">setFunction()</a>, <a class="el" href="classSoSensor.html#acc7ffab34126318972fdc0830de49150">setData()</a> </dd></dl>
 
 </div>
@@ -337,7 +337,7 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Put the sensor in the global delay queue. This means it will be triggered either when the CPU is idle, or when the specified delay queue time-out is reached.</p>
+<p>Put the sensor in the global delay queue. This means it will be triggered either when the CPU is idle, or when the specified delay queue timeout is reached.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoDB.html#a4a40b27b0ed0cd4f3ee94f9b97c97894">SoDB::setDelaySensorTimeout()</a>, <a class="el" href="classSoDelayQueueSensor.html#a0e3737bdbcb78844beae7c759a9e7af4">unschedule()</a>, <a class="el" href="classSoDelayQueueSensor.html#ae2267844f63b8bec0bb134aefbaceec4">isScheduled()</a> </dd></dl>
 
 <p>Implements <a class="el" href="classSoSensor.html#a99166cb15447e892c5dc1085e3621f39">SoSensor</a>.</p>
@@ -497,7 +497,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSoDelayQueueSensor.html">SoDelayQueueSensor</a></li>
-    <li class="footer">Generated on Thu Oct 18 2018 20:23:08 for Coin by
+    <li class="footer">Generated on Fri Jan 24 2020 00:10:08 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

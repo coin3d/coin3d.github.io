@@ -33,8 +33,8 @@
     Coin3D is Free Software,<br />published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.
   </td>
   <td style="text-align: right; padding-right: 0.5em;">
-    <a href="https://github.com/coin3d/">https://github.com/coin3d/</a><br />
-    <a href="http://www.kongsberg.com/kogt/">http://www.kongsberg.com/kogt/</a><br />  
+    <a href="https://coin3d.github.io">https://coin3d.github.io</a><br />
+    <a href="https://www.kongsberg.com/en/kogt/">https://www.kongsberg.com/en/kogt/</a><br />  
     </td>
  </tr>
  </tbody>
@@ -137,7 +137,7 @@ Friends</h2></td></tr>
 <div class="textblock"><p>The <a class="el" href="classSbName.html" title="The SbName class stores strings by reference. ">SbName</a> class stores strings by reference. </p>
 <p>The class is used by Coin for storing keywords, names and other strings. They are stored in a manner where identical strings are guaranteed to map to the same memory address (as returned by the <a class="el" href="classSbName.html#af4025fc41df3195e640c748da108033e">SbName::getString()</a> method).</p>
 <p>The main advantage of storing identical strings to the same memory address is that it simplifies comparison operations, and particularly when working with string data as keys in other data structures, like e.g. in hash (dictionary) tables.</p>
-<p>Apart from that, mapping identical strings to the same memory address can also save on memory resources, and provide run-time optimizations. String comparisons for <a class="el" href="classSbName.html" title="The SbName class stores strings by reference. ">SbName</a> objects are very efficient, for instance.</p>
+<p>Apart from that, mapping identical strings to the same memory address can also save on memory resources, and provide runtime optimizations. String comparisons for <a class="el" href="classSbName.html" title="The SbName class stores strings by reference. ">SbName</a> objects are very efficient, for instance.</p>
 <p>There is an aspect of using <a class="el" href="classSbName.html" title="The SbName class stores strings by reference. ">SbName</a> instances that it is important to be aware of: since strings are stored <em>permanently</em>, using <a class="el" href="classSbName.html" title="The SbName class stores strings by reference. ">SbName</a> instances in code where there is continually changing strings or the continual addition of new unique strings will in the end swamp memory resources. So where possible, use <a class="el" href="classSbString.html" title="The SbString class is a string class with convenience functions for string operations. ">SbString</a> instances instead.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSbString.html" title="The SbString class is a string class with convenience functions for string operations. ">SbString</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -252,7 +252,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>This method returns pointer to character array for the name.</p>
-<p>The returned memory pointer for the character string is guaranteed to be valid for the remaining life time of the process, even after all <a class="el" href="classSbName.html" title="The SbName class stores strings by reference. ">SbName</a> instances referencing the string has been destructed. </p>
+<p>The returned memory pointer for the character string is guaranteed to be valid for the remaining life time of the process, even after all <a class="el" href="classSbName.html" title="The SbName class stores strings by reference. ">SbName</a> instances referencing the string have been destructed. </p>
 
 </div>
 </div>
@@ -693,7 +693,7 @@ Friends</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSbName.html">SbName</a></li>
-    <li class="footer">Generated on Thu Oct 18 2018 20:22:59 for Coin by
+    <li class="footer">Generated on Fri Jan 24 2020 00:09:59 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

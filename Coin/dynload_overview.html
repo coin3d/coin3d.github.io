@@ -33,8 +33,8 @@
     Coin3D is Free Software,<br />published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.
   </td>
   <td style="text-align: right; padding-right: 0.5em;">
-    <a href="https://github.com/coin3d/">https://github.com/coin3d/</a><br />
-    <a href="http://www.kongsberg.com/kogt/">http://www.kongsberg.com/kogt/</a><br />  
+    <a href="https://coin3d.github.io">https://coin3d.github.io</a><br />
+    <a href="https://www.kongsberg.com/en/kogt/">https://www.kongsberg.com/en/kogt/</a><br />  
     </td>
  </tr>
  </tbody>
@@ -73,14 +73,14 @@ $(document).ready(function(){initNavTree('dynload_overview.html','');});
 <div class="title">Dynamic Loading of Extension Nodes </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>When Coin tries to get hold of a node type object (<a class="el" href="classSoType.html" title="The SoType class is the basis for the run-time type system in Coin. ">SoType</a>) for a class based on the name string of the node type, it will - if no such node type has been initialized yet - scan the file system for a dynamically loadable extension node with that given name. This can be completely disabled by setting the environment variable COIN_NO_SOTYPE_DYNLOAD to a positive integer value, new from Coin v2.5.0.</p>
+<div class="textblock"><p>When Coin tries to get hold of a node type object (<a class="el" href="classSoType.html" title="The SoType class is the basis for the runtime type system in Coin. ">SoType</a>) for a class based on the name string of the node type, it will - if no such node type has been initialized yet - scan the file system for a dynamically loadable extension node with that given name. This can be completely disabled by setting the environment variable COIN_NO_SOTYPE_DYNLOAD to a positive integer value, new from Coin v2.5.0.</p>
 <p>On UNIX, extensions nodes are regular .so files. On Win32, extension nodes are built as DLLs. On Mac OS X systems, extension nodes are built as .dylib files. (Note: The extension nodes have to be built using the flag "-dynamiclib", not "-bundle".)</p>
 <p>Whether the dynamically loadable objects should be named with or without the "lib" prefix is optional. Both schemes will work.</p>
-<p>People don't usually program in a way so that they instantiate new nodes through the node class' <a class="el" href="classSoType.html" title="The SoType class is the basis for the run-time type system in Coin. ">SoType</a> object, but that is the way nodes are created when model files are loaded. This means that for all Coin applications that load model files, the custom extension nodes will automatically be supported for the model files without you having to modify their source code and rebuild the applications.</p>
+<p>People don't usually program in a way so that they instantiate new nodes through the node class' <a class="el" href="classSoType.html" title="The SoType class is the basis for the runtime type system in Coin. ">SoType</a> object, but that is the way nodes are created when model files are loaded. This means that for all Coin applications that load model files, the custom extension nodes will automatically be supported for the model files without you having to modify their source code and rebuild the applications.</p>
 <p>See <a href="ftp://ftp.coin3d.org/pub/coin/src/dynloadsample.tar.gz">ftp://ftp.coin3d.org/pub/coin/src/dynloadsample.tar.gz</a> for an example using two dynamically loadable extension nodes. You only use an examiner viewer to view the two extension nodes in action.</p>
 <p>Only a limited set of C++ compilers are supported as of yet. This is because, to initialize the extension node, it is necessary to know something about how the C++ compiler mangles the initClass symbol. If we don't know that, there is no way to locate the initClass method in the library, which means the extension node can <em>not</em> make itself known to the type system.</p>
 <p>If your C++ compiler is not supported, the source file to add support for a new compiler in is src/misc/cppmangle.icc. It is fairly trivial to add support for new compilers, but if you don't understand how, just ask us about it. Patches with support for new compilers are of course very welcome.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoType.html" title="The SoType class is the basis for the run-time type system in Coin. ">SoType</a></dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoType.html" title="The SoType class is the basis for the runtime type system in Coin. ">SoType</a></dd></dl>
 <dl class="section since"><dt>Since</dt><dd>Coin 2.0 </dd></dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
@@ -88,7 +88,7 @@ $(document).ready(function(){initNavTree('dynload_overview.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="related_pages.html">Related Pages</a></li>
-    <li class="footer">Generated on Thu Oct 18 2018 20:22:56 for Coin by
+    <li class="footer">Generated on Fri Jan 24 2020 00:09:56 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

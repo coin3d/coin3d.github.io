@@ -33,8 +33,8 @@
     Coin3D is Free Software,<br />published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.
   </td>
   <td style="text-align: right; padding-right: 0.5em;">
-    <a href="https://github.com/coin3d/">https://github.com/coin3d/</a><br />
-    <a href="http://www.kongsberg.com/kogt/">http://www.kongsberg.com/kogt/</a><br />  
+    <a href="https://coin3d.github.io">https://coin3d.github.io</a><br />
+    <a href="https://www.kongsberg.com/en/kogt/">https://www.kongsberg.com/en/kogt/</a><br />  
     </td>
  </tr>
  </tbody>
@@ -316,8 +316,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Sets the data for the record with group code <em>groupcode</em>. If the record already exists, it's value will simply be overwritten, otherwise a new record will be created. If the record is handled by a subclass, <em>param</em> will be passed on to the subclass (using <a class="el" href="classdimeRecordHolder.html#a6aa688deeaf50dc8af631b1f5d8e381d">dimeRecordHolder::handleRecord()</a>), and will be ignored by <a class="el" href="classdimeRecordHolder.html" title="The dimeRecordHolder class is a superclass for objects that store records. ">dimeRecordHolder</a>.</p>
-<p>For entities, you cannot use this method to set the layer name. Use <a class="el" href="classdimeEntity.html#aa19112c167d39de5a3a1deb5cd3f175c">dimeEntity::setLayer()</a> to do that. Also, you should not use this function to set the block name for a <a class="el" href="classdimeInsert.html" title="The dimeInsert class handles an INSERT entity. ">dimeInsert</a> entity; use <a class="el" href="classdimeInsert.html#ab358873c55e03de1052bd2c8cd9023af">dimeInsert::setBlock()</a> instead.</p>
+<p>Sets the data for the record with group code <em>groupcode</em>. If the record already exists, its value will simply be overwritten, otherwise a new record will be created. If the record is handled by a subclass, <em>param</em> will be passed on to the subclass (using <a class="el" href="classdimeRecordHolder.html#a6aa688deeaf50dc8af631b1f5d8e381d">dimeRecordHolder::handleRecord()</a>), and will be ignored by <a class="el" href="classdimeRecordHolder.html" title="The dimeRecordHolder class is a superclass for objects that store records. ">dimeRecordHolder</a>.</p>
+<p>For entities, you cannot use this method to set the layer name. Use <a class="el" href="classdimeEntity.html#aa19112c167d39de5a3a1deb5cd3f175c">dimeEntity::setLayer()</a> to do that. Also, you should not use this function to set the block name for a <a class="el" href="classdimeInsert.html" title="The dimeInsert class handles an INSERT entity. ">dimeInsert</a> entity, use <a class="el" href="classdimeInsert.html#ab358873c55e03de1052bd2c8cd9023af">dimeInsert::setBlock()</a> instead.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classdimeRecordHolder.html#a6aa688deeaf50dc8af631b1f5d8e381d">dimeRecordHolder::handleRecord()</a> </dd>
 <dd>
 <a class="el" href="classdimeRecordHolder.html#af169d5bff8a651d42b56ff1133ee4f5c">dimeRecordHolder::getRecord()</a> </dd>
@@ -448,7 +448,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Will return the value of the record with group code <em>groupcode</em>. <em>false</em> is returned if the record could not be found. Subclasses should overload this method if one or several records are stored in the class. If the groupcode queried is not stored internally, the subclass should call its parent's method. </p>
+<p>Will return the value of the record with group code <em>groupcode</em>. <em>false</em> is returned if the record could not be found. Subclasses should overload this method if one or several records are stored in the class. If the group code queried is not stored internally, the subclass should call its parent's method. </p>
 
 <p>Reimplemented in <a class="el" href="classdimePolyline.html#a53aaba73db615b044b4193f0b2dbd66f">dimePolyline</a>, <a class="el" href="classdimeEntity.html#a19c366ca24c548666a49179bc15de2bc">dimeEntity</a>, <a class="el" href="classdimeSpline.html#aacca6fb407856ed778784c085ba0a3b0">dimeSpline</a>, <a class="el" href="classdimeBlock.html#abe30b7a755796dc88efcf9ccf4e449da">dimeBlock</a>, <a class="el" href="classdimeEllipse.html#a71ee444212ec48ae07f44194b2b0b1e0">dimeEllipse</a>, <a class="el" href="classdimeText.html#aa09b06321ed43a04a0803031e5e61478">dimeText</a>, <a class="el" href="classdimeVertex.html#addead7cfdcacfeae5e5269038f56c635">dimeVertex</a>, <a class="el" href="classdimeCircle.html#a60a4d704f50cf35e60f23e062517a038">dimeCircle</a>, <a class="el" href="classdimeInsert.html#a37b70067f656fe006f2346eef3981616">dimeInsert</a>, <a class="el" href="classdime3DFace.html#a754b84b4fe84146117a9f31e27ebf078">dime3DFace</a>, <a class="el" href="classdimeArc.html#a138aae49988c4ecc4836ac4755bc5e73">dimeArc</a>, <a class="el" href="classdimeSolid.html#adbb00746060c2ea035bc18f0eb1d5e26">dimeSolid</a>, <a class="el" href="classdimeTrace.html#a019061079c7db45751d5124bd41dd70e">dimeTrace</a>, <a class="el" href="classdimeLine.html#a7e08a94beef995684915c2ed40f52908">dimeLine</a>, <a class="el" href="classdimePoint.html#a030fbb4899328687e2426a017bef60cc">dimePoint</a>, <a class="el" href="classdimeFaceEntity.html#a24509a15b26ed8acefb239112f261005">dimeFaceEntity</a>, <a class="el" href="classdimeLWPolyline.html#a1503a78a2e4f1b961a19f98f70969979">dimeLWPolyline</a>, and <a class="el" href="classdimeExtrusionEntity.html#af3596428241f800cf6923839fe4b7fe1">dimeExtrusionEntity</a>.</p>
 
@@ -477,7 +477,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Reads records from <em>in</em> until the separator groupcode (specified in constructor) is found. Can be overloaded by subclasses, but in most cases this will not be necessary as <a class="el" href="classdimeRecordHolder.html#a6aa688deeaf50dc8af631b1f5d8e381d">dimeRecordHolder::handleRecord()</a> is called for each record found in the stream.</p>
+<p>Reads records from <em>in</em> until the separator group code (specified in constructor) is found. Can be overloaded by subclasses, but in most cases this will not be necessary as <a class="el" href="classdimeRecordHolder.html#a6aa688deeaf50dc8af631b1f5d8e381d">dimeRecordHolder::handleRecord()</a> is called for each record found in the stream.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classdimeEntity.html#abd559e5cb6d05a244af781fbc6a2f744">dimeEntity::handleRecord()</a>. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classdimePolyline.html#af7cb5aab0453a8d224f171297da2e5f3">dimePolyline</a>, <a class="el" href="classdimeEntity.html#a52e0071cb051b5fd835b3dedde8450a4">dimeEntity</a>, <a class="el" href="classdimeBlock.html#aac41b0a9939a61cfa27de3ec0aaa21f3">dimeBlock</a>, <a class="el" href="classdimeInsert.html#a1b9c9baae9eef9f83b10fadd67152efc">dimeInsert</a>, <a class="el" href="classdimeClass.html#ad40fa3c4720589697cf1bc01e78c248c">dimeClass</a>, <a class="el" href="classdimeObject.html#af7d239c43b33dc09851c773a0cd411f2">dimeObject</a>, <a class="el" href="classdimeLayerTable.html#a4a8f02f088bc92877b0c47060206f2de">dimeLayerTable</a>, and <a class="el" href="classdimeTableEntry.html#a1f969e602d765638cd2624c80e7c3557">dimeTableEntry</a>.</p>
@@ -678,7 +678,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Must be overloaded by entities that directly supports a record type. During <a class="el" href="classdimeRecordHolder.html#a1c352cacad3d4711dd522931908cee1e">dimeRecordHolder::read()</a>, <a class="el" href="classdimeRecordHolder.html#a41059899b472a7eb689044851d251945">dimeRecordHolder::setRecord</a> and <a class="el" href="classdimeRecordHolder.html#aec7cbfb81036eef1c7b7862b2deb9229">dimeRecordHolder::setRecords</a>, this function is called for every record found, and it is up to the subclass if the record should be stored internally, or if a generic record should be created and stored in this superclass. A subclass should return <em>true</em> when it will handle the record, <em>false</em> otherwise. Default function does nothing, and returns <em>false</em>.</p>
+<p>Must be overloaded by entities that directly support a record type. During <a class="el" href="classdimeRecordHolder.html#a1c352cacad3d4711dd522931908cee1e">dimeRecordHolder::read()</a>, <a class="el" href="classdimeRecordHolder.html#a41059899b472a7eb689044851d251945">dimeRecordHolder::setRecord</a> and <a class="el" href="classdimeRecordHolder.html#aec7cbfb81036eef1c7b7862b2deb9229">dimeRecordHolder::setRecords</a>, this function is called for every record found, and it is up to the subclass if the record should be stored internally, or if a generic record should be created and stored in this superclass. A subclass should return <em>true</em> when it will handle the record, <em>false</em> otherwise. Default function does nothing, and returns <em>false</em>.</p>
 <p>For entities, records with group codes 8 (layer name) and 62 (color number) are automatically handled by the <a class="el" href="classdimeEntity.html" title="The dimeEntity class is the superclass of all entity classes. ">dimeEntity</a> class.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classdimeRecordHolder.html#a1c352cacad3d4711dd522931908cee1e">dimeRecordHolder::read()</a> </dd>
 <dd>
@@ -748,7 +748,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Can be overloaded by subclasses that want the record holder to store a record, but handles writing themselves. Default method returns <em>true</em> for all group codes. </p>
+<p>Can be overloaded by subclasses that want the record holder to store a record, but handle writing themselves. Default method returns <em>true</em> for all group codes. </p>
 
 <p>Reimplemented in <a class="el" href="classdimeEntity.html#abde0304c0ceb244d70a802875ccb1dd6">dimeEntity</a>.</p>
 
@@ -764,7 +764,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classdimeRecordHolder.html">dimeRecordHolder</a></li>
-    <li class="footer">Generated on Thu Oct 18 2018 19:25:20 for dime by
+    <li class="footer">Generated on Sun Jan 26 2020 20:29:17 for dime by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

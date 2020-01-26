@@ -33,8 +33,8 @@
     Coin3D is Free Software,<br />published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.
   </td>
   <td style="text-align: right; padding-right: 0.5em;">
-    <a href="https://github.com/coin3d/">https://github.com/coin3d/</a><br />
-    <a href="http://www.kongsberg.com/kogt/">http://www.kongsberg.com/kogt/</a><br />  
+    <a href="https://coin3d.github.io">https://coin3d.github.io</a><br />
+    <a href="https://www.kongsberg.com/en/kogt/">https://www.kongsberg.com/en/kogt/</a><br />  
     </td>
  </tr>
  </tbody>
@@ -92,7 +92,7 @@ Inheritance diagram for SoEvent:</div>
 <area href="classSoLocation2Event.html" title="The SoLocation2Event class contains information about 2D movement events. " alt="SoLocation2Event" shape="rect" coords="320,56,470,80"/>
 <area href="classSoMotion3Event.html" title="The SoMotion3Event class contains information about 3D movement events. " alt="SoMotion3Event" shape="rect" coords="480,56,630,80"/>
 <area href="classSoKeyboardEvent.html" title="The SoKeyboardEvent class contains information about keyboard interaction. " alt="SoKeyboardEvent" shape="rect" coords="0,112,150,136"/>
-<area href="classSoMouseButtonEvent.html" title="The SoMouseButtonEvent class contains information about mousebutton interaction. " alt="SoMouseButtonEvent" shape="rect" coords="160,112,310,136"/>
+<area href="classSoMouseButtonEvent.html" title="The SoMouseButtonEvent class contains information about mouse button interaction. ..." alt="SoMouseButtonEvent" shape="rect" coords="160,112,310,136"/>
 <area href="classSoSpaceballButtonEvent.html" title="The SoSpaceballButtonEvent class contains information about spaceball button interaction. " alt="SoSpaceballButtonEvent" shape="rect" coords="320,112,470,136"/>
 </map>
  </div></div>
@@ -142,11 +142,11 @@ Static Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="classSoEvent.html" title="The SoEvent class is the base class for all Coin events. ">SoEvent</a> class is the base class for all Coin events. </p>
 <p>Coin contains its own set of event classes, independent of the underlying window system.</p>
-<p>Upon system specific events, a translation is done by the window specific device classes into one of the Coin event object classes listed below. The event is then typically sent by the render area to an <a class="el" href="classSoSceneManager.html" title="The SoSceneManager class provides the main interface between the scene graph and the GUI toolkit...">SoSceneManager</a> which will apply it to the scenegraph through an <a class="el" href="classSoHandleEventAction.html" title="The SoHandleEventAction class distributes user events to the scene. ">SoHandleEventAction</a>.</p>
-<p>Events may be caught by the user by attaching an <a class="el" href="classSoEventCallback.html" title="The SoEventCallback class provides functionality for catching events. ">SoEventCallback</a> node to the scenegraph, or it can automatically be handled by a dragger or manipulator in the graph.</p>
+<p>Upon system specific events, a translation is done by the window specific device classes into one of the Coin event object classes listed below. The event is then typically sent by the render area to an <a class="el" href="classSoSceneManager.html" title="The SoSceneManager class provides the main interface between the scene graph and the GUI toolkit...">SoSceneManager</a> which will apply it to the scene graph through an <a class="el" href="classSoHandleEventAction.html" title="The SoHandleEventAction class distributes user events to the scene. ">SoHandleEventAction</a>.</p>
+<p>Events may be caught by the user by attaching an <a class="el" href="classSoEventCallback.html" title="The SoEventCallback class provides functionality for catching events. ">SoEventCallback</a> node to the scene graph, or they can automatically be handled by a dragger or manipulator in the graph.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoButtonEvent.html" title="The SoButtonEvent class is the base class for all button events. ">SoButtonEvent</a>, <a class="el" href="classSoKeyboardEvent.html" title="The SoKeyboardEvent class contains information about keyboard interaction. ">SoKeyboardEvent</a>, <a class="el" href="classSoLocation2Event.html" title="The SoLocation2Event class contains information about 2D movement events. ">SoLocation2Event</a>, <a class="el" href="classSoMotion3Event.html" title="The SoMotion3Event class contains information about 3D movement events. ">SoMotion3Event</a> </dd>
 <dd>
-<a class="el" href="classSoMouseButtonEvent.html" title="The SoMouseButtonEvent class contains information about mousebutton interaction. ">SoMouseButtonEvent</a>, <a class="el" href="classSoSpaceballButtonEvent.html" title="The SoSpaceballButtonEvent class contains information about spaceball button interaction. ">SoSpaceballButtonEvent</a> </dd>
+<a class="el" href="classSoMouseButtonEvent.html" title="The SoMouseButtonEvent class contains information about mouse button interaction. ...">SoMouseButtonEvent</a>, <a class="el" href="classSoSpaceballButtonEvent.html" title="The SoSpaceballButtonEvent class contains information about spaceball button interaction. ">SoSpaceballButtonEvent</a> </dd>
 <dd>
 <a class="el" href="classSoEventCallback.html" title="The SoEventCallback class provides functionality for catching events. ">SoEventCallback</a>, <a class="el" href="classSoHandleEventAction.html" title="The SoHandleEventAction class distributes user events to the scene. ">SoHandleEventAction</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -219,7 +219,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This static method returns the <a class="el" href="classSoType.html" title="The SoType class is the basis for the run-time type system in Coin. ">SoType</a> object associated with objects of this class. </p>
+<p>This static method returns the <a class="el" href="classSoType.html" title="The SoType class is the basis for the runtime type system in Coin. ">SoType</a> object associated with objects of this class. </p>
 
 </div>
 </div>
@@ -275,8 +275,8 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Initialize <a class="el" href="classSoEvent.html" title="The SoEvent class is the base class for all Coin events. ">SoEvent</a> and all it's known subclasses (i.e. all subclasses which are part of the standard classes in the Coin library).</p>
-<p>This method is called from <a class="el" href="classSoDB.html#a970f42dfd362c33c69fa1869bfae72b5">SoDB::init()</a>, so it's very unlikely that you will have to call it explicitly. </p>
+<p>Initialize <a class="el" href="classSoEvent.html" title="The SoEvent class is the base class for all Coin events. ">SoEvent</a> and all its known subclasses (i.e. all subclasses which are part of the standard classes in the Coin library).</p>
+<p>This method is called from <a class="el" href="classSoDB.html#a970f42dfd362c33c69fa1869bfae72b5">SoDB::init()</a>, so it is very unlikely that you will have to call it explicitly. </p>
 
 </div>
 </div>
@@ -553,7 +553,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSoEvent.html">SoEvent</a></li>
-    <li class="footer">Generated on Thu Oct 18 2018 20:23:10 for Coin by
+    <li class="footer">Generated on Fri Jan 24 2020 00:10:10 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

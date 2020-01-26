@@ -33,8 +33,8 @@
     Coin3D is Free Software,<br />published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.
   </td>
   <td style="text-align: right; padding-right: 0.5em;">
-    <a href="https://github.com/coin3d/">https://github.com/coin3d/</a><br />
-    <a href="http://www.kongsberg.com/kogt/">http://www.kongsberg.com/kogt/</a><br />  
+    <a href="https://coin3d.github.io">https://coin3d.github.io</a><br />
+    <a href="https://www.kongsberg.com/en/kogt/">https://www.kongsberg.com/en/kogt/</a><br />  
     </td>
  </tr>
  </tbody>
@@ -77,16 +77,16 @@ $(document).ready(function(){initNavTree('profiling_intro.html','');});
 <p>To enable profiling in Coin, use the environment variable <a class="el" href="group__profiler.html#gaa961552d7a272cffa96986008e4559ef">COIN_PROFILER</a>. When profiling is enabled, Coin will gather profiling data during every scene graph traversal by any action.</p>
 <h2>Enabling the default profiling display</h2>
 <p>To get some profiling data shown on the screen, you also need to use the <a class="el" href="group__profiler.html#ga7a452448717da283f227a6e0372d98e1">COIN_PROFILER_OVERLAY</a> environment variable.</p>
-<p>This will give you the default profiling graphics, which shows a top-list of node timings categorized by node types, a scrolling graph of action traversal timings, and a scene graph navigator for closer scene graph inspection.</p>
+<p>This will give you the default profiling graphics, which shows a top list of node timings categorized by node types, a scrolling graph of action traversal timings, and a scene graph navigator for closer scene graph inspection.</p>
 <h2>Read the profiling data</h2>
-<p>The <a class="el" href="classSoProfilerStats.html" title="The SoProfilerStats class is a node for exposing profiling results gathered by SoProfilerElement. ">SoProfilerStats</a> node can be used to fetch the profiling data in the scene graph. If it is positioned anywhere in the scene graph, the fields of the node will be updated every time <a class="el" href="classSoGLRenderAction.html" title="The SoGLRenderAction class renders the scene graph with OpenGL calls. ">SoGLRenderAction</a> is applied to the scene graph, with profiling data gathered from every traversal through the scene graph since the last <a class="el" href="classSoGLRenderAction.html" title="The SoGLRenderAction class renders the scene graph with OpenGL calls. ">SoGLRenderAction</a>, up to the point where <a class="el" href="classSoProfilerStats.html" title="The SoProfilerStats class is a node for exposing profiling results gathered by SoProfilerElement. ">SoProfilerStats</a> is located. Depending of how you wish to use the data, either attach sensors to the fields, or connect the the fields on other coin nodes to the fields on <a class="el" href="classSoProfilerStats.html" title="The SoProfilerStats class is a node for exposing profiling results gathered by SoProfilerElement. ">SoProfilerStats</a>. </p>
+<p>The <a class="el" href="classSoProfilerStats.html" title="The SoProfilerStats class is a node for exposing profiling results gathered by SoProfilerElement. ">SoProfilerStats</a> node can be used to fetch the profiling data in the scene graph. If it is positioned anywhere in the scene graph, the fields of the node will be updated every time <a class="el" href="classSoGLRenderAction.html" title="The SoGLRenderAction class renders the scene graph with OpenGL calls. ">SoGLRenderAction</a> is applied to the scene graph, with profiling data gathered from every traversal through the scene graph since the last <a class="el" href="classSoGLRenderAction.html" title="The SoGLRenderAction class renders the scene graph with OpenGL calls. ">SoGLRenderAction</a>, up to the point where <a class="el" href="classSoProfilerStats.html" title="The SoProfilerStats class is a node for exposing profiling results gathered by SoProfilerElement. ">SoProfilerStats</a> is located. Depending of how you wish to use the data, either attach sensors to the fields, or connect the fields on other coin nodes to the fields on <a class="el" href="classSoProfilerStats.html" title="The SoProfilerStats class is a node for exposing profiling results gathered by SoProfilerElement. ">SoProfilerStats</a>. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="related_pages.html">Related Pages</a></li>
-    <li class="footer">Generated on Thu Oct 18 2018 20:22:56 for Coin by
+    <li class="footer">Generated on Fri Jan 24 2020 00:09:56 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

@@ -33,8 +33,8 @@
     Coin3D is Free Software,<br />published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.
   </td>
   <td style="text-align: right; padding-right: 0.5em;">
-    <a href="https://github.com/coin3d/">https://github.com/coin3d/</a><br />
-    <a href="http://www.kongsberg.com/kogt/">http://www.kongsberg.com/kogt/</a><br />  
+    <a href="https://coin3d.github.io">https://coin3d.github.io</a><br />
+    <a href="https://www.kongsberg.com/en/kogt/">https://www.kongsberg.com/en/kogt/</a><br />  
     </td>
  </tr>
  </tbody>
@@ -164,8 +164,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="classSoTimerSensor.html" title="The SoTimerSensor class is a sensor which will trigger at given intervals. ">SoTimerSensor</a> class is a sensor which will trigger at given intervals. </p>
-<p>Use sensors of this class when you want a job repeated at a certain interval, without explicitly needing to reschedule the sensor (i.e. <a class="el" href="classSoTimerSensor.html" title="The SoTimerSensor class is a sensor which will trigger at given intervals. ">SoTimerSensor</a> automatically re-schedules itself after it has been triggered).</p>
-<p><a class="el" href="classSoTimerSensor.html" title="The SoTimerSensor class is a sensor which will trigger at given intervals. ">SoTimerSensor</a> instances is commonly used to trigger animation updates at a constant framerate. </p>
+<p>Use sensors of this class when you want a job repeated at a certain interval, without explicitly needing to reschedule the sensor (i.e. <a class="el" href="classSoTimerSensor.html" title="The SoTimerSensor class is a sensor which will trigger at given intervals. ">SoTimerSensor</a> automatically reschedules itself after it has been triggered).</p>
+<p><a class="el" href="classSoTimerSensor.html" title="The SoTimerSensor class is a sensor which will trigger at given intervals. ">SoTimerSensor</a> instances are commonly used to trigger animation updates at a constant frame rate. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a77911775db7512717797e64ee366883e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a77911775db7512717797e64ee366883e">&#9670;&nbsp;</a></span>SoTimerSensor() <span class="overload">[1/2]</span></h2>
@@ -211,7 +211,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Constructor taking as parameters the sensor callback function and the userdata which will be passed the callback.</p>
+<p>Constructor taking as parameters the sensor callback function and the userdata which will be passed to the callback.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoSensor.html#ac0a0152828590c9b23da259a9c60a629">setFunction()</a>, <a class="el" href="classSoSensor.html#acc7ffab34126318972fdc0830de49150">setData()</a> </dd></dl>
 
 </div>
@@ -415,7 +415,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSoTimerSensor.html">SoTimerSensor</a></li>
-    <li class="footer">Generated on Thu Oct 18 2018 20:24:04 for Coin by
+    <li class="footer">Generated on Fri Jan 24 2020 00:10:33 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

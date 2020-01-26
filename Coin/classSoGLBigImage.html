@@ -33,8 +33,8 @@
     Coin3D is Free Software,<br />published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.
   </td>
   <td style="text-align: right; padding-right: 0.5em;">
-    <a href="https://github.com/coin3d/">https://github.com/coin3d/</a><br />
-    <a href="http://www.kongsberg.com/kogt/">http://www.kongsberg.com/kogt/</a><br />  
+    <a href="https://coin3d.github.io">https://coin3d.github.io</a><br />
+    <a href="https://www.kongsberg.com/en/kogt/">https://www.kongsberg.com/en/kogt/</a><br />  
     </td>
  </tr>
  </tbody>
@@ -287,7 +287,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This class has a private destuctor since we want users to supply the current GL state when deleting the image. This is to make sure gl texture objects are freed as soon as possible. If you supply NULL to this method, the gl texture objects won't be deleted until the next time an GLRenderAction is applied in the image's cache context(s). </p>
+<p>This class has a private destructor since we want users to supply the current GL state when deleting the image. This is to make sure GL texture objects are freed as soon as possible. If you supply NULL to this method, the GL texture objects won't be deleted until the next time an GLRenderAction is applied in the image's cache context(s). </p>
 
 <p>Reimplemented from <a class="el" href="classSoGLImage.html#ad7e79b5ba71f8d59a70bf98a6fa43b45">SoGLImage</a>.</p>
 
@@ -448,7 +448,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Sets the data for this GL image. Should only be called when one of the parameters have changed, since this will cause the GL texture object to be recreated. Caller is responsible for sending legal Wrap values. CLAMP_TO_EDGE is only supported on OpenGL v1.2 implementations, and as an extension on some earlier SGI implementations (GL_SGIS_texture_edge_clamp).</p>
+<p>Sets the data for this GL image. Should only be called when one of the parameters have changed, since this will cause the GL texture object to be recreated. Caller is responsible for sending legal wrap values. CLAMP_TO_EDGE is only supported on OpenGL v1.2 implementations, and as an extension on some earlier SGI implementations (GL_SGIS_texture_edge_clamp).</p>
 <p>For now, if quality &gt; 0.5 when created, we create mipmaps, otherwise a regular texture is created. Be aware, if you for instance create a texture with texture quality 0.4, and then later try to apply the texture with a texture quality greater than 0.5, the texture object will be recreated as a mipmap texture object. This will happen only once though, of course.</p>
 <p>If <em>border</em> != 0, the OpenGL texture will be created with this border size. Be aware that this might be extremely slow on most PC hardware.</p>
 <p>Normally, the OpenGL texture object isn't created until the first time it is needed, but if <em>createinstate</em> is != NULL, the texture object is created immediately. This is useful if you use a temporary buffer to hold the texture data. Be careful when using this feature, since the texture data might be needed at a later stage (for instance to create a texture object for another context). It will not be possible to create texture objects for other cache contexts when <em>createinstate</em> is != NULL.</p>
@@ -531,7 +531,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns or creates a <a class="el" href="classSoGLDisplayList.html" title="The SoGLDisplayList class stores and manages OpenGL display lists. ">SoGLDisplayList</a> to be used for rendering. Returns NULL if no SoDLDisplayList could be created. </p>
+<p>Returns or creates a <a class="el" href="classSoGLDisplayList.html" title="The SoGLDisplayList class stores and manages OpenGL display lists. ">SoGLDisplayList</a> to be used for rendering. Returns NULL if no <a class="el" href="classSoGLDisplayList.html" title="The SoGLDisplayList class stores and manages OpenGL display lists. ">SoGLDisplayList</a> could be created. </p>
 
 <p>Reimplemented from <a class="el" href="classSoGLImage.html#aff3d3890ee87cd6c742e8da9890d8b48">SoGLImage</a>.</p>
 
@@ -570,7 +570,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Virtual method that will be called once each frame. The method should unref display lists that has an age bigger or equal to <em>maxage</em>, and increment the age for other display lists. </p>
+<p>Virtual method that will be called once each frame. The method should unref display lists that have an age bigger or equal to <em>maxage</em>, and increment the age for other display lists. </p>
 
 <p>Reimplemented from <a class="el" href="classSoGLImage.html#a99e6a675f9c00509bbeda7602d559c02">SoGLImage</a>.</p>
 
@@ -615,7 +615,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSoGLBigImage.html">SoGLBigImage</a></li>
-    <li class="footer">Generated on Thu Oct 18 2018 20:23:12 for Coin by
+    <li class="footer">Generated on Fri Jan 24 2020 00:10:11 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

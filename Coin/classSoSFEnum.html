@@ -33,8 +33,8 @@
     Coin3D is Free Software,<br />published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.
   </td>
   <td style="text-align: right; padding-right: 0.5em;">
-    <a href="https://github.com/coin3d/">https://github.com/coin3d/</a><br />
-    <a href="http://www.kongsberg.com/kogt/">http://www.kongsberg.com/kogt/</a><br />  
+    <a href="https://coin3d.github.io">https://coin3d.github.io</a><br />
+    <a href="https://www.kongsberg.com/en/kogt/">https://www.kongsberg.com/en/kogt/</a><br />  
     </td>
  </tr>
  </tbody>
@@ -321,7 +321,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p>The <a class="el" href="classSoSFEnum.html" title="The SoSFEnum class is a container for an enum value. ">SoSFEnum</a> class is a container for an enum value. </p>
 <p>This field is used where nodes, engines or other field containers needs to store one particular value out of an enumerated set.</p>
 <p>A field of this type stores its value to file as the symbolic name, rather than the actual integer value.</p>
-<p><a class="el" href="classSoSFEnum.html" title="The SoSFEnum class is a container for an enum value. ">SoSFEnum</a> instances are initialized on an instance basis, usually in the constructor of the fieldcontainer with the macros <a class="el" href="group__nodes.html#ga1c28d883c32ef2ac0e5b758d6061fcb2">SO_NODE_DEFINE_ENUM_VALUE(enumtype, symbolvalue)</a> and SO_NODE_SET_SF_ENUM_TYPE(enumfield, enumtype) for nodes, or for engines; SO_ENGINE_DEFINE_ENUM_VALUE() and SO_ENGINE_SET_SF_ENUM_TYPE().</p>
+<p><a class="el" href="classSoSFEnum.html" title="The SoSFEnum class is a container for an enum value. ">SoSFEnum</a> instances are initialized on an instance basis, usually in the constructor of the field container with the macros <a class="el" href="group__nodes.html#ga1c28d883c32ef2ac0e5b758d6061fcb2">SO_NODE_DEFINE_ENUM_VALUE(enumtype, symbolvalue)</a> and SO_NODE_SET_SF_ENUM_TYPE(enumfield, enumtype) for nodes, or for engines; SO_ENGINE_DEFINE_ENUM_VALUE() and SO_ENGINE_SET_SF_ENUM_TYPE().</p>
 <p>Example initialization from the constructor of the <a class="el" href="classSoCone.html" title="The SoCone class is for rendering cone shapes. ">SoCone</a> class: </p><div class="fragment"><div class="line"><a class="code" href="group__nodes.html#ga1c28d883c32ef2ac0e5b758d6061fcb2">SO_NODE_DEFINE_ENUM_VALUE</a>(Part, SIDES);</div><div class="line"><a class="code" href="group__nodes.html#ga1c28d883c32ef2ac0e5b758d6061fcb2">SO_NODE_DEFINE_ENUM_VALUE</a>(Part, BOTTOM);</div><div class="line"><a class="code" href="group__nodes.html#ga1c28d883c32ef2ac0e5b758d6061fcb2">SO_NODE_DEFINE_ENUM_VALUE</a>(Part, ALL);</div><div class="line">SO_NODE_SET_SF_ENUM_TYPE(parts, Part); </div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoMFEnum.html" title="The SoMFEnum class is a container for a set of enumerated values. ">SoMFEnum</a>, <a class="el" href="classSoSFBitMask.html" title="The SoSFBitMask class is a container for a set of bit flags. ">SoSFBitMask</a> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a8ce8f4e1ff5c5b999b55accdd72b330e"></a>
@@ -348,7 +348,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Returns the type identification instance which uniquely identifies the Coin field class the object belongs to.</p>
-<dl class="section see"><dt>See also</dt><dd>getClassTypeId(), <a class="el" href="classSoType.html" title="The SoType class is the basis for the run-time type system in Coin. ">SoType</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>getClassTypeId(), <a class="el" href="classSoType.html" title="The SoType class is the basis for the runtime type system in Coin. ">SoType</a> </dd></dl>
 
 <p>Implements <a class="el" href="classSoField.html#a34ac9c7e16370f08a911e8ef74c8f784">SoField</a>.</p>
 
@@ -705,7 +705,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSoSFEnum.html">SoSFEnum</a></li>
-    <li class="footer">Generated on Thu Oct 18 2018 20:23:50 for Coin by
+    <li class="footer">Generated on Fri Jan 24 2020 00:10:26 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

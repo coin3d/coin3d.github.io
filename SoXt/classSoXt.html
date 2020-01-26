@@ -32,7 +32,7 @@
     Coin3D is Free Software,<br />published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.
   </td>
   <td style="text-align: right; padding-right: 0.5em;">
-    <a href="https://github.com/coin3d/">https://github.com/coin3d/</a><br />
+    <a href="https://bitbucket.org/Coin3D/">https://bitbucket.org/Coin3D/</a><br />
     <a href="http://www.kongsberg.com/kogt/">http://www.kongsberg.com/kogt/</a><br />  
     </td>
  </tr>
@@ -390,7 +390,7 @@ library"). </p>
 <p>This is the event dispatch loop.</p>
 <p>It doesn't return until application exit is somehow forced, either programmatically from the relevant API-call of the native toolkit, or when the user closes the application's main widget.</p>
 <p>After the main loop has finished execution, call <a class="el" href="classSoXt.html#a9e686885e35a1617a612f3a9bd88383c">SoXt::done()</a> to clean up static data.</p>
-<p>This function should be used instead of XtAppMainLoop(). The current implementation is no different than the standard event loop, but in the future it will add support for input device extensions.</p>
+<p>This function should be used instead of XtAppMainLoop(). The current implementation is not different from the standard event loop, but in the future it will add support for input device extensions.</p>
 <p>If you need your own event dispatching loop, base your code on this one, and use <a class="el" href="classSoXt.html#ada7a8b729323e77c821245fc8c5297b6">SoXt::dispatchEvent()</a> when appropriate. </p>
 
 </div>
@@ -481,7 +481,7 @@ library"). </p>
 </div><div class="memdoc">
 <p>Returns the Widget which is the main widget for the application. When this widget gets closed, <a class="el" href="classSoXt.html#ad17f117e3822cab77bc58f122e308d3f">SoXt::mainLoop()</a> will return (unless the close event is caught by the user).</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoXt.html#a044f98f5f117b8a839555dc20a3fb883">getShellWidget()</a></dd></dl>
-<p>This function returns the toplevel shell for the application. </p>
+<p>This function returns the top level shell for the application. </p>
 
 </div>
 </div>
@@ -1041,7 +1041,7 @@ library"). </p>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This method dispatches the event by calling XtDispatchEvent(). Special handling of extension input devices will be handled in this method in the future. </p>
+<p>This method dispatches the event by calling XtDispatchEvent(). Special handling of extension input devices will be done in this method in the future. </p>
 
 </div>
 </div>
@@ -1200,7 +1200,7 @@ library"). </p>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This function should add the necessary arguments to the <em>args</em> argument list so the popup shell gets the same visual and colormap as the rest of the application.</p>
+<p>This function should add the necessary arguments to the <em>args</em> argument list so the pop-up shell gets the same visual and colormap as the rest of the application.</p>
 <p>This function is not implemented. </p>
 
 </div>
@@ -1479,7 +1479,7 @@ library"). </p>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSoXt.html">SoXt</a></li>
-    <li class="footer">Generated on Sat Mar 9 2019 14:36:08 for SoXt by
+    <li class="footer">Generated on Sun Jan 26 2020 21:43:50 for SoXt by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.13 </li>
   </ul>
 </div>

@@ -33,8 +33,8 @@
     Coin3D is Free Software,<br />published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.
   </td>
   <td style="text-align: right; padding-right: 0.5em;">
-    <a href="https://github.com/coin3d/">https://github.com/coin3d/</a><br />
-    <a href="http://www.kongsberg.com/kogt/">http://www.kongsberg.com/kogt/</a><br />  
+    <a href="https://coin3d.github.io">https://coin3d.github.io</a><br />
+    <a href="https://www.kongsberg.com/en/kogt/">https://www.kongsberg.com/en/kogt/</a><br />  
     </td>
  </tr>
  </tbody>
@@ -305,8 +305,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>copyValues</b> (<a cl
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns a matrix which will translate the view volume camera back to origo, and rotate the camera so it'll point along the negative z axis.</p>
-<p>Note that the matrix will <em>not</em> include the rotation necessary to make the camera up vector point along the positive y axis (i.e. camera roll is not accounted for).</p>
+<p>Returns a matrix which will translate the view volume camera back to origo, and rotate the camera so it'll point along the negative Z-axis.</p>
+<p>Note that the matrix will <em>not</em> include the rotation necessary to make the camera up vector point along the positive Y-axis (i.e. camera roll is not accounted for).</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSbDPViewVolume.html#af74dae18438d0bc4c1c778a6f850a1ce">getMatrices()</a>, <a class="el" href="classSbDPViewVolume.html#afbc5e0bb1899148097bc0e3218fd0c07">getMatrix()</a> </dd></dl>
 
 </div>
@@ -658,7 +658,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>copyValues</b> (<a cl
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set up the view volume as a rectangular box for orthographic parallel projections. The line of sight will be along the negative z axis, through the center of the plane defined by the point &lt;(right+left)/2, (top+bottom)/2, 0&gt;.</p>
+<p>Set up the view volume as a rectangular box for orthographic parallel projections. The line of sight will be along the negative Z-axis, through the center of the plane defined by the point &lt;(right+left)/2, (top+bottom)/2, 0&gt;.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSbDPViewVolume.html#a79b16609b4bb4ea993d2dc0abb1e9372">perspective()</a>. </dd></dl>
 
 </div>
@@ -700,7 +700,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>copyValues</b> (<a cl
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set up the view volume for perspective projections. The line of sight will be through origo along the negative z axis.</p>
+<p>Set up the view volume for perspective projections. The line of sight will be through origo along the negative Z-axis.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSbDPViewVolume.html#a5b1ae06d0a994807f8b7b03591390af6">ortho()</a>. </dd></dl>
 
 </div>
@@ -1064,7 +1064,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>copyValues</b> (<a cl
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Dump the state of this object to the <em>file</em> stream. Only works in debug version of library, method does nothing in an optimized compile. </p>
+<p>Dump the state of this object to the <em>fp</em> file stream. Only works in debug version of library, method does nothing in an optimized build. </p>
 
 </div>
 </div>
@@ -1136,7 +1136,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>copyValues</b> (<a cl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSbDPViewVolume.html">SbDPViewVolume</a></li>
-    <li class="footer">Generated on Thu Oct 18 2018 20:22:58 for Coin by
+    <li class="footer">Generated on Fri Jan 24 2020 00:09:58 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

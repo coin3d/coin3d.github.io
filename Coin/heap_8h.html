@@ -33,8 +33,8 @@
     Coin3D is Free Software,<br />published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.
   </td>
   <td style="text-align: right; padding-right: 0.5em;">
-    <a href="https://github.com/coin3d/">https://github.com/coin3d/</a><br />
-    <a href="http://www.kongsberg.com/kogt/">http://www.kongsberg.com/kogt/</a><br />  
+    <a href="https://coin3d.github.io">https://coin3d.github.io</a><br />
+    <a href="https://www.kongsberg.com/en/kogt/">https://www.kongsberg.com/en/kogt/</a><br />  
     </td>
  </tr>
  </tbody>
@@ -77,6 +77,7 @@ $(document).ready(function(){initNavTree('heap_8h.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;Inventor/C/basic.h&gt;</code><br />
+<code>#include &lt;Inventor/SbString.h&gt;</code><br />
 </div>
 <p><a href="heap_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -84,6 +85,9 @@ $(document).ready(function(){initNavTree('heap_8h.html','');});
 Typedefs</h2></td></tr>
 <tr class="memitem:a47f3785a4735870bb7386a9e0a334625"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classint.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="heap_8h.html#a47f3785a4735870bb7386a9e0a334625">cc_heap_compare_cb</a>(void *o1, void *o2)</td></tr>
 <tr class="separator:a47f3785a4735870bb7386a9e0a334625"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5124895e6e916a654c9506a0d2e72dca"><td class="memItemLeft" align="right" valign="top"><a id="a5124895e6e916a654c9506a0d2e72dca"></a>
+typedef void&#160;</td><td class="memItemRight" valign="bottom"><b>cc_heap_print_cb</b>(void *o, <a class="el" href="classSbString.html">SbString</a> &amp;str)</td></tr>
+<tr class="separator:a5124895e6e916a654c9506a0d2e72dca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3cfe921d58e2792362b8c28cc74c2637"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="heap_8h.html#a3cfe921d58e2792362b8c28cc74c2637">cc_heap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="heap_8h.html#a3cfe921d58e2792362b8c28cc74c2637">cc_heap</a></td></tr>
 <tr class="separator:a3cfe921d58e2792362b8c28cc74c2637"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -103,10 +107,14 @@ Functions</h2></td></tr>
 <tr class="separator:aa253e04784df1765ae4769fe80b28cea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a088aeb698e4df777529b702e3f523235"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classint.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="heap_8h.html#a088aeb698e4df777529b702e3f523235">cc_heap_remove</a> (<a class="el" href="heap_8h.html#a3cfe921d58e2792362b8c28cc74c2637">cc_heap</a> *h, void *o)</td></tr>
 <tr class="separator:a088aeb698e4df777529b702e3f523235"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa327d3fa9854e87bf63b3e74a1fcd37c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classint.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="heap_8h.html#aa327d3fa9854e87bf63b3e74a1fcd37c">cc_heap_update</a> (<a class="el" href="heap_8h.html#a3cfe921d58e2792362b8c28cc74c2637">cc_heap</a> *h, void *o)</td></tr>
+<tr class="separator:aa327d3fa9854e87bf63b3e74a1fcd37c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae0cabf2363726f31257dfbbfef3765f"><td class="memItemLeft" align="right" valign="top">unsigned <a class="el" href="classint.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="heap_8h.html#aae0cabf2363726f31257dfbbfef3765f">cc_heap_elements</a> (<a class="el" href="heap_8h.html#a3cfe921d58e2792362b8c28cc74c2637">cc_heap</a> *h)</td></tr>
 <tr class="separator:aae0cabf2363726f31257dfbbfef3765f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade2be8b0679dbb5d9be8c6ac486a84f8"><td class="memItemLeft" align="right" valign="top">SbBool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="heap_8h.html#ade2be8b0679dbb5d9be8c6ac486a84f8">cc_heap_empty</a> (<a class="el" href="heap_8h.html#a3cfe921d58e2792362b8c28cc74c2637">cc_heap</a> *h)</td></tr>
 <tr class="separator:ade2be8b0679dbb5d9be8c6ac486a84f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c4bde02cc7636aa557570ab5340359c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="heap_8h.html#a5c4bde02cc7636aa557570ab5340359c">cc_heap_print</a> (<a class="el" href="heap_8h.html#a3cfe921d58e2792362b8c28cc74c2637">cc_heap</a> *h, cc_heap_print_cb *printcb, <a class="el" href="classSbString.html">SbString</a> &amp;str, SbBool printLeveled=FALSE)</td></tr>
+<tr class="separator:a5c4bde02cc7636aa557570ab5340359c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a47f3785a4735870bb7386a9e0a334625"></a>
@@ -120,7 +128,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>A type definition for heap compare callback function. </p>
+<p>A type definition for heap compare callback function. The heap compare function yields true if the first argument of the call appears before the second in the strict weak ordering relation induced by this type, and false otherwise, i.e. cc_heap_compare_cb(x, x) == false </p>
 
 </div>
 </div>
@@ -172,8 +180,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Construct a heap. <em>size</em> is the initial array size.</p>
-<p><em>comparecb</em> should return a negative value if the first element is less than the second, zero if they are equal and a positive value if the first element is greater than the second.</p>
-<p><em>support_remove</em> specifies if the heap should support removal of elements (other than the top element) after they are added; this requires use of a hash table to be efficent, but as a slight runtime overhead will be incurred for the add and extract_top functions the support can be disabled if you don't need it. </p>
+<p>For a minimum heap <em>comparecb</em> should return 1 if the first element is less than the second, zero if they are equal or the first element is greater than the second. For a maximum heap <em>comparecb</em> should return 1 if the first element is greater than the second, zero if they are equal or the first element is less than the second.</p>
+<p><em>support_remove</em> specifies if the heap should support removal of elements (other than the top element) after they are added; this requires use of a hash table to be efficient, but as a slight runtime overhead will be incurred for the add and extract_top functions the support can be disabled if you don't need it. </p>
 
 </div>
 </div>
@@ -311,6 +319,35 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aa327d3fa9854e87bf63b3e74a1fcd37c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa327d3fa9854e87bf63b3e74a1fcd37c">&#9670;&nbsp;</a></span>cc_heap_update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classint.html">int</a> cc_heap_update </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="heap_8h.html#a3cfe921d58e2792362b8c28cc74c2637">cc_heap</a> *&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>o</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Updates the heap <em>h</em> for new value of existent key <em>o</em>; if key is present TRUE is returned, otherwise FALSE. </p>
+
+</div>
+</div>
 <a id="aae0cabf2363726f31257dfbbfef3765f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aae0cabf2363726f31257dfbbfef3765f">&#9670;&nbsp;</a></span>cc_heap_elements()</h2>
 
@@ -345,7 +382,48 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns TRUE of the heap <em>h</em> is empty; otherwise FALSE. </p>
+<p>Returns TRUE of the heap <em>h</em> is empty, otherwise FALSE. </p>
+
+</div>
+</div>
+<a id="a5c4bde02cc7636aa557570ab5340359c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c4bde02cc7636aa557570ab5340359c">&#9670;&nbsp;</a></span>cc_heap_print()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cc_heap_print </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="heap_8h.html#a3cfe921d58e2792362b8c28cc74c2637">cc_heap</a> *&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cc_heap_print_cb *&#160;</td>
+          <td class="paramname"><em>printcb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSbString.html">SbString</a> &amp;&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SbBool&#160;</td>
+          <td class="paramname"><em>printLeveled</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Print heap <em>h</em> using a specified callback <em>printcb</em>. </p>
 
 </div>
 </div>
@@ -354,8 +432,8 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_469ed70aca823fd8322768ad54869f94.html">Inventor</a></li><li class="navelem"><a class="el" href="dir_c926cf464acaebc2091d00c8a935648f.html">C</a></li><li class="navelem"><a class="el" href="dir_7a50db6ab5259f91fa54d5ee03ce5859.html">base</a></li><li class="navelem"><a class="el" href="heap_8h.html">heap.h</a></li>
-    <li class="footer">Generated on Thu Oct 18 2018 20:22:55 for Coin by
+    <li class="navelem"><a class="el" href="dir_a6603f4dc6a79c28acf9645e930a3a85.html">coin</a></li><li class="navelem"><a class="el" href="dir_f4c6851b118624738cdb074afbf8bfed.html">include</a></li><li class="navelem"><a class="el" href="dir_aa3b0a2670ac5fed57825755ff7e6077.html">Inventor</a></li><li class="navelem"><a class="el" href="dir_8ee6d99fdffd5eea665086b0c867238a.html">C</a></li><li class="navelem"><a class="el" href="dir_3c6fa977572b552de499a7669c3e86e5.html">base</a></li><li class="navelem"><a class="el" href="heap_8h.html">heap.h</a></li>
+    <li class="footer">Generated on Fri Jan 24 2020 00:09:55 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

@@ -33,8 +33,8 @@
     Coin3D is Free Software,<br />published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.
   </td>
   <td style="text-align: right; padding-right: 0.5em;">
-    <a href="https://github.com/coin3d/">https://github.com/coin3d/</a><br />
-    <a href="http://www.kongsberg.com/kogt/">http://www.kongsberg.com/kogt/</a><br />  
+    <a href="https://coin3d.github.io">https://coin3d.github.io</a><br />
+    <a href="https://www.kongsberg.com/en/kogt/">https://www.kongsberg.com/en/kogt/</a><br />  
     </td>
  </tr>
  </tbody>
@@ -182,10 +182,10 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="classSoDebugError.html" title="The SoDebugError class is the internal debugging message passing mechanism. ">SoDebugError</a> class is the internal debugging message passing mechanism. </p>
 <p>This class basically serves two purposes:</p>
-<p>1) It is the message interface through which error and warning conditions are passed to the programmer which is using the Coin library API for building applications. These messages are generated when API methods are used in an incorrect manner, or if actions on the library has caused it to enter an inconsistent state. Coin programmers should then quickly be able to trace down errors in their application code.</p>
+<p>1) It is the message interface through which error and warning conditions are passed to the programmer which is using the Coin library API for building applications. These messages are generated when API methods are used in an incorrect manner, or if actions on the library have caused it to enter an inconsistent state. Coin programmers should then quickly be able to trace down errors in their application code.</p>
 <p>For this service to be available, the Coin library must be compiled with debugging information. For release builds, most of this "programmer's safety net" is removed to gain maximum speed and to use minimum space (build the smallest possible library).</p>
 <p>2) Coin application programmers can call the <a class="el" href="classSoDebugError.html" title="The SoDebugError class is the internal debugging message passing mechanism. ">SoDebugError</a> methods within their own code as a convenient way of debugging application code, replacing the usual cascades of fprintf() calls.</p>
-<p>Coin supports an environment variable to set conditional breakpoints. The COIN_DEBUG_BREAK environment variable can be set to any number of functions in the form of a list separated by commas or spaces. The functionnames must be given as "classname::functioname" (ie without return type, parenthesis or argument types or names). If a debug message is posted from one of those functions, your program will be stopped (using assert(0)).</p>
+<p>Coin supports an environment variable to set conditional breakpoints. The COIN_DEBUG_BREAK environment variable can be set to any number of functions in the form of a list separated by commas or spaces. The function names must be given as "classname::functionname" (i.e. without return type, parenthesis or argument types or names). If a debug message is posted from one of those functions, your program will be stopped (using assert(0)).</p>
 <p>This can be useful if you want to get core-dumps or enter a debugger whenever for instance a warning or an error is posted from some function (e.g. "SbVec3f::normalize"). This feature is only enabled in the debug version of Coin. </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a75af94a4fc4f0feb5b2ead59b04e9bbd"></a>
@@ -227,7 +227,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This method returns the <a class="el" href="classSoType.html" title="The SoType class is the basis for the run-time type system in Coin. ">SoType</a> of a particular object instance.</p>
+<p>This method returns the <a class="el" href="classSoType.html" title="The SoType class is the basis for the runtime type system in Coin. ">SoType</a> of a particular object instance.</p>
 <dl class="section see"><dt>See also</dt><dd>getClassTypeId() </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classSoError.html#a5d123b1c52eed851fb729287dadbf998">SoError</a>.</p>
@@ -423,7 +423,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSoDebugError.html">SoDebugError</a></li>
-    <li class="footer">Generated on Thu Oct 18 2018 20:23:07 for Coin by
+    <li class="footer">Generated on Fri Jan 24 2020 00:10:08 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

@@ -870,7 +870,7 @@ var files_dup =
     [ "SoWriteAction.h", "SoWriteAction_8h_source.html", null ],
     [ "SoWWWAnchor.h", "SoWWWAnchor_8h.html", "SoWWWAnchor_8h" ],
     [ "SoWWWInline.h", "SoWWWInline_8h.html", "SoWWWInline_8h" ],
-    [ "spidermonkey.h", "spidermonkey_8h.html", "spidermonkey_8h" ],
+    [ "spidermonkey.h", "spidermonkey_8h_source.html", null ],
     [ "storage.h", "storage_8h.html", "storage_8h" ],
     [ "string.h", "string_8h.html", "string_8h" ],
     [ "sync.h", "sync_8h_source.html", null ],

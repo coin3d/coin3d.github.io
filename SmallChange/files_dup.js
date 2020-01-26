@@ -1,5 +1,4 @@
 var files_dup =
 [
-    [ "docs", "dir_49e56c817e5e54854c35e136979f97ca.html", "dir_49e56c817e5e54854c35e136979f97ca" ],
-    [ "lib", "dir_97aefd0d527b934f1d99a682da8fe6a9.html", "dir_97aefd0d527b934f1d99a682da8fe6a9" ]
+    [ "smallchange", "dir_f0300e2e644b1b1c000b135e94bc7c9b.html", "dir_f0300e2e644b1b1c000b135e94bc7c9b" ]
 ];

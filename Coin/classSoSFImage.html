@@ -33,8 +33,8 @@
     Coin3D is Free Software,<br />published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.
   </td>
   <td style="text-align: right; padding-right: 0.5em;">
-    <a href="https://github.com/coin3d/">https://github.com/coin3d/</a><br />
-    <a href="http://www.kongsberg.com/kogt/">http://www.kongsberg.com/kogt/</a><br />  
+    <a href="https://coin3d.github.io">https://coin3d.github.io</a><br />
+    <a href="https://www.kongsberg.com/en/kogt/">https://www.kongsberg.com/en/kogt/</a><br />  
     </td>
  </tr>
  </tbody>
@@ -320,15 +320,15 @@ virtual <a class="el" href="classSoNotRec.html">SoNotRec</a>&#160;</td><td class
 <p>For 2-component images, the pixel-format is 0xXXXXGGAA, where the bytes in the pixel color values marked as "XX" are ignored and can be left out. "GG" is the part which gives a grayscale value and "AA" is for opacity.</p>
 <p>For 1-component images, the pixel-format is 0xXXXXXXGG, where the bytes in the pixel color values marked as "XX" are ignored and can be left out.</p>
 <p>The pixels are read as being ordered in rows along X (width) and columns along Y (height, bottom to top).</p>
-<p>Here's a simple example of the file format serialization, for a 2x2 RGB-image inside an <a class="el" href="classSoTexture2.html" title="The SoTexture2 class is used to map a 2D texture onto subsequent geometry in the scenegraph. ">SoTexture2</a> node, as mapped onto an <a class="el" href="classSoCube.html" title="The SoCube class is for rendering cubes. ">SoCube</a>:</p>
-<div class="fragment"><div class="line">Complexity { textureQuality 0.1 }   # <span class="keyword">set</span> low to avoid smoothing</div><div class="line"></div><div class="line">Texture2 {</div><div class="line">   image 2 2 4</div><div class="line"></div><div class="line">   0xffffffff 0x00ff0088   # white   semi-transparent green</div><div class="line">   0xff0000ff 0xffff00ff   #  red    yellow</div><div class="line">}</div><div class="line"></div><div class="line">Cube { }</div></div><!-- fragment --><p>The mini-scenegraph above results in the following mapping on the cube:<br />
+<p>Here's a simple example of the file format serialization, for a 2x2 RGB-image inside an <a class="el" href="classSoTexture2.html" title="The SoTexture2 class is used to map a 2D texture onto subsequent geometry in the scene graph...">SoTexture2</a> node, as mapped onto an <a class="el" href="classSoCube.html" title="The SoCube class is for rendering cubes. ">SoCube</a>:</p>
+<div class="fragment"><div class="line">Complexity { textureQuality 0.1 }   # <span class="keyword">set</span> low to avoid smoothing</div><div class="line"></div><div class="line">Texture2 {</div><div class="line">   image 2 2 4</div><div class="line"></div><div class="line">   0xffffffff 0x00ff0088   # white   semi-transparent green</div><div class="line">   0xff0000ff 0xffff00ff   #  red    yellow</div><div class="line">}</div><div class="line"></div><div class="line">Cube { }</div></div><!-- fragment --><p>The mini-scene graph above results in the following mapping on the cube:<br />
 </p>
 <center> <div class="image">
 <img src="sosfimage.png" alt="sosfimage.png"/>
 <div class="caption">
 Rendering of Example Scenegraph</div></div>
 </center><p>The cube has only been <em>slightly</em> rotated, so as you can see from the snapshot, the Y-rows are mapped from bottom to top, while the X-column pixels are mapped onto the cube from left to right.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoTexture2.html" title="The SoTexture2 class is used to map a 2D texture onto subsequent geometry in the scenegraph. ">SoTexture2</a>, <a class="el" href="classSoSFImage3.html" title="The SoSFImage3 class is used to store 3D (volume) images. ">SoSFImage3</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoTexture2.html" title="The SoTexture2 class is used to map a 2D texture onto subsequent geometry in the scene graph...">SoTexture2</a>, <a class="el" href="classSoSFImage3.html" title="The SoSFImage3 class is used to store 3D (volume) images. ">SoSFImage3</a> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a68d1f33dd82f6c212bd71932dec850f8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a68d1f33dd82f6c212bd71932dec850f8">&#9670;&nbsp;</a></span>getTypeId()</h2>
@@ -354,7 +354,7 @@ Rendering of Example Scenegraph</div></div>
 </table>
 </div><div class="memdoc">
 <p>Returns the type identification instance which uniquely identifies the Coin field class the object belongs to.</p>
-<dl class="section see"><dt>See also</dt><dd>getClassTypeId(), <a class="el" href="classSoType.html" title="The SoType class is the basis for the run-time type system in Coin. ">SoType</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>getClassTypeId(), <a class="el" href="classSoType.html" title="The SoType class is the basis for the runtime type system in Coin. ">SoType</a> </dd></dl>
 
 <p>Implements <a class="el" href="classSoField.html#a34ac9c7e16370f08a911e8ef74c8f784">SoField</a>.</p>
 
@@ -464,7 +464,7 @@ Rendering of Example Scenegraph</div></div>
 </div><div class="memdoc">
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="classSbImage.html" title="The SbImage class is an abstract datatype for 2D and 3D images. ">SbImage</a></td><td>contained by this <a class="el" href="classSoSFImage.html" title="The SoSFImage class is used to store pixel images. ">SoSFImage</a> </td></tr>
+    <tr><td class="paramname"><a class="el" href="classSbImage.html" title="The SbImage class is an abstract data type for 2D and 3D images. ">SbImage</a></td><td>contained by this <a class="el" href="classSoSFImage.html" title="The SoSFImage class is used to store pixel images. ">SoSFImage</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -512,8 +512,8 @@ Rendering of Example Scenegraph</div></div>
 <p>If <em>pixels</em> is not <code>NULL</code>, the image data is copied from <em>pixels</em> into this field. If <em>pixels</em> is <code>NULL</code>, the image data is cleared by setting all bytes to 0 (note that the behavior on passing a <code>NULL</code> pointer is specific for Coin, Open Inventor will crash if you try it).</p>
 <p>The image dimensions is given by the <em>size</em> argument, and the <em>nc</em> argument specifies the number of bytes-pr-pixel. A 24-bit RGB image would for instance have an <em>nc</em> equal to 3.</p>
 <p>The <em>copypolicy</em> argument makes it possible to share image data with <a class="el" href="classSoSFImage.html" title="The SoSFImage class is used to store pixel images. ">SoSFImage</a> without the data being copied (thereby using less memory resources). The default is to copy image data from the <em>pixels</em> source into an internal copy.</p>
-<p><em>Important</em> <em>note:</em> if you call this with <em>copypolicy</em> as either <code>NO_COPY_AND_DELETE</code> or <code>NO_COPY_AND_FREE</code>, and your application is running on Mirosoft Windows, be aware that you will get mysterious crashes if your application is not using the same C library run-time as the Coin library.</p>
-<p>The cause of this is that a memory block would then be allocated by the application on the memory heap of one C library run-time (say, for instance <code>MSVCRT.LIB</code>), but attempted deallocated in the memory heap of another C library run-time (e.g. <code>MSVCRTD.LIB</code>), which typically leads to hard-to-debug crashes.</p>
+<p><em>Important</em> <em>note:</em> if you call this with <em>copypolicy</em> as either <code>NO_COPY_AND_DELETE</code> or <code>NO_COPY_AND_FREE</code>, and your application is running on Microsoft Windows, be aware that you will get mysterious crashes if your application is not using the same C library runtime as the Coin library.</p>
+<p>The cause of this is that a memory block would then be allocated by the application on the memory heap of one C library runtime (say, for instance <code>MSVCRT.LIB</code>), but attempted deallocated in the memory heap of another C library runtime (e.g. <code>MSVCRTD.LIB</code>), which typically leads to hard-to-debug crashes.</p>
 <dl class="section since"><dt>Since</dt><dd>The CopyPolicy argument was added in Coin 2.0. </dd>
 <dd>
 CopyPolicy was added to TGS Inventor 3.0. </dd></dl>
@@ -592,7 +592,7 @@ CopyPolicy was added to TGS Inventor 3.0. </dd></dl>
       </table>
 </div><div class="memdoc">
 <p>Return pixel buffer. Return the image size and components in <em>size</em> and <em>nc</em>.</p>
-<p>You can not use this method to set a new image size. Use <a class="el" href="classSoSFImage.html#a5880716aa92e2b3c19da773e6a48d48c">setValue()</a> to change the size of the image buffer.</p>
+<p>You cannot use this method to set a new image size. Use <a class="el" href="classSoSFImage.html#a5880716aa92e2b3c19da773e6a48d48c">setValue()</a> to change the size of the image buffer.</p>
 <p>The field's container will not be notified about the changes until you call <a class="el" href="classSoSFImage.html#a4b49eeb7af4905941aa12be4fb9ea594">finishEditing()</a>. </p>
 
 </div>
@@ -612,7 +612,7 @@ CopyPolicy was added to TGS Inventor 3.0. </dd></dl>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Notify the field's auditors that the image data has been modified. </p>
+<p>Notify the field's auditors that the image data have been modified. </p>
 
 </div>
 </div>
@@ -838,7 +838,7 @@ TGS Inventor ?.? </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSoSFImage.html">SoSFImage</a></li>
-    <li class="footer">Generated on Thu Oct 18 2018 20:23:50 for Coin by
+    <li class="footer">Generated on Fri Jan 24 2020 00:10:26 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

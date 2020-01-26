@@ -33,8 +33,8 @@
     Coin3D is Free Software,<br />published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.
   </td>
   <td style="text-align: right; padding-right: 0.5em;">
-    <a href="https://github.com/coin3d/">https://github.com/coin3d/</a><br />
-    <a href="http://www.kongsberg.com/kogt/">http://www.kongsberg.com/kogt/</a><br />  
+    <a href="https://coin3d.github.io">https://coin3d.github.io</a><br />
+    <a href="https://www.kongsberg.com/en/kogt/">https://www.kongsberg.com/en/kogt/</a><br />  
     </td>
  </tr>
  </tbody>
@@ -326,7 +326,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Sets the flag returned from <a class="el" href="classSoBoundingBoxCache.html#acda6abcbb37000768cfeb82db5b61e2a">SoBoundingBoxCache::hasLinesOrPoints()</a> to <code>TRUE</code> for all open bounding box caches.</p>
-<p>The reason bounding box caches keep a lines-or-points flag is to make it known to client code if the shape(s) they contain have any of these primitives &ndash; or are rendered with these primitives. The reason this is important to know for the client code is because it might need to add an "epsilon" slack value to the calculated bounding box to account for smoothing / anti-aliasing effects in the renderer, so lines and points graphics is not accidently clipped by near and far clipping planes, for instance.</p>
+<p>The reason bounding box caches keep a lines-or-points flag is to make it known to client code if the shape(s) they contain have any of these primitives &ndash; or are rendered with these primitives. The reason this is important to know for the client code is because it might need to add an "epsilon" slack value to the calculated bounding box to account for smoothing / anti-aliasing effects in the renderer, so line and point graphics are not accidentally clipped by near and far clipping planes, for instance.</p>
 <p>This method is a static method on the class. It will upon invocation scan through the state stack and set the flag for all open <a class="el" href="classSoBoundingBoxCache.html" title="The SoBoundingBoxCache class is used to cache bounding boxes. ">SoBoundingBoxCache</a> elements. It has been made to work like this so it can easily be invoked on all current bounding box cache instances from the SoShape-type nodes using lines and / or point primitives.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSoBoundingBoxCache.html#acda6abcbb37000768cfeb82db5b61e2a">hasLinesOrPoints()</a> </dd></dl>
 
@@ -362,7 +362,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSoBoundingBoxCache.html">SoBoundingBoxCache</a></li>
-    <li class="footer">Generated on Thu Oct 18 2018 20:23:05 for Coin by
+    <li class="footer">Generated on Fri Jan 24 2020 00:10:05 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

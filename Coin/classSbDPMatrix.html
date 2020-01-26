@@ -33,8 +33,8 @@
     Coin3D is Free Software,<br />published under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-clause license</a>.
   </td>
   <td style="text-align: right; padding-right: 0.5em;">
-    <a href="https://github.com/coin3d/">https://github.com/coin3d/</a><br />
-    <a href="http://www.kongsberg.com/kogt/">http://www.kongsberg.com/kogt/</a><br />  
+    <a href="https://coin3d.github.io">https://coin3d.github.io</a><br />
+    <a href="https://www.kongsberg.com/en/kogt/">https://www.kongsberg.com/en/kogt/</a><br />  
     </td>
  </tr>
  </tbody>
@@ -195,7 +195,7 @@ Friends</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="classSbDPMatrix.html" title="The SbDPMatrix class is a 4x4 dimensional representation of a double-precision matrix. ">SbDPMatrix</a> class is a 4x4 dimensional representation of a double-precision matrix. </p>
-<p>This class is like the <a class="el" href="classSbMatrix.html" title="The SbMatrix class is a 4x4 dimensional representation of a matrix. ">SbMatrix</a> class, but uses double-precision floating point values for its elements. For more class documentation, see <a class="el" href="classSbMatrix.html" title="The SbMatrix class is a 4x4 dimensional representation of a matrix. ">SbMatrix</a>.</p>
+<p>This class is like the <a class="el" href="classSbMatrix.html" title="The SbMatrix class is a 4x4 dimensional representation of a matrix. ">SbMatrix</a> class, but uses double-precision floating-point values for its elements. For more class documentation, see <a class="el" href="classSbMatrix.html" title="The SbMatrix class is a 4x4 dimensional representation of a matrix. ">SbMatrix</a>.</p>
 <dl class="section since"><dt>Since</dt><dd>Coin 2.0. </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a128a211a7842030be0e1c041f471f991"></a>
@@ -850,7 +850,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Set translation, rotation and scaling all at once with a specified scale orientation. The resulting matrix gets calculated like this:</p>
-<div class="fragment"><div class="line">M = Ro-¹ * S * Ro * R * T</div></div><!-- fragment --><p>where <em>Ro</em> is the scale orientation, and <em>S</em>, <em>R</em> and <em>T</em> is scaling, rotation and translation.</p>
+<div class="fragment"><div class="line">M = Ro^-1 * S * Ro * R * T</div></div><!-- fragment --><p>where <em>Ro</em> is the scale orientation, and <em>S</em>, <em>R</em> and <em>T</em> is scaling, rotation and translation.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSbDPMatrix.html#ab74a0f653f57e888074078748031faca">setTranslate()</a>, <a class="el" href="classSbDPMatrix.html#aecb5ac77f13d3041efab4239f496b024">setRotate()</a>, <a class="el" href="classSbDPMatrix.html#a965c24d5efbdbbd0ec34ee327a063073">setScale()</a> and <a class="el" href="classSbDPMatrix.html#a06d3aefc6885a646bf79e9c8c20d43f0">getTransform()</a>. </dd></dl>
 
 </div>
@@ -899,7 +899,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Set translation, rotation and scaling all at once with a specified scale orientation and center point. The resulting matrix gets calculated like this:</p>
-<div class="fragment"><div class="line">M = -Tc * Ro-¹ * S * Ro * R * T * Tc</div></div><!-- fragment --><p>where <em>Tc</em> is the center point, <em>Ro</em> the scale orientation, <em>S</em>, <em>R</em> and <em>T</em> is scaling, rotation and translation.</p>
+<div class="fragment"><div class="line">M = -Tc * Ro^-1 * S * Ro * R * T * Tc</div></div><!-- fragment --><p>where <em>Tc</em> is the center point, <em>Ro</em> the scale orientation, <em>S</em>, <em>R</em> and <em>T</em> is scaling, rotation and translation.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSbDPMatrix.html#ab74a0f653f57e888074078748031faca">setTranslate()</a>, <a class="el" href="classSbDPMatrix.html#aecb5ac77f13d3041efab4239f496b024">setRotate()</a>, <a class="el" href="classSbDPMatrix.html#a965c24d5efbdbbd0ec34ee327a063073">setScale()</a> and <a class="el" href="classSbDPMatrix.html#a06d3aefc6885a646bf79e9c8c20d43f0">getTransform()</a>. </dd></dl>
 
 </div>
@@ -941,7 +941,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Factor the matrix back into its translation, rotation, scale and scaleorientation components.</p>
+<p>Factor the matrix back into its translation, rotation, scale and scale orientation components.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSbDPMatrix.html#abf2e53bbe1cfae3a6e6942b94c7fe23b">factor()</a> </dd></dl>
 
 </div>
@@ -1602,7 +1602,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Compare matrices to see if they are not equal. For two matrices to not be equal, it is enough that at least one of their elements are unequal.</p>
+<p>Compare matrices to see if they are not equal. For two matrices to not be equal, it is enough that at least one of their elements are not equal.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSbDPMatrix.html#a8f73f7619edb41946aa52ca6e0c6ee74">equals()</a>. </dd></dl>
 
 </div>
@@ -1617,7 +1617,7 @@ Friends</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSbDPMatrix.html">SbDPMatrix</a></li>
-    <li class="footer">Generated on Thu Oct 18 2018 20:22:58 for Coin by
+    <li class="footer">Generated on Fri Jan 24 2020 00:09:58 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>
