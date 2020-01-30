@@ -1,25 +1,25 @@
 var hierarchy =
 [
-    [ "SoBase", "C:/Data/Volker/Github/installed/share/doc/Coin/html/classSoBase.html", [
-      [ "SoFieldContainer", "C:/Data/Volker/Github/installed/share/doc/Coin/html/classSoFieldContainer.html", [
-        [ "SoNode", "C:/Data/Volker/Github/installed/share/doc/Coin/html/classSoNode.html", [
-          [ "SoShape", "C:/Data/Volker/Github/installed/share/doc/Coin/html/classSoShape.html", [
+    [ "SoBase", "../../Coin/html/classSoBase.html", [
+      [ "SoFieldContainer", "../../Coin/html/classSoFieldContainer.html", [
+        [ "SoNode", "../../Coin/html/classSoNode.html", [
+          [ "SoShape", "../../Coin/html/classSoShape.html", [
             [ "SoObliqueSlice", "classSoObliqueSlice.html", null ],
             [ "SoOrthoSlice", "classSoOrthoSlice.html", null ],
-            [ "SoVertexShape", "C:/Data/Volker/Github/installed/share/doc/Coin/html/classSoVertexShape.html", [
-              [ "SoIndexedShape", "C:/Data/Volker/Github/installed/share/doc/Coin/html/classSoIndexedShape.html", [
-                [ "SoIndexedFaceSet", "C:/Data/Volker/Github/installed/share/doc/Coin/html/classSoIndexedFaceSet.html", [
+            [ "SoVertexShape", "../../Coin/html/classSoVertexShape.html", [
+              [ "SoIndexedShape", "../../Coin/html/classSoIndexedShape.html", [
+                [ "SoIndexedFaceSet", "../../Coin/html/classSoIndexedFaceSet.html", [
                   [ "SoVolumeIndexedFaceSet", "classSoVolumeIndexedFaceSet.html", null ]
                 ] ],
-                [ "SoIndexedTriangleStripSet", "C:/Data/Volker/Github/installed/share/doc/Coin/html/classSoIndexedTriangleStripSet.html", [
+                [ "SoIndexedTriangleStripSet", "../../Coin/html/classSoIndexedTriangleStripSet.html", [
                   [ "SoVolumeIndexedTriangleStripSet", "classSoVolumeIndexedTriangleStripSet.html", null ]
                 ] ]
               ] ],
-              [ "SoNonIndexedShape", "C:/Data/Volker/Github/installed/share/doc/Coin/html/classSoNonIndexedShape.html", [
-                [ "SoFaceSet", "C:/Data/Volker/Github/installed/share/doc/Coin/html/classSoFaceSet.html", [
+              [ "SoNonIndexedShape", "../../Coin/html/classSoNonIndexedShape.html", [
+                [ "SoFaceSet", "../../Coin/html/classSoFaceSet.html", [
                   [ "SoVolumeFaceSet", "classSoVolumeFaceSet.html", null ]
                 ] ],
-                [ "SoTriangleStripSet", "C:/Data/Volker/Github/installed/share/doc/Coin/html/classSoTriangleStripSet.html", [
+                [ "SoTriangleStripSet", "../../Coin/html/classSoTriangleStripSet.html", [
                   [ "SoVolumeTriangleStripSet", "classSoVolumeTriangleStripSet.html", null ]
                 ] ]
               ] ]
@@ -34,7 +34,7 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
-    [ "SoDetail", "C:/Data/Volker/Github/installed/share/doc/Coin/html/classSoDetail.html", [
+    [ "SoDetail", "../../Coin/html/classSoDetail.html", [
       [ "SoObliqueSliceDetail", "classSoObliqueSliceDetail.html", null ],
       [ "SoOrthoSliceDetail", "classSoOrthoSliceDetail.html", null ],
       [ "SoVolumeDetail", "classSoVolumeDetail.html", [

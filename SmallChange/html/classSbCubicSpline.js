@@ -7,14 +7,14 @@ var classSbCubicSpline =
     ] ],
     [ "SbCubicSpline", "classSbCubicSpline.html#a863c001849c40042e005fe5b230729f6", null ],
     [ "~SbCubicSpline", "classSbCubicSpline.html#aae820d045e1e29dae6887bde1855b205", null ],
-    [ "getBasisMatrix", "classSbCubicSpline.html#a51a30a340b2343de6e3b57475cd675a0", null ],
-    [ "getPoint", "classSbCubicSpline.html#af00c1862bb202862622698011dc9e0cb", null ],
-    [ "getSegmentInfo", "classSbCubicSpline.html#a3bc6264f8bf1373925b9795edab6d98d", null ],
-    [ "getSegmentLength", "classSbCubicSpline.html#a82d3aab5d0be2fae2eb45859e1abcf91", null ],
-    [ "getTangent", "classSbCubicSpline.html#aaf66b18e6f267b6608f31dc0c1946088", null ],
     [ "setBasisMatrix", "classSbCubicSpline.html#a0f923ebd031e80a02081d3f942dad05e", null ],
     [ "setBasisMatrix", "classSbCubicSpline.html#a525e763796b3b881cac3028646c7124b", null ],
+    [ "getBasisMatrix", "classSbCubicSpline.html#a51a30a340b2343de6e3b57475cd675a0", null ],
+    [ "setLoop", "classSbCubicSpline.html#ac4102c8c4ea8375c65768d2afa319643", null ],
     [ "setControlPoints", "classSbCubicSpline.html#a2eca65846282797adee95cd8ab9a14c4", null ],
     [ "setControlPoints", "classSbCubicSpline.html#a1c2709f259fed1bc2280c906f24e3d21", null ],
-    [ "setLoop", "classSbCubicSpline.html#ac4102c8c4ea8375c65768d2afa319643", null ]
+    [ "getPoint", "classSbCubicSpline.html#af00c1862bb202862622698011dc9e0cb", null ],
+    [ "getTangent", "classSbCubicSpline.html#aaf66b18e6f267b6608f31dc0c1946088", null ],
+    [ "getSegmentInfo", "classSbCubicSpline.html#a3bc6264f8bf1373925b9795edab6d98d", null ],
+    [ "getSegmentLength", "classSbCubicSpline.html#a82d3aab5d0be2fae2eb45859e1abcf91", null ]
 ];

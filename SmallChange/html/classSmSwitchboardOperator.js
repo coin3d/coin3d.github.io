@@ -73,8 +73,7 @@ var classSmSwitchboardOperator =
     [ "SmSwitchboardOperator", "classSmSwitchboardOperator.html#af072bb40e1c5d0b77d21d4173198667b", null ],
     [ "~SmSwitchboardOperator", "classSmSwitchboardOperator.html#a4b40ae45328a7c77a1b79173f10602d8", null ],
     [ "handleEvent", "classSmSwitchboardOperator.html#aedf62eee2673bb0305b36e22c917f9ed", null ],
-    [ "initClass", "classSmSwitchboardOperator.html#aa442bed05b296d7d8f9b2bf92476a1b5", null ],
-    [ "behavior", "classSmSwitchboardOperator.html#aaff999a6a44103e95970ff984e375991", null ],
     [ "key", "classSmSwitchboardOperator.html#aff593a2a74bd1e6a55bb14628ab4327a", null ],
+    [ "behavior", "classSmSwitchboardOperator.html#aaff999a6a44103e95970ff984e375991", null ],
     [ "msecs", "classSmSwitchboardOperator.html#aefaecba9bf7e950388df34e99b413d3d", null ]
 ];

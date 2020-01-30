@@ -32,36 +32,26 @@ var NAVTREE =
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", "functions_func" ],
-        [ "Variables", "functions_vars.html", "functions_vars" ],
-        [ "Typedefs", "functions_type.html", null ],
+        [ "Variables", "functions_vars.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
         [ "Enumerator", "functions_eval.html", null ]
       ] ]
     ] ],
     [ "Files", "files.html", [
-      [ "File List", "files.html", "files_dup" ],
-      [ "File Members", "globals.html", [
-        [ "All", "globals.html", "globals_dup" ],
-        [ "Functions", "globals_func.html", null ],
-        [ "Variables", "globals_vars.html", null ],
-        [ "Typedefs", "globals_type.html", null ],
-        [ "Macros", "globals_defs.html", null ]
-      ] ]
+      [ "File List", "files.html", "files_dup" ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"AutoFile_8cpp.html",
-"SmSphereEventHandler_8cpp.html#ae673954b91e78df7ea604c7e825d8ff9",
-"classCubicSplineEngine.html#a6d855a7487498242698758c60ee202e9",
-"classSbVec3.html#acaa1664740b4e8c04d2419701c1d0f9f",
-"classSmHash.html#a52122d66c75c923fb8e1777d584c951a",
-"classSmSwitchboardOperator.html#a4b40ae45328a7c77a1b79173f10602d8",
-"classSmWellLogKit.html#ae891a5b304a16809a0e3e98701c1252c",
-"dir_55b8df3780e85ead456ee04f8a1d240b.html",
-"group__envvars.html#gafff36f9cad1322e147739161279022dd"
+"AutoFile_8h_source.html",
+"classLegendKit.html#aacf0d54dc5dc8a9dadea721516cbb878",
+"classSmCoordinateSystem.html#ae3b5c52d891d7a8a8990866ffb9c1d8a",
+"classSmSceneManager.html#ad11ee9cf5410f92765e5b2c7726651e8",
+"classSmTrackPointKit.html#ace3852dd5eaae1a4199fb70709223cf9",
+"classUTMElement.html#a14ff5fe09b01b31cd1cf5ed3030deaf5",
+"group__nodes.html#ga5aa0e28f57bbf350f271c1550156281f"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

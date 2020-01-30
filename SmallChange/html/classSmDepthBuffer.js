@@ -13,8 +13,7 @@ var classSmDepthBuffer =
     [ "SmDepthBuffer", "classSmDepthBuffer.html#a749bfa14ff1b4b904ccd73289219bb59", null ],
     [ "~SmDepthBuffer", "classSmDepthBuffer.html#a308fab5c4eccc1b2f9b90229ab31adce", null ],
     [ "GLRender", "classSmDepthBuffer.html#a881fbb369d96b941845d64cbfb3a0f14", null ],
-    [ "initClass", "classSmDepthBuffer.html#a9d54f266d2e98cfcff301535114179ad", null ],
-    [ "clearNow", "classSmDepthBuffer.html#a5f037a177540bbc4f8723055591cacd0", null ],
+    [ "func", "classSmDepthBuffer.html#a5a28e2a745f0ce8f3a9ff0f88d0a9431", null ],
     [ "enable", "classSmDepthBuffer.html#a3635a8e4b2936b798d43095ccb71046b", null ],
-    [ "func", "classSmDepthBuffer.html#a5a28e2a745f0ce8f3a9ff0f88d0a9431", null ]
+    [ "clearNow", "classSmDepthBuffer.html#a5f037a177540bbc4f8723055591cacd0", null ]
 ];
