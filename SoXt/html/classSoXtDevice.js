@@ -10,6 +10,5 @@ var classSoXtDevice =
     [ "setEventPosition", "classSoXtDevice.html#ae26f6134559c0e91b97a50117bb171a1", null ],
     [ "addEventHandler", "classSoXtDevice.html#afb31aa6ff173866eea6d79e15b5e225d", null ],
     [ "removeEventHandler", "classSoXtDevice.html#a6ce443f0c2d058a899c9020a9bd624f6", null ],
-    [ "invokeHandlers", "classSoXtDevice.html#a50126f27ae1da02324602b21207d39a6", null ],
-    [ "SoXtDeviceP", "classSoXtDevice.html#acbc37512b983e16970d320c6efb9a45f", null ]
+    [ "invokeHandlers", "classSoXtDevice.html#a50126f27ae1da02324602b21207d39a6", null ]
 ];

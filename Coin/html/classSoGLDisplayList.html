@@ -74,14 +74,14 @@ $(document).ready(function(){initNavTree('classSoGLDisplayList.html','');});
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classSoGLDisplayList-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">SoGLDisplayList Class Reference<div class="ingroups"><a class="el" href="group__elements.html">Element Classes</a></div></div>  </div>
+<div class="title">SoGLDisplayList Class Reference<div class="ingroups"><a class="el" href="group__coin__elements.html">Element Classes</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p>The <a class="el" href="classSoGLDisplayList.html" title="The SoGLDisplayList class stores and manages OpenGL display lists. ">SoGLDisplayList</a> class stores and manages OpenGL display lists.  
  <a href="classSoGLDisplayList.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="SoGLCacheContextElement_8h_source.html">Inventor/elements/SoGLCacheContextElement.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="SoGLDisplayList_8h_source.html">Inventor/elements/SoGLDisplayList.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -92,7 +92,7 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9675f4cb4e76b8b005a128fc613cf20e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoGLDisplayList.html#a9675f4cb4e76b8b005a128fc613cf20e">SoGLDisplayList</a> (<a class="el" href="classSoState.html">SoState</a> *state, Type type, <a class="el" href="classint.html">int</a> allocnum=1, SbBool mipmaptexobj=FALSE)</td></tr>
+<tr class="memitem:a9675f4cb4e76b8b005a128fc613cf20e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoGLDisplayList.html#a9675f4cb4e76b8b005a128fc613cf20e">SoGLDisplayList</a> (<a class="el" href="classSoState.html">SoState</a> *state, Type type, <a class="el" href="classint.html">int</a> allocnum=1, <a class="el" href="classint.html">SbBool</a> mipmaptexobj=FALSE)</td></tr>
 <tr class="separator:a9675f4cb4e76b8b005a128fc613cf20e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc910c8eb5219d173615ca678ebe4409"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoGLDisplayList.html#acc910c8eb5219d173615ca678ebe4409">ref</a> (void)</td></tr>
 <tr class="separator:acc910c8eb5219d173615ca678ebe4409"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -106,7 +106,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a553a566be22fee2ea06cb5b4b7b5fbb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c80a2c5ad0ce0c6b9c1274185c14900"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoGLDisplayList.html#a2c80a2c5ad0ce0c6b9c1274185c14900">addDependency</a> (<a class="el" href="classSoState.html">SoState</a> *state)</td></tr>
 <tr class="separator:a2c80a2c5ad0ce0c6b9c1274185c14900"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1778e860c4994af8915d97b0ce0586bc"><td class="memItemLeft" align="right" valign="top">SbBool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoGLDisplayList.html#a1778e860c4994af8915d97b0ce0586bc">isMipMapTextureObject</a> (void) const</td></tr>
+<tr class="memitem:a1778e860c4994af8915d97b0ce0586bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classint.html">SbBool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoGLDisplayList.html#a1778e860c4994af8915d97b0ce0586bc">isMipMapTextureObject</a> (void) const</td></tr>
 <tr class="separator:a1778e860c4994af8915d97b0ce0586bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0ab317d4f33d2d919e8ad81d5de0b8e"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoGLDisplayList.html#ae0ab317d4f33d2d919e8ad81d5de0b8e">getType</a> (void) const</td></tr>
 <tr class="separator:ae0ab317d4f33d2d919e8ad81d5de0b8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,7 +152,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">SbBool&#160;</td>
+          <td class="paramtype"><a class="el" href="classint.html">SbBool</a>&#160;</td>
           <td class="paramname"><em>mipmaptexobj</em> = <code>FALSE</code>&#160;</td>
         </tr>
         <tr>
@@ -308,7 +308,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">SbBool SoGLDisplayList::isMipMapTextureObject </td>
+          <td class="memname"><a class="el" href="classint.html">SbBool</a> SoGLDisplayList::isMipMapTextureObject </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -444,7 +444,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSoGLDisplayList.html">SoGLDisplayList</a></li>
-    <li class="footer">Generated on Wed Jan 29 2020 23:52:13 for Coin by
+    <li class="footer">Generated on Sat Dec 9 2023 20:13:33 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

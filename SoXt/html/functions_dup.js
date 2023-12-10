@@ -21,6 +21,15 @@ var functions_dup =
     [ "u", "functions_u.html", null ],
     [ "v", "functions_v.html", null ],
     [ "w", "functions_w.html", null ],
-    [ "x", "functions_x.html", null ],
-    [ "~", "functions_0x7e.html", null ]
+    [ "xtc", "functions_x.html", null ],
+    [ "xtd", "functions_x.html", null ],
+    [ "xte", "functions_x.html", null ],
+    [ "xtf", "functions_x.html", null ],
+    [ "xtg", "functions_x.html", null ],
+    [ "xtk", "functions_x.html", null ],
+    [ "xtm", "functions_x.html", null ],
+    [ "xtp", "functions_x.html", null ],
+    [ "xtr", "functions_x.html", null ],
+    [ "xtv", "functions_x.html", null ],
+    [ "~", "functions_~.html", null ]
 ];

@@ -74,11 +74,14 @@ $(document).ready(function(){initNavTree('classSoPrimitiveVertexCache.html','');
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classSoPrimitiveVertexCache-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">SoPrimitiveVertexCache Class Reference</div>  </div>
+<div class="title">SoPrimitiveVertexCache Class Reference<div class="ingroups"><a class="el" href="group__coin__caches.html">Cache Classes</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="SoPrimitiveVertexCache_8h_source.html">include/Inventor/caches/SoPrimitiveVertexCache.h</a>&gt;</code></p>
+<p>This cache contains an organized version of the geometry in vertex array form.  
+ <a href="classSoPrimitiveVertexCache.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="SoPrimitiveVertexCache_8h_source.html">Inventor/caches/SoPrimitiveVertexCache.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for SoPrimitiveVertexCache:</div>
 <div class="dyncontent">
@@ -104,7 +107,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3a3aa7bd1159b04af70e5034ae924067"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07945544b5c694532e604423d97ea05d"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoPrimitiveVertexCache.html#a07945544b5c694532e604423d97ea05d">~SoPrimitiveVertexCache</a> ()</td></tr>
 <tr class="separator:a07945544b5c694532e604423d97ea05d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab78cda5fcc6f3250a7b612b39c55fcf3"><td class="memItemLeft" align="right" valign="top">virtual SbBool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoPrimitiveVertexCache.html#ab78cda5fcc6f3250a7b612b39c55fcf3">isValid</a> (const <a class="el" href="classSoState.html">SoState</a> *state) const</td></tr>
+<tr class="memitem:ab78cda5fcc6f3250a7b612b39c55fcf3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classint.html">SbBool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoPrimitiveVertexCache.html#ab78cda5fcc6f3250a7b612b39c55fcf3">isValid</a> (const <a class="el" href="classSoState.html">SoState</a> *state) const</td></tr>
 <tr class="separator:ab78cda5fcc6f3250a7b612b39c55fcf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aedcdb42a3fd8bfbbb03ab44765ebf58a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoPrimitiveVertexCache.html#aedcdb42a3fd8bfbbb03ab44765ebf58a">close</a> (<a class="el" href="classSoState.html">SoState</a> *state)</td></tr>
 <tr class="separator:aedcdb42a3fd8bfbbb03ab44765ebf58a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,7 +157,7 @@ const GLint *&#160;</td><td class="memItemRight" valign="bottom"><b>getTriangleI
 int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>getTriangleIndex</b> (const <a class="el" href="classint.html">int</a> idx) const</td></tr>
 <tr class="separator:a0f95f4fb673274e0ee1c2a493430f681"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe60539c9704897c3d20430a4f923275"><td class="memItemLeft" align="right" valign="top"><a id="abe60539c9704897c3d20430a4f923275"></a>
-SbBool&#160;</td><td class="memItemRight" valign="bottom"><b>colorPerVertex</b> (void) const</td></tr>
+<a class="el" href="classint.html">SbBool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>colorPerVertex</b> (void) const</td></tr>
 <tr class="separator:abe60539c9704897c3d20430a4f923275"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addf9900ce8d0acf42d26c30a7651b4b9"><td class="memItemLeft" align="right" valign="top"><a id="addf9900ce8d0acf42d26c30a7651b4b9"></a>
 const <a class="el" href="classSbVec4f.html">SbVec4f</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getMultiTextureCoordinateArray</b> (const <a class="el" href="classint.html">int</a> unit) const</td></tr>
@@ -202,7 +205,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a986f9bab8a17b466a36c22eaabd17259 inherit pro_methods_classSoCache"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The SoPrimitiveVertexClass is used to cache generated triangles. </p>
+<div class="textblock"><p>This cache contains an organized version of the geometry in vertex array form. </p>
+<p>The SoPrimitiveVertexClass is used to cache generated triangles.</p>
+<dl class="section since"><dt>Since</dt><dd>Coin 3.0 </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3a3aa7bd1159b04af70e5034ae924067"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3a3aa7bd1159b04af70e5034ae924067">&#9670;&nbsp;</a></span>SoPrimitiveVertexCache()</h2>
@@ -260,7 +265,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">SbBool SoPrimitiveVertexCache::isValid </td>
+          <td class="memname"><a class="el" href="classint.html">SbBool</a> SoPrimitiveVertexCache::isValid </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classSoState.html">SoState</a> *&#160;</td>
           <td class="paramname"><em>state</em></td><td>)</td>
@@ -308,7 +313,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSoPrimitiveVertexCache.html">SoPrimitiveVertexCache</a></li>
-    <li class="footer">Generated on Wed Jan 29 2020 23:52:24 for Coin by
+    <li class="footer">Generated on Sat Dec 9 2023 20:13:38 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

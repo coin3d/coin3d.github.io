@@ -31,6 +31,6 @@ var classSoBase =
     [ "readInstance", "classSoBase.html#ab4953769f9d9dd210153228a2f096a67", null ],
     [ "createNotRec", "classSoBase.html#aa41e45678b8c582b5202143a220ad76c", null ],
     [ "PImpl", "classSoBase.html#abde54206b8f19d7e20fb1e9c7c1e2965", null ],
-    [ "referencecount", "classSoBase.html#a4943df8b5820a4f27885ee34e1ea145a", null ],
+    [ "referencecount", "classSoBase.html#a103e7682b55e3d88af5f2d5eef8263b5", null ],
     [ "alive", "classSoBase.html#a7f29419919ef8edbbb73bf2ab37ccc90", null ]
 ];

@@ -74,7 +74,7 @@ $(document).ready(function(){initNavTree('classSoCache.html','');});
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="classSoCache-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">SoCache Class Reference<div class="ingroups"><a class="el" href="group__caches.html">Cache Classes</a></div></div>  </div>
+<div class="title">SoCache Class Reference<div class="ingroups"><a class="el" href="group__coin__caches.html">Cache Classes</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -92,8 +92,8 @@ Inheritance diagram for SoCache:</div>
 <area href="classSoConvexDataCache.html" title="The SoConvexDataCache class is used to cache convexified polygons. " alt="SoConvexDataCache" shape="rect" coords="178,56,346,80"/>
 <area href="classSoGLRenderCache.html" title="The SoGLRenderCache class is used to cache OpenGL calls. " alt="SoGLRenderCache" shape="rect" coords="356,56,524,80"/>
 <area href="classSoNormalCache.html" title="The SoNormalCache class is used to hold cached normals. " alt="SoNormalCache" shape="rect" coords="534,56,702,80"/>
-<area href="classSoPrimitiveVertexCache.html" alt="SoPrimitiveVertexCache" shape="rect" coords="712,56,880,80"/>
-<area href="classSoTextureCoordinateCache.html" alt="SoTextureCoordinateCache" shape="rect" coords="890,56,1058,80"/>
+<area href="classSoPrimitiveVertexCache.html" title="This cache contains an organized version of the geometry in vertex array form. " alt="SoPrimitiveVertexCache" shape="rect" coords="712,56,880,80"/>
+<area href="classSoTextureCoordinateCache.html" title="The SoTextureCoordinateCache class is used to cache generated texture coordinates. " alt="SoTextureCoordinateCache" shape="rect" coords="890,56,1058,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -109,7 +109,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acbee322cd97c3779a44631d481311212"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e6597415be84754904ddc928668ed2b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoCache.html#a9e6597415be84754904ddc928668ed2b">addCacheDependency</a> (const <a class="el" href="classSoState.html">SoState</a> *state, <a class="el" href="classSoCache.html">SoCache</a> *cache)</td></tr>
 <tr class="separator:a9e6597415be84754904ddc928668ed2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e1b3f532a7bc38340bf1bb19cb2bcc3"><td class="memItemLeft" align="right" valign="top">virtual SbBool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoCache.html#a7e1b3f532a7bc38340bf1bb19cb2bcc3">isValid</a> (const <a class="el" href="classSoState.html">SoState</a> *state) const</td></tr>
+<tr class="memitem:a7e1b3f532a7bc38340bf1bb19cb2bcc3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classint.html">SbBool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoCache.html#a7e1b3f532a7bc38340bf1bb19cb2bcc3">isValid</a> (const <a class="el" href="classSoState.html">SoState</a> *state) const</td></tr>
 <tr class="separator:a7e1b3f532a7bc38340bf1bb19cb2bcc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad77f772d438355e4af92034a1e5d11e8"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classSoElement.html">SoElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoCache.html#ad77f772d438355e4af92034a1e5d11e8">getInvalidElement</a> (const <a class="el" href="classSoState.html">SoState</a> *const state) const</td></tr>
 <tr class="separator:ad77f772d438355e4af92034a1e5d11e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -131,15 +131,7 @@ Protected Member Functions</h2></td></tr>
 <p>Example: you have a <a class="el" href="classSoCoordinate3.html" title="The SoCoordinate3 class is a node for providing coordinates to shape nodes. ">SoCoordinate3</a> node outside an <a class="el" href="classSoSeparator.html" title="The SoSeparator class is a state-preserving group node. ">SoSeparator</a>, but an <a class="el" href="classSoIndexedFaceSet.html" title="The SoIndexedFaceSet class is used to handle generic indexed facesets. ">SoIndexedFaceSet</a> inside the <a class="el" href="classSoSeparator.html" title="The SoSeparator class is a state-preserving group node. ">SoSeparator</a>. If the <a class="el" href="classSoSeparator.html" title="The SoSeparator class is a state-preserving group node. ">SoSeparator</a> creates a cache, <a class="el" href="classSoIndexedFaceSet.html" title="The SoIndexedFaceSet class is used to handle generic indexed facesets. ">SoIndexedFaceSet</a> will read <a class="el" href="classSoCoordinateElement.html" title="The SoCoordinateElement class is yet to be documented. ">SoCoordinateElement</a>, and since <a class="el" href="classSoCoordinateElement.html" title="The SoCoordinateElement class is yet to be documented. ">SoCoordinateElement</a> hasn't been set after the cache was opened, the cache stores that element in the cache's list of element dependencies.</p>
 <p>At the next frame, the <a class="el" href="classSoSeparator.html" title="The SoSeparator class is a state-preserving group node. ">SoSeparator</a> will test if the cache is valid, and will then test all dependency elements. If one of the elements doesn't match, the cache is not valid and can't be used.</p>
 <p>That's the basics. There are some steps you have to do when creating a cache to make the cache dependencies work. Basically you have to do it like this:</p>
-<pre class="fragment">SbBool storedinvalid = SoCacheElement::setInvalid(FALSE);
-state-&gt;push();
-SoMyCache * cache = new SoMyCache(state);
-cache-&gt;ref();
-SoCacheElement::set(state, cache);
-buildMyCache();
-state-&gt;pop();
-SoCacheElement::setInvalid(storedinvalid);
-</pre><p>First you reset and store the old value of the cache invalid-flag. Then you push the state so that the cache can detect when something outside the cache is changed (and to be able to change the cache element). Next, you create the cache - don't forget to ref it. Finally, set the current cache in the cache element and build the cache. After building the cache, you pop the state and restore the invalid-cache flag.</p>
+<div class="fragment"><div class="line">SbBool storedinvalid = <a class="code" href="classSoCacheElement.html#a6082e45336953d996d9f5738d908a9fd">SoCacheElement::setInvalid</a>(FALSE);</div><div class="line">state-&gt;<a class="code" href="classSoState.html#a3cfd0e43dfb2469eec5dd9701860ec9a">push</a>();</div><div class="line">SoMyCache * cache = <span class="keyword">new</span> SoMyCache(state);</div><div class="line">cache-&gt;ref();</div><div class="line"><a class="code" href="classSoCacheElement.html#aeed0ab875e5b0685a35f52f0e4a9e8ab">SoCacheElement::set</a>(state, cache);</div><div class="line">buildMyCache();</div><div class="line">state-&gt;<a class="code" href="classSoState.html#a9bd01b48366dfda61f0b0b4f2a4fdac7">pop</a>();</div><div class="line"><a class="code" href="classSoCacheElement.html#a6082e45336953d996d9f5738d908a9fd">SoCacheElement::setInvalid</a>(storedinvalid);</div></div><!-- fragment --><p>First you reset and store the old value of the cache invalid-flag. Then you push the state so that the cache can detect when something outside the cache is changed (and to be able to change the cache element). Next, you create the cache - don't forget to ref it. Finally, set the current cache in the cache element and build the cache. After building the cache, you pop the state and restore the invalid-cache flag.</p>
 <p>When building the cache, all elements that are read will be copied into the cache (using <a class="el" href="classSoElement.html#a4a6e2a38cdbbdd1dccbb3e9928e68d55">SoElement::copyMatchInfo()</a>), and these copied elements are used to test the validity of the cache (in <a class="el" href="classSoCache.html#a7e1b3f532a7bc38340bf1bb19cb2bcc3">SoCache::isValid()</a>).</p>
 <p>You don't have to manually add element dependencies. They will automatically be picked up when creating the cache. This is handled in <a class="el" href="classSoElement.html#ab8cb20060c9b527c8b2e343b1cf4032a">SoElement::getConstElement()</a>.</p>
 <p>If you want the cache to be invalidated when some field inside your node is changed, it's common to overload the notify()-method, and call <a class="el" href="classSoCache.html#a6c8892faf5317b9ad1fb19e9acabd504">SoCache::invalidate()</a> whenever the notify()-method for your node is called. See for instance <a class="el" href="classSoShape.html#a954e546c49b3078934c159d05836cfa3">SoShape::notify()</a>.</p>
@@ -295,7 +287,7 @@ SoCacheElement::setInvalid(storedinvalid);
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">SbBool SoCache::isValid </td>
+          <td class="memname"><a class="el" href="classint.html">SbBool</a> SoCache::isValid </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classSoState.html">SoState</a> *&#160;</td>
           <td class="paramname"><em>state</em></td><td>)</td>
@@ -391,7 +383,7 @@ SoCacheElement::setInvalid(storedinvalid);
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSoCache.html">SoCache</a></li>
-    <li class="footer">Generated on Wed Jan 29 2020 23:52:06 for Coin by
+    <li class="footer">Generated on Sat Dec 9 2023 20:13:30 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

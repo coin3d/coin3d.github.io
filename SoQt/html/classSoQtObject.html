@@ -105,16 +105,16 @@ Inheritance diagram for SoQtObject:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6e8a275be6045a6121dde25537ed3429"><td class="memItemLeft" align="right" valign="top">virtual <a class="elRef" doxygen="C:/Coin3D/share/doc/Coin/html/Coin.tag:../../Coin/html/" href="../../Coin/html/classSoType.html">SoType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoQtObject.html#a6e8a275be6045a6121dde25537ed3429">getTypeId</a> (void) const =0</td></tr>
+<tr class="memitem:a6e8a275be6045a6121dde25537ed3429"><td class="memItemLeft" align="right" valign="top">virtual <a class="elRef" doxygen="C:/coin3d/share/doc/Coin/html/Coin.tag:../../Coin/html/" href="../../Coin/html/classSoType.html">SoType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoQtObject.html#a6e8a275be6045a6121dde25537ed3429">getTypeId</a> (void) const =0</td></tr>
 <tr class="separator:a6e8a275be6045a6121dde25537ed3429"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad67d1c02506e025550c5b8572cece20c"><td class="memItemLeft" align="right" valign="top">SbBool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoQtObject.html#ad67d1c02506e025550c5b8572cece20c">isOfType</a> (<a class="elRef" doxygen="C:/Coin3D/share/doc/Coin/html/Coin.tag:../../Coin/html/" href="../../Coin/html/classSoType.html">SoType</a> type) const</td></tr>
+<tr class="memitem:ad67d1c02506e025550c5b8572cece20c"><td class="memItemLeft" align="right" valign="top">SbBool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoQtObject.html#ad67d1c02506e025550c5b8572cece20c">isOfType</a> (<a class="elRef" doxygen="C:/coin3d/share/doc/Coin/html/Coin.tag:../../Coin/html/" href="../../Coin/html/classSoType.html">SoType</a> type) const</td></tr>
 <tr class="separator:ad67d1c02506e025550c5b8572cece20c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:afcdd569d4a61e703b49cb5d7d8698e09"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoQtObject.html#afcdd569d4a61e703b49cb5d7d8698e09">initClass</a> (void)</td></tr>
 <tr class="separator:afcdd569d4a61e703b49cb5d7d8698e09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a565e58069f85c82349bf1d8a68212b80"><td class="memItemLeft" align="right" valign="top">static <a class="elRef" doxygen="C:/Coin3D/share/doc/Coin/html/Coin.tag:../../Coin/html/" href="../../Coin/html/classSoType.html">SoType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoQtObject.html#a565e58069f85c82349bf1d8a68212b80">getClassTypeId</a> (void)</td></tr>
+<tr class="memitem:a565e58069f85c82349bf1d8a68212b80"><td class="memItemLeft" align="right" valign="top">static <a class="elRef" doxygen="C:/coin3d/share/doc/Coin/html/Coin.tag:../../Coin/html/" href="../../Coin/html/classSoType.html">SoType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoQtObject.html#a565e58069f85c82349bf1d8a68212b80">getClassTypeId</a> (void)</td></tr>
 <tr class="separator:a565e58069f85c82349bf1d8a68212b80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affa0550225ecb90628dc90db64f205da"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoQtObject.html#affa0550225ecb90628dc90db64f205da">init</a> (void)</td></tr>
 <tr class="separator:affa0550225ecb90628dc90db64f205da"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -124,7 +124,7 @@ Static Public Member Functions</h2></td></tr>
 <p>The purpose of making this class the superclass of all <a class="el" href="classSoQt.html" title="The SoQt class takes care of Qt initialization and event dispatching. ">SoQt</a> device, component and viewer classes is to be able to do runtime type checking of the <a class="el" href="classSoQt.html" title="The SoQt class takes care of Qt initialization and event dispatching. ">SoQt</a> objects.</p>
 <p>You can place the macro SOQT_OBJECT_HEADER(classname,parentname) within a class definition header for <a class="el" href="classSoQt.html" title="The SoQt class takes care of Qt initialization and event dispatching. ">SoQt</a> extension components to automatically provide the necessary definitions for setting up a runtime type system for your extension classes:</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#ifndef MYSPECIALVIEWER_H</span></div><div class="line"><span class="preprocessor">#define MYSPECIALVIEWER_H</span></div><div class="line"></div><div class="line"><span class="keyword">class </span>MySpecialViewer : <span class="keyword">public</span> <a class="code" href="classSoQtExaminerViewer.html">SoQtExaminerViewer</a> {</div><div class="line">  SOQT_OBJECT_HEADER(MySpecialViewer, <a class="code" href="classSoQtExaminerViewer.html">SoQtExaminerViewer</a>);</div><div class="line">  <span class="comment">// [rest of class definition follows]</span></div><div class="line">};</div><div class="line"></div><div class="line"><span class="preprocessor">#endif // !MYSPECIALVIEWER_H</span></div></div><!-- fragment --><p>Then put the SOQT_OBJECT_SOURCE(classname) macro within the actual implementation source code file to include the necessary code for the runtime type system:</p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;MySpecialViewer.h&gt;</span></div><div class="line"></div><div class="line">SOQT_OBJECT_SOURCE(MySpecialViewer);</div><div class="line"></div><div class="line"><span class="comment">// [rest of class implementation]</span></div></div><!-- fragment --><p>See also the documentation of the <a class="elRef" doxygen="C:/Coin3D/share/doc/Coin/html/Coin.tag:../../Coin/html/" href="../../Coin/html/classSoType.html">SoType</a> class in Coin or Inventor. </p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;MySpecialViewer.h&gt;</span></div><div class="line"></div><div class="line">SOQT_OBJECT_SOURCE(MySpecialViewer);</div><div class="line"></div><div class="line"><span class="comment">// [rest of class implementation]</span></div></div><!-- fragment --><p>See also the documentation of the <a class="elRef" doxygen="C:/coin3d/share/doc/Coin/html/Coin.tag:../../Coin/html/" href="../../Coin/html/classSoType.html">SoType</a> class in Coin or Inventor. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="afcdd569d4a61e703b49cb5d7d8698e09"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afcdd569d4a61e703b49cb5d7d8698e09">&#9670;&nbsp;</a></span>initClass()</h2>
@@ -163,7 +163,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" doxygen="C:/Coin3D/share/doc/Coin/html/Coin.tag:../../Coin/html/" href="../../Coin/html/classSoType.html">SoType</a> SoQtObject::getClassTypeId </td>
+          <td class="memname"><a class="elRef" doxygen="C:/coin3d/share/doc/Coin/html/Coin.tag:../../Coin/html/" href="../../Coin/html/classSoType.html">SoType</a> SoQtObject::getClassTypeId </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -176,7 +176,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This static method returns the <a class="elRef" doxygen="C:/Coin3D/share/doc/Coin/html/Coin.tag:../../Coin/html/" href="../../Coin/html/classSoType.html">SoType</a> object associated with objects of this class. </p>
+<p>This static method returns the <a class="elRef" doxygen="C:/coin3d/share/doc/Coin/html/Coin.tag:../../Coin/html/" href="../../Coin/html/classSoType.html">SoType</a> object associated with objects of this class. </p>
 
 </div>
 </div>
@@ -190,7 +190,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" doxygen="C:/Coin3D/share/doc/Coin/html/Coin.tag:../../Coin/html/" href="../../Coin/html/classSoType.html">SoType</a> SoQtObject::getTypeId </td>
+          <td class="memname"><a class="elRef" doxygen="C:/coin3d/share/doc/Coin/html/Coin.tag:../../Coin/html/" href="../../Coin/html/classSoType.html">SoType</a> SoQtObject::getTypeId </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -217,7 +217,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">SbBool SoQtObject::isOfType </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" doxygen="C:/Coin3D/share/doc/Coin/html/Coin.tag:../../Coin/html/" href="../../Coin/html/classSoType.html">SoType</a>&#160;</td>
+          <td class="paramtype"><a class="elRef" doxygen="C:/coin3d/share/doc/Coin/html/Coin.tag:../../Coin/html/" href="../../Coin/html/classSoType.html">SoType</a>&#160;</td>
           <td class="paramname"><em>type</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -264,7 +264,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSoQtObject.html">SoQtObject</a></li>
-    <li class="footer">Generated on Thu Jan 30 2020 20:08:23 for SoQt by
+    <li class="footer">Generated on Fri Dec 8 2023 23:56:20 for SoQt by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

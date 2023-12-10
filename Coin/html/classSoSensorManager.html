@@ -73,7 +73,7 @@ $(document).ready(function(){initNavTree('classSoSensorManager.html','');});
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classSoSensorManager-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">SoSensorManager Class Reference<div class="ingroups"><a class="el" href="group__sensors.html">Sensor Classes</a></div></div>  </div>
+<div class="title">SoSensorManager Class Reference<div class="ingroups"><a class="el" href="group__coin__sensors.html">Sensor Classes</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -102,15 +102,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6b09f419c039fa5917c2725eab33b82f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a189348611c49f36d58af5077f920a162"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoSensorManager.html#a189348611c49f36d58af5077f920a162">removeRescheduledTimer</a> (<a class="el" href="classSoTimerQueueSensor.html">SoTimerQueueSensor</a> *s)</td></tr>
 <tr class="separator:a189348611c49f36d58af5077f920a162"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa077dc9dd11e12cad63016c60e4c9af7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoSensorManager.html#aa077dc9dd11e12cad63016c60e4c9af7">processDelayQueue</a> (SbBool isidle)</td></tr>
+<tr class="memitem:aa077dc9dd11e12cad63016c60e4c9af7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoSensorManager.html#aa077dc9dd11e12cad63016c60e4c9af7">processDelayQueue</a> (<a class="el" href="classint.html">SbBool</a> isidle)</td></tr>
 <tr class="separator:aa077dc9dd11e12cad63016c60e4c9af7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e6b511731fc72c3adb16f7f345d11d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoSensorManager.html#a1e6b511731fc72c3adb16f7f345d11d6">processImmediateQueue</a> (void)</td></tr>
 <tr class="separator:a1e6b511731fc72c3adb16f7f345d11d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b5935cf5cdaeaf4825940260e5a142f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoSensorManager.html#a3b5935cf5cdaeaf4825940260e5a142f">processTimerQueue</a> (void)</td></tr>
 <tr class="separator:a3b5935cf5cdaeaf4825940260e5a142f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23dad9c29887f3039ddc3f751af2e501"><td class="memItemLeft" align="right" valign="top">SbBool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoSensorManager.html#a23dad9c29887f3039ddc3f751af2e501">isDelaySensorPending</a> (void)</td></tr>
+<tr class="memitem:a23dad9c29887f3039ddc3f751af2e501"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classint.html">SbBool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoSensorManager.html#a23dad9c29887f3039ddc3f751af2e501">isDelaySensorPending</a> (void)</td></tr>
 <tr class="separator:a23dad9c29887f3039ddc3f751af2e501"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae598bb762c7a417b8f4f45f7a13fc80f"><td class="memItemLeft" align="right" valign="top">SbBool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoSensorManager.html#ae598bb762c7a417b8f4f45f7a13fc80f">isTimerSensorPending</a> (<a class="el" href="classSbTime.html">SbTime</a> &amp;tm)</td></tr>
+<tr class="memitem:ae598bb762c7a417b8f4f45f7a13fc80f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classint.html">SbBool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoSensorManager.html#ae598bb762c7a417b8f4f45f7a13fc80f">isTimerSensorPending</a> (<a class="el" href="classSbTime.html">SbTime</a> &amp;tm)</td></tr>
 <tr class="separator:ae598bb762c7a417b8f4f45f7a13fc80f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a017db6daa54156ec1a2f8198fb30d531"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoSensorManager.html#a017db6daa54156ec1a2f8198fb30d531">setDelaySensorTimeout</a> (const <a class="el" href="classSbTime.html">SbTime</a> &amp;t)</td></tr>
 <tr class="separator:a017db6daa54156ec1a2f8198fb30d531"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -339,7 +339,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void SoSensorManager::processDelayQueue </td>
           <td>(</td>
-          <td class="paramtype">SbBool&#160;</td>
+          <td class="paramtype"><a class="el" href="classint.html">SbBool</a>&#160;</td>
           <td class="paramname"><em>isidle</em></td><td>)</td>
           <td></td>
         </tr>
@@ -402,7 +402,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">SbBool SoSensorManager::isDelaySensorPending </td>
+          <td class="memname"><a class="el" href="classint.html">SbBool</a> SoSensorManager::isDelaySensorPending </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -421,7 +421,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">SbBool SoSensorManager::isTimerSensorPending </td>
+          <td class="memname"><a class="el" href="classint.html">SbBool</a> SoSensorManager::isTimerSensorPending </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classSbTime.html">SbTime</a> &amp;&#160;</td>
           <td class="paramname"><em>tm</em></td><td>)</td>
@@ -536,7 +536,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSoSensorManager.html">SoSensorManager</a></li>
-    <li class="footer">Generated on Wed Jan 29 2020 23:52:28 for Coin by
+    <li class="footer">Generated on Sat Dec 9 2023 20:13:39 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

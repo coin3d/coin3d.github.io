@@ -75,7 +75,7 @@ $(document).ready(function(){initNavTree('classSoDetail.html','');});
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="classSoDetail-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">SoDetail Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="group__details.html">Detail Classes</a></div></div>  </div>
+<div class="title">SoDetail Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="group__coin__details.html">Detail Classes</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -108,7 +108,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1fe89bba19607b2854fb41beec156b67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f254d2c666e18624de3bd2aedbc2b46"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classSoType.html">SoType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoDetail.html#a5f254d2c666e18624de3bd2aedbc2b46">getTypeId</a> (void) const =0</td></tr>
 <tr class="separator:a5f254d2c666e18624de3bd2aedbc2b46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cb6b9500db87b2c5a59849910190ef9"><td class="memItemLeft" align="right" valign="top">SbBool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoDetail.html#a9cb6b9500db87b2c5a59849910190ef9">isOfType</a> (const <a class="el" href="classSoType.html">SoType</a> type) const</td></tr>
+<tr class="memitem:a9cb6b9500db87b2c5a59849910190ef9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classint.html">SbBool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoDetail.html#a9cb6b9500db87b2c5a59849910190ef9">isOfType</a> (const <a class="el" href="classSoType.html">SoType</a> type) const</td></tr>
 <tr class="separator:a9cb6b9500db87b2c5a59849910190ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
@@ -295,7 +295,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the type identification of a detail derived from a class inheriting <a class="el" href="classSoDetail.html" title="The SoDetail class is the superclass for all classes storing detailed information about particular sh...">SoDetail</a>. This is used for runtime type checking and "downward" casting.</p>
 <p>Usage example:</p>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> fuhbear(<a class="code" href="classSoDetail.html">SoDetail</a> * detail)</div><div class="line">{</div><div class="line">  <span class="keywordflow">if</span> (detail-&gt;<a class="code" href="classSoDetail.html#a5f254d2c666e18624de3bd2aedbc2b46">getTypeId</a>() == SoFaceDetail::getClassTypeId()) {</div><div class="line">    <span class="comment">// safe downward cast, know the type</span></div><div class="line">    <a class="code" href="classSoFaceDetail.html">SoFaceDetail</a> * facedetail = (<a class="code" href="classSoFaceDetail.html">SoFaceDetail</a> *)detail;</div><div class="line">  }</div><div class="line">  <span class="keywordflow">return</span>; <span class="comment">// ignore if not a SoFaceDetail</span></div><div class="line">}</div></div><!-- fragment --><p>For application programmers wanting to extend the library with new detail classes: this method needs to be overridden in <em>all</em> subclasses. This is typically done as part of setting up the full type system for extension classes, which is usually accomplished by using the predefined macros available through Inventor/nodes/SoSubDetail.h: SO_DETAIL_SOURCE and SO_DETAIL_INIT_CLASS. </p>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> fuhbear(<a class="code" href="classSoDetail.html">SoDetail</a> * detail)</div><div class="line">{</div><div class="line">  <span class="keywordflow">if</span> (detail-&gt;<a class="code" href="classSoDetail.html#a5f254d2c666e18624de3bd2aedbc2b46">getTypeId</a>() == <a class="code" href="classSoFaceDetail.html#a9a8097b33b6b3d3a872a184e58ca61ce">SoFaceDetail::getClassTypeId</a>()) {</div><div class="line">    <span class="comment">// safe downward cast, know the type</span></div><div class="line">    <a class="code" href="classSoFaceDetail.html">SoFaceDetail</a> * facedetail = (<a class="code" href="classSoFaceDetail.html">SoFaceDetail</a> *)detail;</div><div class="line">  }</div><div class="line">  <span class="keywordflow">return</span>; <span class="comment">// ignore if not a SoFaceDetail</span></div><div class="line">}</div></div><!-- fragment --><p>For application programmers wanting to extend the library with new detail classes: this method needs to be overridden in <em>all</em> subclasses. This is typically done as part of setting up the full type system for extension classes, which is usually accomplished by using the predefined macros available through Inventor/nodes/SoSubDetail.h: SO_DETAIL_SOURCE and SO_DETAIL_INIT_CLASS. </p>
 
 <p>Implemented in <a class="el" href="classSoNodeKitDetail.html#a5f7235b65c2d8010977801688d5c26c3">SoNodeKitDetail</a>, <a class="el" href="classSoConeDetail.html#add3ca1d1f1db9a3eb839d96f0f1c502f">SoConeDetail</a>, <a class="el" href="classSoCubeDetail.html#abef63a8de616061dfce69b4e034b280a">SoCubeDetail</a>, <a class="el" href="classSoCylinderDetail.html#a5aae271ec30c039bc27aaf4fe2653128">SoCylinderDetail</a>, <a class="el" href="classSoFaceDetail.html#a8d3f708423a09d3852d543ad7224712b">SoFaceDetail</a>, <a class="el" href="classSoLineDetail.html#a5cce1bd894b00339946238e846b02824">SoLineDetail</a>, <a class="el" href="classSoPointDetail.html#aab9662d343a226fe07d03e8633f91a9d">SoPointDetail</a>, and <a class="el" href="classSoTextDetail.html#ac54c46949921fd523a2f5babb68475c1">SoTextDetail</a>.</p>
 
@@ -308,7 +308,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">SbBool SoDetail::isOfType </td>
+          <td class="memname"><a class="el" href="classint.html">SbBool</a> SoDetail::isOfType </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classSoType.html">SoType</a>&#160;</td>
           <td class="paramname"><em>type</em></td><td>)</td>
@@ -343,7 +343,7 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the type for this class. </p>
+<p>Returns the type identification for this class. </p>
 
 </div>
 </div>
@@ -357,7 +357,7 @@ Protected Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSoDetail.html">SoDetail</a></li>
-    <li class="footer">Generated on Wed Jan 29 2020 23:52:09 for Coin by
+    <li class="footer">Generated on Sat Dec 9 2023 20:13:32 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

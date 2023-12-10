@@ -8,7 +8,7 @@ var classSoDetailList =
     [ "insert", "classSoDetailList.html#a312638158426fb9c0b9a939f769e1a51", null ],
     [ "truncate", "classSoDetailList.html#a991227efed1d231562858d0303609dfb", null ],
     [ "copy", "classSoDetailList.html#a555f88b11be299f2fe2221024e920682", null ],
-    [ "operator=", "classSoDetailList.html#aab3a63a08885327c16ce529d467dfb61", null ],
+    [ "operator=", "classSoDetailList.html#a9e8aeabea3c5346d1f5e610af98d515a", null ],
     [ "operator[]", "classSoDetailList.html#a2f694a355b6275f155db2a7243065a71", null ],
     [ "set", "classSoDetailList.html#ad943c37febf69f78808b15a8fcaec341", null ]
 ];

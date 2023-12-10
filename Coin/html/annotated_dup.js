@@ -2,14 +2,8 @@ var annotated_dup =
 [
     [ "cc_debugerror", "structcc__debugerror.html", "structcc__debugerror" ],
     [ "cc_error", "structcc__error.html", "structcc__error" ],
-    [ "cc_glglue_offscreen_cb_functions", "structcc__glglue__offscreen__cb__functions.html", "structcc__glglue__offscreen__cb__functions" ],
     [ "cc_rbptree", "structcc__rbptree.html", "structcc__rbptree" ],
     [ "cc_string", "structcc__string.html", "structcc__string" ],
-    [ "JSClass", "structJSClass.html", "structJSClass" ],
-    [ "JSErrorReport", "structJSErrorReport.html", "structJSErrorReport" ],
-    [ "JSFunctionSpec", "structJSFunctionSpec.html", "structJSFunctionSpec" ],
-    [ "JSIdArray", "structJSIdArray.html", "structJSIdArray" ],
-    [ "JSPropertySpec", "structJSPropertySpec.html", "structJSPropertySpec" ],
     [ "SbBarrier", "classSbBarrier.html", "classSbBarrier" ],
     [ "SbBox2d", "classSbBox2d.html", "classSbBox2d" ],
     [ "SbBox2f", "classSbBox2f.html", "classSbBox2f" ],
@@ -180,7 +174,6 @@ var annotated_dup =
     [ "SoAnnoText3FontSizeHintElement", "classSoAnnoText3FontSizeHintElement.html", "classSoAnnoText3FontSizeHintElement" ],
     [ "SoAnnoText3RenderPrintElement", "classSoAnnoText3RenderPrintElement.html", "classSoAnnoText3RenderPrintElement" ],
     [ "SoAntiSquish", "classSoAntiSquish.html", "classSoAntiSquish" ],
-    [ "SoAnyVertexAttribute", "classSoAnyVertexAttribute.html", null ],
     [ "SoAppearanceKit", "classSoAppearanceKit.html", "classSoAppearanceKit" ],
     [ "SoArray", "classSoArray.html", "classSoArray" ],
     [ "SoAsciiText", "classSoAsciiText.html", "classSoAsciiText" ],
@@ -839,6 +832,5 @@ var annotated_dup =
     [ "SoWrapperKit", "classSoWrapperKit.html", "classSoWrapperKit" ],
     [ "SoWriteAction", "classSoWriteAction.html", "classSoWriteAction" ],
     [ "SoWWWAnchor", "classSoWWWAnchor.html", "classSoWWWAnchor" ],
-    [ "SoWWWInline", "classSoWWWInline.html", "classSoWWWInline" ],
-    [ "SpiderMonkey_t", "structSpiderMonkey__t.html", "structSpiderMonkey__t" ]
+    [ "SoWWWInline", "classSoWWWInline.html", "classSoWWWInline" ]
 ];

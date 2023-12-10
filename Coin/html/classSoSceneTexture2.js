@@ -9,7 +9,7 @@ var classSoSceneTexture2 =
     [ "Wrap", "classSoSceneTexture2.html#ab76f95aa60de5b5753520b9462b644c2", [
       [ "REPEAT", "classSoSceneTexture2.html#ab76f95aa60de5b5753520b9462b644c2a3a5dbbdfa290a772587dcdcdbd76fdcc", null ],
       [ "CLAMP", "classSoSceneTexture2.html#ab76f95aa60de5b5753520b9462b644c2a7ad4a917801632a9fc7130f1019c489b", null ],
-      [ "CLAMP_TO_BORDER", "classSoSceneTexture2.html#ab76f95aa60de5b5753520b9462b644c2adbe0f0e287134cd4d325a8cb8ff054a3", null ]
+      [ "CLAMP_TO_BORDER", "classSoSceneTexture2.html#ab76f95aa60de5b5753520b9462b644c2a26ae2dd4abe4441543030d84109ff02c", null ]
     ] ],
     [ "TransparencyFunction", "classSoSceneTexture2.html#a05be2984fe23a2a1f320c53d5a02e4a8", [
       [ "NONE", "classSoSceneTexture2.html#a05be2984fe23a2a1f320c53d5a02e4a8af7185d53d148a91d8769771b1568bcb7", null ],

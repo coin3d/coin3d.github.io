@@ -74,7 +74,7 @@ $(document).ready(function(){initNavTree('classSbDPViewVolume.html','');});
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classSbDPViewVolume-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">SbDPViewVolume Class Reference<div class="ingroups"><a class="el" href="group__base.html">Base Classes</a></div></div>  </div>
+<div class="title">SbDPViewVolume Class Reference<div class="ingroups"><a class="el" href="group__coin__base.html">Base Classes</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -114,7 +114,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a79be264c3a4288ea537ebafb4b724d48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17b45805b941b9b380b963ee442cc77e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSbVec3d.html">SbVec3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSbDPViewVolume.html#a17b45805b941b9b380b963ee442cc77e">getPlanePoint</a> (const double distFromEye, const <a class="el" href="classSbVec2d.html">SbVec2d</a> &amp;normPoint) const</td></tr>
 <tr class="separator:a17b45805b941b9b380b963ee442cc77e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7b964bf2f24916e8e437be2beb5edc9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSbDPRotation.html">SbDPRotation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSbDPViewVolume.html#af7b964bf2f24916e8e437be2beb5edc9">getAlignRotation</a> (SbBool rightAngleOnly=FALSE) const</td></tr>
+<tr class="memitem:af7b964bf2f24916e8e437be2beb5edc9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSbDPRotation.html">SbDPRotation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSbDPViewVolume.html#af7b964bf2f24916e8e437be2beb5edc9">getAlignRotation</a> (<a class="el" href="classint.html">SbBool</a> rightAngleOnly=FALSE) const</td></tr>
 <tr class="separator:af7b964bf2f24916e8e437be2beb5edc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23ec4d873f268e23d19017d4169f9d9f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSbDPViewVolume.html#a23ec4d873f268e23d19017d4169f9d9f">getWorldToScreenScale</a> (const <a class="el" href="classSbVec3d.html">SbVec3d</a> &amp;worldCenter, double normRadius) const</td></tr>
 <tr class="separator:a23ec4d873f268e23d19017d4169f9d9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,8 +166,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aaa31bc923afc5064b7cfc0317291dd8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cb448d2972bf657b5f1ef6d4e20409c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSbVec3d.html">SbVec3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSbDPViewVolume.html#a4cb448d2972bf657b5f1ef6d4e20409c">getViewUp</a> (void) const</td></tr>
 <tr class="separator:a4cb448d2972bf657b5f1ef6d4e20409c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae40c557829df8b8bf137b0085c34d058"><td class="memItemLeft" align="right" valign="top"><a id="ae40c557829df8b8bf137b0085c34d058"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>copyValues</b> (<a class="el" href="classSbViewVolume.html">SbViewVolume</a> &amp;vv)</td></tr>
+<tr class="memitem:ae40c557829df8b8bf137b0085c34d058"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSbDPViewVolume.html#ae40c557829df8b8bf137b0085c34d058">copyValues</a> (<a class="el" href="classSbViewVolume.html">SbViewVolume</a> &amp;vv)</td></tr>
 <tr class="separator:ae40c557829df8b8bf137b0085c34d058"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -488,7 +487,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>copyValues</b> (<a cl
         <tr>
           <td class="memname"><a class="el" href="classSbDPRotation.html">SbDPRotation</a> SbDPViewVolume::getAlignRotation </td>
           <td>(</td>
-          <td class="paramtype">SbBool&#160;</td>
+          <td class="paramtype"><a class="el" href="classint.html">SbBool</a>&#160;</td>
           <td class="paramname"><em>rightangleonly</em> = <code>FALSE</code></td><td>)</td>
           <td> const</td>
         </tr>
@@ -1126,6 +1125,25 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>copyValues</b> (<a cl
 
 </div>
 </div>
+<a id="ae40c557829df8b8bf137b0085c34d058"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae40c557829df8b8bf137b0085c34d058">&#9670;&nbsp;</a></span>copyValues()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SbDPViewVolume::copyValues </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classSbViewVolume.html">SbViewVolume</a> &amp;&#160;</td>
+          <td class="paramname"><em>vv</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Copies all values of a single precision <a class="el" href="classSbViewVolume.html" title="The SbViewVolume class is a viewing volume in 3D space. ">SbViewVolume</a> <em>vv</em> to the current double precision instance. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="SbDPViewVolume_8h_source.html">SbDPViewVolume.h</a></li>
 <li>SbDPViewVolume.cpp</li>
@@ -1136,7 +1154,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>copyValues</b> (<a cl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSbDPViewVolume.html">SbDPViewVolume</a></li>
-    <li class="footer">Generated on Wed Jan 29 2020 23:51:58 for Coin by
+    <li class="footer">Generated on Sat Dec 9 2023 20:13:27 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

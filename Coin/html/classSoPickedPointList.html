@@ -73,7 +73,7 @@ $(document).ready(function(){initNavTree('classSoPickedPointList.html','');});
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classSoPickedPointList-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">SoPickedPointList Class Reference<div class="ingroups"><a class="el" href="group__general.html">Miscellaneous Classes</a></div></div>  </div>
+<div class="title">SoPickedPointList Class Reference<div class="ingroups"><a class="el" href="group__coin__general.html">Miscellaneous Classes</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -99,11 +99,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a63a03530b4d49f0c12c0ebe462bc44fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a4d6d5e94746d453b63dfb3e4f62e68"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoPickedPointList.html#a2a4d6d5e94746d453b63dfb3e4f62e68">SoPickedPointList</a> (const <a class="el" href="classSoPickedPointList.html">SoPickedPointList</a> &amp;l)</td></tr>
 <tr class="separator:a2a4d6d5e94746d453b63dfb3e4f62e68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a795307b4f47bfc6035a7f94732f5e632"><td class="memItemLeft" align="right" valign="top"><a id="a795307b4f47bfc6035a7f94732f5e632"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>append</b> (<a class="el" href="classSoPickedPoint.html">SoPickedPoint</a> *pp)</td></tr>
+<tr class="memitem:a795307b4f47bfc6035a7f94732f5e632"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoPickedPointList.html#a795307b4f47bfc6035a7f94732f5e632">append</a> (<a class="el" href="classSoPickedPoint.html">SoPickedPoint</a> *pp)</td></tr>
 <tr class="separator:a795307b4f47bfc6035a7f94732f5e632"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98d037a305db2136d23bdda06a522775"><td class="memItemLeft" align="right" valign="top"><a id="a98d037a305db2136d23bdda06a522775"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>insert</b> (<a class="el" href="classSoPickedPoint.html">SoPickedPoint</a> *pp, const <a class="el" href="classint.html">int</a> insertbefore)</td></tr>
+<tr class="memitem:a98d037a305db2136d23bdda06a522775"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoPickedPointList.html#a98d037a305db2136d23bdda06a522775">insert</a> (<a class="el" href="classSoPickedPoint.html">SoPickedPoint</a> *pp, const <a class="el" href="classint.html">int</a> insertbefore)</td></tr>
 <tr class="separator:a98d037a305db2136d23bdda06a522775"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaae564fbe0397ffa9873bec91e02ceb8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSoPickedPoint.html">SoPickedPoint</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoPickedPointList.html#aaae564fbe0397ffa9873bec91e02ceb8">operator[]</a> (const <a class="el" href="classint.html">int</a> idx) const</td></tr>
 <tr class="separator:aaae564fbe0397ffa9873bec91e02ceb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -217,7 +215,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>This constructor initializes the internal allocated size for the list to <em>sizehint</em>. Note that the list will still initially contain zero items.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classSbList.html#ab18cad4eb2d06030cd564917a8c331f4">SbList::SbList(const int sizehint)</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classSbPList.html#aa7f2d079fc9b7f79159c52bfc84c1903">SbPList::SbPList(const int sizehint)</a> </dd></dl>
 
 </div>
 </div>
@@ -242,6 +240,76 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a795307b4f47bfc6035a7f94732f5e632"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a795307b4f47bfc6035a7f94732f5e632">&#9670;&nbsp;</a></span>append()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SoPickedPointList::append </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classSoPickedPoint.html">SoPickedPoint</a> *&#160;</td>
+          <td class="paramname"><em>pp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Append <em>item</em> to the end of the list.</p>
+<p>Automatically allocates more items internally if needed.</p>
+<p>Overloaded from parent to accept an <a class="el" href="classSoPickedPoint.html" title="The SoPickedPoint class is used for specifying picked points. ">SoPickedPoint</a> pointer argument.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classSbPList.html#a61404440e153af0870eac6183d09fc04">SbPList::append()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a98d037a305db2136d23bdda06a522775"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98d037a305db2136d23bdda06a522775">&#9670;&nbsp;</a></span>insert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SoPickedPointList::insert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classSoPickedPoint.html">SoPickedPoint</a> *&#160;</td>
+          <td class="paramname"><em>pp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classint.html">int</a>&#160;</td>
+          <td class="paramname"><em>insertbefore</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Insert <em>item</em> at index <em>insertbefore</em>.</p>
+<p><em>insertbefore</em> should not be larger than the current number of items in the list.</p>
+<p>Overloaded from parent to accept an <a class="el" href="classSoPickedPoint.html" title="The SoPickedPoint class is used for specifying picked points. ">SoPickedPoint</a> pointer argument.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classSbPList.html#af500b13baee20036c51b7746c9b046b0">SbPList::insert()</a> </dd></dl>
+
+</div>
+</div>
 <a id="aaae564fbe0397ffa9873bec91e02ceb8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaae564fbe0397ffa9873bec91e02ceb8">&#9670;&nbsp;</a></span>operator[]()</h2>
 
@@ -265,8 +333,10 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns element at <em>idx</em>.</p>
-<p>Will automatically expand the size of the internal array if <em>idx</em> is outside the current bounds of the list. The values of any additional pointers are then set to <code>NULL</code>. </p>
+<p>Returns element at <em>index</em>.</p>
+<p>Will automatically expand the size of the internal array if <em>index</em> is outside the current bounds of the list. The values of any additional pointers are then set to <code>NULL</code>.</p>
+<p>Overloaded from parent to return an <a class="el" href="classSoPickedPoint.html" title="The SoPickedPoint class is used for specifying picked points. ">SoPickedPoint</a> pointer.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classSbPList.html#a8f4ae28407482bca1ee8c6c7d67a1584">SbPList::operator[]()</a> </dd></dl>
 
 </div>
 </div>
@@ -295,7 +365,10 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Overridden to delete truncated items. </p>
+<p>Shorten the list to contain <em>length</em> elements, removing items from <em>index</em> <em>length</em> and onwards.</p>
+<p>If <em>fit</em> is non-zero, will also shrink the internal size of the allocated array. Note that this is much less efficient than not re-fitting the array size.</p>
+<p>Overloaded from parent to delete truncated items.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classSbPList.html#ac32c857e4308dd6b638275d90ea6fc60">SbPList::truncate()</a> </dd></dl>
 
 </div>
 </div>
@@ -324,7 +397,9 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Overridden to destruct the replaced item. </p>
+<p>Index operator to set element at <em>index</em>. Does <em>not</em> expand array bounds if <em>index</em> is outside the list.</p>
+<p>Overloaded from parent to destruct the replaced item.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classSbPList.html#a2594a4326065d15ec4bcb3104b4e74b6">SbPList::set()</a> </dd></dl>
 
 </div>
 </div>
@@ -338,7 +413,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSoPickedPointList.html">SoPickedPointList</a></li>
-    <li class="footer">Generated on Wed Jan 29 2020 23:52:23 for Coin by
+    <li class="footer">Generated on Sat Dec 9 2023 20:13:37 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

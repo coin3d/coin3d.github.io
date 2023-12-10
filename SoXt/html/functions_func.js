@@ -20,6 +20,15 @@ var functions_func =
     [ "u", "functions_func_u.html", null ],
     [ "v", "functions_func_v.html", null ],
     [ "w", "functions_func_w.html", null ],
-    [ "x", "functions_func_x.html", null ],
-    [ "~", "functions_func_0x7e.html", null ]
+    [ "xtc", "functions_func_x.html", null ],
+    [ "xtd", "functions_func_x.html", null ],
+    [ "xte", "functions_func_x.html", null ],
+    [ "xtf", "functions_func_x.html", null ],
+    [ "xtg", "functions_func_x.html", null ],
+    [ "xtk", "functions_func_x.html", null ],
+    [ "xtm", "functions_func_x.html", null ],
+    [ "xtp", "functions_func_x.html", null ],
+    [ "xtr", "functions_func_x.html", null ],
+    [ "xtv", "functions_func_x.html", null ],
+    [ "~", "functions_func_~.html", null ]
 ];

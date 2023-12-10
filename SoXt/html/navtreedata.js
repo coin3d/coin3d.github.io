@@ -1,3 +1,27 @@
+/*
+ @licstart  The following is the entire license notice for the JavaScript code in this file.
+
+ The MIT License (MIT)
+
+ Copyright (C) 1997-2020 by Dimitri van Heesch
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy of this software
+ and associated documentation files (the "Software"), to deal in the Software without restriction,
+ including without limitation the rights to use, copy, modify, merge, publish, distribute,
+ sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in all copies or
+ substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
+ BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+ DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+ @licend  The above is the entire license notice for the JavaScript code in this file
+*/
 var NAVTREE =
 [
   [ "SoXt", "index.html", [
@@ -15,8 +39,8 @@ var NAVTREE =
         [ "Enumerator", "functions_eval.html", null ]
       ] ]
     ] ],
-    [ "Files", null, [
-      [ "File List", "files.html", "files" ]
+    [ "Files", "files.html", [
+      [ "File List", "files.html", "files_dup" ]
     ] ]
   ] ]
 ];
@@ -24,10 +48,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "SoXtBasic_8h_source.html",
-"classSoXtFullViewer.html#a33952b22e0386794e1fc4e08b794c2e3",
-"classSoXtPlaneViewer.html#aca63283e093c98db1dc30209dcdeb532",
-"classSoXtViewer.html#aa42582272bc27f8963722031b8304434",
-"group__envvars.html#gaa24faeaeabed94bc9ff732669b879a8a"
+"classSoXtFullViewer.html#a41451335f9b67338d3b28794312ce4dd",
+"classSoXtRenderArea.html#a20af72ae135927cfe4b225603e182840",
+"classSoXtViewer.html#ac4108f206862fa93244a9434e2bd2c85aae8ae5a367a8bd58ccc5e625aa5cd6b6",
+"group__coin__envvars.html#gaaab7c4761acb993269c0b6defc6e87fb"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

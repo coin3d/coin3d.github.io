@@ -11,7 +11,5 @@ var classSoXtMouse =
     [ "~SoXtMouse", "classSoXtMouse.html#a634be37d8a9e3caffdb82d9c0d370029", null ],
     [ "enable", "classSoXtMouse.html#acbff8fa2beece4c31e7134575a13b295", null ],
     [ "disable", "classSoXtMouse.html#a1c06f4e1b0ae45fd9060ea5b937418f3", null ],
-    [ "translateEvent", "classSoXtMouse.html#afb0d457ef96af267cbdfb87add7f2a47", null ],
-    [ "SoXtMouseP", "classSoXtMouse.html#ae12ecca8799e2465afc19a123bc84c89", null ],
-    [ "SoGuiMouseP", "classSoXtMouse.html#acf77c8b75f1e480204415ae98f1becfe", null ]
+    [ "translateEvent", "classSoXtMouse.html#afb0d457ef96af267cbdfb87add7f2a47", null ]
 ];

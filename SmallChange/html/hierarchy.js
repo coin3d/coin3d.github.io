@@ -2,6 +2,7 @@ var hierarchy =
 [
     [ "HQSphereGenerator", "classHQSphereGenerator.html", null ],
     [ "HQSphereGenerator::object", "classHQSphereGenerator_1_1object.html", null ],
+    [ "RenderState", "structRenderState.html", null ],
     [ "SbBox3< Type >", "classSbBox3.html", null ],
     [ "SbCubicSpline", "classSbCubicSpline.html", null ],
     [ "SbHash< Type, Key >", "classSbHash.html", null ],
@@ -29,6 +30,7 @@ var hierarchy =
         [ "SoNode", "../../Coin/html/classSoNode.html", [
           [ "CoinEnvironment", "classCoinEnvironment.html", null ],
           [ "SmBillboardClipPlane", "classSmBillboardClipPlane.html", null ],
+          [ "SmColorGradient", "classSmColorGradient.html", null ],
           [ "SmDepthBuffer", "classSmDepthBuffer.html", null ],
           [ "SmEventHandler", "classSmEventHandler.html", [
             [ "SmExaminerEventHandler", "classSmExaminerEventHandler.html", [
@@ -37,6 +39,7 @@ var hierarchy =
             [ "SmHelicopterEventHandler", "classSmHelicopterEventHandler.html", null ],
             [ "SmPanEventHandler", "classSmPanEventHandler.html", null ]
           ] ],
+          [ "SmSceneryView", "classSmSceneryView.html", null ],
           [ "SmTextureFont", "classSmTextureFont.html", null ],
           [ "SmTooltip", "classSmTooltip.html", null ],
           [ "SoBaseKit", "../../Coin/html/classSoBaseKit.html", [
@@ -96,6 +99,7 @@ var hierarchy =
             [ "Coinboard", "classCoinboard.html", null ],
             [ "SkyDome", "classSkyDome.html", null ],
             [ "SmHQSphere", "classSmHQSphere.html", null ],
+            [ "SmScenery", "classSmScenery.html", null ],
             [ "SmTextureText2", "classSmTextureText2.html", null ],
             [ "SmTrack", "classSmTrack.html", null ],
             [ "SmVertexArrayShape", "classSmVertexArrayShape.html", null ],
@@ -133,8 +137,10 @@ var hierarchy =
     ] ],
     [ "SoElement", "../../Coin/html/classSoElement.html", [
       [ "GLDepthBufferElement", "classGLDepthBufferElement.html", null ],
+      [ "SmSceneryViewElement", "classSmSceneryViewElement.html", null ],
       [ "SmTextureText2CollectorElement", "classSmTextureText2CollectorElement.html", null ],
       [ "SoReplacedElement", "../../Coin/html/classSoReplacedElement.html", [
+        [ "SmColorGradientElement", "classSmColorGradientElement.html", null ],
         [ "SmTextureFontElement", "classSmTextureFontElement.html", null ]
       ] ],
       [ "UTMElement", "classUTMElement.html", null ]

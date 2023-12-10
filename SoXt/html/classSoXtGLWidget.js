@@ -66,8 +66,6 @@ var classSoXtGLWidget =
     [ "getOverlayVisual", "classSoXtGLWidget.html#a82a5274625aaeeb902cce41412188057", null ],
     [ "getDisplayListShareGroup", "classSoXtGLWidget.html#a8618a9cb155692c53f8bdbc4752ba9c1", null ],
     [ "getGlxMgrWidget", "classSoXtGLWidget.html#a2de37f30e813650eace1e5983a74d57c", null ],
-    [ "SoGuiGLWidgetP", "classSoXtGLWidget.html#a4f169097beaf72feab4504cd22b0a051", null ],
-    [ "SoXtGLWidgetP", "classSoXtGLWidget.html#aca029d62f37048bf51f79d90f87bb790", null ],
     [ "waitForExpose", "classSoXtGLWidget.html#a2ce66a612462a0ca70ee9b68dddfc705", null ],
     [ "drawToFrontBuffer", "classSoXtGLWidget.html#a507fc730835a9848408a0cdf3698968b", null ]
 ];

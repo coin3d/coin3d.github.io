@@ -1,9 +1,9 @@
 var classSoText2 =
 [
     [ "Justification", "classSoText2.html#a2b916b2cdf2af5de4e02289287055195", [
-      [ "LEFT", "classSoText2.html#a2b916b2cdf2af5de4e02289287055195a6c562b768b88ba8901bca4ce159b3061", null ],
-      [ "RIGHT", "classSoText2.html#a2b916b2cdf2af5de4e02289287055195aaee4b7fc4bd2ebaac89a9a03443b485c", null ],
-      [ "CENTER", "classSoText2.html#a2b916b2cdf2af5de4e02289287055195a2b45d3aae54e3d15bc335c5151c3aae4", null ]
+      [ "LEFT", "classSoText2.html#a2b916b2cdf2af5de4e02289287055195ab4a9da47537fc7a331b2741f78c4451d", null ],
+      [ "RIGHT", "classSoText2.html#a2b916b2cdf2af5de4e02289287055195a4b2435edac1e7ce9ce0aad05e49564fe", null ],
+      [ "CENTER", "classSoText2.html#a2b916b2cdf2af5de4e02289287055195ab37b17821ff848cd4c8a8387d3baa5f2", null ]
     ] ],
     [ "SoText2", "classSoText2.html#abce21ed959d467b28115c8a72fa88283", null ],
     [ "~SoText2", "classSoText2.html#a0f1b8f79b7e79e29e28d8016dc7db302", null ],

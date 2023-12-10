@@ -18,7 +18,7 @@ var simage_8c =
     [ "simage_free_image", "simage_8c.html#a74acd8c16c6bfffc790728c89f0aeaef", null ],
     [ "s_image_open", "simage_8c.html#ace4ede0b89fc2205c32829f83987ff9f", null ],
     [ "s_image_read_line", "simage_8c.html#a26465fb19c4a10e1bf8846b3765a21ee", null ],
-    [ "s_set_dynamic_loader_interface", "simage_8c.html#ad99f99334c82487a660a3ca199ecfb25", null ],
+    [ "s_set_dynamic_loader_interface", "simage_8c.html#a696ab624ee138e25a91f18aa554f753c", null ],
     [ "gdiplus_loader", "simage_8c.html#a89d3c1517cee409206ae0f8cc7a8854a", null ],
     [ "targa_loader", "simage_8c.html#af44bf04974b3f8958e8a613f482ebe60", null ],
     [ "pic_loader", "simage_8c.html#afd1f5ae13241eb526d2f39761977a15d", null ],

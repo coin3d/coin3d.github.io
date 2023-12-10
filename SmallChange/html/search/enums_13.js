@@ -1,4 +1,0 @@
-var searchData=
-[
-  ['wrap',['Wrap',['C:/Data/Volker/Github/installed/share/doc/Coin/html/classSoBumpMap.html#ac7c4517f5b783c57d980b9f5659cc11f',1,'SoBumpMap::Wrap()'],['C:/Data/Volker/Github/installed/share/doc/Coin/html/classSoGLImage.html#aa7a651ee3183f5497290ce3d92141524',1,'SoGLImage::Wrap()'],['C:/Data/Volker/Github/installed/share/doc/Coin/html/classSoSceneTexture2.html#ab76f95aa60de5b5753520b9462b644c2',1,'SoSceneTexture2::Wrap()'],['C:/Data/Volker/Github/installed/share/doc/Coin/html/classSoTexture2.html#a262a667689ef20bb704803f78ca2a0b1',1,'SoTexture2::Wrap()'],['C:/Data/Volker/Github/installed/share/doc/Coin/html/classSoTexture3.html#a381510e51ec9f972066f1af7ee0d245c',1,'SoTexture3::Wrap()'],['C:/Data/Volker/Github/installed/share/doc/Coin/html/classSoTextureCubeMap.html#a7d0018c4069e00063d45f8c15649456a',1,'SoTextureCubeMap::Wrap()']]]
-];

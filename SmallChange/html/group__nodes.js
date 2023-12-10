@@ -53,6 +53,24 @@ var group__nodes =
       [ "fogVisibility", "classCoinEnvironment.html#a577a0a2898e780ab721acd5745873a68", null ],
       [ "fogStart", "classCoinEnvironment.html#a7f303153193ec8195e900c295e0f15ac", null ]
     ] ],
+    [ "SmColorGradient", "classSmColorGradient.html", [
+      [ "Mapping", "classSmColorGradient.html#ac373c2a25b9cde9a2491772c37162499", [
+        [ "RELATIVE", "classSmColorGradient.html#ac373c2a25b9cde9a2491772c37162499a63551dab76bf3b17ed03b89bbf8117cb", null ],
+        [ "ABSOLUTE", "classSmColorGradient.html#ac373c2a25b9cde9a2491772c37162499a47c403452cc860d6f46d801f5d1e249f", null ]
+      ] ],
+      [ "SmColorGradient", "classSmColorGradient.html#a2ccb8735cfde8508b0455be1614bb6a5", null ],
+      [ "~SmColorGradient", "classSmColorGradient.html#a63f85c6a5086d22cede15b04be1dc1b2", null ],
+      [ "doAction", "classSmColorGradient.html#adce056fd10f427882a3ce34361715b86", null ],
+      [ "GLRender", "classSmColorGradient.html#a5f20c7ede8b9bf12870606210cf96fad", null ],
+      [ "callback", "classSmColorGradient.html#a276458e6f77a43eb716d2487968942d2", null ],
+      [ "readInstance", "classSmColorGradient.html#a0658fc7977f0029da4d17ff71aa51015", null ],
+      [ "notify", "classSmColorGradient.html#a42dd8114077657fdc4cbf9fdfb1daed5", null ],
+      [ "on", "classSmColorGradient.html#aea89d11010619084128849aefae3b4dc", null ],
+      [ "mapping", "classSmColorGradient.html#a11f2d1e589d8ad0553fb9f50c2bbe236", null ],
+      [ "color", "classSmColorGradient.html#a5543b343110a86dcf212f013e42e34d7", null ],
+      [ "parameter", "classSmColorGradient.html#aa7f5f462897259465ad7a67c83d12142", null ],
+      [ "filename", "classSmColorGradient.html#a1808f2fbd76efb5b45da408b7a5053ef", null ]
+    ] ],
     [ "InterleavedArraysShape", "classInterleavedArraysShape.html", [
       [ "Type", "classInterleavedArraysShape.html#a38bd378df7af99b75defd7db2eb44ea0", [
         [ "POINTS", "classInterleavedArraysShape.html#a38bd378df7af99b75defd7db2eb44ea0ab89916c01c8db0320cf9401097f17854", null ],
@@ -282,16 +300,5 @@ var group__nodes =
       [ "clearDepthBuffer", "classViewportRegion.html#a960dd712d2e453c9e3209ea06320271f", null ],
       [ "clearColorBuffer", "classViewportRegion.html#ab5d1c776d4ce1bfb1647015d676aab33", null ],
       [ "clearColor", "classViewportRegion.html#a30af0632be9466af80dc4b5ec500f977", null ]
-    ] ],
-    [ "SO_NODE_HEADER", "../../Coin/html/group__nodes.html#ga2c4d8b776be8aac5d22cf94b7b92235e", null ],
-    [ "SO_NODE_ABSTRACT_HEADER", "../../Coin/html/group__nodes.html#ga2bb0ff232b768799a8f33832780e23b0", null ],
-    [ "SO_NODE_INIT_CLASS", "../../Coin/html/group__nodes.html#ga3498e0cf3179332511a984d81b6bbd62", null ],
-    [ "SO_NODE_INIT_ABSTRACT_CLASS", "../../Coin/html/group__nodes.html#gab7e402b0a82fae1a3abdd4d9afe833cc", null ],
-    [ "SO_NODE_SOURCE", "../../Coin/html/group__nodes.html#ga0c812aee96f40bd1b759f8c5a9d09b48", null ],
-    [ "SO_NODE_ABSTRACT_SOURCE", "../../Coin/html/group__nodes.html#ga687f9e5e91d6cec3bb4f8aac7a753473", null ],
-    [ "SO_NODE_CONSTRUCTOR", "../../Coin/html/group__nodes.html#ga5aa0e28f57bbf350f271c1550156281f", null ],
-    [ "SO_NODE_IS_FIRST_INSTANCE", "../../Coin/html/group__nodes.html#ga7342238d25c2224535918b8e5b3f8bfd", null ],
-    [ "SO_NODE_ADD_FIELD", "../../Coin/html/group__nodes.html#gaba48e7967e2d337365375343dc650c45", null ],
-    [ "SO_NODE_DEFINE_ENUM_VALUE", "../../Coin/html/group__nodes.html#ga1c28d883c32ef2ac0e5b758d6061fcb2", null ],
-    [ "getClassTypeId", "../../Coin/html/group__nodes.html#ga9513de738f5681eeae4bb9f8ff5e7500", null ]
+    ] ]
 ];

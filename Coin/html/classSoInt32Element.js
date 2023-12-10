@@ -7,5 +7,5 @@ var classSoInt32Element =
     [ "copyMatchInfo", "classSoInt32Element.html#adf154ad630a2a221e8a329c056958851", null ],
     [ "print", "classSoInt32Element.html#a4c072ac4067bceb688f1d856b7bbaaab", null ],
     [ "setElt", "classSoInt32Element.html#a8c2dc883660896b2aff89f72de7dacf9", null ],
-    [ "data", "classSoInt32Element.html#ad2adf8868e417739697ee385ced135e0", null ]
+    [ "data", "classSoInt32Element.html#a2b7a0019f5fbdc039be45a986fcda7a7", null ]
 ];

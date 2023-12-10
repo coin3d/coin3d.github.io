@@ -16,6 +16,5 @@ var classSoXtFlyViewer =
     [ "setSeekMode", "classSoXtFlyViewer.html#ab753ab7bf273e72bc10a9147101fbfe7", null ],
     [ "actualRedraw", "classSoXtFlyViewer.html#a2f3b92a85595892ef16d10c5fdac9119", null ],
     [ "rightWheelMotion", "classSoXtFlyViewer.html#aa7fcaf2b751ba37368f10ff5bea995de", null ],
-    [ "afterRealizeHook", "classSoXtFlyViewer.html#a13e07e5a5bf3c9be6e90fdbbba8e43bc", null ],
-    [ "SoXtFlyViewerP", "classSoXtFlyViewer.html#a6e47d8ba838e66178686bb8dbb7f902e", null ]
+    [ "afterRealizeHook", "classSoXtFlyViewer.html#a13e07e5a5bf3c9be6e90fdbbba8e43bc", null ]
 ];

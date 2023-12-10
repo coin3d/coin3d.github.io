@@ -11,9 +11,7 @@ var group__misc =
         [ "DLL", "classSoXt.html#adcf3d2f7b3ce989edf4d1fc67dd27b7daf059076af08adf840c208c28e81fd202", null ],
         [ "LIB", "classSoXt.html#adcf3d2f7b3ce989edf4d1fc67dd27b7da9e96adfc13d4b267b8aca10627ac8e98", null ],
         [ "UNKNOWN", "classSoXt.html#adcf3d2f7b3ce989edf4d1fc67dd27b7da24e52b897ec115b47a40397f619a8ebf", null ]
-      ] ],
-      [ "SoGuiP", "classSoXt.html#ab51687957946f99b6bac39d18bc7064c", null ],
-      [ "SoXtP", "classSoXt.html#a8b4cee45c051c4dbc61aae5fc00df836", null ]
+      ] ]
     ] ],
     [ "SoXtCursor", "classSoXtCursor.html", [
       [ "CustomCursor", "structSoXtCursor_1_1CustomCursor.html", [

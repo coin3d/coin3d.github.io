@@ -16,7 +16,7 @@ var classSbBox2f =
     [ "getMin", "classSbBox2f.html#ae2c43a14d9842d0c1339b422f86c9dd9", null ],
     [ "getMin", "classSbBox2f.html#a87381f189b356411c3bb009334f14eeb", null ],
     [ "getMax", "classSbBox2f.html#a4458392eb8d8fed8629d56e7e55247db", null ],
-    [ "getMax", "classSbBox2f.html#ae2e6a4b18d081d92eadfaa374b125a04", null ],
+    [ "getMax", "classSbBox2f.html#a0852cf263a148e47bb8154f29c01a0ed", null ],
     [ "extendBy", "classSbBox2f.html#ae2e64a1f974668066070f8b85256cc1e", null ],
     [ "extendBy", "classSbBox2f.html#a2d6c817d8fde53380e5bd1fa68b22f08", null ],
     [ "makeEmpty", "classSbBox2f.html#a8a53357d402331b2433a190182c055dc", null ],

@@ -1,9 +1,9 @@
 var classSoRotationXYZ =
 [
     [ "Axis", "classSoRotationXYZ.html#afe6a3f9d0f3a142fd2b57309107df652", [
-      [ "X", "classSoRotationXYZ.html#afe6a3f9d0f3a142fd2b57309107df652a823a66df56754aa1986ef7511c0eb285", null ],
-      [ "Y", "classSoRotationXYZ.html#afe6a3f9d0f3a142fd2b57309107df652a255e8b4e67512061df9cf0702e45266d", null ],
-      [ "Z", "classSoRotationXYZ.html#afe6a3f9d0f3a142fd2b57309107df652a3681d264d4b805a2b0e2051819ceaf0c", null ]
+      [ "X", "classSoRotationXYZ.html#afe6a3f9d0f3a142fd2b57309107df652ac2a53e567d20e6ae111031098140a142", null ],
+      [ "Y", "classSoRotationXYZ.html#afe6a3f9d0f3a142fd2b57309107df652a4fcd0c4473234f9c59ca6d8ed3db2dfe", null ],
+      [ "Z", "classSoRotationXYZ.html#afe6a3f9d0f3a142fd2b57309107df652a2bf6cd418b81d84dd53c861248d3a4ec", null ]
     ] ],
     [ "SoRotationXYZ", "classSoRotationXYZ.html#a82135baa87e2cbafc71f759af2128c63", null ],
     [ "~SoRotationXYZ", "classSoRotationXYZ.html#aece4b4636ac1a69b92ce6ccd9807582e", null ],

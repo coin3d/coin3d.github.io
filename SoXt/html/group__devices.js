@@ -11,8 +11,7 @@ var group__devices =
       [ "setEventPosition", "classSoXtDevice.html#ae26f6134559c0e91b97a50117bb171a1", null ],
       [ "addEventHandler", "classSoXtDevice.html#afb31aa6ff173866eea6d79e15b5e225d", null ],
       [ "removeEventHandler", "classSoXtDevice.html#a6ce443f0c2d058a899c9020a9bd624f6", null ],
-      [ "invokeHandlers", "classSoXtDevice.html#a50126f27ae1da02324602b21207d39a6", null ],
-      [ "SoXtDeviceP", "classSoXtDevice.html#acbc37512b983e16970d320c6efb9a45f", null ]
+      [ "invokeHandlers", "classSoXtDevice.html#a50126f27ae1da02324602b21207d39a6", null ]
     ] ],
     [ "SoXtKeyboard", "classSoXtKeyboard.html", [
       [ "Events", "classSoXtKeyboard.html#a27627469504f8e71c7f74898de0acbf6", [
@@ -24,9 +23,7 @@ var group__devices =
       [ "~SoXtKeyboard", "classSoXtKeyboard.html#a2407199e1397ce4bf0a98f24efe25bb0", null ],
       [ "enable", "classSoXtKeyboard.html#a282c761d9bed341713d42faece3d0a29", null ],
       [ "disable", "classSoXtKeyboard.html#a2f7f648de10efe525de6c30b178a13d2", null ],
-      [ "translateEvent", "classSoXtKeyboard.html#ad217d9a5da8fec3603b2aa9db324604d", null ],
-      [ "SoXtKeyboardP", "classSoXtKeyboard.html#a71615f1784b5e7d48a599d4990a8649b", null ],
-      [ "SoGuiKeyboardP", "classSoXtKeyboard.html#ad4a5c7938a1d01dfdf46c4bf23dcb992", null ]
+      [ "translateEvent", "classSoXtKeyboard.html#ad217d9a5da8fec3603b2aa9db324604d", null ]
     ] ],
     [ "SoXtMouse", "classSoXtMouse.html", [
       [ "Events", "classSoXtMouse.html#ad5f40f12228ff2f47c10d72bedd25b01", [
@@ -40,8 +37,6 @@ var group__devices =
       [ "~SoXtMouse", "classSoXtMouse.html#a634be37d8a9e3caffdb82d9c0d370029", null ],
       [ "enable", "classSoXtMouse.html#acbff8fa2beece4c31e7134575a13b295", null ],
       [ "disable", "classSoXtMouse.html#a1c06f4e1b0ae45fd9060ea5b937418f3", null ],
-      [ "translateEvent", "classSoXtMouse.html#afb0d457ef96af267cbdfb87add7f2a47", null ],
-      [ "SoXtMouseP", "classSoXtMouse.html#ae12ecca8799e2465afc19a123bc84c89", null ],
-      [ "SoGuiMouseP", "classSoXtMouse.html#acf77c8b75f1e480204415ae98f1becfe", null ]
+      [ "translateEvent", "classSoXtMouse.html#afb0d457ef96af267cbdfb87add7f2a47", null ]
     ] ]
 ];

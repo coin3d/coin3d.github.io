@@ -40,7 +40,5 @@ var classSoXtComponent =
     [ "invokeVisibilityChangeCallbacks", "classSoXtComponent.html#a762d848ba32723a8f49d31f21cdd63cc", null ],
     [ "invokeWindowCloseCallbacks", "classSoXtComponent.html#a523b89da59bb14c72af43af7f2ceb52e", null ],
     [ "windowCloseAction", "classSoXtComponent.html#ad5c581c0af3e682689ab4bcfc48197e9", null ],
-    [ "SoGuiComponentP", "classSoXtComponent.html#a75a29d29ba31ff59f111326ee16106b7", null ],
-    [ "SoXtComponentP", "classSoXtComponent.html#a93eb22eaf0921dfcf5084e711d62e4e6", null ],
     [ "firstRealize", "classSoXtComponent.html#a018cd140cc80cc0e89f1ee55de8427e2", null ]
 ];

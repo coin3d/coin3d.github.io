@@ -9,7 +9,5 @@ var classSoXtKeyboard =
     [ "~SoXtKeyboard", "classSoXtKeyboard.html#a2407199e1397ce4bf0a98f24efe25bb0", null ],
     [ "enable", "classSoXtKeyboard.html#a282c761d9bed341713d42faece3d0a29", null ],
     [ "disable", "classSoXtKeyboard.html#a2f7f648de10efe525de6c30b178a13d2", null ],
-    [ "translateEvent", "classSoXtKeyboard.html#ad217d9a5da8fec3603b2aa9db324604d", null ],
-    [ "SoXtKeyboardP", "classSoXtKeyboard.html#a71615f1784b5e7d48a599d4990a8649b", null ],
-    [ "SoGuiKeyboardP", "classSoXtKeyboard.html#ad4a5c7938a1d01dfdf46c4bf23dcb992", null ]
+    [ "translateEvent", "classSoXtKeyboard.html#ad217d9a5da8fec3603b2aa9db324604d", null ]
 ];

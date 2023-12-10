@@ -121,8 +121,7 @@ static <a class="el" href="classint.html">int</a>&#160;</td><td class="memItemRi
 <tr class="memitem:acd6c9e45fdbdf2be50d75626edcf0759"><td class="memItemLeft" align="right" valign="top"><a id="acd6c9e45fdbdf2be50d75626edcf0759"></a>
 static void *&#160;</td><td class="memItemRight" valign="bottom"><b>createInstance</b> (void)</td></tr>
 <tr class="separator:acd6c9e45fdbdf2be50d75626edcf0759"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5139d5340e96f91162b6ccda02e103d2"><td class="memItemLeft" align="right" valign="top"><a id="a5139d5340e96f91162b6ccda02e103d2"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>initClass</b> (void)</td></tr>
+<tr class="memitem:a5139d5340e96f91162b6ccda02e103d2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoResetMatrixElement.html#a5139d5340e96f91162b6ccda02e103d2">initClass</a> (void)</td></tr>
 <tr class="separator:a5139d5340e96f91162b6ccda02e103d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02bdb4a7f36ceac430c62163db56dccb"><td class="memItemLeft" align="right" valign="top"><a id="a02bdb4a7f36ceac430c62163db56dccb"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>set</b> (<a class="el" href="classSoState.html">SoState</a> *const state, const <a class="el" href="classSbMatrix.html">SbMatrix</a> &amp;m)</td></tr>
@@ -151,7 +150,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a32dc93c3a84a2d476707bc096aea10df"><td class="memItemLeft" align="right" valign="top"><a id="a32dc93c3a84a2d476707bc096aea10df"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setElt</b> (const <a class="el" href="classSbMatrix.html">SbMatrix</a> &amp;matrix)</td></tr>
 <tr class="separator:a32dc93c3a84a2d476707bc096aea10df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a198e9003c026888ded0ffee79b95c93e"><td class="memItemLeft" align="right" valign="top">virtual SbBool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoResetMatrixElement.html#a198e9003c026888ded0ffee79b95c93e">matches</a> (const <a class="el" href="classSoElement.html">SoElement</a> *element) const</td></tr>
+<tr class="memitem:a198e9003c026888ded0ffee79b95c93e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classint.html">SbBool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoResetMatrixElement.html#a198e9003c026888ded0ffee79b95c93e">matches</a> (const <a class="el" href="classSoElement.html">SoElement</a> *element) const</td></tr>
 <tr class="separator:a198e9003c026888ded0ffee79b95c93e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af25916121fd4a45a218f3ea8e269f60d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classSoElement.html">SoElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoResetMatrixElement.html#af25916121fd4a45a218f3ea8e269f60d">copyMatchInfo</a> (void) const</td></tr>
 <tr class="separator:af25916121fd4a45a218f3ea8e269f60d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -217,11 +216,38 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>The destructor. </p>
+<p>Destructor. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a5139d5340e96f91162b6ccda02e103d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5139d5340e96f91162b6ccda02e103d2">&#9670;&nbsp;</a></span>initClass()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SoResetMatrixElement::initClass </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Initialize relevant common data for all instances, like the type system. </p>
+
+</div>
+</div>
 <a id="af0a6383708ce5eb45a40bf14f80b7270"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af0a6383708ce5eb45a40bf14f80b7270">&#9670;&nbsp;</a></span>init()</h2>
 
@@ -261,7 +287,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">SbBool SoResetMatrixElement::matches </td>
+          <td class="memname"><a class="el" href="classint.html">SbBool</a> SoResetMatrixElement::matches </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classSoElement.html">SoElement</a> *&#160;</td>
           <td class="paramname"><em>element</em></td><td>)</td>
@@ -321,7 +347,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSoResetMatrixElement.html">SoResetMatrixElement</a></li>
-    <li class="footer">Generated on Wed Jan 29 2020 23:52:25 for Coin by
+    <li class="footer">Generated on Sat Dec 9 2023 20:13:38 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

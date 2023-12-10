@@ -1,9 +1,9 @@
 var classSoCone =
 [
     [ "Part", "classSoCone.html#a16fd6ddab267c269e269a883bb2774c1", [
-      [ "SIDES", "classSoCone.html#a16fd6ddab267c269e269a883bb2774c1a52ef4ad6d8e196764f24212894331620", null ],
-      [ "BOTTOM", "classSoCone.html#a16fd6ddab267c269e269a883bb2774c1a6d9fae2fef2b18904b009ca953cd87b9", null ],
-      [ "ALL", "classSoCone.html#a16fd6ddab267c269e269a883bb2774c1aa94d4945b5b82136819c081fb57355c2", null ]
+      [ "SIDES", "classSoCone.html#a16fd6ddab267c269e269a883bb2774c1a4f69faf6668cec0831c9166556ca20c1", null ],
+      [ "BOTTOM", "classSoCone.html#a16fd6ddab267c269e269a883bb2774c1afdfaabb294c3f8e81cb5d41562e2c3f3", null ],
+      [ "ALL", "classSoCone.html#a16fd6ddab267c269e269a883bb2774c1ad89b8046441e38dcf5625292d363dc9f", null ]
     ] ],
     [ "SoCone", "classSoCone.html#a194d82469bf653f5e361cb262d772fae", null ],
     [ "~SoCone", "classSoCone.html#ad4870bcfbf408b8bfe38862e9fbbf8f5", null ],

@@ -14,7 +14,7 @@ var classSoShapeHints =
       [ "CONVEX", "classSoShapeHints.html#a19a3acc8d0e36b7fa2b43339e1a4b964a41006d88add0b114dfaf545256a2aff3", null ]
     ] ],
     [ "WindingType", "classSoShapeHints.html#adf8b6aac541c02e7dcda0a84c4360a4d", [
-      [ "NO_WINDING_TYPE", "classSoShapeHints.html#adf8b6aac541c02e7dcda0a84c4360a4dad2402444c1cea4101b01d5a726f7d6f2", null ]
+      [ "NO_WINDING_TYPE", "classSoShapeHints.html#adf8b6aac541c02e7dcda0a84c4360a4da5ecc576a63f44ab87551fb3a2edc6e07", null ]
     ] ],
     [ "SoShapeHints", "classSoShapeHints.html#a1c36b751f6a5b31463cbd32d45816461", null ],
     [ "~SoShapeHints", "classSoShapeHints.html#ae68fff8678714750ead87cd5a822c51e", null ],

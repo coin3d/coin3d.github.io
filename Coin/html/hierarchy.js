@@ -2,19 +2,13 @@ var hierarchy =
 [
     [ "cc_debugerror", "structcc__debugerror.html", null ],
     [ "cc_error", "structcc__error.html", null ],
-    [ "cc_glglue_offscreen_cb_functions", "structcc__glglue__offscreen__cb__functions.html", null ],
     [ "cc_rbptree", "structcc__rbptree.html", null ],
     [ "cc_string", "structcc__string.html", null ],
     [ "SoLazyElement::CoinState", "structSoLazyElement_1_1CoinState.html", null ],
     [ "SoScXMLNavigationTarget::Data", "classSoScXMLNavigationTarget_1_1Data.html", null ],
     [ "SoGLLazyElement::GLState", "structSoGLLazyElement_1_1GLState.html", null ],
-    [ "SoGLMultiTextureImageElement::GLUnitData", "classSoGLMultiTextureImageElement_1_1GLUnitData.html", null ],
     [ "SoGLMultiTextureCoordinateElement::GLUnitData", "classSoGLMultiTextureCoordinateElement_1_1GLUnitData.html", null ],
-    [ "JSClass", "structJSClass.html", null ],
-    [ "JSErrorReport", "structJSErrorReport.html", null ],
-    [ "JSFunctionSpec", "structJSFunctionSpec.html", null ],
-    [ "JSIdArray", "structJSIdArray.html", null ],
-    [ "JSPropertySpec", "structJSPropertySpec.html", null ],
+    [ "SoGLMultiTextureImageElement::GLUnitData", "classSoGLMultiTextureImageElement_1_1GLUnitData.html", null ],
     [ "SbBarrier", "classSbBarrier.html", null ],
     [ "SbBox2d", "classSbBox2d.html", null ],
     [ "SbBox2f", "classSbBox2f.html", null ],
@@ -100,7 +94,6 @@ var hierarchy =
     [ "SbList< int >", "classSbList.html", null ],
     [ "SbList< int32_t >", "classSbList.html", null ],
     [ "SbList< ReadImageCBData >", "classSbList.html", null ],
-    [ "SbList< SbBool >", "classSbList.html", null ],
     [ "SbList< SbClipData >", "classSbList.html", null ],
     [ "SbList< SbList< SbVec2s > >", "classSbList.html", null ],
     [ "SbList< SbMatrix >", "classSbList.html", null ],
@@ -738,9 +731,7 @@ var hierarchy =
             [ "SoUnits", "classSoUnits.html", null ]
           ] ],
           [ "SoTransparencyType", "classSoTransparencyType.html", null ],
-          [ "SoVertexAttribute", "classSoVertexAttribute.html", [
-            [ "SoAnyVertexAttribute< Type >", "classSoAnyVertexAttribute.html", null ]
-          ] ],
+          [ "SoVertexAttribute", "classSoVertexAttribute.html", null ],
           [ "SoVertexAttributeBinding", "classSoVertexAttributeBinding.html", null ],
           [ "SoVertexProperty", "classSoVertexProperty.html", null ],
           [ "SoVRMLAppearance", "classSoVRMLAppearance.html", null ],
@@ -1128,10 +1119,9 @@ var hierarchy =
     [ "SoVectorOutput", "classSoVectorOutput.html", [
       [ "SoPSVectorOutput", "classSoPSVectorOutput.html", null ]
     ] ],
-    [ "SpiderMonkey_t", "structSpiderMonkey__t.html", null ],
     [ "SoRenderManager::Superimposition", "classSoRenderManager_1_1Superimposition.html", null ],
-    [ "SoMultiTextureMatrixElement::UnitData", "classSoMultiTextureMatrixElement_1_1UnitData.html", null ],
     [ "SoTextureCombineElement::UnitData", "classSoTextureCombineElement_1_1UnitData.html", null ],
+    [ "SoMultiTextureMatrixElement::UnitData", "classSoMultiTextureMatrixElement_1_1UnitData.html", null ],
     [ "SoMultiTextureCoordinateElement::UnitData", "classSoMultiTextureCoordinateElement_1_1UnitData.html", null ],
     [ "SoMultiTextureImageElement::UnitData", "classSoMultiTextureImageElement_1_1UnitData.html", null ],
     [ "int", "classint.html", null ]

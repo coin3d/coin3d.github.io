@@ -24,7 +24,5 @@ var classSoXtExaminerViewer =
     [ "processSoEvent", "classSoXtExaminerViewer.html#a3607c480807b734cbe573ca85e8a0b86", null ],
     [ "setSeekMode", "classSoXtExaminerViewer.html#a78c526e4c15a92f9084244754f69f79a", null ],
     [ "actualRedraw", "classSoXtExaminerViewer.html#a8be2b1d273d7be42ebd1f3cb459d2528", null ],
-    [ "afterRealizeHook", "classSoXtExaminerViewer.html#afecc341aeb4096fdd5cac11c617c2266", null ],
-    [ "SoGuiExaminerViewerP", "classSoXtExaminerViewer.html#a65897161b2a3bf9c010ff2e0589b1d38", null ],
-    [ "SoXtExaminerViewerP", "classSoXtExaminerViewer.html#a1c3b80aa89b6113542f42923cc1aa9b5", null ]
+    [ "afterRealizeHook", "classSoXtExaminerViewer.html#afecc341aeb4096fdd5cac11c617c2266", null ]
 ];

@@ -101,7 +101,5 @@ var classSoXtViewer =
     [ "addSuperimposition", "classSoXtViewer.html#a78acd0e5561b02fe9b6a8e1b4a6b19d6", null ],
     [ "removeSuperimposition", "classSoXtViewer.html#aa29db1975ae955fa64b39cca8e0e6bdb", null ],
     [ "setSuperimpositionEnabled", "classSoXtViewer.html#a30f3e708e0c6afbde26215eda52ed600", null ],
-    [ "getSuperimpositionEnabled", "classSoXtViewer.html#aa5d6bbea8d0a39ad587932ec2c07e561", null ],
-    [ "SoXtViewerP", "classSoXtViewer.html#a6dfe08b9ceff1fb88180e67eaf386efc", null ],
-    [ "SoXtPlaneViewer", "classSoXtViewer.html#a2c42f2f412203ceff5b3520b211e1522", null ]
+    [ "getSuperimpositionEnabled", "classSoXtViewer.html#aa5d6bbea8d0a39ad587932ec2c07e561", null ]
 ];

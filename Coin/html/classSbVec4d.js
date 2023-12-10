@@ -25,7 +25,7 @@ var classSbVec4d =
     [ "negate", "classSbVec4d.html#ad954080acdc3f04dcf367720462677fd", null ],
     [ "normalize", "classSbVec4d.html#aac6b1ddbae7284245537b7354f7bcc92", null ],
     [ "operator*=", "classSbVec4d.html#a84b928e2bae9c8951bfe58a97fada7d7", null ],
-    [ "operator/=", "classSbVec4d.html#a815d4fa859f6c6b6f80844bb988f2095", null ],
+    [ "operator/=", "classSbVec4d.html#ad28f16fc9f57cab7b39566693e5a9246", null ],
     [ "operator+=", "classSbVec4d.html#aa53a7b2961acae8d12ab2362b445c951", null ],
     [ "operator-=", "classSbVec4d.html#ada8b1af27e1fed0ed972140637c56cc8", null ],
     [ "operator-", "classSbVec4d.html#ad5892573fdc3d3574edfe5629ee5f878", null ],

@@ -73,7 +73,7 @@ $(document).ready(function(){initNavTree('classSbVec3fList.html','');});
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classSbVec3fList-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">SbVec3fList Class Reference<div class="ingroups"><a class="el" href="group__base.html">Base Classes</a></div></div>  </div>
+<div class="title">SbVec3fList Class Reference<div class="ingroups"><a class="el" href="group__coin__base.html">Base Classes</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -228,7 +228,9 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Overridden from parent to allocate a new <a class="el" href="classSbVec3f.html" title="The SbVec3f class is a 3 dimensional vector with floating point coordinates. ">SbVec3f</a> instance when called.</p>
+<p>Append <em>item</em> to the end of the list.</p>
+<p>Automatically allocates more items internally if needed.</p>
+<p>Overloaded from parent to allocate a new <a class="el" href="classSbVec3f.html" title="The SbVec3f class is a 3 dimensional vector with floating point coordinates. ">SbVec3f</a> instance when called.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSbPList.html#a61404440e153af0870eac6183d09fc04">SbPList::append()</a> </dd></dl>
 
 </div>
@@ -266,7 +268,9 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Overridden from parent to allocate a new <a class="el" href="classSbVec3f.html" title="The SbVec3f class is a 3 dimensional vector with floating point coordinates. ">SbVec3f</a> instance when called.</p>
+<p>Insert <em>item</em> at index <em>insertbefore</em>.</p>
+<p><em>insertbefore</em> should not be larger than the current number of items in the list.</p>
+<p>Overloaded from parent to allocate a new <a class="el" href="classSbVec3f.html" title="The SbVec3f class is a 3 dimensional vector with floating point coordinates. ">SbVec3f</a> instance when called.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSbPList.html#af500b13baee20036c51b7746c9b046b0">SbPList::insert()</a> </dd></dl>
 
 </div>
@@ -294,7 +298,10 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Overridden from parent to return an <a class="el" href="classSbVec3f.html" title="The SbVec3f class is a 3 dimensional vector with floating point coordinates. ">SbVec3f</a>. </p>
+<p>Returns element at <em>index</em>.</p>
+<p>Will automatically expand the size of the internal array if <em>index</em> is outside the current bounds of the list. The values of any additional pointers are then set to <code>NULL</code>.</p>
+<p>Overloaded from parent to return an <a class="el" href="classSbVec3f.html" title="The SbVec3f class is a 3 dimensional vector with floating point coordinates. ">SbVec3f</a> pointer.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classSbPList.html#a8f4ae28407482bca1ee8c6c7d67a1584">SbPList::operator[]()</a> </dd></dl>
 
 </div>
 </div>
@@ -308,7 +315,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSbVec3fList.html">SbVec3fList</a></li>
-    <li class="footer">Generated on Wed Jan 29 2020 23:52:00 for Coin by
+    <li class="footer">Generated on Sat Dec 9 2023 20:13:28 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

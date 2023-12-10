@@ -1,9 +1,9 @@
 var classSoPolygonOffset =
 [
     [ "Style", "classSoPolygonOffset.html#a4db5d089190917a978b376151aa53065", [
-      [ "FILLED", "classSoPolygonOffset.html#a4db5d089190917a978b376151aa53065a5b0cbcbfc3de809f6f24f43eaf7ad150", null ],
-      [ "LINES", "classSoPolygonOffset.html#a4db5d089190917a978b376151aa53065aff51cdcf4eb18f200eb07d04f47266d1", null ],
-      [ "POINTS", "classSoPolygonOffset.html#a4db5d089190917a978b376151aa53065a9df55224fe5098023c0ad7b1c387404f", null ]
+      [ "FILLED", "classSoPolygonOffset.html#a4db5d089190917a978b376151aa53065aa49a5be0221534618001fc263e1dd1a5", null ],
+      [ "LINES", "classSoPolygonOffset.html#a4db5d089190917a978b376151aa53065adbe202b1c00f1c353180949028e2121b", null ],
+      [ "POINTS", "classSoPolygonOffset.html#a4db5d089190917a978b376151aa53065a2ffa54ab2f390e6bc1d65f5bf4ee099a", null ]
     ] ],
     [ "SoPolygonOffset", "classSoPolygonOffset.html#a02f8b7b8a83efc7dd4cfc7fc3cb5546b", null ],
     [ "~SoPolygonOffset", "classSoPolygonOffset.html#acc5e709aaf00f9e914901c9220e9fa9b", null ],

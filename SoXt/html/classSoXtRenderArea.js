@@ -59,10 +59,8 @@ var classSoXtRenderArea =
     [ "sizeChanged", "classSoXtRenderArea.html#a4b5060ccd0c0df37774779071430ac8e", null ],
     [ "widgetChanged", "classSoXtRenderArea.html#af8e25bd52c4753bf5f8cff4201d1f7e0", null ],
     [ "afterRealizeHook", "classSoXtRenderArea.html#a29d62189872a94435da4e5fbac108433", null ],
-    [ "buildWidget", "classSoXtRenderArea.html#a345598ca8a19ae0ade3715751366c61a", null ],
     [ "getDefaultWidgetName", "classSoXtRenderArea.html#ab67fd56c36aa843c550944bd171d7525", null ],
     [ "getDefaultTitle", "classSoXtRenderArea.html#aa8009192059fb1469044f3127cc141e8", null ],
     [ "getDefaultIconTitle", "classSoXtRenderArea.html#a61bc98170af58e221c0c12d4bea58c86", null ],
-    [ "glScheduleRedraw", "classSoXtRenderArea.html#af51773ff83d9d156893c501b5c772e8f", null ],
-    [ "SoXtRenderAreaP", "classSoXtRenderArea.html#ae3e80adf0e639002edb5776ea381891b", null ]
+    [ "glScheduleRedraw", "classSoXtRenderArea.html#af51773ff83d9d156893c501b5c772e8f", null ]
 ];

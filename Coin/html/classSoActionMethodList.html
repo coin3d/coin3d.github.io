@@ -73,7 +73,7 @@ $(document).ready(function(){initNavTree('classSoActionMethodList.html','');});
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classSoActionMethodList-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">SoActionMethodList Class Reference<div class="ingroups"><a class="el" href="group__actions.html">Action Classes</a></div></div>  </div>
+<div class="title">SoActionMethodList Class Reference<div class="ingroups"><a class="el" href="group__coin__actions.html">Action Classes</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -97,10 +97,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af86c8480152c573d9e75e835aa72bc74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a474f294ac9475da3d05f269dd47c7699"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoActionMethodList.html#a474f294ac9475da3d05f269dd47c7699">~SoActionMethodList</a> ()</td></tr>
 <tr class="separator:a474f294ac9475da3d05f269dd47c7699"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92d1a05963d4c52df1d6c2cf1968e625"><td class="memItemLeft" align="right" valign="top"><a id="a92d1a05963d4c52df1d6c2cf1968e625"></a>
-<a class="el" href="SoActionMethodList_8h.html#a20da48d2b340cf58ff0fca763fcf1577">SoActionMethod</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (const <a class="el" href="classint.html">int</a> index)</td></tr>
+<tr class="memitem:a92d1a05963d4c52df1d6c2cf1968e625"><td class="memItemLeft" align="right" valign="top">SoActionMethod &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoActionMethodList.html#a92d1a05963d4c52df1d6c2cf1968e625">operator[]</a> (const <a class="el" href="classint.html">int</a> index)</td></tr>
 <tr class="separator:a92d1a05963d4c52df1d6c2cf1968e625"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79983ab40c7c4be74506aff39f9e0a72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoActionMethodList.html#a79983ab40c7c4be74506aff39f9e0a72">addMethod</a> (const <a class="el" href="classSoType.html">SoType</a> node, const <a class="el" href="SoActionMethodList_8h.html#a20da48d2b340cf58ff0fca763fcf1577">SoActionMethod</a> method)</td></tr>
+<tr class="memitem:a79983ab40c7c4be74506aff39f9e0a72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoActionMethodList.html#a79983ab40c7c4be74506aff39f9e0a72">addMethod</a> (const <a class="el" href="classSoType.html">SoType</a> node, const SoActionMethod method)</td></tr>
 <tr class="separator:a79983ab40c7c4be74506aff39f9e0a72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85d2c887bf7ccc5d8fbc3cb9e7df0050"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoActionMethodList.html#a85d2c887bf7ccc5d8fbc3cb9e7df0050">setUp</a> (void)</td></tr>
 <tr class="separator:a85d2c887bf7ccc5d8fbc3cb9e7df0050"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -196,6 +195,28 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a92d1a05963d4c52df1d6c2cf1968e625"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92d1a05963d4c52df1d6c2cf1968e625">&#9670;&nbsp;</a></span>operator[]()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SoActionMethod &amp; SoActionMethodList::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classint.html">int</a>&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns element at <em>index</em>.</p>
+<p>Will automatically expand the size of the internal array if <em>index</em> is outside the current bounds of the list. The values of any additional pointers are then set to <code>NULL</code>.</p>
+<p>Overloaded from parent to return an SoActionMethod.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classSbPList.html#a8f4ae28407482bca1ee8c6c7d67a1584">SbPList::operator[]()</a> </dd></dl>
+
+</div>
+</div>
 <a id="a79983ab40c7c4be74506aff39f9e0a72"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a79983ab40c7c4be74506aff39f9e0a72">&#9670;&nbsp;</a></span>addMethod()</h2>
 
@@ -211,7 +232,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="SoActionMethodList_8h.html#a20da48d2b340cf58ff0fca763fcf1577">SoActionMethod</a>&#160;</td>
+          <td class="paramtype">const SoActionMethod&#160;</td>
           <td class="paramname"><em>method</em>&#160;</td>
         </tr>
         <tr>
@@ -254,7 +275,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSoActionMethodList.html">SoActionMethodList</a></li>
-    <li class="footer">Generated on Wed Jan 29 2020 23:52:04 for Coin by
+    <li class="footer">Generated on Sat Dec 9 2023 20:13:29 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

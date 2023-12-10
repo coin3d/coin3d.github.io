@@ -97,7 +97,7 @@ Generic GLSL Shader Support</h1>
 <li><a class="el" href="classSoFragmentShader.html" title="The SoFragmentShader class is used for setting up fragment shader programs. ">SoFragmentShader</a></li>
 <li><a class="el" href="classSoGeometryShader.html" title="The SoGeometryShader class is used for loading geometry shader programs. ">SoGeometryShader</a></li>
 </ul>
-<p>See also the <a class="el" href="coin_shaders.html">Shaders in Coin</a> page for more information.</p>
+<p>See also the <a class="el" href="coin_shaders_page.html">Shaders in Coin</a> page for more information.</p>
 <h1><a class="anchor" id="shadownodes"></a>
 Generic Shadow Rendering Functionality</h1>
 <p>Support for rendering shadows has been added to Coin through a set of shader-based nodes. The technique used is the Variance Shadow Maps technique (<a href="http://www.punkuser.net/vsm/">http://www.punkuser.net/vsm/</a>).</p>
@@ -109,7 +109,7 @@ Generic Shadow Rendering Functionality</h1>
 <h1><a class="anchor" id="vborendering"></a>
 Vertex Buffer Object (VBO) Usage</h1>
 <p>A lot of nodes have had their rendering code optimized for VBO usage, giving great performance increases. However, this is not universally enabled - it is necessary to organize the scene graphs in specific ways for VBOs to be used.</p>
-<p>See the <a class="el" href="vbo_rendering.html">VBO Rendering in Coin</a> page for a detailed description.</p>
+<p>See the <a class="el" href="coin_vbo_rendering.html">VBO Rendering in Coin</a> page for a detailed description.</p>
 <p>Relevant classes:</p><ul>
 <li><a class="el" href="classSoVertexProperty.html" title="The SoVertexProperty class collects the functionality of various appearance nodes. ">SoVertexProperty</a></li>
 <li><a class="el" href="classSoReorganizeAction.html" title="The SoReorganizeAction class reorganizes your scene graph to optimize traversal/rendering. ">SoReorganizeAction</a></li>
@@ -118,7 +118,7 @@ Vertex Buffer Object (VBO) Usage</h1>
 Expanded Sb* Class Collection</h1>
 <p>The set of Sb* classes in Coin has been expanded greatly, with most notable a whole skew of SbVec and SbBox classes. The reasoning behind this move was that historically these classes were just added as needed, one by one, causing the stable branch of Coin and the development branch of Coin to diverge and become more and more incompatible as time went by. Also, extension nodes were created in peripheral libraries that used these new classes from the Coin development branch, and consequently couldn't be built against the stable branch of Coin. With this preemptive class set expansion, we hope to cause that the Coin stable branch and the Coin development branch stay closer in sync over a longer period, and that the incompatibility divergence will happen around major new feature sets instead of around minor details.</p>
 <p>New Sb*-classes: <br />
-<a class="el" href="classSbBox2i32.html" title="The SbBox2i32 class is a 2 dimensional box with 32-bit integer coordinates. ">SbBox2i32</a>, <a class="el" href="classSbBox3i32.html">SbBox3i32</a>, <a class="el" href="classSbBox3d.html" title="The SbBox3d class is an abstraction for an axis aligned 3 dimensional box. ">SbBox3d</a>, <a class="el" href="classSbVec2b.html" title="a vector class for containing two byte integers. ">SbVec2b</a>, <a class="el" href="classSbVec2ub.html">SbVec2ub</a>, <a class="el" href="classSbVec2us.html">SbVec2us</a>, <a class="el" href="classSbVec2i32.html" title="The SbVec2i32 class is a 2 dimensional vector with 32-bit signed integer coordinates. ">SbVec2i32</a>, <a class="el" href="classSbVec2ui32.html">SbVec2ui32</a>, <a class="el" href="classSbVec3b.html">SbVec3b</a>, <a class="el" href="classSbVec3ub.html">SbVec3ub</a>, <a class="el" href="classSbVec3us.html">SbVec3us</a>, <a class="el" href="classSbVec3i32.html">SbVec3i32</a>, <a class="el" href="classSbVec3ui32.html">SbVec3ui32</a>, <a class="el" href="classSbVec4b.html">SbVec4b</a>, <a class="el" href="classSbVec4ub.html">SbVec4ub</a>, <a class="el" href="classSbVec4s.html">SbVec4s</a>, <a class="el" href="classSbVec4us.html">SbVec4us</a>, <a class="el" href="classSbVec4i32.html">SbVec4i32</a>, <a class="el" href="classSbVec4ui32.html">SbVec4ui32</a>, <a class="el" href="classSbXfBox3d.html" title="The SbXfBox3d class is a 3 dimensional box with double precision coordinates and an attached transfor...">SbXfBox3d</a></p>
+<a class="el" href="classSbBox2i32.html" title="The SbBox2i32 class is a 2 dimensional box with 32-bit integer coordinates. ">SbBox2i32</a>, <a class="el" href="classSbBox3i32.html" title="The SbBox3i32 class is a 3 dimensional box with 32-bit integer coordinates. ">SbBox3i32</a>, <a class="el" href="classSbBox3d.html" title="The SbBox3d class is an abstraction for an axis aligned 3 dimensional box. ">SbBox3d</a>, <a class="el" href="classSbVec2b.html" title="a vector class for containing two byte integers. ">SbVec2b</a>, <a class="el" href="classSbVec2ub.html">SbVec2ub</a>, <a class="el" href="classSbVec2us.html">SbVec2us</a>, <a class="el" href="classSbVec2i32.html" title="The SbVec2i32 class is a 2 dimensional vector with 32-bit signed integer coordinates. ">SbVec2i32</a>, <a class="el" href="classSbVec2ui32.html">SbVec2ui32</a>, <a class="el" href="classSbVec3b.html">SbVec3b</a>, <a class="el" href="classSbVec3ub.html">SbVec3ub</a>, <a class="el" href="classSbVec3us.html">SbVec3us</a>, <a class="el" href="classSbVec3i32.html">SbVec3i32</a>, <a class="el" href="classSbVec3ui32.html">SbVec3ui32</a>, <a class="el" href="classSbVec4b.html">SbVec4b</a>, <a class="el" href="classSbVec4ub.html">SbVec4ub</a>, <a class="el" href="classSbVec4s.html">SbVec4s</a>, <a class="el" href="classSbVec4us.html">SbVec4us</a>, <a class="el" href="classSbVec4i32.html">SbVec4i32</a>, <a class="el" href="classSbVec4ui32.html">SbVec4ui32</a>, <a class="el" href="classSbXfBox3d.html" title="The SbXfBox3d class is a 3 dimensional box with double precision coordinates and an attached transfor...">SbXfBox3d</a></p>
 <p>Note: You can also find a good deal of these classes in TGS Inventor, so this was also a TGS compatibility move.</p>
 <h1><a class="anchor" id="fieldclasses"></a>
 Expanded Field Class Collection</h1>
@@ -151,7 +151,7 @@ Visual Studio Projects</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="coin_new_features.html">New Features in Coin</a></li>
-    <li class="footer">Generated on Wed Jan 29 2020 23:51:56 for Coin by
+    <li class="footer">Generated on Sat Dec 9 2023 20:13:27 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

@@ -60,12 +60,10 @@ var group__viewers =
       [ "sizeChanged", "classSoXtRenderArea.html#a4b5060ccd0c0df37774779071430ac8e", null ],
       [ "widgetChanged", "classSoXtRenderArea.html#af8e25bd52c4753bf5f8cff4201d1f7e0", null ],
       [ "afterRealizeHook", "classSoXtRenderArea.html#a29d62189872a94435da4e5fbac108433", null ],
-      [ "buildWidget", "classSoXtRenderArea.html#a345598ca8a19ae0ade3715751366c61a", null ],
       [ "getDefaultWidgetName", "classSoXtRenderArea.html#ab67fd56c36aa843c550944bd171d7525", null ],
       [ "getDefaultTitle", "classSoXtRenderArea.html#aa8009192059fb1469044f3127cc141e8", null ],
       [ "getDefaultIconTitle", "classSoXtRenderArea.html#a61bc98170af58e221c0c12d4bea58c86", null ],
-      [ "glScheduleRedraw", "classSoXtRenderArea.html#af51773ff83d9d156893c501b5c772e8f", null ],
-      [ "SoXtRenderAreaP", "classSoXtRenderArea.html#ae3e80adf0e639002edb5776ea381891b", null ]
+      [ "glScheduleRedraw", "classSoXtRenderArea.html#af51773ff83d9d156893c501b5c772e8f", null ]
     ] ],
     [ "SoXtConstrainedViewer", "classSoXtConstrainedViewer.html", [
       [ "SoXtConstrainedViewer", "classSoXtConstrainedViewer.html#ad3c7f5680786c328130fa438c7b9cf9d", null ],
@@ -107,9 +105,7 @@ var group__viewers =
       [ "processSoEvent", "classSoXtExaminerViewer.html#a3607c480807b734cbe573ca85e8a0b86", null ],
       [ "setSeekMode", "classSoXtExaminerViewer.html#a78c526e4c15a92f9084244754f69f79a", null ],
       [ "actualRedraw", "classSoXtExaminerViewer.html#a8be2b1d273d7be42ebd1f3cb459d2528", null ],
-      [ "afterRealizeHook", "classSoXtExaminerViewer.html#afecc341aeb4096fdd5cac11c617c2266", null ],
-      [ "SoGuiExaminerViewerP", "classSoXtExaminerViewer.html#a65897161b2a3bf9c010ff2e0589b1d38", null ],
-      [ "SoXtExaminerViewerP", "classSoXtExaminerViewer.html#a1c3b80aa89b6113542f42923cc1aa9b5", null ]
+      [ "afterRealizeHook", "classSoXtExaminerViewer.html#afecc341aeb4096fdd5cac11c617c2266", null ]
     ] ],
     [ "SoXtFlyViewer", "classSoXtFlyViewer.html", [
       [ "SoXtFlyViewer", "classSoXtFlyViewer.html#ab91e0d7d83901aaab4e7cdbf9a676cd5", null ],
@@ -128,8 +124,7 @@ var group__viewers =
       [ "setSeekMode", "classSoXtFlyViewer.html#ab753ab7bf273e72bc10a9147101fbfe7", null ],
       [ "actualRedraw", "classSoXtFlyViewer.html#a2f3b92a85595892ef16d10c5fdac9119", null ],
       [ "rightWheelMotion", "classSoXtFlyViewer.html#aa7fcaf2b751ba37368f10ff5bea995de", null ],
-      [ "afterRealizeHook", "classSoXtFlyViewer.html#a13e07e5a5bf3c9be6e90fdbbba8e43bc", null ],
-      [ "SoXtFlyViewerP", "classSoXtFlyViewer.html#a6e47d8ba838e66178686bb8dbb7f902e", null ]
+      [ "afterRealizeHook", "classSoXtFlyViewer.html#a13e07e5a5bf3c9be6e90fdbbba8e43bc", null ]
     ] ],
     [ "SoXtFullViewer", "classSoXtFullViewer.html", [
       [ "BuildFlag", "classSoXtFullViewer.html#a0774d55c0a28e7f2f4f6eeecb50edbea", [
@@ -154,7 +149,6 @@ var group__viewers =
       [ "setViewing", "classSoXtFullViewer.html#a7d5a7ab9b69f49421c6da46645afbd61", null ],
       [ "setComponentCursor", "classSoXtFullViewer.html#abaa80e335e07cd93db710ca52f961999", null ],
       [ "sizeChanged", "classSoXtFullViewer.html#a22ba746445e4afd3d4e7703f441d2bfa", null ],
-      [ "buildWidget", "classSoXtFullViewer.html#ab4934c6132de4ad7f88b6e00b7bf074b", null ],
       [ "buildDecoration", "classSoXtFullViewer.html#a5c2f49077f41562ee64c720077cd87ad", null ],
       [ "buildLeftTrim", "classSoXtFullViewer.html#a9735b54754d75d94825ceea278e98935", null ],
       [ "buildBottomTrim", "classSoXtFullViewer.html#a33952b22e0386794e1fc4e08b794c2e3", null ],
@@ -185,13 +179,10 @@ var group__viewers =
       [ "setBottomWheelString", "classSoXtFullViewer.html#a6650bf0d1a79317bf61a8beb645bfa48", null ],
       [ "getBottomWheelLabelWidget", "classSoXtFullViewer.html#a34285f13e7b81e2d0ae7024876e33a5f", null ],
       [ "setRightWheelString", "classSoXtFullViewer.html#a32149810dfd9b3492b42e83df9ec969d", null ],
-      [ "getRightWheelString", "classSoXtFullViewer.html#ae877bff9160f08ee306b05ad9890c223", null ],
       [ "getRightWheelLabelWidget", "classSoXtFullViewer.html#a819fd4752982d2cd2832b6970e95c117", null ],
       [ "processSoEvent", "classSoXtFullViewer.html#a41451335f9b67338d3b28794312ce4dd", null ],
       [ "buildFunctionsSubmenu", "classSoXtFullViewer.html#a0423d22a8016aa748de5caa5ad46214a", null ],
       [ "buildDrawStyleSubmenu", "classSoXtFullViewer.html#a4d5f0b3eafd4f53512a2eafb24a65d1d", null ],
-      [ "SoGuiFullViewerP", "classSoXtFullViewer.html#ab8318b1e2a8307b29ebd61072eeb43b0", null ],
-      [ "SoXtFullViewerP", "classSoXtFullViewer.html#ad60af419625120d36fe87243769095f0", null ],
       [ "leftWheel", "classSoXtFullViewer.html#a46dfa2f00d668921f9486b450c39e721", null ],
       [ "rightWheel", "classSoXtFullViewer.html#af4685247b986aa74496a0bc952c26bc9", null ],
       [ "bottomWheel", "classSoXtFullViewer.html#a79c09cacb64de8b2a3a0fb90e38c18e5", null ],
@@ -219,7 +210,6 @@ var group__viewers =
       [ "setViewing", "classSoXtPlaneViewer.html#a65250b47c20a4a4f771f662579199e04", null ],
       [ "setCamera", "classSoXtPlaneViewer.html#a2de52a5750e499f6a1291b4d1a8f4e2f", null ],
       [ "setCursorEnabled", "classSoXtPlaneViewer.html#a58fcdbd149b2981a2f60635566d82b1d", null ],
-      [ "buildWidget", "classSoXtPlaneViewer.html#af337a776a9399f8d5a068103428874f7", null ],
       [ "getDefaultWidgetName", "classSoXtPlaneViewer.html#a780e4742635c48b526fb8a371c576004", null ],
       [ "getDefaultTitle", "classSoXtPlaneViewer.html#a8e8fce5c286bc8b07abce58751ce2f8f", null ],
       [ "getDefaultIconTitle", "classSoXtPlaneViewer.html#ad89364aa2c17f19a6c5c8ae35aab2fb2", null ],
@@ -237,9 +227,7 @@ var group__viewers =
       [ "rightWheelFinish", "classSoXtPlaneViewer.html#aeefc44bbb056451236786de2db38a4c5", null ],
       [ "createViewerButtons", "classSoXtPlaneViewer.html#a7b3fe1a08f103577a3643ae251d97e62", null ],
       [ "afterRealizeHook", "classSoXtPlaneViewer.html#a1d4b2c46a163bdc2d3f7e68e62896179", null ],
-      [ "computeSeekFinalOrientation", "classSoXtPlaneViewer.html#acddace0993ef17121bf624f3d51edd22", null ],
-      [ "SoGuiPlaneViewerP", "classSoXtPlaneViewer.html#ad4eb7c057cd349e05b62ed793e004a31", null ],
-      [ "SoXtPlaneViewerP", "classSoXtPlaneViewer.html#a3bbaacf247736f6b0fb60725d4ea206c", null ]
+      [ "computeSeekFinalOrientation", "classSoXtPlaneViewer.html#acddace0993ef17121bf624f3d51edd22", null ]
     ] ],
     [ "SoXtViewer", "classSoXtViewer.html", [
       [ "Type", "classSoXtViewer.html#a2b24a1235eb33cd62cfaa87773306db5", [
@@ -343,8 +331,6 @@ var group__viewers =
       [ "addSuperimposition", "classSoXtViewer.html#a78acd0e5561b02fe9b6a8e1b4a6b19d6", null ],
       [ "removeSuperimposition", "classSoXtViewer.html#aa29db1975ae955fa64b39cca8e0e6bdb", null ],
       [ "setSuperimpositionEnabled", "classSoXtViewer.html#a30f3e708e0c6afbde26215eda52ed600", null ],
-      [ "getSuperimpositionEnabled", "classSoXtViewer.html#aa5d6bbea8d0a39ad587932ec2c07e561", null ],
-      [ "SoXtViewerP", "classSoXtViewer.html#a6dfe08b9ceff1fb88180e67eaf386efc", null ],
-      [ "SoXtPlaneViewer", "classSoXtViewer.html#a2c42f2f412203ceff5b3520b211e1522", null ]
+      [ "getSuperimpositionEnabled", "classSoXtViewer.html#aa5d6bbea8d0a39ad587932ec2c07e561", null ]
     ] ]
 ];

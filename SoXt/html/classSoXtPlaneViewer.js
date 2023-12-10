@@ -6,7 +6,6 @@ var classSoXtPlaneViewer =
     [ "setViewing", "classSoXtPlaneViewer.html#a65250b47c20a4a4f771f662579199e04", null ],
     [ "setCamera", "classSoXtPlaneViewer.html#a2de52a5750e499f6a1291b4d1a8f4e2f", null ],
     [ "setCursorEnabled", "classSoXtPlaneViewer.html#a58fcdbd149b2981a2f60635566d82b1d", null ],
-    [ "buildWidget", "classSoXtPlaneViewer.html#af337a776a9399f8d5a068103428874f7", null ],
     [ "getDefaultWidgetName", "classSoXtPlaneViewer.html#a780e4742635c48b526fb8a371c576004", null ],
     [ "getDefaultTitle", "classSoXtPlaneViewer.html#a8e8fce5c286bc8b07abce58751ce2f8f", null ],
     [ "getDefaultIconTitle", "classSoXtPlaneViewer.html#ad89364aa2c17f19a6c5c8ae35aab2fb2", null ],
@@ -24,7 +23,5 @@ var classSoXtPlaneViewer =
     [ "rightWheelFinish", "classSoXtPlaneViewer.html#aeefc44bbb056451236786de2db38a4c5", null ],
     [ "createViewerButtons", "classSoXtPlaneViewer.html#a7b3fe1a08f103577a3643ae251d97e62", null ],
     [ "afterRealizeHook", "classSoXtPlaneViewer.html#a1d4b2c46a163bdc2d3f7e68e62896179", null ],
-    [ "computeSeekFinalOrientation", "classSoXtPlaneViewer.html#acddace0993ef17121bf624f3d51edd22", null ],
-    [ "SoGuiPlaneViewerP", "classSoXtPlaneViewer.html#ad4eb7c057cd349e05b62ed793e004a31", null ],
-    [ "SoXtPlaneViewerP", "classSoXtPlaneViewer.html#a3bbaacf247736f6b0fb60725d4ea206c", null ]
+    [ "computeSeekFinalOrientation", "classSoXtPlaneViewer.html#acddace0993ef17121bf624f3d51edd22", null ]
 ];

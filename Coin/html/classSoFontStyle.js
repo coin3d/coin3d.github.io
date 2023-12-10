@@ -1,14 +1,14 @@
 var classSoFontStyle =
 [
     [ "Family", "classSoFontStyle.html#a797fff8ccb801543fbda54be3a19d3cf", [
-      [ "SERIF", "classSoFontStyle.html#a797fff8ccb801543fbda54be3a19d3cfa8dcabcb93a3094660bbc488bf2e3ad9a", null ],
-      [ "SANS", "classSoFontStyle.html#a797fff8ccb801543fbda54be3a19d3cfad2d21b6d650d0b47c5706bc45341833b", null ],
-      [ "TYPEWRITER", "classSoFontStyle.html#a797fff8ccb801543fbda54be3a19d3cfa079fb8a0d869fbc4bb9f7a5638531dae", null ]
+      [ "SERIF", "classSoFontStyle.html#a797fff8ccb801543fbda54be3a19d3cfa595c29b7165ebf70a5140b2066e6dcc3", null ],
+      [ "SANS", "classSoFontStyle.html#a797fff8ccb801543fbda54be3a19d3cfaee6dae43dd1af3bb0c9e9ce1da981c8e", null ],
+      [ "TYPEWRITER", "classSoFontStyle.html#a797fff8ccb801543fbda54be3a19d3cfa87003369988b9bf0d00cd7402ef87fe4", null ]
     ] ],
     [ "Style", "classSoFontStyle.html#aefec3a4f69d7f6eb27e90f6b3e367501", [
-      [ "NONE", "classSoFontStyle.html#aefec3a4f69d7f6eb27e90f6b3e367501a0b21f8b06a5ee58978d7651a1a16649e", null ],
-      [ "BOLD", "classSoFontStyle.html#aefec3a4f69d7f6eb27e90f6b3e367501a692dda3c193c1922ed7975a268192388", null ],
-      [ "ITALIC", "classSoFontStyle.html#aefec3a4f69d7f6eb27e90f6b3e367501ae85e1c5af5eb4b99d45832dd4295af67", null ]
+      [ "NONE", "classSoFontStyle.html#aefec3a4f69d7f6eb27e90f6b3e367501a4a52e082c8cdf993e609808d440912e0", null ],
+      [ "BOLD", "classSoFontStyle.html#aefec3a4f69d7f6eb27e90f6b3e367501aa4bd19b0c8eb4fbe19fc255328f6ea7f", null ],
+      [ "ITALIC", "classSoFontStyle.html#aefec3a4f69d7f6eb27e90f6b3e367501a6363a97fdd5ce326cbfb866258b9f0ce", null ]
     ] ],
     [ "SoFontStyle", "classSoFontStyle.html#a34ad9d6c3e07b3a89c89a32a905aa747", null ],
     [ "~SoFontStyle", "classSoFontStyle.html#af707554552e0f4c881ec4ce39e3d36dd", null ],

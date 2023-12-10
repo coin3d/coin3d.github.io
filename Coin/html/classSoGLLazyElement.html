@@ -76,7 +76,7 @@ $(document).ready(function(){initNavTree('classSoGLLazyElement.html','');});
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="classSoGLLazyElement-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">SoGLLazyElement Class Reference<div class="ingroups"><a class="el" href="group__elements.html">Element Classes</a></div></div>  </div>
+<div class="title">SoGLLazyElement Class Reference<div class="ingroups"><a class="el" href="group__coin__elements.html">Element Classes</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -126,7 +126,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setDiffuseElt</b> (<a class="el" href="classSoNode.html">SoNode</a> *, int32_t numcolors, const <a class="el" href="classSbColor.html">SbColor</a> *colors, <a class="el" href="classSoColorPacker.html">SoColorPacker</a> *packer)</td></tr>
 <tr class="separator:a95ab4d951699ec29428363b795ff1999"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77d14d65f4aa9f2c0358d7ed32353981"><td class="memItemLeft" align="right" valign="top"><a id="a77d14d65f4aa9f2c0358d7ed32353981"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setPackedElt</b> (<a class="el" href="classSoNode.html">SoNode</a> *node, int32_t numcolors, const uint32_t *colors, const SbBool packedtransparency)</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setPackedElt</b> (<a class="el" href="classSoNode.html">SoNode</a> *node, int32_t numcolors, const uint32_t *colors, const <a class="el" href="classint.html">SbBool</a> packedtransparency)</td></tr>
 <tr class="separator:a77d14d65f4aa9f2c0358d7ed32353981"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18d34d517a399d8d64da5162f2466a21"><td class="memItemLeft" align="right" valign="top"><a id="a18d34d517a399d8d64da5162f2466a21"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setColorIndexElt</b> (<a class="el" href="classSoNode.html">SoNode</a> *node, int32_t numindices, const int32_t *indices)</td></tr>
@@ -150,7 +150,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setSpecularEl
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setShininessElt</b> (float value)</td></tr>
 <tr class="separator:a61bc506569e8f1b6b7cb5aeffe135521"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1151ac7687e65d76358efcda169fcec2"><td class="memItemLeft" align="right" valign="top"><a id="a1151ac7687e65d76358efcda169fcec2"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setColorMaterialElt</b> (SbBool value)</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setColorMaterialElt</b> (<a class="el" href="classint.html">SbBool</a> value)</td></tr>
 <tr class="separator:a1151ac7687e65d76358efcda169fcec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add34ba78895126b94b19209cf6aa624a"><td class="memItemLeft" align="right" valign="top"><a id="add34ba78895126b94b19209cf6aa624a"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>enableBlendingElt</b> (<a class="el" href="classint.html">int</a> sfactor, <a class="el" href="classint.html">int</a> dfactor, <a class="el" href="classint.html">int</a> alpha_sfactor, <a class="el" href="classint.html">int</a> alpha_dfactor)</td></tr>
@@ -162,19 +162,19 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>disableBlendi
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setLightModelElt</b> (<a class="el" href="classSoState.html">SoState</a> *state, int32_t model)</td></tr>
 <tr class="separator:a84d3959f92c4efe1c49c76403ffe68d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29146234643c92e8013a3ec310262fed"><td class="memItemLeft" align="right" valign="top"><a id="a29146234643c92e8013a3ec310262fed"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setMaterialElt</b> (<a class="el" href="classSoNode.html">SoNode</a> *node, uint32_t bitmask, <a class="el" href="classSoColorPacker.html">SoColorPacker</a> *packer, const <a class="el" href="classSbColor.html">SbColor</a> *diffuse, const <a class="el" href="classint.html">int</a> numdiffuse, const float *transp, const <a class="el" href="classint.html">int</a> numtransp, const <a class="el" href="classSbColor.html">SbColor</a> &amp;ambient, const <a class="el" href="classSbColor.html">SbColor</a> &amp;emissive, const <a class="el" href="classSbColor.html">SbColor</a> &amp;specular, const float shininess, const SbBool istransparent)</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setMaterialElt</b> (<a class="el" href="classSoNode.html">SoNode</a> *node, uint32_t bitmask, <a class="el" href="classSoColorPacker.html">SoColorPacker</a> *packer, const <a class="el" href="classSbColor.html">SbColor</a> *diffuse, const <a class="el" href="classint.html">int</a> numdiffuse, const float *transp, const <a class="el" href="classint.html">int</a> numtransp, const <a class="el" href="classSbColor.html">SbColor</a> &amp;ambient, const <a class="el" href="classSbColor.html">SbColor</a> &amp;emissive, const <a class="el" href="classSbColor.html">SbColor</a> &amp;specular, const float shininess, const <a class="el" href="classint.html">SbBool</a> istransparent)</td></tr>
 <tr class="separator:a29146234643c92e8013a3ec310262fed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a170a7d7d2b4a1330ba161383bbdf663f"><td class="memItemLeft" align="right" valign="top"><a id="a170a7d7d2b4a1330ba161383bbdf663f"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setVertexOrderingElt</b> (VertexOrdering ordering)</td></tr>
 <tr class="separator:a170a7d7d2b4a1330ba161383bbdf663f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86e1bb3f423f08d8684ca9d387856bc8"><td class="memItemLeft" align="right" valign="top"><a id="a86e1bb3f423f08d8684ca9d387856bc8"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setBackfaceCullingElt</b> (SbBool onoff)</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setBackfaceCullingElt</b> (<a class="el" href="classint.html">SbBool</a> onoff)</td></tr>
 <tr class="separator:a86e1bb3f423f08d8684ca9d387856bc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf97518d3bf2d7116a61b6dbe393b0b5"><td class="memItemLeft" align="right" valign="top"><a id="abf97518d3bf2d7116a61b6dbe393b0b5"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setTwosideLightingElt</b> (SbBool onoff)</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setTwosideLightingElt</b> (<a class="el" href="classint.html">SbBool</a> onoff)</td></tr>
 <tr class="separator:abf97518d3bf2d7116a61b6dbe393b0b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab99f043b58d48153adcfa37d773e6d63"><td class="memItemLeft" align="right" valign="top"><a id="ab99f043b58d48153adcfa37d773e6d63"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setShadeModelElt</b> (SbBool flatshading)</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setShadeModelElt</b> (<a class="el" href="classint.html">SbBool</a> flatshading)</td></tr>
 <tr class="separator:ab99f043b58d48153adcfa37d773e6d63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a447ce22f5f872322d1c1afa49a72ccce"><td class="memItemLeft" align="right" valign="top"><a id="a447ce22f5f872322d1c1afa49a72ccce"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setAlphaTestElt</b> (<a class="el" href="classint.html">int</a> func, float value)</td></tr>
@@ -183,7 +183,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setAlphaTestE
 void&#160;</td><td class="memItemRight" valign="bottom"><b>updateColorVBO</b> (SoVBO *vbo)</td></tr>
 <tr class="separator:af4b4bc9bff931613601b68d7ad1c01af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classSoLazyElement"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classSoLazyElement')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classSoLazyElement.html">SoLazyElement</a></td></tr>
-<tr class="memitem:a925f127c8ffec64079370cc38fed9824 inherit pub_methods_classSoLazyElement"><td class="memItemLeft" align="right" valign="top">virtual SbBool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoLazyElement.html#a925f127c8ffec64079370cc38fed9824">matches</a> (const <a class="el" href="classSoElement.html">SoElement</a> *) const</td></tr>
+<tr class="memitem:a925f127c8ffec64079370cc38fed9824 inherit pub_methods_classSoLazyElement"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classint.html">SbBool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoLazyElement.html#a925f127c8ffec64079370cc38fed9824">matches</a> (const <a class="el" href="classSoElement.html">SoElement</a> *) const</td></tr>
 <tr class="separator:a925f127c8ffec64079370cc38fed9824 inherit pub_methods_classSoLazyElement"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3c94c1bec1526869b758cfce86e8e94 inherit pub_methods_classSoLazyElement"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classSoElement.html">SoElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoLazyElement.html#aa3c94c1bec1526869b758cfce86e8e94">copyMatchInfo</a> (void) const</td></tr>
 <tr class="separator:aa3c94c1bec1526869b758cfce86e8e94 inherit pub_methods_classSoLazyElement"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -197,10 +197,10 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>getNumTransparenci
 int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>getNumColorIndices</b> (void) const</td></tr>
 <tr class="separator:a615369bbd0a0c6d877f3d1c7a30f4d9c inherit pub_methods_classSoLazyElement"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a377f5a7a3ffebff76516d20be35f30df inherit pub_methods_classSoLazyElement"><td class="memItemLeft" align="right" valign="top"><a id="a377f5a7a3ffebff76516d20be35f30df"></a>
-SbBool&#160;</td><td class="memItemRight" valign="bottom"><b>isPacked</b> (void) const</td></tr>
+<a class="el" href="classint.html">SbBool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>isPacked</b> (void) const</td></tr>
 <tr class="separator:a377f5a7a3ffebff76516d20be35f30df inherit pub_methods_classSoLazyElement"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19148521d7f531f5db12baa391270e8c inherit pub_methods_classSoLazyElement"><td class="memItemLeft" align="right" valign="top"><a id="a19148521d7f531f5db12baa391270e8c"></a>
-SbBool&#160;</td><td class="memItemRight" valign="bottom"><b>isTransparent</b> (void) const</td></tr>
+<a class="el" href="classint.html">SbBool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>isTransparent</b> (void) const</td></tr>
 <tr class="separator:a19148521d7f531f5db12baa391270e8c inherit pub_methods_classSoLazyElement"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1aa73d09c595acedc56f069025a4d02c inherit pub_methods_classSoLazyElement"><td class="memItemLeft" align="right" valign="top"><a id="a1aa73d09c595acedc56f069025a4d02c"></a>
 const uint32_t *&#160;</td><td class="memItemRight" valign="bottom"><b>getPackedPointer</b> (void) const</td></tr>
@@ -230,11 +230,9 @@ const float *&#160;</td><td class="memItemRight" valign="bottom"><b>getTranspare
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a0526a861d5d258cd255370cdab486d70"><td class="memItemLeft" align="right" valign="top"><a id="a0526a861d5d258cd255370cdab486d70"></a>
-static <a class="el" href="classSoType.html">SoType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getClassTypeId</b> (void)</td></tr>
+<tr class="memitem:a0526a861d5d258cd255370cdab486d70"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classSoType.html">SoType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoGLLazyElement.html#a0526a861d5d258cd255370cdab486d70">getClassTypeId</a> (void)</td></tr>
 <tr class="separator:a0526a861d5d258cd255370cdab486d70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43dfc995495b9bdefde94d7a6a3652a6"><td class="memItemLeft" align="right" valign="top"><a id="a43dfc995495b9bdefde94d7a6a3652a6"></a>
-static <a class="el" href="classint.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getClassStackIndex</b> (void)</td></tr>
+<tr class="memitem:a43dfc995495b9bdefde94d7a6a3652a6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classint.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoGLLazyElement.html#a43dfc995495b9bdefde94d7a6a3652a6">getClassStackIndex</a> (void)</td></tr>
 <tr class="separator:a43dfc995495b9bdefde94d7a6a3652a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a845efb5e7df694b3ef41aeee0ba744e8"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoGLLazyElement.html#a845efb5e7df694b3ef41aeee0ba744e8">createInstance</a> (void)</td></tr>
 <tr class="separator:a845efb5e7df694b3ef41aeee0ba744e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -259,19 +257,19 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>sendLightModel
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>sendPackedDiffuse</b> (<a class="el" href="classSoState.html">SoState</a> *state, const uint32_t diffuse)</td></tr>
 <tr class="separator:a78200bb73aee3f248b4d10345b431457"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9539d390fdf2be530ed0027f61b57582"><td class="memItemLeft" align="right" valign="top"><a id="a9539d390fdf2be530ed0027f61b57582"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>sendFlatshading</b> (<a class="el" href="classSoState.html">SoState</a> *state, const SbBool onoff)</td></tr>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>sendFlatshading</b> (<a class="el" href="classSoState.html">SoState</a> *state, const <a class="el" href="classint.html">SbBool</a> onoff)</td></tr>
 <tr class="separator:a9539d390fdf2be530ed0027f61b57582"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bdc08be0efa6aa1888ca475c7e46e65"><td class="memItemLeft" align="right" valign="top"><a id="a2bdc08be0efa6aa1888ca475c7e46e65"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>sendVertexOrdering</b> (<a class="el" href="classSoState.html">SoState</a> *state, const VertexOrdering ordering)</td></tr>
 <tr class="separator:a2bdc08be0efa6aa1888ca475c7e46e65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2ce3f03b1f5b84692014f9d74fe2cdf"><td class="memItemLeft" align="right" valign="top"><a id="ab2ce3f03b1f5b84692014f9d74fe2cdf"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>sendTwosideLighting</b> (<a class="el" href="classSoState.html">SoState</a> *state, const SbBool onoff)</td></tr>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>sendTwosideLighting</b> (<a class="el" href="classSoState.html">SoState</a> *state, const <a class="el" href="classint.html">SbBool</a> onoff)</td></tr>
 <tr class="separator:ab2ce3f03b1f5b84692014f9d74fe2cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9db8d8c5cebbb67a2fec49ef21b57d52"><td class="memItemLeft" align="right" valign="top"><a id="a9db8d8c5cebbb67a2fec49ef21b57d52"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>sendBackfaceCulling</b> (<a class="el" href="classSoState.html">SoState</a> *state, const SbBool onoff)</td></tr>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>sendBackfaceCulling</b> (<a class="el" href="classSoState.html">SoState</a> *state, const <a class="el" href="classint.html">SbBool</a> onoff)</td></tr>
 <tr class="separator:a9db8d8c5cebbb67a2fec49ef21b57d52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af71e8f9528b685db231366ff704e50a1"><td class="memItemLeft" align="right" valign="top"><a id="af71e8f9528b685db231366ff704e50a1"></a>
-static SbBool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoGLLazyElement.html#af71e8f9528b685db231366ff704e50a1">isColorIndex</a> (<a class="el" href="classSoState.html">SoState</a> *state)</td></tr>
+static <a class="el" href="classint.html">SbBool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoGLLazyElement.html#af71e8f9528b685db231366ff704e50a1">isColorIndex</a> (<a class="el" href="classSoState.html">SoState</a> *state)</td></tr>
 <tr class="memdesc:af71e8f9528b685db231366ff704e50a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">FIXME: write doc. <br /></td></tr>
 <tr class="separator:af71e8f9528b685db231366ff704e50a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae32fccbc7c294c652ba058ae8eb23e37"><td class="memItemLeft" align="right" valign="top"><a id="ae32fccbc7c294c652ba058ae8eb23e37"></a>
@@ -285,7 +283,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>beginCaching</
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>endCaching</b> (<a class="el" href="classSoState.html">SoState</a> *state)</td></tr>
 <tr class="separator:a7d8e5c15e0f7f6d34a33178efcc28e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab34cb4d12fc72bf0a3043c09f6bc080f"><td class="memItemLeft" align="right" valign="top"><a id="ab34cb4d12fc72bf0a3043c09f6bc080f"></a>
-static SbBool&#160;</td><td class="memItemRight" valign="bottom"><b>preCacheCall</b> (const <a class="el" href="classSoState.html">SoState</a> *state, const <a class="el" href="structSoGLLazyElement_1_1GLState.html">SoGLLazyElement::GLState</a> *prestate)</td></tr>
+static <a class="el" href="classint.html">SbBool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>preCacheCall</b> (const <a class="el" href="classSoState.html">SoState</a> *state, const <a class="el" href="structSoGLLazyElement_1_1GLState.html">SoGLLazyElement::GLState</a> *prestate)</td></tr>
 <tr class="separator:ab34cb4d12fc72bf0a3043c09f6bc080f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a84e64c7e09836937b9da972a7305b9"><td class="memItemLeft" align="right" valign="top"><a id="a8a84e64c7e09836937b9da972a7305b9"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>postCacheCall</b> (const <a class="el" href="classSoState.html">SoState</a> *state, const <a class="el" href="structSoGLLazyElement_1_1GLState.html">SoGLLazyElement::GLState</a> *poststate)</td></tr>
@@ -293,11 +291,9 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>postCacheCall<
 <tr class="memitem:a7c76dc9ec0ac109ccf5013914a0e2c75"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoGLLazyElement.html#a7c76dc9ec0ac109ccf5013914a0e2c75">mergeCacheInfo</a> (<a class="el" href="classSoState.html">SoState</a> *state, <a class="el" href="structSoGLLazyElement_1_1GLState.html">SoGLLazyElement::GLState</a> *childprestate, <a class="el" href="structSoGLLazyElement_1_1GLState.html">SoGLLazyElement::GLState</a> *childpoststate)</td></tr>
 <tr class="separator:a7c76dc9ec0ac109ccf5013914a0e2c75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classSoLazyElement"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classSoLazyElement')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classSoLazyElement.html">SoLazyElement</a></td></tr>
-<tr class="memitem:a67175612866d86b07efec3ddbb0f6fb7 inherit pub_static_methods_classSoLazyElement"><td class="memItemLeft" align="right" valign="top"><a id="a67175612866d86b07efec3ddbb0f6fb7"></a>
-static <a class="el" href="classSoType.html">SoType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getClassTypeId</b> (void)</td></tr>
+<tr class="memitem:a67175612866d86b07efec3ddbb0f6fb7 inherit pub_static_methods_classSoLazyElement"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classSoType.html">SoType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoLazyElement.html#a67175612866d86b07efec3ddbb0f6fb7">getClassTypeId</a> (void)</td></tr>
 <tr class="separator:a67175612866d86b07efec3ddbb0f6fb7 inherit pub_static_methods_classSoLazyElement"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbd9e341726cb91a92a226132fd69b18 inherit pub_static_methods_classSoLazyElement"><td class="memItemLeft" align="right" valign="top"><a id="afbd9e341726cb91a92a226132fd69b18"></a>
-static <a class="el" href="classint.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getClassStackIndex</b> (void)</td></tr>
+<tr class="memitem:afbd9e341726cb91a92a226132fd69b18 inherit pub_static_methods_classSoLazyElement"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classint.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoLazyElement.html#afbd9e341726cb91a92a226132fd69b18">getClassStackIndex</a> (void)</td></tr>
 <tr class="separator:afbd9e341726cb91a92a226132fd69b18 inherit pub_static_methods_classSoLazyElement"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95b378403ca1c9e8e6ba6d5d817fe8b9 inherit pub_static_methods_classSoLazyElement"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoLazyElement.html#a95b378403ca1c9e8e6ba6d5d817fe8b9">createInstance</a> (void)</td></tr>
 <tr class="separator:a95b378403ca1c9e8e6ba6d5d817fe8b9 inherit pub_static_methods_classSoLazyElement"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -312,7 +308,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>setDiffuse</b>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>setTransparency</b> (<a class="el" href="classSoState.html">SoState</a> *state, <a class="el" href="classSoNode.html">SoNode</a> *node, int32_t numvalues, const float *transparency, <a class="el" href="classSoColorPacker.html">SoColorPacker</a> *packer)</td></tr>
 <tr class="separator:a36ac2d1ed9ee781fc5385ea0128c380e inherit pub_static_methods_classSoLazyElement"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a695adad1c3c33df00d4be754f495d93c inherit pub_static_methods_classSoLazyElement"><td class="memItemLeft" align="right" valign="top"><a id="a695adad1c3c33df00d4be754f495d93c"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>setPacked</b> (<a class="el" href="classSoState.html">SoState</a> *state, <a class="el" href="classSoNode.html">SoNode</a> *node, int32_t numcolors, const uint32_t *colors, const SbBool packedtransparency=FALSE)</td></tr>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>setPacked</b> (<a class="el" href="classSoState.html">SoState</a> *state, <a class="el" href="classSoNode.html">SoNode</a> *node, int32_t numcolors, const uint32_t *colors, const <a class="el" href="classint.html">SbBool</a> packedtransparency=FALSE)</td></tr>
 <tr class="separator:a695adad1c3c33df00d4be754f495d93c inherit pub_static_methods_classSoLazyElement"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75be4c334c4eac6db273e1155068b2ed inherit pub_static_methods_classSoLazyElement"><td class="memItemLeft" align="right" valign="top"><a id="a75be4c334c4eac6db273e1155068b2ed"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>setColorIndices</b> (<a class="el" href="classSoState.html">SoState</a> *state, <a class="el" href="classSoNode.html">SoNode</a> *node, int32_t numindices, const int32_t *indices)</td></tr>
@@ -330,7 +326,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>setSpecular</b
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>setShininess</b> (<a class="el" href="classSoState.html">SoState</a> *state, float value)</td></tr>
 <tr class="separator:ae175c1f1ac00ee732b21ed6c2dd28df2 inherit pub_static_methods_classSoLazyElement"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4698815408e901b15cb7ea1680fa3cc0 inherit pub_static_methods_classSoLazyElement"><td class="memItemLeft" align="right" valign="top"><a id="a4698815408e901b15cb7ea1680fa3cc0"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>setColorMaterial</b> (<a class="el" href="classSoState.html">SoState</a> *state, SbBool value)</td></tr>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>setColorMaterial</b> (<a class="el" href="classSoState.html">SoState</a> *state, <a class="el" href="classint.html">SbBool</a> value)</td></tr>
 <tr class="separator:a4698815408e901b15cb7ea1680fa3cc0 inherit pub_static_methods_classSoLazyElement"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad473359bc5c3b97fa0915f2760445fb4 inherit pub_static_methods_classSoLazyElement"><td class="memItemLeft" align="right" valign="top"><a id="ad473359bc5c3b97fa0915f2760445fb4"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>enableBlending</b> (<a class="el" href="classSoState.html">SoState</a> *state, <a class="el" href="classint.html">int</a> sfactor, <a class="el" href="classint.html">int</a> dfactor)</td></tr>
@@ -348,13 +344,13 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>setLightModel<
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>setVertexOrdering</b> (<a class="el" href="classSoState.html">SoState</a> *state, VertexOrdering ordering)</td></tr>
 <tr class="separator:a9b007384e2421068c72ca7c5c0b46103 inherit pub_static_methods_classSoLazyElement"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2314159904a64886f1630cd9dd3b62f inherit pub_static_methods_classSoLazyElement"><td class="memItemLeft" align="right" valign="top"><a id="af2314159904a64886f1630cd9dd3b62f"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>setBackfaceCulling</b> (<a class="el" href="classSoState.html">SoState</a> *state, SbBool onoff)</td></tr>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>setBackfaceCulling</b> (<a class="el" href="classSoState.html">SoState</a> *state, <a class="el" href="classint.html">SbBool</a> onoff)</td></tr>
 <tr class="separator:af2314159904a64886f1630cd9dd3b62f inherit pub_static_methods_classSoLazyElement"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3eb35da71dc89e56de0f73b5f89b70e6 inherit pub_static_methods_classSoLazyElement"><td class="memItemLeft" align="right" valign="top"><a id="a3eb35da71dc89e56de0f73b5f89b70e6"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>setTwosideLighting</b> (<a class="el" href="classSoState.html">SoState</a> *state, SbBool onoff)</td></tr>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>setTwosideLighting</b> (<a class="el" href="classSoState.html">SoState</a> *state, <a class="el" href="classint.html">SbBool</a> onoff)</td></tr>
 <tr class="separator:a3eb35da71dc89e56de0f73b5f89b70e6 inherit pub_static_methods_classSoLazyElement"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a076b28114c33042747eed46fec0b7f24 inherit pub_static_methods_classSoLazyElement"><td class="memItemLeft" align="right" valign="top"><a id="a076b28114c33042747eed46fec0b7f24"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>setShadeModel</b> (<a class="el" href="classSoState.html">SoState</a> *state, SbBool flatshading)</td></tr>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>setShadeModel</b> (<a class="el" href="classSoState.html">SoState</a> *state, <a class="el" href="classint.html">SbBool</a> flatshading)</td></tr>
 <tr class="separator:a076b28114c33042747eed46fec0b7f24 inherit pub_static_methods_classSoLazyElement"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af85315ee88ac8810b4bb9c47a9367944 inherit pub_static_methods_classSoLazyElement"><td class="memItemLeft" align="right" valign="top"><a id="af85315ee88ac8810b4bb9c47a9367944"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>setAlphaTest</b> (<a class="el" href="classSoState.html">SoState</a> *state, <a class="el" href="classint.html">int</a> func, float value)</td></tr>
@@ -387,13 +383,13 @@ static const <a class="el" href="classSbColor.html">SbColor</a> &amp;&#160;</td>
 static float&#160;</td><td class="memItemRight" valign="bottom"><b>getShininess</b> (<a class="el" href="classSoState.html">SoState</a> *)</td></tr>
 <tr class="separator:ad180674071d0b8ed7e65303872041ec8 inherit pub_static_methods_classSoLazyElement"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf761706a2094e2557335d8f91dd9920 inherit pub_static_methods_classSoLazyElement"><td class="memItemLeft" align="right" valign="top"><a id="adf761706a2094e2557335d8f91dd9920"></a>
-static SbBool&#160;</td><td class="memItemRight" valign="bottom"><b>getColorMaterial</b> (<a class="el" href="classSoState.html">SoState</a> *)</td></tr>
+static <a class="el" href="classint.html">SbBool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getColorMaterial</b> (<a class="el" href="classSoState.html">SoState</a> *)</td></tr>
 <tr class="separator:adf761706a2094e2557335d8f91dd9920 inherit pub_static_methods_classSoLazyElement"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c9ffd1eff0b66d552f8d6979967995a inherit pub_static_methods_classSoLazyElement"><td class="memItemLeft" align="right" valign="top"><a id="a9c9ffd1eff0b66d552f8d6979967995a"></a>
-static SbBool&#160;</td><td class="memItemRight" valign="bottom"><b>getBlending</b> (<a class="el" href="classSoState.html">SoState</a> *, <a class="el" href="classint.html">int</a> &amp;sfactor, <a class="el" href="classint.html">int</a> &amp;dfactor)</td></tr>
+static <a class="el" href="classint.html">SbBool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getBlending</b> (<a class="el" href="classSoState.html">SoState</a> *, <a class="el" href="classint.html">int</a> &amp;sfactor, <a class="el" href="classint.html">int</a> &amp;dfactor)</td></tr>
 <tr class="separator:a9c9ffd1eff0b66d552f8d6979967995a inherit pub_static_methods_classSoLazyElement"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae9bf24907bcee82d3fe5b4531a96548 inherit pub_static_methods_classSoLazyElement"><td class="memItemLeft" align="right" valign="top"><a id="aae9bf24907bcee82d3fe5b4531a96548"></a>
-static SbBool&#160;</td><td class="memItemRight" valign="bottom"><b>getAlphaBlending</b> (<a class="el" href="classSoState.html">SoState</a> *, <a class="el" href="classint.html">int</a> &amp;sfactor, <a class="el" href="classint.html">int</a> &amp;dfactor)</td></tr>
+static <a class="el" href="classint.html">SbBool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getAlphaBlending</b> (<a class="el" href="classSoState.html">SoState</a> *, <a class="el" href="classint.html">int</a> &amp;sfactor, <a class="el" href="classint.html">int</a> &amp;dfactor)</td></tr>
 <tr class="separator:aae9bf24907bcee82d3fe5b4531a96548 inherit pub_static_methods_classSoLazyElement"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc31572530ef18acc57c9a7f15e87464 inherit pub_static_methods_classSoLazyElement"><td class="memItemLeft" align="right" valign="top"><a id="afc31572530ef18acc57c9a7f15e87464"></a>
 static int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>getLightModel</b> (<a class="el" href="classSoState.html">SoState</a> *)</td></tr>
@@ -402,7 +398,7 @@ static int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>getLightMod
 static <a class="el" href="classint.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getAlphaTest</b> (<a class="el" href="classSoState.html">SoState</a> *state, float &amp;value)</td></tr>
 <tr class="separator:a969728de2ca24f62f7754669e315f987 inherit pub_static_methods_classSoLazyElement"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa008889fc66c355e4a776a84f097a2e8 inherit pub_static_methods_classSoLazyElement"><td class="memItemLeft" align="right" valign="top"><a id="aa008889fc66c355e4a776a84f097a2e8"></a>
-static SbBool&#160;</td><td class="memItemRight" valign="bottom"><b>getTwoSidedLighting</b> (<a class="el" href="classSoState.html">SoState</a> *state)</td></tr>
+static <a class="el" href="classint.html">SbBool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getTwoSidedLighting</b> (<a class="el" href="classSoState.html">SoState</a> *state)</td></tr>
 <tr class="separator:aa008889fc66c355e4a776a84f097a2e8 inherit pub_static_methods_classSoLazyElement"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad035a6f502036d697607f7fdf0bd9e57 inherit pub_static_methods_classSoLazyElement"><td class="memItemLeft" align="right" valign="top"><a id="ad035a6f502036d697607f7fdf0bd9e57"></a>
 static <a class="el" href="classSoLazyElement.html">SoLazyElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getInstance</b> (<a class="el" href="classSoState.html">SoState</a> *state)</td></tr>
@@ -438,7 +434,7 @@ static int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>getDefaultL
 static int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>getDefaultColorIndex</b> (void)</td></tr>
 <tr class="separator:a89b9930b1d4983ff5ba6c1329f5d5147 inherit pub_static_methods_classSoLazyElement"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b1496ad2b84d8d9560e9a97c969d064 inherit pub_static_methods_classSoLazyElement"><td class="memItemLeft" align="right" valign="top"><a id="a1b1496ad2b84d8d9560e9a97c969d064"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>setMaterials</b> (<a class="el" href="classSoState.html">SoState</a> *state, <a class="el" href="classSoNode.html">SoNode</a> *node, uint32_t bitmask, <a class="el" href="classSoColorPacker.html">SoColorPacker</a> *cPacker, const <a class="el" href="classSbColor.html">SbColor</a> *diffuse, const <a class="el" href="classint.html">int</a> numdiffuse, const float *transp, const <a class="el" href="classint.html">int</a> numtransp, const <a class="el" href="classSbColor.html">SbColor</a> &amp;ambient, const <a class="el" href="classSbColor.html">SbColor</a> &amp;emissive, const <a class="el" href="classSbColor.html">SbColor</a> &amp;specular, const float shininess, const SbBool istransparent)</td></tr>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>setMaterials</b> (<a class="el" href="classSoState.html">SoState</a> *state, <a class="el" href="classSoNode.html">SoNode</a> *node, uint32_t bitmask, <a class="el" href="classSoColorPacker.html">SoColorPacker</a> *cPacker, const <a class="el" href="classSbColor.html">SbColor</a> *diffuse, const <a class="el" href="classint.html">int</a> numdiffuse, const float *transp, const <a class="el" href="classint.html">int</a> numtransp, const <a class="el" href="classSbColor.html">SbColor</a> &amp;ambient, const <a class="el" href="classSbColor.html">SbColor</a> &amp;emissive, const <a class="el" href="classSbColor.html">SbColor</a> &amp;specular, const float shininess, const <a class="el" href="classint.html">SbBool</a> istransparent)</td></tr>
 <tr class="separator:a1b1496ad2b84d8d9560e9a97c969d064 inherit pub_static_methods_classSoLazyElement"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e93bac8ccaa47e2bcb8faf983cc78c4 inherit pub_static_methods_classSoLazyElement"><td class="memItemLeft" align="right" valign="top"><a id="a6e93bac8ccaa47e2bcb8faf983cc78c4"></a>
 static <a class="el" href="classSoLazyElement.html">SoLazyElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getWInstance</b> (<a class="el" href="classSoState.html">SoState</a> *state)</td></tr>
@@ -462,12 +458,17 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>setTransparenc
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
+<tr class="memitem:a31908073f19fbaa392e1b953bd310d6d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoGLLazyElement.html#a31908073f19fbaa392e1b953bd310d6d">~SoGLLazyElement</a> ()</td></tr>
+<tr class="separator:a31908073f19fbaa392e1b953bd310d6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b87169b3e553071585ff907d44033d2"><td class="memItemLeft" align="right" valign="top"><a id="a9b87169b3e553071585ff907d44033d2"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>lazyDidSet</b> (uint32_t mask)</td></tr>
 <tr class="separator:a9b87169b3e553071585ff907d44033d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81803ac537c7f7e33f79e6a6249c0e35"><td class="memItemLeft" align="right" valign="top"><a id="a81803ac537c7f7e33f79e6a6249c0e35"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>lazyDidntSet</b> (uint32_t mask)</td></tr>
 <tr class="separator:a81803ac537c7f7e33f79e6a6249c0e35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classSoLazyElement"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classSoLazyElement')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classSoLazyElement.html">SoLazyElement</a></td></tr>
+<tr class="memitem:a655cb145b4816a4d8458cbb833effed1 inherit pro_methods_classSoLazyElement"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoLazyElement.html#a655cb145b4816a4d8458cbb833effed1">~SoLazyElement</a> ()</td></tr>
+<tr class="separator:a655cb145b4816a4d8458cbb833effed1 inherit pro_methods_classSoLazyElement"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classSoElement"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classSoElement')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classSoElement.html">SoElement</a></td></tr>
 <tr class="memitem:a34312a1075fc6b90b3e5ccf5875c8c79 inherit pro_methods_classSoElement"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoElement.html#a34312a1075fc6b90b3e5ccf5875c8c79">SoElement</a> (void)</td></tr>
 <tr class="separator:a34312a1075fc6b90b3e5ccf5875c8c79 inherit pro_methods_classSoElement"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -578,7 +579,88 @@ struct <a class="el" href="structSoLazyElement_1_1CoinState.html">SoLazyElement:
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="classSoGLLazyElement.html" title="The SoGLLazyElement class is meant to optimize GL rendering. ">SoGLLazyElement</a> class is meant to optimize GL rendering. </p>
 <p>This is just a wrap-around implementation for compatibility. It should (hopefully) work in the same way as the Inventor class though. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a31908073f19fbaa392e1b953bd310d6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31908073f19fbaa392e1b953bd310d6d">&#9670;&nbsp;</a></span>~SoGLLazyElement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SoGLLazyElement::~SoGLLazyElement </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Destructor. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0526a861d5d258cd255370cdab486d70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0526a861d5d258cd255370cdab486d70">&#9670;&nbsp;</a></span>getClassTypeId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classSoType.html">SoType</a> SoGLLazyElement::getClassTypeId </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This static method returns the <a class="el" href="classSoType.html" title="The SoType class is the basis for the runtime type system in Coin. ">SoType</a> object associated with objects of this class. </p>
+
+</div>
+</div>
+<a id="a43dfc995495b9bdefde94d7a6a3652a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43dfc995495b9bdefde94d7a6a3652a6">&#9670;&nbsp;</a></span>getClassStackIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classint.html">int</a> SoGLLazyElement::getClassStackIndex </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This static method returns the state stack index for the class. </p>
+
+</div>
+</div>
 <a id="a845efb5e7df694b3ef41aeee0ba744e8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a845efb5e7df694b3ef41aeee0ba744e8">&#9670;&nbsp;</a></span>createInstance()</h2>
 
@@ -604,7 +686,7 @@ struct <a class="el" href="structSoLazyElement_1_1CoinState.html">SoLazyElement:
 </div><div class="memdoc">
 <p><em>This API member is considered internal to the library, as it is not likely to be of interest to the application programmer.</em><br />
 <br />
- </p>
+ Creates a new instance of the class type corresponding to the <a class="el" href="classSoType.html" title="The SoType class is the basis for the runtime type system in Coin. ">SoType</a> object. </p>
 
 </div>
 </div>
@@ -631,7 +713,7 @@ struct <a class="el" href="structSoLazyElement_1_1CoinState.html">SoLazyElement:
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This static method initializes static data for the <a class="el" href="classSoGLLazyElement.html" title="The SoGLLazyElement class is meant to optimize GL rendering. ">SoGLLazyElement</a> class. </p>
+<p>Initialize relevant common data for all instances, like the type system. </p>
 
 </div>
 </div>
@@ -816,7 +898,7 @@ struct <a class="el" href="structSoLazyElement_1_1CoinState.html">SoLazyElement:
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSoGLLazyElement.html">SoGLLazyElement</a></li>
-    <li class="footer">Generated on Wed Jan 29 2020 23:52:13 for Coin by
+    <li class="footer">Generated on Sat Dec 9 2023 20:13:33 for Coin by
     <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.14 </li>
   </ul>
 </div>

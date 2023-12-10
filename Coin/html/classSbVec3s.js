@@ -9,7 +9,7 @@ var classSbVec3s =
     [ "SbVec3s", "classSbVec3s.html#af7f0f60434502a96320805da1129e2ca", null ],
     [ "SbVec3s", "classSbVec3s.html#a87ebb005dda25e4028180796dc718da9", null ],
     [ "setValue", "classSbVec3s.html#a13bcd6f18c9b72e0398932ebc2c3f2be", null ],
-    [ "setValue", "classSbVec3s.html#aa5530c1d493c57f9861aaa4193c897e4", null ],
+    [ "setValue", "classSbVec3s.html#af2766b6b57f0a6e0d828c645c3034880", null ],
     [ "setValue", "classSbVec3s.html#a7b3b315d4c4ee43904b574e55413987b", null ],
     [ "setValue", "classSbVec3s.html#aaa8e79640bc4dabb9bd3e2c7bd577e0c", null ],
     [ "setValue", "classSbVec3s.html#a508bfa34c7c89ef64cd756467970ee39", null ],
