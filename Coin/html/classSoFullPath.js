@@ -1,9 +1,0 @@
-var classSoFullPath =
-[
-    [ "pop", "classSoFullPath.html#ac910125223965d59eb473cadc636f8c6", null ],
-    [ "getTail", "classSoFullPath.html#a6f10361f7f8af28a937a2ad52efeb7b9", null ],
-    [ "getNodeFromTail", "classSoFullPath.html#ac6f2a1d6b9ac930051a66ae78d7af5d1", null ],
-    [ "getIndexFromTail", "classSoFullPath.html#aa097cb570b7b2f2beac84dc65405314d", null ],
-    [ "getLength", "classSoFullPath.html#a9105009b476fea9b0fe7e163f20343ae", null ],
-    [ "SoTempPath", "classSoFullPath.html#a3db738d22a6a471b912582e2d878cc2c", null ]
-];
